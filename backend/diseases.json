@@ -1,0 +1,891 @@
+{
+  "Acne Vulgaris": {
+    "symptoms": [
+      "pimples",
+      "blackheads",
+      "whiteheads",
+      "oily skin",
+      "scarring",
+      "skin problems"
+    ],
+    "remedies": [
+      "tea tree oil",
+      "aloe vera",
+      "honey mask",
+      "washing face twice daily"
+    ],
+    "medical": [
+      "benzoyl peroxide",
+      "salicylic acid",
+      "topical retinoids",
+      "oral antibiotics"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Anemia": {
+    "symptoms": [
+      "fatigue",
+      "weakness",
+      "pale skin",
+      "chest pain",
+      "cold hands and feet",
+      "dizziness"
+    ],
+    "remedies": [
+      "iron-rich foods (spinach, lentils)",
+      "vitamin c (enhances iron absorption)"
+    ],
+    "medical": [
+      "iron supplements",
+      "vitamin b12 injections",
+      "blood transfusions in severe cases"
+    ],
+    "specialist": "Hematologist"
+  },
+  "Asthma": {
+    "symptoms": [
+      "shortness of breath",
+      "chest tightness",
+      "wheezing",
+      "coughing attacks"
+    ],
+    "remedies": [
+      "sitting upright",
+      "caffeinated tea (relaxes airways)",
+      "eucalyptus oil inhalation"
+    ],
+    "medical": [
+      "inhalers (albuterol)",
+      "corticosteroids",
+      "allergy medications"
+    ],
+    "specialist": "Pulmonologist"
+  },
+  "Bronchitis": {
+    "symptoms": [
+      "cough with mucus",
+      "fatigue",
+      "shortness of breath",
+      "slight fever",
+      "chest discomfort"
+    ],
+    "remedies": [
+      "drinking heavy fluids",
+      "using a humidifier",
+      "breathing in steam",
+      "rest"
+    ],
+    "medical": [
+      "cough suppressants",
+      "pain relievers",
+      "bronchodilators",
+      "antibiotics (if bacterial)"
+    ],
+    "specialist": "Pulmonologist"
+  },
+  "Cellulitis": {
+    "symptoms": [
+      "red, swollen area of skin",
+      "pain or tenderness",
+      "skin that is warm to the touch",
+      "fever",
+      "skin problems"
+    ],
+    "remedies": [
+      "elevating the affected area",
+      "cool, damp cloth application"
+    ],
+    "medical": [
+      "oral antibiotics",
+      "intravenous antibiotics in severe cases"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Common Cold": {
+    "symptoms": [
+      "cough",
+      "fever",
+      "fatigue",
+      "runny nose",
+      "sore throat",
+      "sneezing",
+      "congestion"
+    ],
+    "remedies": [
+      "rest and hydration",
+      "ginger and honey tea",
+      "saltwater gargle",
+      "vitamin c"
+    ],
+    "medical": [
+      "fever medication",
+      "decongestants",
+      "throat lozenges"
+    ],
+    "specialist": "General Physician"
+  },
+  "COVID-19": {
+    "symptoms": [
+      "fever",
+      "dry cough",
+      "fatigue",
+      "loss of taste or smell",
+      "shortness of breath",
+      "body aches"
+    ],
+    "remedies": [
+      "isolation and rest",
+      "staying hydrated",
+      "breathing exercises"
+    ],
+    "medical": [
+      "antiviral treatments",
+      "corticosteroids",
+      "paracetamol"
+    ],
+    "specialist": "Pulmonologist"
+  },
+  "Dandruff (Seborrheic Dermatitis)": {
+    "symptoms": [
+      "flaky skin on scalp",
+      "itching",
+      "red skin",
+      "scaly patches",
+      "skin problems"
+    ],
+    "remedies": [
+      "coconut oil",
+      "aloe vera",
+      "apple cider vinegar wash",
+      "tea tree oil drops in shampoo"
+    ],
+    "medical": [
+      "medicated shampoos (zinc pyrithione, ketoconazole)",
+      "topical corticosteroids"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Dengue Fever": {
+    "symptoms": [
+      "high fever",
+      "severe headache",
+      "pain behind eyes",
+      "joint and muscle pain",
+      "skin rash",
+      "fatigue"
+    ],
+    "remedies": [
+      "papaya leaf extract",
+      "coconut water",
+      "complete bed rest"
+    ],
+    "medical": [
+      "acetaminophen (avoid ibuprofen)",
+      "intravenous fluids if severe"
+    ],
+    "specialist": "Infectious Disease Specialist"
+  },
+  "Eczema (Atopic Dermatitis)": {
+    "symptoms": [
+      "dry skin",
+      "itching",
+      "red to brownish-gray patches",
+      "small raised bumps",
+      "skin problems"
+    ],
+    "remedies": [
+      "coconut oil application",
+      "colloidal oatmeal bath",
+      "humidifier"
+    ],
+    "medical": [
+      "corticosteroid creams",
+      "calcineurin inhibitors",
+      "antihistamines"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Food Poisoning": {
+    "symptoms": [
+      "upset stomach",
+      "stomach cramps",
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "fever"
+    ],
+    "remedies": [
+      "ginger tea",
+      "apple cider vinegar",
+      "avoiding dairy and caffeine",
+      "clear broths"
+    ],
+    "medical": [
+      "fluid replacement (IV if severe)",
+      "antibiotics (if Lysteria or bacterial)"
+    ],
+    "specialist": "Gastroenterologist"
+  },
+  "Gastroenteritis (Stomach Bug)": {
+    "symptoms": [
+      "stomach pain",
+      "fatigue",
+      "fever",
+      "nausea",
+      "vomiting",
+      "diarrhea",
+      "cramps"
+    ],
+    "remedies": [
+      "herbal tea",
+      "BRAT diet (bananas, rice, applesauce, toast)",
+      "clear fluids"
+    ],
+    "medical": [
+      "anti-nausea medication",
+      "oral rehydration salts"
+    ],
+    "specialist": "Gastroenterologist"
+  },
+  "Hives (Urticaria)": {
+    "symptoms": [
+      "red, itchy welts",
+      "swelling",
+      "blanching",
+      "center turns white when pressed",
+      "skin problems"
+    ],
+    "remedies": [
+      "cold compress",
+      "oatmeal bath",
+      "avoiding known triggers",
+      "wearing loose clothing"
+    ],
+    "medical": [
+      "antihistamines",
+      "corticosteroids",
+      "epinephrine (for severe allergic reactions)"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Hypertension (High Blood Pressure)": {
+    "symptoms": [
+      "headache",
+      "shortness of breath",
+      "nosebleeds",
+      "dizziness",
+      "chest pain"
+    ],
+    "remedies": [
+      "dash diet",
+      "garlic",
+      "reducing sodium intake",
+      "stress management",
+      "meditation"
+    ],
+    "medical": [
+      "ACE inhibitors",
+      "beta-blockers",
+      "diuretics"
+    ],
+    "specialist": "Cardiologist"
+  },
+  "Impetigo": {
+    "symptoms": [
+      "red sores that easily rupture",
+      "honey-colored crusts",
+      "itching",
+      "skin problems"
+    ],
+    "remedies": [
+      "washing sores with mild soap and water",
+      "applying wet compresses",
+      "cutting nails short to prevent scratching"
+    ],
+    "medical": [
+      "topical antibiotic ointment (mupirocin)",
+      "oral antibiotics"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Influenza (Flu)": {
+    "symptoms": [
+      "fever",
+      "headache",
+      "fatigue",
+      "cough",
+      "muscle aches",
+      "chills",
+      "sweats"
+    ],
+    "remedies": [
+      "steam inhalation",
+      "hydration therapy",
+      "warm fluids",
+      "rest"
+    ],
+    "medical": [
+      "antiviral medication",
+      "pain relievers",
+      "fever reducers"
+    ],
+    "specialist": "General Physician"
+  },
+  "Jaundice": {
+    "symptoms": [
+      "yellow skin",
+      "yellow eyes",
+      "dark urine",
+      "pale stools",
+      "fatigue",
+      "abdominal pain"
+    ],
+    "remedies": [
+      "sugarcane juice",
+      "sunlight exposure (for mild newborn jaundice)",
+      "lots of fluids",
+      "eating fruits"
+    ],
+    "medical": [
+      "treating underlying cause (hepatitis etc)",
+      "liver transplant in severe cases",
+      "phototherapy (newborns)"
+    ],
+    "specialist": "Gastroenterologist"
+  },
+  "Kidney Stones": {
+    "symptoms": [
+      "severe pain in side and back",
+      "pain radiating to lower abdomen",
+      "pain during urination",
+      "pink, red or brown urine",
+      "nausea"
+    ],
+    "remedies": [
+      "drinking heavy amounts of water",
+      "lemon juice",
+      "apple cider vinegar",
+      "celery juice"
+    ],
+    "medical": [
+      "pain relievers",
+      "alpha blockers to relax ureter",
+      "extracorporeal shock wave lithotripsy (ESWL)",
+      "surgery"
+    ],
+    "specialist": "Urologist"
+  },
+  "Lyme Disease": {
+    "symptoms": [
+      "circular rash",
+      "bulls-eye pattern",
+      "fatigue",
+      "chills",
+      "fever",
+      "headache",
+      "muscle aches",
+      "joint aches",
+      "swollen lymph nodes"
+    ],
+    "remedies": [
+      "essential oils (tick repellent preventative)",
+      "anti-inflammatory diet"
+    ],
+    "medical": [
+      "oral antibiotics (doxycycline, amoxicillin)",
+      "intravenous antibiotics for neurological symptoms"
+    ],
+    "specialist": "Infectious Disease Specialist"
+  },
+  "Malaria": {
+    "symptoms": [
+      "fever",
+      "chills",
+      "sweating",
+      "headache",
+      "fatigue",
+      "nausea",
+      "vomiting"
+    ],
+    "remedies": [
+      "cooling sponges",
+      "papaya leaf extract (complementary)",
+      "lots of fluids"
+    ],
+    "medical": [
+      "antimalarial drugs (chloroquine, artemisinin)",
+      "hospitalization for severe cases"
+    ],
+    "specialist": "Infectious Disease Specialist"
+  },
+  "Melanoma (Skin Cancer)": {
+    "symptoms": [
+      "changes in an existing mole",
+      "development of a new pigmented or unusual looking growth",
+      "irregularly shaped mole",
+      "skin problems"
+    ],
+    "remedies": [
+      "strict sun protection",
+      "regular self-examinations (no home remedies for cancer)"
+    ],
+    "medical": [
+      "surgical excision",
+      "immunotherapy",
+      "targeted therapy",
+      "radiation therapy"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Norovirus": {
+    "symptoms": [
+      "diarrhea",
+      "vomiting",
+      "nausea",
+      "stomach pain",
+      "fever",
+      "headache",
+      "body aches"
+    ],
+    "remedies": [
+      "bland foods",
+      "strict hygiene",
+      "plenty of clear fluids"
+    ],
+    "medical": [
+      "intravenous fluids for severe dehydration",
+      "anti-diarrheal medications"
+    ],
+    "specialist": "Gastroenterologist"
+  },
+  "Osteoarthritis": {
+    "symptoms": [
+      "joint pain",
+      "stiffness",
+      "tenderness",
+      "loss of flexibility",
+      "grating sensation",
+      "bone spurs"
+    ],
+    "remedies": [
+      "hot and cold therapy",
+      "turmeric and ginger tea",
+      "low-impact exercise",
+      "epsom salt bath"
+    ],
+    "medical": [
+      "acetaminophen",
+      "nonsteroidal anti-inflammatory drugs (NSAIDs)",
+      "physical therapy",
+      "joint replacement"
+    ],
+    "specialist": "Rheumatologist"
+  },
+  "Pneumonia": {
+    "symptoms": [
+      "cough with phlegm",
+      "fever",
+      "chills",
+      "difficulty breathing",
+      "chest pain"
+    ],
+    "remedies": [
+      "peppermint tea",
+      "warm damp washcloth on face",
+      "humidifier"
+    ],
+    "medical": [
+      "antibiotics (if bacterial)",
+      "cough medicine",
+      "oxygen therapy in severe cases"
+    ],
+    "specialist": "Pulmonologist"
+  },
+  "Psoriasis": {
+    "symptoms": [
+      "red patches of skin covered with thick, silvery scales",
+      "dry, cracked skin that may bleed",
+      "itching",
+      "burning",
+      "skin problems"
+    ],
+    "remedies": [
+      "aloe vera",
+      "epsom salt baths",
+      "omega-3 supplements",
+      "stress management"
+    ],
+    "medical": [
+      "topical corticosteroids",
+      "light therapy (phototherapy)",
+      "systemic medications (biologics)"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Q Fever": {
+    "symptoms": [
+      "high fever",
+      "severe headache",
+      "fatigue",
+      "chills",
+      "cough",
+      "nausea",
+      "diarrhea"
+    ],
+    "remedies": [
+      "plenty of fluids",
+      "rest",
+      "cooling baths"
+    ],
+    "medical": [
+      "antibiotics (doxycycline)",
+      "hydroxychloroquine for chronic cases"
+    ],
+    "specialist": "Infectious Disease Specialist"
+  },
+  "Ringworm (Fungal Infection)": {
+    "symptoms": [
+      "itchy, ring-shaped rash",
+      "red, scaly, cracked skin",
+      "hair loss",
+      "skin problems"
+    ],
+    "remedies": [
+      "apple cider vinegar compress",
+      "tea tree oil application",
+      "garlic paste"
+    ],
+    "medical": [
+      "antifungal creams (clotrimazole)",
+      "oral antifungal medications"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Rosacea": {
+    "symptoms": [
+      "facial redness",
+      "swollen red bumps",
+      "visible blood vessels",
+      "eye problems",
+      "enlarged nose",
+      "skin problems"
+    ],
+    "remedies": [
+      "green tea extract",
+      "oatmeal mask",
+      "identifying and avoiding trigger foods/environments",
+      "gentle skin care"
+    ],
+    "medical": [
+      "topical drugs (brimonidine, ivermectin)",
+      "oral antibiotics",
+      "laser therapy"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Scabies": {
+    "symptoms": [
+      "intense itching directly at night",
+      "pimple-like skin rash",
+      "scales or blisters",
+      "burrow tracks on skin"
+    ],
+    "remedies": [
+      "tea tree oil application",
+      "neem oil",
+      "washing all clothes in hot water"
+    ],
+    "medical": [
+      "permethrin cream",
+      "ivermectin pills",
+      "antihistamines for itching"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Skin Allergy (Contact Dermatitis)": {
+    "symptoms": [
+      "skin problems",
+      "itching",
+      "red rash",
+      "blisters",
+      "dry patches"
+    ],
+    "remedies": [
+      "cold compress",
+      "aloe vera gel",
+      "oatmeal bath",
+      "avoiding the trigger substance"
+    ],
+    "medical": [
+      "topical hydrocortisone cream",
+      "oral antihistamines"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Tuberculosis": {
+    "symptoms": [
+      "persistent cough",
+      "chest pain",
+      "coughing up blood",
+      "fatigue",
+      "weight loss",
+      "night sweats",
+      "fever"
+    ],
+    "remedies": [
+      "high-protein diet",
+      "fresh air and ventilation",
+      "adequate rest"
+    ],
+    "medical": [
+      "long-term antibiotics (isoniazid, rifampin)",
+      "medical supervision"
+    ],
+    "specialist": "Pulmonologist"
+  },
+  "Ulcerative Colitis": {
+    "symptoms": [
+      "diarrhea often with blood or pus",
+      "abdominal pain",
+      "rectal pain",
+      "weight loss",
+      "fatigue",
+      "fever"
+    ],
+    "remedies": [
+      "eating small meals",
+      "drinking plenty of liquids",
+      "reducing stress",
+      "low fiber dietary changes"
+    ],
+    "medical": [
+      "anti-inflammatory drugs",
+      "immune system suppressors",
+      "biologics",
+      "surgery"
+    ],
+    "specialist": "Gastroenterologist"
+  },
+  "Vertigo": {
+    "symptoms": [
+      "dizziness",
+      "feeling of spinning",
+      "loss of balance",
+      "nausea",
+      "vomiting",
+      "nystagmus (abnormal eye movements)"
+    ],
+    "remedies": [
+      "epley maneuver",
+      "ginkgo biloba",
+      "ginger root tea",
+      "hydration",
+      "sitting still"
+    ],
+    "medical": [
+      "vestibular rehabilitation",
+      "water pills (diuretics)",
+      "anti-nausea medications"
+    ],
+    "specialist": "ENT Specialist / Neurologist"
+  },
+  "Vitiligo": {
+    "symptoms": [
+      "patchy loss of skin color",
+      "premature whitening or graying of hair",
+      "loss of color in tissues that line inside of mouth",
+      "skin problems"
+    ],
+    "remedies": [
+      "ginkgo biloba supplements",
+      "using broad-spectrum sunscreen",
+      "cosmetic concealers"
+    ],
+    "medical": [
+      "corticosteroid creams",
+      "calcineurin inhibitor ointments",
+      "phototherapy",
+      "depigmentation therapy"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Warts": {
+    "symptoms": [
+      "small, fleshy, grainy bumps",
+      "flesh-colored",
+      "white, pink or tan",
+      "rough to the touch",
+      "skin problems"
+    ],
+    "remedies": [
+      "apple cider vinegar application",
+      "garlic extract",
+      "duct tape occlusion therapy"
+    ],
+    "medical": [
+      "cryotherapy (freezing)",
+      "salicylic acid treatments",
+      "laser treatment",
+      "minor surgery"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Whooping Cough (Pertussis)": {
+    "symptoms": [
+      "severe hacking cough",
+      "high-pitched intake of breath that sounds like 'whoop'",
+      "runny nose",
+      "fever",
+      "vomiting after coughing"
+    ],
+    "remedies": [
+      "using a cool mist vaporizer",
+      "drinking plenty of fluids",
+      "eating smaller meals"
+    ],
+    "medical": [
+      "antibiotics",
+      "hospitalization for infants",
+      "preventative DTaP vaccine"
+    ],
+    "specialist": "Pulmonologist"
+  },
+  "Xeroderma Pigmentosum": {
+    "symptoms": [
+      "severe sunburn from very small sunlight",
+      "freckling on sun-exposed areas",
+      "blistering",
+      "dry skin",
+      "high risk of skin cancer"
+    ],
+    "remedies": [
+      "strict sun avoidance",
+      "protective clothing including UV-blocking shields",
+      "remaining indoors during day"
+    ],
+    "medical": [
+      "frequent skin cancer screenings",
+      "surgical removal of tumors",
+      "retinoids to prevent skin cancer"
+    ],
+    "specialist": "Dermatologist"
+  },
+  "Yellow Fever": {
+    "symptoms": [
+      "fever",
+      "headache",
+      "muscle aches (especially in back and knees)",
+      "sensitivity to light",
+      "nausea",
+      "jaundice",
+      "bleeding"
+    ],
+    "remedies": [
+      "plenty of fluids to prevent dehydration",
+      "rest",
+      "avoiding mosquito bites"
+    ],
+    "medical": [
+      "preventative yellow fever vaccine",
+      "pain relievers (avoid aspirin/NSAIDs due to bleeding risk)",
+      "dialysis for kidney failure"
+    ],
+    "specialist": "Infectious Disease Specialist"
+  },
+  "Zika Virus": {
+    "symptoms": [
+      "fever",
+      "rash",
+      "headache",
+      "joint pain",
+      "red eyes",
+      "muscle pain"
+    ],
+    "remedies": [
+      "plenty of rest",
+      "drinking fluids to prevent dehydration",
+      "avoiding mosquito bites"
+    ],
+    "medical": [
+      "acetaminophen to reduce fever and pain (avoiding NSAIDs)",
+      "no specific antiviral treatment available"
+    ],
+    "specialist": "Infectious Disease Specialist"
+  },
+  "Diabetes Type 1": {
+    "symptoms": [
+      "increased thirst",
+      "frequent urination",
+      "extreme hunger",
+      "unintended weight loss",
+      "fatigue",
+      "weakness",
+      "blurred vision",
+      "mood changes"
+    ],
+    "remedies": [
+      "regular exercise",
+      "maintaining a balanced, low-sugar diet",
+      "close monitoring of blood sugar",
+      "stress management"
+    ],
+    "medical": [
+      "insulin injections or insulin pump therapy",
+      "frequent blood sugar monitoring",
+      "carbohydrate counting"
+    ],
+    "specialist": "Endocrinologist"
+  },
+  "Diabetes Type 2": {
+    "symptoms": [
+      "increased thirst",
+      "frequent urination",
+      "increased hunger",
+      "fatigue",
+      "blurred vision",
+      "slow-healing sores",
+      "frequent infections",
+      "darkened skin in certain areas"
+    ],
+    "remedies": [
+      "bitter gourd (karela) juice",
+      "fenugreek seeds soaked in water",
+      "cinnamon powder",
+      "amla (Indian gooseberry)",
+      "regular physical activity",
+      "weight loss and management",
+      "healthy eating (low carb, high fiber)"
+    ],
+    "medical": [
+      "metformin",
+      "sulfonylureas",
+      "insulin therapy in advanced cases",
+      "blood sugar monitoring",
+      "GLP-1 receptor agonists",
+      "DPP-4 inhibitors"
+    ],
+    "specialist": "Endocrinologist"
+  },
+  "Gestational Diabetes": {
+    "symptoms": [
+      "increased thirst",
+      "frequent urination",
+      "fatigue",
+      "nausea",
+      "frequent infections"
+    ],
+    "remedies": [
+      "eating healthy foods (high fiber, low fat/sugar)",
+      "staying physically active",
+      "portion control",
+      "monitoring weight gain during pregnancy"
+    ],
+    "medical": [
+      "blood sugar monitoring",
+      "insulin injections (if diet/exercise isn't enough)",
+      "metformin (if recommended by doctor)",
+      "close monitoring of the baby"
+    ],
+    "specialist": "Endocrinologist / Obstetrician"
+  }
+}
