@@ -16,6 +16,7 @@ Symptoms (text)
 Skin images
 Audio samples (e.g., cough recordings)
 🔹 Step 2 — Processing Layer
+
 ⚛️ Quantum Symptom Engine
 Built using Qiskit with Grover's Algorithm
 Searches large medical datasets efficiently via quantum-inspired parallelism
