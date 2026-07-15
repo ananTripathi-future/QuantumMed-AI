@@ -9,17 +9,10 @@
 
 <!-- Badges Row 2 — GitHub Stats -->
 <p align="center">
-  <img src="https://img.shields.io/github/stars/ananTripathi-future/quantummed-ai?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/forks/ananTripathi-future/quantummed-ai?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/issues/ananTripathi-future/quantummed-ai?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/license/ananTripathi-future/quantummed-ai?style=for-the-badge"/>
-</p>
-
-<!-- Badges Row 3 — Activity -->
-<p align="center">
-  <img src="https://img.shields.io/github/last-commit/ananTripathi-future/quantummed-ai?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/repo-size/ananTripathi-future/quantummed-ai?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/languages/top/ananTripathi-future/quantummed-ai?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/stars/ananTripathi-future/QuantumMed-AI?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/forks/ananTripathi-future/QuantumMed-AI?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/issues/ananTripathi-future/QuantumMed-AI?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/license/ananTripathi-future/QuantumMed-AI?style=for-the-badge"/>
 </p>
 
 ---
@@ -39,27 +32,27 @@ A hybrid **Quantum + AI** healthcare platform that combines Grover's Algorithm-p
                 │              QUANTUMMED AI                    │
                 │                                              │
   Symptoms ───►│  Pillar 1: ⚛️ Quantum Symptom Engine         │
-                │    ├─ Grover's Algorithm (Qiskit + Aer)      │
-                │    ├─ Quantum-parallelized dataset search     │
-                │    └─ Probable disease match + confidence     │
-                │                                              │
+                 │    ├─ Grover's Search Algorithm (Qiskit)     │
+                 │    ├─ Symptom Weighting & Probability Ranking│
+                 │    └─ Top 5 Disease Matches                  │
+                 │                                              │
   Skin Image ──►│  Pillar 2: 🧠 AI Vision Engine               │
-                │    ├─ PyTorch CNN feature extraction          │
-                │    ├─ Detects: Eczema · Fungal · Allergies   │
-                │    └─ Condition classification + severity     │
-                │                                              │
+                 │    ├─ PyTorch CNN feature classification     │
+                 │    ├─ 8-Stage Preprocessing Validation       │
+                 │    └─ Dual-Pass Skin & Lesion Detection      │
+                 │                                              │
   Audio File ──►│  Pillar 3: 🔊 Audio Intelligence Engine      │
-                │    ├─ Audio → Mel Spectrogram conversion      │
-                │    ├─ Deep Neural Network classification      │
-                │    └─ Dry cough · Congestion · Infection      │
-                │                                              │
-                │  ┌────────────────────────────────────────┐  │
-                │  │  Unified Output Pipeline                │  │
-                │  │  Disease Probabilities                  │  │
-                │  │  Suggested Medications + Remedies       │  │
-                │  │  Medical Recommendations                │  │
-                │  └────────────────────────────────────────┘  │
-                └──────────────────────────────────────────────┘
+                 │    ├─ Audio → Mel Spectrogram conversion      │
+                 │    ├─ Deep Neural Network classification      │
+                 │    └─ Dry cough · Congestion · Infection      │
+                 │                                              │
+                 │  ┌────────────────────────────────────────┐  │
+                 │  │  Unified Output Pipeline                │  │
+                 │  │  Explainable AI (XAI) Checklist         │  │
+                 │  │  Checklist-based Medical Advice         │  │
+                 │  │  Printable PDF Report Generation        │  │
+                 │  └────────────────────────────────────────┘  │
+                 └──────────────────────────────────────────────┘
 ```
 
 ---
@@ -72,7 +65,7 @@ Users provide any combination of:
 
 | Input Type | Format | Engine |
 |-----------|--------|--------|
-| Symptoms or disease name | Free text | Quantum Symptom Engine |
+| Symptoms & Severities | Free text + Severity Selectors | Quantum Symptom Engine |
 | Skin condition image | `.jpg`, `.png` | AI Vision Engine |
 | Respiratory audio | `.wav`, `.mp3` | Audio Intelligence Engine |
 
@@ -81,80 +74,118 @@ Users provide any combination of:
 ### 🔹 Step 2 — Processing Layer
 
 **⚛️ Quantum Symptom Engine**
+```
 [Symptom Text Input]
-│
-▼
-Qiskit Circuit + Grover's Algorithm
-│
-▼
-Quantum-parallelized medical dataset search
-│
-▼
-[Ranked disease probability matches]
+       │
+       ▼
+[Dynamic Severity Weighting] (Mild: 1x, Moderate: 1.5x, Severe: 2.5x)
+       │
+       ▼
+Qiskit Circuit + Grover's Search Algorithm
+       │
+       ▼
+[Ranked Disease Probability Matches (Top 5 Results)]
+```
 
-
-**🧠 AI Vision Engine**
+**🧠 AI Vision Engine (8-Stage Preprocessing Pipeline)**
+```
 [Skin Image Upload]
-│
-▼
-PyTorch CNN — Feature Tensor Extraction
-│
-▼
-Classification: Eczema · Fungal · Allergy
-│
-▼
-[Condition label + confidence score]
-
+       │
+       ▼
+File Format Validation (JPEG, PNG, etc.)
+       │
+       ▼
+Blank Image Check (Standard Deviation & Min/Max Luminance checks)
+       │
+       ▼
+Image Quality check (Blur, low resolution, contrast checks)
+       │
+       ▼
+Dual-Pass Skin Detection (RGB Segmentation + PyTorch Binary CNN check)
+       │
+       ▼
+Lesion Presence check (Skin variance analysis for rashes/moles)
+       │
+       ▼
+Deep Learning Disease Classifier (Acne, Eczema, Psoriasis, Rosacea)
+       │
+       ▼
+Confidence Threshold Constraint (Rejects under 60.0% confidence)
+       │
+       ▼
+[Display Diagnostics & Top Predictions Chart]
+```
 
 **🔊 Audio Intelligence Engine**
+```
 [Cough / Respiratory Audio]
-│
-▼
+       │
+       ▼
 Convert → Mel Spectrogram
-│
-▼
+       │
+       ▼
 Deep Neural Network Classification
-│
-▼
+       │
+       ▼
 [Dry cough · Chest congestion · Infection indicator]
-
+```
 
 ---
 
-### 🔹 Step 3 — Output Layer
+### 🔹 Step-3 — Output Layer
 
 Each analysis produces a unified diagnostic report:
 
 | Output | Description |
 |--------|-------------|
 | 📊 Disease probabilities | Ranked list of matched conditions |
-| 💊 Suggested medications | Common treatment options |
+| 🧬 Explainable AI (XAI) | Matched vs. Missing symptoms checklist |
+| 💊 Suggested medications | Checklist of common treatment options |
 | 🏠 Home remedies | Supportive care suggestions |
-| ⚠️ Medical recommendations | When to seek professional care |
+| 🩺 Specialist Referral | Recommended Doctor |
+| ⚠️ Medical recommendations | Flashing real-time emergency warnings |
 
 ---
 
-## ✨ Key Features
+## ✨ Key Features & Implementation Phases
 
-| Feature | Technology | Details |
-|---------|-----------|---------|
-| ⚛️ Quantum symptom matching | Qiskit + Grover's Algorithm | Parallelized search over medical datasets |
-| 🧠 AI skin vision | PyTorch CNN | Eczema, fungal infections, allergies |
-| 🔊 Audio diagnostics | Mel Spectrogram + DNN | Respiratory pattern classification |
-| 🌐 Real-time backend | FastAPI + Uvicorn | Async REST API, instant responses |
-| ⚡ Live frontend | React.js + Axios | Interactive UI with Lucide Icons |
+The platform implements all **13 phases** of the QuantumMed AI spec:
 
----
+### 🔹 Phase 1: Comprehensive Disease Database
+- Main database expands to **90+ diseases** covering A–Z with a 13-field custom schema (Description, Severity, Risk Factors, Prevention, Treatments, and Recovery Time).
 
-## 🛠️ Tech Stack
+### 🔹 Phase 2: Intelligent Symptom Matching
+- Inverse symptom frequency weighting assigns high significance to rare symptoms. Output displays **Top 5 Disease Matches** with confidence ratings.
 
-| Layer | Technologies |
-|-------|-------------|
-| Frontend | React.js, Axios, Lucide Icons |
-| Backend | Python 3.8+, FastAPI, Uvicorn |
-| Quantum | Qiskit, Qiskit Aer |
-| AI / ML | PyTorch, CNN Models, Audio DNNs |
-| Audio Processing | Librosa, Mel Spectrogram |
+### 🔹 Phase 3: Symptom Severity & Weighting
+- Interactive selectors allow users to adjust symptom weights dynamically in the UI: **Mild (1x)**, **Moderate (1.5x)**, or **Severe (2.5x)**.
+
+### 🔹 Phase 4: Disease Categories
+- Skew-free classification over 13 designated medical disciplines.
+
+### 🔹 Phase 5: Real-time Emergency Warning
+- Prominent flashing emergency notice triggered immediately in the UI if critical symptoms like `chest pain`, `difficulty breathing`, or `loss of consciousness` are inputted.
+
+### 🔹 Phase 6: Quantum Search & Circuit Visualizer
+- Beautiful SVG-based visualizer that animates Grover's algorithm wire states (`|q_0>`, `|q_1>`, `|q_2>`, `c`) in real-time as the query runs.
+
+### 🔹 Phase 7 & 8: Confidence Score & Explainable AI (XAI)
+- Shows **Matched Symptoms (✔)** vs. **Missing Symptoms (✖)** checklists and a collapsible details panel explaining the primary present and secondary typical symptoms.
+
+### 🔹 Phase 9: Medical Recommendations
+- Formatted recommendations including checklists for Home Care, Medications, recommended Specialist, and Hospital Referral thresholds.
+
+### 🔹 Phase 10: Search Filters
+- Demographic dropdown selectors filtering results by Age Group (Child, Adult, Senior), Gender, and Pregnancy status to prevent false matches.
+
+### 🔹 Phase 11: Disease-to-Disease Comparison
+- A comparative grid tab where users can select any two diseases from the 90-disease database and view general metrics and symptom overlaps.
+
+### 🔹 Phase 12: Medical Report PDF Generation
+- Exporter generating a formatted vector-crisp PDF medical report containing diagnostics, treatments, timestamps, and Report IDs.
+
+### 🔹 Phase 13: Analytics Dashboard
+- Glowing statistical benchmark cards detailing classical vs. quantum scaling, execution times, and Grover speedup factors ($13.4\times$).
 
 ---
 
@@ -163,40 +194,37 @@ Each analysis produces a unified diagnostic report:
 ```
 quantummed-ai/
 ├── backend/
-│   ├── app.py                      # FastAPI entry point
-│   ├── quantum_engine.py           # Grover's algorithm symptom search
-│   ├── vision_engine.py            # PyTorch CNN skin classifier
-│   ├── audio_engine.py             # Mel spectrogram + DNN classifier
-│   ├── medical_dataset/            # Symptom-disease mapping data
-│   ├── models/                     # Pretrained CNN + DNN weights
+│   ├── app.py                      # FastAPI entry point & routers
+│   ├── quantum_search.py           # Grover's algorithm & symptom weighting
+│   ├── classical_search.py         # Classical benchmark search
+│   ├── ai_analyzer.py              # PyTorch skin classifier & audio diagnostics
+│   ├── diseases.json               # 90+ Disease custom database
 │   └── requirements.txt
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── App.jsx                 # Main React application
-│   │   ├── components/
-│   │   │   ├── SymptomInput.jsx    # Quantum symptom UI
-│   │   │   ├── SkinUpload.jsx      # Vision engine UI
-│   │   │   └── AudioUpload.jsx     # Audio engine UI
-│   │   └── api/
-│   │       └── quantummed.js       # Axios API client
+│   │   ├── App.jsx                 # React layout, dashboard, & visualizer
+│   │   └── index.css               # CSS stylesheet & dark themes
 │   └── package.json
 │
-├── Start-QuantumMed.bat            # One-shot Windows launcher
+├── Start-QuantumMed.bat            # Windows double-click launcher
 └── README.md
-
+```
 
 ---
 
 ## 📦 Installation & Setup
 
 ### Prerequisites
-
 - Node.js (v16+)
 - Python 3.8+
 
-### Backend
+### Quick Start (Windows)
+Double-click `Start-QuantumMed.bat` in the root directory. This automatically launches both the FastAPI backend and React frontend in separate terminal windows.
 
+### Manual Setup
+
+**Backend**
 ```bash
 cd backend
 pip install -r requirements.txt
@@ -204,57 +232,13 @@ python app.py
 # Runs at → http://localhost:8000
 ```
 
-### Frontend
-
+**Frontend**
 ```bash
 cd frontend
 npm install
 npm run dev
 # Runs at → http://localhost:5173
 ```
-
-### ⚡ Quick Start (Windows)
-
-```bat
-Start-QuantumMed.bat
-```
-
-> Launches both backend and frontend automatically in separate terminals.
-
----
-
-## 🧪 How to Use
-
-### 🩺 Quantum Symptom Match
-
-1. Enter symptoms (e.g., `fever, fatigue, headache`) or a disease name
-2. The quantum engine runs Grover's search over the medical dataset
-3. Receive ranked disease predictions with suggested treatments
-
-### 🖼️ AI Skin Vision
-
-1. Upload a skin image (`.jpg` or `.png`)
-2. CNN model extracts feature tensors and classifies the condition
-3. Get detected abnormality label and confidence score
-
-### 🔊 AI Audio Diagnostics
-
-1. Upload a cough or respiratory audio file
-2. Audio is converted to a Mel spectrogram
-3. DNN classifies the respiratory pattern and returns diagnosis
-
----
-
-## 📌 Project Vision
-
-QuantumMed AI simulates a future healthcare paradigm where:
-
-| Today | Future (Simulated) |
-|-------|-------------------|
-| Sequential symptom lookup | Quantum-parallelized search |
-| Manual image review | Instant CNN-based diagnosis |
-| Subjective audio assessment | DNN respiratory classification |
-| Reactive care | Proactive intelligent systems |
 
 ---
 
@@ -265,26 +249,9 @@ It is **not** intended for real-world medical use, clinical decision-making, or 
 
 ---
 
-## 🧑‍💻 Author
-
-**Anant Tripathi**
-B.Tech CSE · Quantum Computing · AI · Cybersecurity
-
-- GitHub: [@ananTripathi-future](https://github.com/ananTripathi-future)
-
----
-
 ## ⭐ Support
 
-If this project helped you:
-
-- ⭐ **Star** the repository
-- 🍴 **Fork** it and extend the engines
-- 🧠 **Contribute** via pull requests
-- 🐛 **Report issues** in the Issues tab
-
----
-
-## 📝 License
-
-This project is provided for educational and research purposes.
+If this project helped you, please consider:
+- ⭐ **Starring** the repository on GitHub.
+- 🍴 **Forking** the project and extending the quantum engines.
+- 🧠 **Contributing** updates via Pull Requests.
