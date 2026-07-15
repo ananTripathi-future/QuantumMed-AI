@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="images/banner.png" alt="QuantumMed AI Banner" width="100%">
-</p>
+
 
 <h1 align="center">⚛️ QuantumMed AI</h1>
 
