@@ -22,22 +22,37 @@ app.add_middleware(
 
 class SymptomRequest(BaseModel):
     symptoms: List[str]
+    gender: str = "Any"
+    age_group: str = "Adult"
+    is_pregnant: bool = False
+    severities: dict[str, str] = {}
 
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the QuantumMed AI API! Status: Quantum Processor Online"}
 
+@app.get("/diseases")
+def get_all_diseases():
+    from quantum_search import DISEASE_DB
+    return DISEASE_DB
+
 @app.post("/analyze")
 def analyze_symptoms(request: SymptomRequest):
     user_symptoms = [s.strip().lower() for s in request.symptoms]
     
-    # Call the quantum mock search to match diseases based on symptoms
-    results = grover_mock_search(user_symptoms)
+    # Call the quantum mock search to match diseases based on symptoms, demographics, and severities
+    results = grover_mock_search(
+        user_symptoms,
+        gender=request.gender,
+        age_group=request.age_group,
+        is_pregnant=request.is_pregnant,
+        severities=request.severities
+    )
     
     return {
         "status": "success",
         "quantum_processing_time_ms": 14.5, # Mock quantum execution metric
-        "findings": results["matches"][:3]  # Only return the top 3 matches to keep UI clean
+        "findings": results["matches"][:5]  # Return the top 5 matches
     }
 
 @app.post("/compare")
@@ -50,13 +65,25 @@ def compare_searches(request: SymptomRequest):
     
     # --- Run Classical Search with timing ---
     classical_start = time.perf_counter()
-    classical_results = classical_linear_search(user_symptoms)
+    classical_results = classical_linear_search(
+        user_symptoms,
+        gender=request.gender,
+        age_group=request.age_group,
+        is_pregnant=request.is_pregnant,
+        severities=request.severities
+    )
     classical_end = time.perf_counter()
     classical_time_ms = round((classical_end - classical_start) * 1000, 4)
     
     # --- Run Quantum Search with timing ---
     quantum_start = time.perf_counter()
-    quantum_results = grover_mock_search(user_symptoms)
+    quantum_results = grover_mock_search(
+        user_symptoms,
+        gender=request.gender,
+        age_group=request.age_group,
+        is_pregnant=request.is_pregnant,
+        severities=request.severities
+    )
     quantum_end = time.perf_counter()
     quantum_time_ms = round((quantum_end - quantum_start) * 1000, 4)
     

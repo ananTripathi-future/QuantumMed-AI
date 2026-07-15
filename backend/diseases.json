@@ -1,5 +1,8 @@
 {
   "Acne Vulgaris": {
+    "name": "Acne Vulgaris",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "pimples",
       "blackheads",
@@ -8,21 +11,45 @@
       "scarring",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "hormonal changes",
+      "family history",
+      "oily cosmetics",
+      "stress",
+      "certain medications"
+    ],
+    "home_remedies": [
       "tea tree oil",
       "aloe vera",
       "honey mask",
       "washing face twice daily"
     ],
-    "medical": [
+    "medical_treatment": [
+      "chemical peels",
+      "laser therapy",
+      "comedone extraction"
+    ],
+    "medications": [
       "benzoyl peroxide",
       "salicylic acid",
       "topical retinoids",
       "oral antibiotics"
     ],
-    "specialist": "Dermatologist"
+    "prevention": [
+      "wash face twice daily",
+      "use non-comedogenic cosmetics",
+      "avoid touching face",
+      "stay hydrated"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A common skin condition that occurs when hair follicles become clogged with oil and dead skin cells, leading to pimples and breakouts.",
+    "recovery_time": "4-8 weeks to see improvement"
   },
   "Anemia": {
+    "name": "Anemia",
+    "category": "Cardiology",
+    "severity": "Moderate",
     "symptoms": [
       "fatigue",
       "weakness",
@@ -31,37 +58,81 @@
       "cold hands and feet",
       "dizziness"
     ],
-    "remedies": [
-      "iron-rich foods (spinach, lentils)",
-      "vitamin c (enhances iron absorption)"
+    "risk_factors": [
+      "poor diet",
+      "intestinal disorders",
+      "chronic diseases",
+      "pregnancy",
+      "family history"
     ],
-    "medical": [
-      "iron supplements",
-      "vitamin b12 injections",
+    "home_remedies": [
+      "iron-rich foods (spinach, lentils)",
+      "vitamin c intake (enhances iron absorption)"
+    ],
+    "medical_treatment": [
+      "treating underlying cause",
       "blood transfusions in severe cases"
     ],
-    "specialist": "Hematologist"
+    "medications": [
+      "iron supplements",
+      "vitamin b12 injections",
+      "folic acid"
+    ],
+    "prevention": [
+      "eat a balanced diet with iron-rich foods",
+      "monitor vitamin b12 levels",
+      "avoid excess tea/coffee with meals"
+    ],
+    "recommended_specialist": "Hematologist",
+    "emergency": false,
+    "description": "A condition in which the blood lacks enough healthy red blood cells or hemoglobin, leading to reduced oxygen flow to the body's organs.",
+    "recovery_time": "3-6 months to restore iron levels"
   },
   "Asthma": {
+    "name": "Asthma",
+    "category": "Pulmonology",
+    "severity": "Severe",
     "symptoms": [
       "shortness of breath",
       "chest tightness",
       "wheezing",
       "coughing attacks"
     ],
-    "remedies": [
+    "risk_factors": [
+      "family history",
+      "allergies",
+      "exposure to smoke",
+      "obesity",
+      "air pollution"
+    ],
+    "home_remedies": [
       "sitting upright",
       "caffeinated tea (relaxes airways)",
       "eucalyptus oil inhalation"
     ],
-    "medical": [
+    "medical_treatment": [
+      "bronchial thermoplasty",
+      "oxygen therapy during severe flare-ups"
+    ],
+    "medications": [
       "inhalers (albuterol)",
-      "corticosteroids",
+      "inhaled corticosteroids",
       "allergy medications"
     ],
-    "specialist": "Pulmonologist"
+    "prevention": [
+      "avoid known allergens and asthma triggers",
+      "get regular flu vaccines",
+      "avoid exposure to smoke"
+    ],
+    "recommended_specialist": "Pulmonologist",
+    "emergency": true,
+    "description": "A chronic condition in which the airways narrow, swell, and produce extra mucus, making breathing difficult and triggering coughing and wheezing.",
+    "recovery_time": "Chronic condition (lifelong management)"
   },
   "Bronchitis": {
+    "name": "Bronchitis",
+    "category": "Pulmonology",
+    "severity": "Moderate",
     "symptoms": [
       "cough with mucus",
       "fatigue",
@@ -69,21 +140,42 @@
       "slight fever",
       "chest discomfort"
     ],
-    "remedies": [
+    "risk_factors": [
+      "cigarette smoke",
+      "low resistance/weak immunity",
+      "exposure to irritants on the job",
+      "gastric reflux"
+    ],
+    "home_remedies": [
       "drinking heavy fluids",
       "using a humidifier",
       "breathing in steam",
       "rest"
     ],
-    "medical": [
+    "medical_treatment": [
+      "pulmonary rehabilitation",
+      "oxygen therapy (if severe chronic cases)"
+    ],
+    "medications": [
       "cough suppressants",
       "pain relievers",
       "bronchodilators",
       "antibiotics (if bacterial)"
     ],
-    "specialist": "Pulmonologist"
+    "prevention": [
+      "avoid cigarette smoke",
+      "wash hands frequently",
+      "wear a mask in polluted areas"
+    ],
+    "recommended_specialist": "Pulmonologist",
+    "emergency": false,
+    "description": "Inflammation of the lining of the bronchial tubes, which carry air to and from your lungs, often leading to a persistent mucus cough.",
+    "recovery_time": "1-3 weeks (acute) or chronic"
   },
   "Cellulitis": {
+    "name": "Cellulitis",
+    "category": "Dermatology",
+    "severity": "Moderate",
     "symptoms": [
       "red, swollen area of skin",
       "pain or tenderness",
@@ -91,17 +183,40 @@
       "fever",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "injuries/cuts",
+      "weakened immune system",
+      "skin conditions like eczema",
+      "chronic swelling (lymphedema)",
+      "obesity"
+    ],
+    "home_remedies": [
       "elevating the affected area",
       "cool, damp cloth application"
     ],
-    "medical": [
-      "oral antibiotics",
-      "intravenous antibiotics in severe cases"
+    "medical_treatment": [
+      "wound care",
+      "surgical drainage if an abscess forms"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "oral antibiotics",
+      "intravenous antibiotics in severe cases",
+      "pain relievers"
+    ],
+    "prevention": [
+      "wash cuts/scrapes immediately with soap and water",
+      "apply protective ointment",
+      "keep skin moisturized to prevent cracks"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A common and potentially serious bacterial skin infection that causes swelling, redness, and pain, usually on the lower legs.",
+    "recovery_time": "7-14 days with antibiotics"
   },
   "Common Cold": {
+    "name": "Common Cold",
+    "category": "Pulmonology",
+    "severity": "Mild",
     "symptoms": [
       "cough",
       "fever",
@@ -111,20 +226,42 @@
       "sneezing",
       "congestion"
     ],
-    "remedies": [
+    "risk_factors": [
+      "being under 6 years old",
+      "weakened immune system",
+      "time of year (fall/winter)",
+      "smoking",
+      "crowded settings"
+    ],
+    "home_remedies": [
       "rest and hydration",
       "ginger and honey tea",
       "saltwater gargle",
       "vitamin c"
     ],
-    "medical": [
-      "fever medication",
+    "medical_treatment": [
+      "supportive rest",
+      "warm steam inhalation"
+    ],
+    "medications": [
+      "fever medication (acetaminophen)",
       "decongestants",
       "throat lozenges"
     ],
-    "specialist": "General Physician"
+    "prevention": [
+      "wash hands frequently",
+      "disinfect belongings",
+      "avoid close contact with sick individuals"
+    ],
+    "recommended_specialist": "General Physician",
+    "emergency": false,
+    "description": "A viral infection of your nose and throat (upper respiratory tract) that is usually harmless, though it may feel unpleasant.",
+    "recovery_time": "7-10 days"
   },
   "COVID-19": {
+    "name": "COVID-19",
+    "category": "Pulmonology",
+    "severity": "Severe",
     "symptoms": [
       "fever",
       "dry cough",
@@ -133,19 +270,42 @@
       "shortness of breath",
       "body aches"
     ],
-    "remedies": [
+    "risk_factors": [
+      "older age",
+      "underlying health conditions (diabetes, heart issues)",
+      "being unvaccinated",
+      "immunodeficiency"
+    ],
+    "home_remedies": [
       "isolation and rest",
       "staying hydrated",
       "breathing exercises"
     ],
-    "medical": [
-      "antiviral treatments",
+    "medical_treatment": [
+      "monoclonal antibody therapy",
+      "oxygen therapy in hospital cases",
+      "mechanical ventilation (severe)"
+    ],
+    "medications": [
+      "antiviral treatments (paxlovid)",
       "corticosteroids",
       "paracetamol"
     ],
-    "specialist": "Pulmonologist"
+    "prevention": [
+      "get vaccinated",
+      "wear a mask in crowded areas",
+      "practice social distancing",
+      "wash hands frequently"
+    ],
+    "recommended_specialist": "Pulmonologist",
+    "emergency": true,
+    "description": "An infectious disease caused by the SARS-CoV-2 virus, leading to respiratory symptoms that range from mild to life-threatening.",
+    "recovery_time": "1-2 weeks (mild cases) or months (long COVID)"
   },
   "Dandruff (Seborrheic Dermatitis)": {
+    "name": "Dandruff (Seborrheic Dermatitis)",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "flaky skin on scalp",
       "itching",
@@ -153,19 +313,41 @@
       "scaly patches",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "stress",
+      "cold, dry weather",
+      "oily skin",
+      "neurological conditions like Parkinson's"
+    ],
+    "home_remedies": [
       "coconut oil",
       "aloe vera",
       "apple cider vinegar wash",
       "tea tree oil drops in shampoo"
     ],
-    "medical": [
-      "medicated shampoos (zinc pyrithione, ketoconazole)",
-      "topical corticosteroids"
+    "medical_treatment": [
+      "scalp exfoliating treatments",
+      "light therapy"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "medicated shampoos (zinc pyrithione, ketoconazole)",
+      "topical corticosteroids",
+      "antifungal creams"
+    ],
+    "prevention": [
+      "use gentle hair care products",
+      "manage stress",
+      "shampoo regularly if you have oily scalp"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A common condition characterized by flaking skin on the scalp, which can be accompanied by itching and redness.",
+    "recovery_time": "Manageable, improvements in 1-2 weeks"
   },
   "Dengue Fever": {
+    "name": "Dengue Fever",
+    "category": "Immunology",
+    "severity": "Severe",
     "symptoms": [
       "high fever",
       "severe headache",
@@ -174,18 +356,36 @@
       "skin rash",
       "fatigue"
     ],
-    "remedies": [
+    "risk_factors": [
+      "living or traveling in tropical/subtropical regions",
+      "previous infection with a different dengue serotype"
+    ],
+    "home_remedies": [
       "papaya leaf extract",
       "coconut water",
       "complete bed rest"
     ],
-    "medical": [
-      "acetaminophen (avoid ibuprofen)",
-      "intravenous fluids if severe"
+    "medical_treatment": [
+      "intravenous fluid replacement",
+      "blood transfusion in severe hemorrhagic cases"
     ],
-    "specialist": "Infectious Disease Specialist"
+    "medications": [
+      "acetaminophen (avoid ibuprofen/aspirin to reduce bleeding risks)"
+    ],
+    "prevention": [
+      "use mosquito repellent",
+      "wear long sleeves and pants",
+      "remove standing water around the home"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": true,
+    "description": "A painful, mosquito-borne viral infection that causes high fever and severe flu-like symptoms, with a risk of developing severe hemorrhagic fever.",
+    "recovery_time": "1-2 weeks"
   },
   "Eczema (Atopic Dermatitis)": {
+    "name": "Eczema (Atopic Dermatitis)",
+    "category": "Dermatology",
+    "severity": "Moderate",
     "symptoms": [
       "dry skin",
       "itching",
@@ -193,19 +393,41 @@
       "small raised bumps",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "family history of eczema or asthma",
+      "allergies",
+      "environmental irritants",
+      "stress"
+    ],
+    "home_remedies": [
       "coconut oil application",
       "colloidal oatmeal bath",
       "humidifier"
     ],
-    "medical": [
+    "medical_treatment": [
+      "phototherapy (light therapy)",
+      "wet wrap therapy"
+    ],
+    "medications": [
       "corticosteroid creams",
       "calcineurin inhibitors",
-      "antihistamines"
+      "oral antihistamines",
+      "dupilumab (biologic)"
     ],
-    "specialist": "Dermatologist"
+    "prevention": [
+      "moisturize skin regularly",
+      "avoid harsh soaps",
+      "identify and avoid trigger substances"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A chronic condition that makes the skin red, dry, and extremely itchy, often starting in childhood.",
+    "recovery_time": "Chronic (recurrent flare-ups)"
   },
   "Food Poisoning": {
+    "name": "Food Poisoning",
+    "category": "Gastroenterology",
+    "severity": "Moderate",
     "symptoms": [
       "upset stomach",
       "stomach cramps",
@@ -214,19 +436,42 @@
       "diarrhea",
       "fever"
     ],
-    "remedies": [
+    "risk_factors": [
+      "eating raw or undercooked meats/seafood",
+      "consuming unpasteurized dairy",
+      "poor food handling",
+      "weakened immunity"
+    ],
+    "home_remedies": [
       "ginger tea",
       "apple cider vinegar",
       "avoiding dairy and caffeine",
       "clear broths"
     ],
-    "medical": [
-      "fluid replacement (IV if severe)",
-      "antibiotics (if Lysteria or bacterial)"
+    "medical_treatment": [
+      "intravenous fluids for severe dehydration",
+      "hospital monitoring"
     ],
-    "specialist": "Gastroenterologist"
+    "medications": [
+      "rehydration salts",
+      "antibiotics (if bacterial/severe)",
+      "anti-parasitics"
+    ],
+    "prevention": [
+      "wash hands and surfaces often",
+      "separate raw foods",
+      "cook to safe temperatures",
+      "refrigerate promptly"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "An illness caused by eating contaminated food, typically resulting in stomach upset, severe vomiting, and diarrhea.",
+    "recovery_time": "1-3 days"
   },
   "Gastroenteritis (Stomach Bug)": {
+    "name": "Gastroenteritis (Stomach Bug)",
+    "category": "Gastroenterology",
+    "severity": "Moderate",
     "symptoms": [
       "stomach pain",
       "fatigue",
@@ -236,18 +481,39 @@
       "diarrhea",
       "cramps"
     ],
-    "remedies": [
+    "risk_factors": [
+      "contact with infected persons",
+      "consuming contaminated food or water",
+      "poor hand hygiene"
+    ],
+    "home_remedies": [
       "herbal tea",
       "BRAT diet (bananas, rice, applesauce, toast)",
       "clear fluids"
     ],
-    "medical": [
-      "anti-nausea medication",
-      "oral rehydration salts"
+    "medical_treatment": [
+      "supportive rest",
+      "oral rehydration therapy"
     ],
-    "specialist": "Gastroenterologist"
+    "medications": [
+      "anti-nausea medication (ondansetron)",
+      "oral rehydration salts",
+      "antidiarrheals (use with caution)"
+    ],
+    "prevention": [
+      "wash hands thoroughly",
+      "get the rotavirus vaccine (for infants)",
+      "disinfect infected surfaces"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "An inflammation of the stomach and intestines, usually caused by a viral or bacterial infection, presenting with vomiting and diarrhea.",
+    "recovery_time": "3-7 days"
   },
   "Hives (Urticaria)": {
+    "name": "Hives (Urticaria)",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "red, itchy welts",
       "swelling",
@@ -255,20 +521,42 @@
       "center turns white when pressed",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "known allergies",
+      "recent infection",
+      "stress",
+      "temperature extremes",
+      "exercise"
+    ],
+    "home_remedies": [
       "cold compress",
       "oatmeal bath",
       "avoiding known triggers",
       "wearing loose clothing"
     ],
-    "medical": [
-      "antihistamines",
-      "corticosteroids",
-      "epinephrine (for severe allergic reactions)"
+    "medical_treatment": [
+      "allergy testing",
+      "immunosuppressive therapy (for chronic cases)"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "oral antihistamines",
+      "corticosteroids",
+      "epinephrine (in emergencies)"
+    ],
+    "prevention": [
+      "avoid known allergens and triggers",
+      "manage stress",
+      "wear loose, smooth-textured clothing"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A skin reaction that causes red, swollen, and intensely itchy welts, ranging in size and appearing anywhere on the body.",
+    "recovery_time": "24 hours to a few weeks"
   },
   "Hypertension (High Blood Pressure)": {
+    "name": "Hypertension (High Blood Pressure)",
+    "category": "Cardiology",
+    "severity": "Moderate",
     "symptoms": [
       "headache",
       "shortness of breath",
@@ -276,39 +564,85 @@
       "dizziness",
       "chest pain"
     ],
-    "remedies": [
+    "risk_factors": [
+      "older age",
+      "family history",
+      "excess weight",
+      "lack of physical activity",
+      "high-sodium diet",
+      "excess alcohol"
+    ],
+    "home_remedies": [
       "dash diet",
       "garlic",
       "reducing sodium intake",
       "stress management",
       "meditation"
     ],
-    "medical": [
+    "medical_treatment": [
+      "lifestyle modification program",
+      "regular BP monitoring"
+    ],
+    "medications": [
       "ACE inhibitors",
       "beta-blockers",
-      "diuretics"
+      "diuretics",
+      "calcium channel blockers"
     ],
-    "specialist": "Cardiologist"
+    "prevention": [
+      "maintain a healthy weight",
+      "exercise regularly",
+      "eat a low-salt, balanced diet",
+      "limit alcohol and quit smoking"
+    ],
+    "recommended_specialist": "Cardiologist",
+    "emergency": false,
+    "description": "A common condition in which the long-term force of the blood against your artery walls is high enough that it may cause heart disease.",
+    "recovery_time": "Chronic condition (requires lifelong monitoring)"
   },
   "Impetigo": {
+    "name": "Impetigo",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "red sores that easily rupture",
       "honey-colored crusts",
       "itching",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "age (2-5 years old)",
+      "crowded conditions",
+      "warm, humid weather",
+      "broken skin (cuts, scrapes)"
+    ],
+    "home_remedies": [
       "washing sores with mild soap and water",
       "applying wet compresses",
       "cutting nails short to prevent scratching"
     ],
-    "medical": [
+    "medical_treatment": [
+      "gentle washing to remove crusts",
+      "covering sores with bandages"
+    ],
+    "medications": [
       "topical antibiotic ointment (mupirocin)",
       "oral antibiotics"
     ],
-    "specialist": "Dermatologist"
+    "prevention": [
+      "keep cuts and scrapes clean and covered",
+      "avoid sharing personal items",
+      "wash infected person's clothes and linens"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A highly contagious bacterial skin infection that causes red sores, mainly on the face, which rupture and form honey-colored crusts.",
+    "recovery_time": "7-10 days with treatment"
   },
   "Influenza (Flu)": {
+    "name": "Influenza (Flu)",
+    "category": "Pulmonology",
+    "severity": "Moderate",
     "symptoms": [
       "fever",
       "headache",
@@ -318,20 +652,41 @@
       "chills",
       "sweats"
     ],
-    "remedies": [
+    "risk_factors": [
+      "older age or young childhood",
+      "weak immune system",
+      "chronic illnesses (diabetes, asthma)",
+      "pregnancy"
+    ],
+    "home_remedies": [
       "steam inhalation",
       "hydration therapy",
       "warm fluids",
       "rest"
     ],
-    "medical": [
-      "antiviral medication",
+    "medical_treatment": [
+      "supportive home care",
+      "hospitalization in severe cases"
+    ],
+    "medications": [
+      "antiviral medication (oseltamivir)",
       "pain relievers",
       "fever reducers"
     ],
-    "specialist": "General Physician"
+    "prevention": [
+      "get the annual flu vaccine",
+      "wash hands frequently",
+      "avoid close contact with infected individuals"
+    ],
+    "recommended_specialist": "General Physician",
+    "emergency": false,
+    "description": "A common viral infection of the respiratory tract that causes fever, muscle aches, headache, fatigue, and coughing.",
+    "recovery_time": "1-2 weeks"
   },
   "Jaundice": {
+    "name": "Jaundice",
+    "category": "Gastroenterology",
+    "severity": "Moderate",
     "symptoms": [
       "yellow skin",
       "yellow eyes",
@@ -340,20 +695,42 @@
       "fatigue",
       "abdominal pain"
     ],
-    "remedies": [
+    "risk_factors": [
+      "excessive alcohol use",
+      "exposure to hepatitis viruses",
+      "certain medications",
+      "blood disorders",
+      "gallstones"
+    ],
+    "home_remedies": [
       "sugarcane juice",
       "sunlight exposure (for mild newborn jaundice)",
       "lots of fluids",
       "eating fruits"
     ],
-    "medical": [
-      "treating underlying cause (hepatitis etc)",
-      "liver transplant in severe cases",
-      "phototherapy (newborns)"
+    "medical_treatment": [
+      "treating underlying cause (gallstone removal, etc.)",
+      "phototherapy (for newborns)"
     ],
-    "specialist": "Gastroenterologist"
+    "medications": [
+      "antiviral drugs (for viral hepatitis)",
+      "steroids",
+      "supportive medications"
+    ],
+    "prevention": [
+      "avoid excessive alcohol",
+      "get vaccinated against Hepatitis A and B",
+      "practice safe hygiene and food preparation"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "A yellow discoloration of the skin and eyes caused by high levels of bilirubin in the blood, indicating potential liver or gallbladder issues.",
+    "recovery_time": "Weeks to months depending on the cause"
   },
   "Kidney Stones": {
+    "name": "Kidney Stones",
+    "category": "Gastroenterology",
+    "severity": "Severe",
     "symptoms": [
       "severe pain in side and back",
       "pain radiating to lower abdomen",
@@ -361,21 +738,42 @@
       "pink, red or brown urine",
       "nausea"
     ],
-    "remedies": [
+    "risk_factors": [
+      "dehydration",
+      "diet high in protein, sodium, and sugar",
+      "obesity",
+      "digestive diseases/surgery",
+      "family history"
+    ],
+    "home_remedies": [
       "drinking heavy amounts of water",
       "lemon juice",
       "apple cider vinegar",
       "celery juice"
     ],
-    "medical": [
-      "pain relievers",
-      "alpha blockers to relax ureter",
+    "medical_treatment": [
       "extracorporeal shock wave lithotripsy (ESWL)",
-      "surgery"
+      "ureteroscopy",
+      "percutaneous nephrolithotomy (surgery)"
     ],
-    "specialist": "Urologist"
+    "medications": [
+      "pain relievers (NSAIDs)",
+      "alpha blockers to relax the ureter"
+    ],
+    "prevention": [
+      "stay hydrated by drinking water throughout the day",
+      "eat fewer oxalate-rich foods",
+      "reduce sodium and animal protein"
+    ],
+    "recommended_specialist": "Urologist",
+    "emergency": true,
+    "description": "Hard deposits made of minerals and salts that form inside your kidneys, causing severe pain when they travel down the urinary tract.",
+    "recovery_time": "1-4 weeks (to pass stone)"
   },
   "Lyme Disease": {
+    "name": "Lyme Disease",
+    "category": "Immunology",
+    "severity": "Moderate",
     "symptoms": [
       "circular rash",
       "bulls-eye pattern",
@@ -387,17 +785,36 @@
       "joint aches",
       "swollen lymph nodes"
     ],
-    "remedies": [
+    "risk_factors": [
+      "spending time in wooded or grassy areas",
+      "having exposed skin in tick habitats",
+      "failing to remove ticks promptly"
+    ],
+    "home_remedies": [
       "essential oils (tick repellent preventative)",
       "anti-inflammatory diet"
     ],
-    "medical": [
-      "oral antibiotics (doxycycline, amoxicillin)",
-      "intravenous antibiotics for neurological symptoms"
+    "medical_treatment": [
+      "supportive care",
+      "intravenous antibiotic therapy for neurological complications"
     ],
-    "specialist": "Infectious Disease Specialist"
+    "medications": [
+      "oral antibiotics (doxycycline, amoxicillin, cefuroxime)"
+    ],
+    "prevention": [
+      "use insect repellent with DEET",
+      "wear long sleeves/pants in wooded areas",
+      "check body for ticks after outdoor activities"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": false,
+    "description": "A tick-borne bacterial infection characterized by a distinctive 'bulls-eye' rash, fever, fatigue, and joint pain.",
+    "recovery_time": "2-4 weeks with early antibiotics"
   },
   "Malaria": {
+    "name": "Malaria",
+    "category": "Immunology",
+    "severity": "Severe",
     "symptoms": [
       "fever",
       "chills",
@@ -407,37 +824,81 @@
       "nausea",
       "vomiting"
     ],
-    "remedies": [
+    "risk_factors": [
+      "traveling to or living in tropical regions",
+      "being pregnant",
+      "young childhood",
+      "lacking immunity"
+    ],
+    "home_remedies": [
       "cooling sponges",
       "papaya leaf extract (complementary)",
       "lots of fluids"
     ],
-    "medical": [
-      "antimalarial drugs (chloroquine, artemisinin)",
-      "hospitalization for severe cases"
+    "medical_treatment": [
+      "hospitalization and monitoring in severe cases",
+      "intravenous medication"
     ],
-    "specialist": "Infectious Disease Specialist"
+    "medications": [
+      "antimalarial drugs (chloroquine, artemisinin-based combination therapies)"
+    ],
+    "prevention": [
+      "take prescription antimalarials before traveling",
+      "sleep under insecticide-treated bed nets",
+      "use insect repellent"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": true,
+    "description": "A serious, potentially life-threatening disease spread by infected Anopheles mosquitoes, causing cyclic fevers, chills, and flu-like symptoms.",
+    "recovery_time": "1-2 weeks with treatment"
   },
   "Melanoma (Skin Cancer)": {
+    "name": "Melanoma (Skin Cancer)",
+    "category": "Dermatology",
+    "severity": "Severe",
     "symptoms": [
       "changes in an existing mole",
       "development of a new pigmented or unusual looking growth",
       "irregularly shaped mole",
       "skin problems"
     ],
-    "remedies": [
-      "strict sun protection",
-      "regular self-examinations (no home remedies for cancer)"
+    "risk_factors": [
+      "fair skin",
+      "history of sunburns",
+      "excessive UV light exposure (tanning beds)",
+      "having many moles",
+      "family history"
     ],
-    "medical": [
+    "home_remedies": [
+      "strict sun protection",
+      "regular self-examinations (no home remedies for cancer treatment)"
+    ],
+    "medical_treatment": [
       "surgical excision",
       "immunotherapy",
       "targeted therapy",
-      "radiation therapy"
+      "radiation therapy",
+      "chemotherapy"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "checkpoint inhibitors",
+      "targeted drugs (BRAF/MEK inhibitors)"
+    ],
+    "prevention": [
+      "apply sunscreen daily",
+      "avoid tanning beds",
+      "wear protective clothing",
+      "regularly check skin for changing moles"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "The most serious type of skin cancer, developing in the cells (melanocytes) that produce melanin, which gives skin its color.",
+    "recovery_time": "Varies (long-term monitoring required)"
   },
   "Norovirus": {
+    "name": "Norovirus",
+    "category": "Gastroenterology",
+    "severity": "Moderate",
     "symptoms": [
       "diarrhea",
       "vomiting",
@@ -447,18 +908,38 @@
       "headache",
       "body aches"
     ],
-    "remedies": [
+    "risk_factors": [
+      "eating in crowded settings (schools, cruise ships)",
+      "poor hand hygiene",
+      "eating contaminated food/shellfish"
+    ],
+    "home_remedies": [
       "bland foods",
       "strict hygiene",
       "plenty of clear fluids"
     ],
-    "medical": [
-      "intravenous fluids for severe dehydration",
-      "anti-diarrheal medications"
+    "medical_treatment": [
+      "oral rehydration therapy",
+      "intravenous fluids in severe dehydration"
     ],
-    "specialist": "Gastroenterologist"
+    "medications": [
+      "anti-diarrheals (under doctor guidance)",
+      "rehydration salts"
+    ],
+    "prevention": [
+      "wash hands with soap and water",
+      "wash fruits/vegetables and cook seafood thoroughly",
+      "disinfect contaminated surfaces"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "A highly contagious virus that causes sudden onset of severe vomiting and watery diarrhea, commonly known as food poisoning or stomach flu.",
+    "recovery_time": "1-3 days"
   },
   "Osteoarthritis": {
+    "name": "Osteoarthritis",
+    "category": "Orthopedics",
+    "severity": "Moderate",
     "symptoms": [
       "joint pain",
       "stiffness",
@@ -467,21 +948,45 @@
       "grating sensation",
       "bone spurs"
     ],
-    "remedies": [
+    "risk_factors": [
+      "older age",
+      "obesity",
+      "joint injuries",
+      "repeated stress on joint",
+      "genetics",
+      "bone deformities"
+    ],
+    "home_remedies": [
       "hot and cold therapy",
       "turmeric and ginger tea",
       "low-impact exercise",
       "epsom salt bath"
     ],
-    "medical": [
-      "acetaminophen",
-      "nonsteroidal anti-inflammatory drugs (NSAIDs)",
+    "medical_treatment": [
       "physical therapy",
-      "joint replacement"
+      "occupational therapy",
+      "joint replacement surgery (arthroplasty)"
     ],
-    "specialist": "Rheumatologist"
+    "medications": [
+      "acetaminophen",
+      "NSAIDs (ibuprofen)",
+      "duloxetine",
+      "corticosteroid joint injections"
+    ],
+    "prevention": [
+      "maintain a healthy weight",
+      "stay physically active with low-impact exercises",
+      "prevent joint injuries"
+    ],
+    "recommended_specialist": "Rheumatologist",
+    "emergency": false,
+    "description": "The most common form of arthritis, characterized by the gradual wearing down of the protective cartilage on the ends of your bones.",
+    "recovery_time": "Chronic condition (long-term management)"
   },
   "Pneumonia": {
+    "name": "Pneumonia",
+    "category": "Pulmonology",
+    "severity": "Severe",
     "symptoms": [
       "cough with phlegm",
       "fever",
@@ -489,19 +994,43 @@
       "difficulty breathing",
       "chest pain"
     ],
-    "remedies": [
+    "risk_factors": [
+      "age (under 2 or over 65)",
+      "chronic lung disease (COPD, asthma)",
+      "weakened immune system",
+      "smoking",
+      "hospitalization"
+    ],
+    "home_remedies": [
       "peppermint tea",
       "warm damp washcloth on face",
       "humidifier"
     ],
-    "medical": [
-      "antibiotics (if bacterial)",
-      "cough medicine",
-      "oxygen therapy in severe cases"
+    "medical_treatment": [
+      "oxygen therapy",
+      "respiratory therapy",
+      "hospitalization for severe breathing difficulties"
     ],
-    "specialist": "Pulmonologist"
+    "medications": [
+      "antibiotics (for bacterial)",
+      "cough medicines",
+      "fever reducers"
+    ],
+    "prevention": [
+      "get the pneumococcal vaccine",
+      "practice good hygiene",
+      "quit smoking",
+      "maintain a healthy immune system"
+    ],
+    "recommended_specialist": "Pulmonologist",
+    "emergency": true,
+    "description": "An infection that inflames the air sacs in one or both lungs, which may fill with fluid or pus, causing cough, fever, and difficulty breathing.",
+    "recovery_time": "2-6 weeks"
   },
   "Psoriasis": {
+    "name": "Psoriasis",
+    "category": "Dermatology",
+    "severity": "Moderate",
     "symptoms": [
       "red patches of skin covered with thick, silvery scales",
       "dry, cracked skin that may bleed",
@@ -509,20 +1038,44 @@
       "burning",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "family history",
+      "stress",
+      "smoking",
+      "obesity",
+      "certain infections (like strep throat)"
+    ],
+    "home_remedies": [
       "aloe vera",
       "epsom salt baths",
       "omega-3 supplements",
       "stress management"
     ],
-    "medical": [
-      "topical corticosteroids",
-      "light therapy (phototherapy)",
-      "systemic medications (biologics)"
+    "medical_treatment": [
+      "phototherapy (light therapy)",
+      "excimer laser"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "topical corticosteroids",
+      "salicylic acid topical",
+      "methotrexate",
+      "biologic injections"
+    ],
+    "prevention": [
+      "keep skin moisturized",
+      "avoid skin injuries",
+      "manage stress and avoid triggers",
+      "limit alcohol and quit smoking"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A chronic autoimmune disease that speeds up the growth cycle of skin cells, leading to thick, red, scaly patches that itch and burn.",
+    "recovery_time": "Chronic (recurrent flare-ups)"
   },
   "Q Fever": {
+    "name": "Q Fever",
+    "category": "Immunology",
+    "severity": "Moderate",
     "symptoms": [
       "high fever",
       "severe headache",
@@ -532,36 +1085,78 @@
       "nausea",
       "diarrhea"
     ],
-    "remedies": [
+    "risk_factors": [
+      "working in agriculture (cattle, sheep, goats)",
+      "being a veterinarian or laboratory worker",
+      "consuming raw dairy"
+    ],
+    "home_remedies": [
       "plenty of fluids",
       "rest",
       "cooling baths"
     ],
-    "medical": [
-      "antibiotics (doxycycline)",
-      "hydroxychloroquine for chronic cases"
+    "medical_treatment": [
+      "supportive therapy",
+      "chronic Q fever monitoring"
     ],
-    "specialist": "Infectious Disease Specialist"
+    "medications": [
+      "doxycycline (antibiotic)",
+      "hydroxychloroquine (for chronic cases)"
+    ],
+    "prevention": [
+      "avoid contact with animal birth fluids",
+      "pasteurize milk and dairy products",
+      "get vaccinated if in high-risk professions"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": false,
+    "description": "A bacterial infection caused by Coxiella burnetii, typically transmitted to humans from farm animals, causing acute flu-like illness.",
+    "recovery_time": "1-3 weeks (acute) or chronic"
   },
   "Ringworm (Fungal Infection)": {
+    "name": "Ringworm (Fungal Infection)",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "itchy, ring-shaped rash",
       "red, scaly, cracked skin",
       "hair loss",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "living in warm climates",
+      "sharing clothing or towels",
+      "close contact with infected animals or people",
+      "weak immune system"
+    ],
+    "home_remedies": [
       "apple cider vinegar compress",
       "tea tree oil application",
       "garlic paste"
     ],
-    "medical": [
-      "antifungal creams (clotrimazole)",
+    "medical_treatment": [
+      "hygiene improvement",
+      "keeping the area dry"
+    ],
+    "medications": [
+      "topical antifungal creams (clotrimazole, miconazole)",
       "oral antifungal medications"
     ],
-    "specialist": "Dermatologist"
+    "prevention": [
+      "keep skin clean and dry",
+      "wear loose cotton clothing",
+      "avoid sharing personal items",
+      "treat infected pets"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A highly contagious fungal infection of the skin or scalp that produces an itchy, red, circular rash resembling a ring.",
+    "recovery_time": "2-4 weeks"
   },
   "Rosacea": {
+    "name": "Rosacea",
+    "category": "Dermatology",
+    "severity": "Moderate",
     "symptoms": [
       "facial redness",
       "swollen red bumps",
@@ -570,39 +1165,81 @@
       "enlarged nose",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "being female",
+      "fair skin",
+      "age (30-50 years old)",
+      "family history",
+      "smoking"
+    ],
+    "home_remedies": [
       "green tea extract",
       "oatmeal mask",
       "identifying and avoiding trigger foods/environments",
       "gentle skin care"
     ],
-    "medical": [
-      "topical drugs (brimonidine, ivermectin)",
-      "oral antibiotics",
-      "laser therapy"
+    "medical_treatment": [
+      "laser therapy",
+      "electrosurgery to remove visible blood vessels"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "topical metronidazole",
+      "azelaic acid",
+      "oral antibiotics (doxycycline)",
+      "brimonidine gel"
+    ],
+    "prevention": [
+      "use gentle cleansers and daily sunscreen",
+      "avoid triggers (spicy food, hot drinks, wind, sun)",
+      "avoid rubbing face"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A chronic inflammatory skin condition that causes redness, visible blood vessels, and small red bumps on the face, mainly the cheeks and nose.",
+    "recovery_time": "Chronic (requires long-term management)"
   },
   "Scabies": {
+    "name": "Scabies",
+    "category": "Dermatology",
+    "severity": "Moderate",
     "symptoms": [
       "intense itching directly at night",
       "pimple-like skin rash",
       "scales or blisters",
       "burrow tracks on skin"
     ],
-    "remedies": [
+    "risk_factors": [
+      "crowded living environments (nursing homes, prisons)",
+      "close physical contact with an infected person"
+    ],
+    "home_remedies": [
       "tea tree oil application",
       "neem oil",
       "washing all clothes in hot water"
     ],
-    "medical": [
-      "permethrin cream",
-      "ivermectin pills",
-      "antihistamines for itching"
+    "medical_treatment": [
+      "treatment of all household members simultaneously",
+      "decontamination of environment"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "permethrin cream",
+      "oral ivermectin",
+      "antihistamines for itching",
+      "sulfur ointment"
+    ],
+    "prevention": [
+      "avoid direct skin contact with infected individuals",
+      "wash all bedding and clothing in hot water and dry on high heat"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "An itchy skin condition caused by microscopic mites that burrow into the upper layer of the skin to live and lay eggs.",
+    "recovery_time": "2-4 weeks after treatment"
   },
   "Skin Allergy (Contact Dermatitis)": {
+    "name": "Skin Allergy (Contact Dermatitis)",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "skin problems",
       "itching",
@@ -610,19 +1247,40 @@
       "blisters",
       "dry patches"
     ],
-    "remedies": [
+    "risk_factors": [
+      "exposure to allergens (poison ivy, nickel, latex, cosmetics)",
+      "frequent handwashing",
+      "occupational exposure to irritants"
+    ],
+    "home_remedies": [
       "cold compress",
       "aloe vera gel",
       "oatmeal bath",
       "avoiding the trigger substance"
     ],
-    "medical": [
-      "topical hydrocortisone cream",
-      "oral antihistamines"
+    "medical_treatment": [
+      "patch testing to identify allergen",
+      "wet dressings"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "topical hydrocortisone cream",
+      "oral antihistamines",
+      "systemic corticosteroids (severe cases)"
+    ],
+    "prevention": [
+      "avoid contact with known allergens",
+      "wash skin immediately if exposed",
+      "apply barrier creams or wear gloves"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "An allergic skin reaction resulting from direct contact with an irritating substance or allergen, causing redness, itching, and rashes.",
+    "recovery_time": "2-4 weeks (after trigger is removed)"
   },
   "Tuberculosis": {
+    "name": "Tuberculosis",
+    "category": "Pulmonology",
+    "severity": "Severe",
     "symptoms": [
       "persistent cough",
       "chest pain",
@@ -632,18 +1290,38 @@
       "night sweats",
       "fever"
     ],
-    "remedies": [
+    "risk_factors": [
+      "weakened immune system (HIV/AIDS)",
+      "traveling to high-TB-burden regions",
+      "substance abuse",
+      "working in healthcare"
+    ],
+    "home_remedies": [
       "high-protein diet",
       "fresh air and ventilation",
       "adequate rest"
     ],
-    "medical": [
-      "long-term antibiotics (isoniazid, rifampin)",
-      "medical supervision"
+    "medical_treatment": [
+      "directly observed therapy (DOTS)",
+      "isolation during infectious stage"
     ],
-    "specialist": "Pulmonologist"
+    "medications": [
+      "antibiotics (isoniazid, rifampin, ethambutol, pyrazinamide) for 6-9 months"
+    ],
+    "prevention": [
+      "get the BCG vaccine (in high-risk areas)",
+      "ensure good ventilation",
+      "wear a mask in TB exposure settings"
+    ],
+    "recommended_specialist": "Pulmonologist",
+    "emergency": true,
+    "description": "A serious infectious bacterial disease that mainly affects the lungs, spread through tiny droplets released into the air.",
+    "recovery_time": "6-9 months of antibiotic therapy"
   },
   "Ulcerative Colitis": {
+    "name": "Ulcerative Colitis",
+    "category": "Gastroenterology",
+    "severity": "Severe",
     "symptoms": [
       "diarrhea often with blood or pus",
       "abdominal pain",
@@ -652,21 +1330,42 @@
       "fatigue",
       "fever"
     ],
-    "remedies": [
+    "risk_factors": [
+      "age (usually before 30)",
+      "race/ethnicity (higher in Ashkenazi Jews)",
+      "family history",
+      "environmental triggers"
+    ],
+    "home_remedies": [
       "eating small meals",
       "drinking plenty of liquids",
       "reducing stress",
       "low fiber dietary changes"
     ],
-    "medical": [
-      "anti-inflammatory drugs",
-      "immune system suppressors",
-      "biologics",
-      "surgery"
+    "medical_treatment": [
+      "colectomy surgery (in severe/refractory cases)",
+      "nutritional support"
     ],
-    "specialist": "Gastroenterologist"
+    "medications": [
+      "anti-inflammatory drugs (sulfasalazine)",
+      "corticosteroids",
+      "immune system suppressors",
+      "biologics"
+    ],
+    "prevention": [
+      "maintain a food diary to avoid trigger foods",
+      "manage stress",
+      "follow up regularly with doctor"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "An inflammatory bowel disease that causes long-lasting inflammation and ulcers in the innermost lining of the large intestine and rectum.",
+    "recovery_time": "Chronic (periods of remission and flare)"
   },
   "Vertigo": {
+    "name": "Vertigo",
+    "category": "Neurology",
+    "severity": "Moderate",
     "symptoms": [
       "dizziness",
       "feeling of spinning",
@@ -675,41 +1374,81 @@
       "vomiting",
       "nystagmus (abnormal eye movements)"
     ],
-    "remedies": [
+    "risk_factors": [
+      "head injury",
+      "inner ear infections",
+      "older age",
+      "migraines",
+      "certain medications"
+    ],
+    "home_remedies": [
       "epley maneuver",
       "ginkgo biloba",
       "ginger root tea",
       "hydration",
       "sitting still"
     ],
-    "medical": [
-      "vestibular rehabilitation",
-      "water pills (diuretics)",
-      "anti-nausea medications"
+    "medical_treatment": [
+      "vestibular rehabilitation therapy (VRT)",
+      "canalith repositioning procedures"
     ],
-    "specialist": "ENT Specialist / Neurologist"
+    "medications": [
+      "anti-nausea medications (meclizine)",
+      "diuretics (for Meniere's)",
+      "antihistamines"
+    ],
+    "prevention": [
+      "avoid sudden head movements",
+      "sit down immediately when dizzy",
+      "perform head exercises recommended by doctor"
+    ],
+    "recommended_specialist": "ENT Specialist / Neurologist",
+    "emergency": false,
+    "description": "A sensation of spinning or dizziness, often caused by problems in the inner ear or brain, resulting in a loss of balance.",
+    "recovery_time": "A few hours to several weeks"
   },
   "Vitiligo": {
+    "name": "Vitiligo",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "patchy loss of skin color",
       "premature whitening or graying of hair",
       "loss of color in tissues that line inside of mouth",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "family history",
+      "autoimmune conditions (thyroid disease, alopecia areata)"
+    ],
+    "home_remedies": [
       "ginkgo biloba supplements",
       "using broad-spectrum sunscreen",
       "cosmetic concealers"
     ],
-    "medical": [
-      "corticosteroid creams",
-      "calcineurin inhibitor ointments",
-      "phototherapy",
-      "depigmentation therapy"
+    "medical_treatment": [
+      "phototherapy (light therapy)",
+      "depigmentation therapy",
+      "skin grafting (surgery)"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "topical corticosteroid creams",
+      "calcineurin inhibitor ointments",
+      "oral corticosteroids (for fast-spreading)"
+    ],
+    "prevention": [
+      "protect skin from sun with sunscreen and clothing",
+      "avoid skin trauma/injuries"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A condition in which the skin loses its pigment-producing cells (melanocytes), resulting in irregular discolored patches on the skin and hair.",
+    "recovery_time": "Chronic (recovers color slowly with therapy)"
   },
   "Warts": {
+    "name": "Warts",
+    "category": "Dermatology",
+    "severity": "Mild",
     "symptoms": [
       "small, fleshy, grainy bumps",
       "flesh-colored",
@@ -717,20 +1456,43 @@
       "rough to the touch",
       "skin problems"
     ],
-    "remedies": [
+    "risk_factors": [
+      "young age",
+      "weakened immune system",
+      "biting nails or cuticle picking",
+      "sharing towels/public showers"
+    ],
+    "home_remedies": [
       "apple cider vinegar application",
       "garlic extract",
       "duct tape occlusion therapy"
     ],
-    "medical": [
+    "medical_treatment": [
       "cryotherapy (freezing)",
-      "salicylic acid treatments",
       "laser treatment",
-      "minor surgery"
+      "minor surgical removal",
+      "electrosurgery"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "salicylic acid topical",
+      "imiquimod cream",
+      "cantharidin"
+    ],
+    "prevention": [
+      "avoid direct contact with warts",
+      "don't bite nails",
+      "wear shoes in public showers",
+      "keep feet dry"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "Small, non-cancerous skin growths caused by a human papillomavirus (HPV) infection in the top layer of skin.",
+    "recovery_time": "Weeks to months"
   },
   "Whooping Cough (Pertussis)": {
+    "name": "Whooping Cough (Pertussis)",
+    "category": "Pulmonology",
+    "severity": "Severe",
     "symptoms": [
       "severe hacking cough",
       "high-pitched intake of breath that sounds like 'whoop'",
@@ -738,19 +1500,38 @@
       "fever",
       "vomiting after coughing"
     ],
-    "remedies": [
+    "risk_factors": [
+      "being unvaccinated",
+      "infant age (high complication risk)",
+      "close contact with infected person"
+    ],
+    "home_remedies": [
       "using a cool mist vaporizer",
       "drinking plenty of fluids",
       "eating smaller meals"
     ],
-    "medical": [
-      "antibiotics",
-      "hospitalization for infants",
-      "preventative DTaP vaccine"
+    "medical_treatment": [
+      "supportive oxygen therapy in infants",
+      "hospitalization for respiratory distress"
     ],
-    "specialist": "Pulmonologist"
+    "medications": [
+      "antibiotics (erythromycin, azithromycin)",
+      "cough medicines (rarely effective)"
+    ],
+    "prevention": [
+      "get the DTaP/Tdap vaccine",
+      "ensure booster doses in pregnancy",
+      "keep infected individuals isolated"
+    ],
+    "recommended_specialist": "Pulmonologist",
+    "emergency": true,
+    "description": "A highly contagious bacterial respiratory tract infection characterized by severe hacking coughs followed by a high-pitched 'whooping' sound.",
+    "recovery_time": "6-10 weeks (known as the 100-day cough)"
   },
   "Xeroderma Pigmentosum": {
+    "name": "Xeroderma Pigmentosum",
+    "category": "Dermatology",
+    "severity": "Severe",
     "symptoms": [
       "severe sunburn from very small sunlight",
       "freckling on sun-exposed areas",
@@ -758,19 +1539,38 @@
       "dry skin",
       "high risk of skin cancer"
     ],
-    "remedies": [
+    "risk_factors": [
+      "consanguineous marriage in parents (autosomal recessive)",
+      "family history"
+    ],
+    "home_remedies": [
       "strict sun avoidance",
       "protective clothing including UV-blocking shields",
       "remaining indoors during day"
     ],
-    "medical": [
+    "medical_treatment": [
       "frequent skin cancer screenings",
-      "surgical removal of tumors",
-      "retinoids to prevent skin cancer"
+      "surgical removal of skin tumors",
+      "cryosurgery"
     ],
-    "specialist": "Dermatologist"
+    "medications": [
+      "topical 5-fluorouracil",
+      "oral retinoids (to prevent tumors)"
+    ],
+    "prevention": [
+      "strict, total protection from ultraviolet (UV) light",
+      "installing UV filters on indoor windows",
+      "avoiding outdoor activities in daylight"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A rare inherited skin disorder characterized by an extreme sensitivity to ultraviolet (UV) rays, causing severe skin damage and a massive risk of skin cancer.",
+    "recovery_time": "Chronic (lifelong strict management)"
   },
   "Yellow Fever": {
+    "name": "Yellow Fever",
+    "category": "Immunology",
+    "severity": "Severe",
     "symptoms": [
       "fever",
       "headache",
@@ -780,19 +1580,37 @@
       "jaundice",
       "bleeding"
     ],
-    "remedies": [
+    "risk_factors": [
+      "living in or traveling to jungle/forested areas of Africa/South America",
+      "being unvaccinated"
+    ],
+    "home_remedies": [
       "plenty of fluids to prevent dehydration",
       "rest",
       "avoiding mosquito bites"
     ],
-    "medical": [
-      "preventative yellow fever vaccine",
-      "pain relievers (avoid aspirin/NSAIDs due to bleeding risk)",
-      "dialysis for kidney failure"
+    "medical_treatment": [
+      "hospitalization for supportive therapy",
+      "blood transfusions",
+      "kidney dialysis in severe cases"
     ],
-    "specialist": "Infectious Disease Specialist"
+    "medications": [
+      "supportive drugs (avoid aspirin/NSAIDs due to bleeding risks)"
+    ],
+    "prevention": [
+      "get the yellow fever vaccine before traveling",
+      "use mosquito repellent and nets",
+      "wear protective clothing"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": true,
+    "description": "A viral infection spread by mosquitoes in tropical regions, causing severe headaches, fever, and jaundice, which can lead to organ failure and bleeding.",
+    "recovery_time": "1-2 weeks (mild) or months"
   },
   "Zika Virus": {
+    "name": "Zika Virus",
+    "category": "Immunology",
+    "severity": "Moderate",
     "symptoms": [
       "fever",
       "rash",
@@ -801,18 +1619,38 @@
       "red eyes",
       "muscle pain"
     ],
-    "remedies": [
+    "risk_factors": [
+      "traveling to areas with active Zika transmission",
+      "unprotected sex with an infected partner",
+      "lacking immunity"
+    ],
+    "home_remedies": [
       "plenty of rest",
       "drinking fluids to prevent dehydration",
       "avoiding mosquito bites"
     ],
-    "medical": [
-      "acetaminophen to reduce fever and pain (avoiding NSAIDs)",
-      "no specific antiviral treatment available"
+    "medical_treatment": [
+      "supportive care",
+      "ultrasound monitoring for pregnant patients"
     ],
-    "specialist": "Infectious Disease Specialist"
+    "medications": [
+      "acetaminophen (avoid NSAIDs like aspirin until dengue is ruled out)"
+    ],
+    "prevention": [
+      "avoid mosquito bites",
+      "use mosquito repellent and nets",
+      "practice safe sex",
+      "avoid travel to Zika-affected areas if pregnant"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": false,
+    "description": "A virus transmitted primarily by Aedes mosquitoes, causing mild symptoms like fever and rash, but linked to birth defects (microcephaly) in infants born to infected mothers.",
+    "recovery_time": "2-7 days"
   },
   "Diabetes Type 1": {
+    "name": "Diabetes Type 1",
+    "category": "Endocrinology",
+    "severity": "Severe",
     "symptoms": [
       "increased thirst",
       "frequent urination",
@@ -823,20 +1661,38 @@
       "blurred vision",
       "mood changes"
     ],
-    "remedies": [
+    "risk_factors": [
+      "family history",
+      "genetics",
+      "geography (further from equator)",
+      "possible viral triggers"
+    ],
+    "home_remedies": [
       "regular exercise",
       "maintaining a balanced, low-sugar diet",
       "close monitoring of blood sugar",
       "stress management"
     ],
-    "medical": [
-      "insulin injections or insulin pump therapy",
-      "frequent blood sugar monitoring",
-      "carbohydrate counting"
+    "medical_treatment": [
+      "continuous glucose monitoring (CGM)",
+      "pancreas transplant (rare cases)"
     ],
-    "specialist": "Endocrinologist"
+    "medications": [
+      "insulin injections",
+      "insulin pump therapy"
+    ],
+    "prevention": [
+      "no known prevention for Type 1 diabetes"
+    ],
+    "recommended_specialist": "Endocrinologist",
+    "emergency": true,
+    "description": "An autoimmune condition in which the pancreas produces little or no insulin, the hormone needed to allow sugar (glucose) to enter cells.",
+    "recovery_time": "Chronic (lifelong management)"
   },
   "Diabetes Type 2": {
+    "name": "Diabetes Type 2",
+    "category": "Endocrinology",
+    "severity": "Severe",
     "symptoms": [
       "increased thirst",
       "frequent urination",
@@ -847,26 +1703,46 @@
       "frequent infections",
       "darkened skin in certain areas"
     ],
-    "remedies": [
+    "risk_factors": [
+      "being overweight",
+      "physical inactivity",
+      "family history",
+      "age (over 45)",
+      "high blood pressure/cholesterol"
+    ],
+    "home_remedies": [
       "bitter gourd (karela) juice",
       "fenugreek seeds soaked in water",
       "cinnamon powder",
-      "amla (Indian gooseberry)",
       "regular physical activity",
       "weight loss and management",
       "healthy eating (low carb, high fiber)"
     ],
-    "medical": [
+    "medical_treatment": [
+      "dietary counseling",
+      "regular glucose checks",
+      "bariatric surgery (in some obesity cases)"
+    ],
+    "medications": [
       "metformin",
       "sulfonylureas",
-      "insulin therapy in advanced cases",
-      "blood sugar monitoring",
       "GLP-1 receptor agonists",
-      "DPP-4 inhibitors"
+      "insulin therapy (advanced)"
     ],
-    "specialist": "Endocrinologist"
+    "prevention": [
+      "maintain a healthy weight",
+      "stay physically active",
+      "eat a balanced, fiber-rich diet"
+    ],
+    "recommended_specialist": "Endocrinologist",
+    "emergency": false,
+    "description": "A chronic condition that affects the way the body processes blood sugar (glucose), marked by insulin resistance or insufficient insulin production.",
+    "recovery_time": "Chronic (can be put into remission with intensive lifestyle changes)"
   },
   "Gestational Diabetes": {
+    "name": "Gestational Diabetes",
+    "category": "Endocrinology",
+    "severity": "Moderate",
     "symptoms": [
       "increased thirst",
       "frequent urination",
@@ -874,18 +1750,2051 @@
       "nausea",
       "frequent infections"
     ],
-    "remedies": [
+    "risk_factors": [
+      "overweight before pregnancy",
+      "family history of diabetes",
+      "gestational diabetes in prior pregnancy",
+      "age over 25"
+    ],
+    "home_remedies": [
       "eating healthy foods (high fiber, low fat/sugar)",
       "staying physically active",
       "portion control",
       "monitoring weight gain during pregnancy"
     ],
-    "medical": [
-      "blood sugar monitoring",
-      "insulin injections (if diet/exercise isn't enough)",
-      "metformin (if recommended by doctor)",
-      "close monitoring of the baby"
+    "medical_treatment": [
+      "frequent blood sugar testing during pregnancy",
+      "baby growth monitoring via ultrasound"
     ],
-    "specialist": "Endocrinologist / Obstetrician"
+    "medications": [
+      "insulin injections (if diet/exercise isn't enough)",
+      "metformin"
+    ],
+    "prevention": [
+      "maintain a healthy weight before pregnancy",
+      "eat healthy foods and stay active before and during pregnancy"
+    ],
+    "recommended_specialist": "Endocrinologist / Obstetrician",
+    "emergency": false,
+    "description": "A type of diabetes that develops during pregnancy in women who did not previously have diabetes, caused by pregnancy hormones affecting insulin action.",
+    "recovery_time": "Resolves shortly after childbirth (increased risk of future Type 2)"
+  },
+  "Appendicitis": {
+    "name": "Appendicitis",
+    "category": "Gastroenterology",
+    "severity": "Severe",
+    "symptoms": [
+      "abdominal pain",
+      "nausea",
+      "vomiting",
+      "loss of appetite",
+      "low-grade fever",
+      "abdominal swelling"
+    ],
+    "risk_factors": [
+      "age (10-30 years old)",
+      "family history",
+      "cystic fibrosis"
+    ],
+    "home_remedies": [
+      "rest",
+      "clear fluid diet (temporary before emergency hospital evaluation)"
+    ],
+    "medical_treatment": [
+      "appendectomy (surgical removal of appendix)",
+      "laparoscopy"
+    ],
+    "medications": [
+      "intravenous antibiotics",
+      "pain relievers"
+    ],
+    "prevention": [
+      "no specific prevention (diet high in fiber might reduce risk)"
+    ],
+    "recommended_specialist": "General Surgeon",
+    "emergency": true,
+    "description": "An inflammation of the appendix, a finger-shaped pouch that projects from your colon, representing a medical emergency due to rupture risks.",
+    "recovery_time": "2-4 weeks after surgery"
+  },
+  "Alzheimer's Disease": {
+    "name": "Alzheimer's Disease",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "memory loss",
+      "confusion",
+      "difficulty thinking",
+      "disorientation",
+      "misplacing things",
+      "mood changes"
+    ],
+    "risk_factors": [
+      "older age",
+      "family history",
+      "genetics",
+      "down syndrome",
+      "past head trauma",
+      "poor cardiovascular health"
+    ],
+    "home_remedies": [
+      "cognitive exercises",
+      "establishing a routine",
+      "regular physical activity",
+      "balanced diet"
+    ],
+    "medical_treatment": [
+      "cognitive stimulation therapy",
+      "supportive nursing care"
+    ],
+    "medications": [
+      "cholinesterase inhibitors (donepezil)",
+      "memantine",
+      "monoclonal antibodies (lecanemab)"
+    ],
+    "prevention": [
+      "engage in regular mental and physical activities",
+      "maintain a healthy heart",
+      "stay socially active"
+    ],
+    "recommended_specialist": "Neurologist / Geriatrician",
+    "emergency": false,
+    "description": "A progressive disease that destroys memory and other important mental functions, representing the most common cause of dementia.",
+    "recovery_time": "Chronic (progressive and lifelong)"
+  },
+  "Alopecia": {
+    "name": "Alopecia",
+    "category": "Dermatology",
+    "severity": "Mild",
+    "symptoms": [
+      "hair loss",
+      "thinning hair",
+      "bald patches",
+      "shedding",
+      "scalp itching"
+    ],
+    "risk_factors": [
+      "family history",
+      "older age",
+      "significant weight loss",
+      "medical conditions like diabetes/lupus",
+      "stress"
+    ],
+    "home_remedies": [
+      "onion juice",
+      "coconut oil scalp massage",
+      "rosemary essential oil",
+      "aloe vera scalp mask"
+    ],
+    "medical_treatment": [
+      "hair transplant surgery",
+      "platelet-rich plasma (PRP) therapy",
+      "scalp immunotherapy"
+    ],
+    "medications": [
+      "minoxidil topical",
+      "finasteride",
+      "corticosteroid injections",
+      "JAK inhibitors"
+    ],
+    "prevention": [
+      "gentle hair care routines",
+      "avoid tight hairstyles",
+      "maintain a balanced diet rich in iron and protein"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A condition that causes hair to fall out, ranging from small patches (alopecia areata) to total body hair loss (alopecia universalis).",
+    "recovery_time": "Varies (months to years; unpredictable regrowth)"
+  },
+  "Bipolar Disorder": {
+    "name": "Bipolar Disorder",
+    "category": "Psychiatry",
+    "severity": "Severe",
+    "symptoms": [
+      "mood swings",
+      "manic episodes",
+      "depressive episodes",
+      "high energy",
+      "impulsivity",
+      "irritability"
+    ],
+    "risk_factors": [
+      "having a first-degree relative with bipolar",
+      "periods of high stress",
+      "drug or alcohol abuse"
+    ],
+    "home_remedies": [
+      "regular sleep schedule",
+      "stress reduction",
+      "support groups",
+      "mindfulness meditation"
+    ],
+    "medical_treatment": [
+      "cognitive behavioral therapy (CBT)",
+      "psychoeducation",
+      "hospitalization during severe manic/depressive phases"
+    ],
+    "medications": [
+      "mood stabilizers (lithium)",
+      "antipsychotics",
+      "antidepressants"
+    ],
+    "prevention": [
+      "take prescribed medication consistently",
+      "avoid alcohol and drugs",
+      "monitor mood and identify early triggers"
+    ],
+    "recommended_specialist": "Psychiatrist",
+    "emergency": true,
+    "description": "A mental health condition that causes extreme mood swings that include emotional highs (mania or hypomania) and lows (depression).",
+    "recovery_time": "Chronic (lifelong management)"
+  },
+  "Bell's Palsy": {
+    "name": "Bell's Palsy",
+    "category": "Neurology",
+    "severity": "Moderate",
+    "symptoms": [
+      "facial drooping",
+      "drooling",
+      "difficulty closing eye",
+      "jaw pain",
+      "loss of taste",
+      "headache"
+    ],
+    "risk_factors": [
+      "pregnancy",
+      "diabetes",
+      "lung infection",
+      "family history",
+      "recent viral infection (herpes simplex, influenza)"
+    ],
+    "home_remedies": [
+      "facial massage",
+      "eye patch (to protect dry eye)",
+      "warm compress",
+      "lubricating eye drops"
+    ],
+    "medical_treatment": [
+      "physical therapy for facial muscles",
+      "acupuncture"
+    ],
+    "medications": [
+      "oral corticosteroids (prednisone)",
+      "antiviral medications (acyclovir)",
+      "pain relievers"
+    ],
+    "prevention": [
+      "no specific prevention (managing stress and maintaining immunity might help)"
+    ],
+    "recommended_specialist": "Neurologist",
+    "emergency": false,
+    "description": "A temporary condition that causes weakness or paralysis of the muscles on one side of the face, usually resolving completely.",
+    "recovery_time": "3-6 months (90% recover fully)"
+  },
+  "Celiac Disease": {
+    "name": "Celiac Disease",
+    "category": "Gastroenterology",
+    "severity": "Severe",
+    "symptoms": [
+      "diarrhea",
+      "bloating",
+      "gas",
+      "fatigue",
+      "weight loss",
+      "abdominal pain",
+      "iron deficiency anemia"
+    ],
+    "risk_factors": [
+      "family history",
+      "type 1 diabetes",
+      "autoimmune thyroid disease",
+      "down syndrome"
+    ],
+    "home_remedies": [
+      "strict gluten-free diet",
+      "checking food labels",
+      "eating naturally gluten-free grains (rice, quinoa)"
+    ],
+    "medical_treatment": [
+      "dietary counseling from a dietitian",
+      "bone density screening"
+    ],
+    "medications": [
+      "corticosteroids (for severe non-responsive cases)",
+      "vitamin and mineral supplements"
+    ],
+    "prevention": [
+      "no prevention (gluten avoidance completely halts symptoms)"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "A serious autoimmune reaction to eating gluten, a protein found in wheat, barley, and rye, which damages the small intestine lining.",
+    "recovery_time": "Months to years for intestinal healing"
+  },
+  "Chickenpox": {
+    "name": "Chickenpox",
+    "category": "Pediatrics",
+    "severity": "Mild",
+    "symptoms": [
+      "itchy skin rash",
+      "fluid-filled blisters",
+      "fever",
+      "fatigue",
+      "loss of appetite",
+      "headache"
+    ],
+    "risk_factors": [
+      "being unvaccinated",
+      "working in a school/childcare facility",
+      "weakened immune system"
+    ],
+    "home_remedies": [
+      "calamine lotion",
+      "oatmeal baths",
+      "keeping fingernails short",
+      "loose clothing"
+    ],
+    "medical_treatment": [
+      "supportive care",
+      "hospitalization for rare complications"
+    ],
+    "medications": [
+      "acetaminophen (avoid aspirin due to Reye's syndrome)",
+      "antiviral drugs (acyclovir)",
+      "antihistamines"
+    ],
+    "prevention": [
+      "get the varicella (chickenpox) vaccine",
+      "avoid contact with infected individuals"
+    ],
+    "recommended_specialist": "Pediatrician / General Physician",
+    "emergency": false,
+    "description": "A highly contagious viral infection causing an itchy, blister-like rash on the skin along with fever and body aches.",
+    "recovery_time": "7-10 days"
+  },
+  "Cholera": {
+    "name": "Cholera",
+    "category": "Gastroenterology",
+    "severity": "Severe",
+    "symptoms": [
+      "watery diarrhea (rice-water stools)",
+      "nausea",
+      "vomiting",
+      "dehydration",
+      "muscle cramps"
+    ],
+    "risk_factors": [
+      "poor sanitary conditions",
+      "reduced or non-existent stomach acid",
+      "sharing food/water with infected people",
+      "type O blood"
+    ],
+    "home_remedies": [
+      "homemade oral rehydration solution (ORS)",
+      "clean drinking water",
+      "zinc supplements"
+    ],
+    "medical_treatment": [
+      "intravenous fluid replacement",
+      "sanitary isolation"
+    ],
+    "medications": [
+      "antibiotics (doxycycline, azithromycin)",
+      "oral rehydration salts"
+    ],
+    "prevention": [
+      "drink only safe/boiled water",
+      "practice strict food hygiene",
+      "wash hands frequently",
+      "get the cholera vaccine"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": true,
+    "description": "An acute diarrheal illness caused by infection of the intestine with the Vibrio cholerae bacteria, leading to rapid, life-threatening dehydration.",
+    "recovery_time": "2-7 days with hydration"
+  },
+  "Depression (Clinical)": {
+    "name": "Depression (Clinical)",
+    "category": "Psychiatry",
+    "severity": "Severe",
+    "symptoms": [
+      "persistent sadness",
+      "loss of interest",
+      "fatigue",
+      "sleep disturbances",
+      "difficulty concentrating",
+      "appetite changes"
+    ],
+    "risk_factors": [
+      "family history",
+      "major life changes or trauma",
+      "chronic illnesses",
+      "abuse of alcohol or drugs",
+      "certain medications"
+    ],
+    "home_remedies": [
+      "regular exercise",
+      "social connection",
+      "mindfulness meditation",
+      "healthy sleep hygiene"
+    ],
+    "medical_treatment": [
+      "cognitive behavioral therapy (CBT)",
+      "interpersonal therapy (IPT)",
+      "electroconvulsive therapy (ECT) in severe cases"
+    ],
+    "medications": [
+      "SSRIs (sertraline, escitalopram)",
+      "SNRIs (duloxetine)",
+      "atypical antidepressants"
+    ],
+    "prevention": [
+      "manage stress",
+      "reach out for support early",
+      "get regular exercise and avoid isolation"
+    ],
+    "recommended_specialist": "Psychiatrist / Psychologist",
+    "emergency": true,
+    "description": "A mood disorder causing a persistent feeling of sadness and loss of interest, significantly impairing daily functioning.",
+    "recovery_time": "Varies (treatable, episodes can last months)"
+  },
+  "Dermatitis (Contact / Seborrheic)": {
+    "name": "Dermatitis (Contact / Seborrheic)",
+    "category": "Dermatology",
+    "severity": "Mild",
+    "symptoms": [
+      "red rash",
+      "itching",
+      "dry cracked skin",
+      "blisters",
+      "swelling",
+      "burning sensation"
+    ],
+    "risk_factors": [
+      "exposure to skin irritants",
+      "allergies",
+      "excessive handwashing",
+      "stress",
+      "cold dry weather"
+    ],
+    "home_remedies": [
+      "cold compress",
+      "aloe vera",
+      "colloidal oatmeal bath",
+      "avoiding known triggers"
+    ],
+    "medical_treatment": [
+      "patch testing for allergens",
+      "moisture barrier therapy"
+    ],
+    "medications": [
+      "topical corticosteroid creams",
+      "oral antihistamines",
+      "barrier repair creams"
+    ],
+    "prevention": [
+      "avoid contact with irritating substances",
+      "apply protective moisturizers",
+      "use fragrance-free soaps"
+    ],
+    "recommended_specialist": "Dermatologist",
+    "emergency": false,
+    "description": "A general term for skin inflammation, resulting in red, itchy, and irritated skin rashes from direct contact with substances.",
+    "recovery_time": "2-4 weeks after trigger removal"
+  },
+  "Epilepsy": {
+    "name": "Epilepsy",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "recurrent seizures",
+      "temporary confusion",
+      "staring spells",
+      "uncontrollable jerking movements",
+      "loss of consciousness"
+    ],
+    "risk_factors": [
+      "head trauma",
+      "stroke or vascular diseases",
+      "brain infections (meningitis)",
+      "family history",
+      "dementia"
+    ],
+    "home_remedies": [
+      "getting adequate sleep",
+      "avoiding flashing lights (seizure triggers)",
+      "stress management",
+      "wearing a medical ID"
+    ],
+    "medical_treatment": [
+      "vagus nerve stimulation (VNS)",
+      "ketogenic diet",
+      "epilepsy surgery"
+    ],
+    "medications": [
+      "anti-epileptic drugs (levetiracetam, lamotrigine, valproate)"
+    ],
+    "prevention": [
+      "prevent head injuries",
+      "control high blood pressure to prevent stroke",
+      "practice good hygiene to avoid brain infections"
+    ],
+    "recommended_specialist": "Neurologist",
+    "emergency": true,
+    "description": "A neurological disorder marked by sudden recurrent episodes of sensory disturbance, loss of consciousness, or convulsions, associated with abnormal electrical activity in the brain.",
+    "recovery_time": "Chronic (well-controlled with medication)"
+  },
+  "Endometriosis": {
+    "name": "Endometriosis",
+    "category": "Gynecology",
+    "severity": "Moderate",
+    "symptoms": [
+      "painful periods (dysmenorrhea)",
+      "pelvic pain",
+      "pain during intercourse",
+      "heavy bleeding",
+      "infertility",
+      "fatigue"
+    ],
+    "risk_factors": [
+      "never giving birth",
+      "starting periods at early age",
+      "short menstrual cycles",
+      "family history of endometriosis"
+    ],
+    "home_remedies": [
+      "heating pad",
+      "warm baths",
+      "gentle exercise",
+      "anti-inflammatory diet"
+    ],
+    "medical_treatment": [
+      "laparoscopic surgery to remove tissue",
+      "hysterectomy (severe cases)"
+    ],
+    "medications": [
+      "pain relievers (NSAIDs)",
+      "hormonal contraceptives",
+      "GnRH agonists"
+    ],
+    "prevention": [
+      "no specific prevention (lowering estrogen levels via exercise and diet can help)"
+    ],
+    "recommended_specialist": "Gynecologist",
+    "emergency": false,
+    "description": "An often painful disorder in which tissue similar to the tissue that normally lines the inside of your uterus grows outside your uterus.",
+    "recovery_time": "Chronic (recurrent symptoms until menopause)"
+  },
+  "Fibromyalgia": {
+    "name": "Fibromyalgia",
+    "category": "Orthopedics",
+    "severity": "Moderate",
+    "symptoms": [
+      "widespread muscle pain",
+      "fatigue",
+      "sleep issues",
+      "cognitive difficulties (fibro fog)",
+      "joint stiffness",
+      "headaches"
+    ],
+    "risk_factors": [
+      "being female",
+      "family history",
+      "rheumatoid arthritis or lupus",
+      "severe physical/emotional trauma"
+    ],
+    "home_remedies": [
+      "low-impact exercise",
+      "yoga",
+      "acupuncture",
+      "massage therapy",
+      "warm baths"
+    ],
+    "medical_treatment": [
+      "physical therapy",
+      "cognitive behavioral therapy (CBT)",
+      "occupational therapy"
+    ],
+    "medications": [
+      "pain relievers (NSAIDs)",
+      "antidepressants (duloxetine)",
+      "anti-seizure medications (pregabalin)"
+    ],
+    "prevention": [
+      "no prevention (managing stress, maintaining physical activity, and good sleep can prevent flares)"
+    ],
+    "recommended_specialist": "Rheumatologist",
+    "emergency": false,
+    "description": "A disorder characterized by widespread musculoskeletal pain accompanied by fatigue, sleep, memory, and mood issues.",
+    "recovery_time": "Chronic (long-term flare management)"
+  },
+  "Gout": {
+    "name": "Gout",
+    "category": "Orthopedics",
+    "severity": "Moderate",
+    "symptoms": [
+      "intense joint pain",
+      "joint redness and swelling",
+      "joint stiffness",
+      "warmth in joint",
+      "limited range of motion"
+    ],
+    "risk_factors": [
+      "diet high in purines (red meat, seafood)",
+      "obesity",
+      "family history",
+      "high blood pressure/diabetes",
+      "alcohol use"
+    ],
+    "home_remedies": [
+      "drinking plenty of water",
+      "cherry juice",
+      "avoiding high-purine foods",
+      "cold compress on joint"
+    ],
+    "medical_treatment": [
+      "joint fluid aspiration",
+      "dietary program modifications"
+    ],
+    "medications": [
+      "NSAIDs (indomethacin)",
+      "colchicine",
+      "corticosteroids",
+      "uric acid-lowering drugs (allopurinol)"
+    ],
+    "prevention": [
+      "limit purine-rich foods and alcohol",
+      "drink plenty of water",
+      "maintain a healthy weight"
+    ],
+    "recommended_specialist": "Rheumatologist",
+    "emergency": false,
+    "description": "A common and painful form of inflammatory arthritis that usually affects one joint at a time (often the big toe), caused by uric acid crystal buildup.",
+    "recovery_time": "5-12 days (for acute attack)"
+  },
+  "GERD (Acid Reflux)": {
+    "name": "GERD (Acid Reflux)",
+    "category": "Gastroenterology",
+    "severity": "Mild",
+    "symptoms": [
+      "heartburn",
+      "regurgitation of food or acid",
+      "chest pain",
+      "difficulty swallowing",
+      "chronic cough",
+      "sore throat"
+    ],
+    "risk_factors": [
+      "obesity",
+      "hiatal hernia",
+      "pregnancy",
+      "smoking",
+      "eating large meals or lying down immediately after eating"
+    ],
+    "home_remedies": [
+      "eating smaller meals",
+      "avoiding lying down after eating",
+      "elevating head of bed",
+      "avoiding trigger foods (spicy, fatty)"
+    ],
+    "medical_treatment": [
+      "lifestyle modification program",
+      "surgical fundoplication (severe reflux cases)"
+    ],
+    "medications": [
+      "antacids (calcium carbonate)",
+      "H2 blockers (famotidine)",
+      "proton pump inhibitors (omeprazole)"
+    ],
+    "prevention": [
+      "maintain a healthy weight",
+      "avoid tight-fitting clothing",
+      "don't lie down for 3 hours after eating",
+      "quit smoking"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "A digestive disorder that occurs when stomach acid repeatedly flows back into the tube connecting your mouth and stomach (esophagus).",
+    "recovery_time": "Manageable with ongoing therapy"
+  },
+  "Glaucoma": {
+    "name": "Glaucoma",
+    "category": "ENT",
+    "severity": "Severe",
+    "symptoms": [
+      "gradual loss of peripheral vision",
+      "tunnel vision",
+      "severe eye pain",
+      "blurry vision",
+      "halos around lights",
+      "eye redness"
+    ],
+    "risk_factors": [
+      "high internal eye pressure",
+      "age over 60",
+      "family history of glaucoma",
+      "medical conditions (diabetes, high BP)",
+      "extreme nearsightedness"
+    ],
+    "home_remedies": [
+      "regular eye exams",
+      "moderate exercise",
+      "avoiding sleeping with head down"
+    ],
+    "medical_treatment": [
+      "laser therapy (iridotomy)",
+      "trabeculectomy surgery",
+      "drainage implants"
+    ],
+    "medications": [
+      "prescription eye drops (prostaglandin analogs, beta blockers, alpha agonists)"
+    ],
+    "prevention": [
+      "get regular dilated eye exams",
+      "know your family history of eye disease",
+      "exercise safely to lower eye pressure"
+    ],
+    "recommended_specialist": "Ophthalmologist",
+    "emergency": true,
+    "description": "A group of eye conditions that damage the optic nerve, the health of which is vital for good vision, often caused by abnormally high pressure in your eye.",
+    "recovery_time": "Chronic (lifelong treatment to prevent blindness)"
+  },
+  "Hyperthyroidism": {
+    "name": "Hyperthyroidism",
+    "category": "Endocrinology",
+    "severity": "Severe",
+    "symptoms": [
+      "rapid heart rate",
+      "weight loss",
+      "increased appetite",
+      "anxiety",
+      "tremors",
+      "sweating",
+      "heat sensitivity",
+      "goiter"
+    ],
+    "risk_factors": [
+      "family history of Grave's disease",
+      "being female",
+      "personal history of chronic illnesses like type 1 diabetes"
+    ],
+    "home_remedies": [
+      "bugleweed extract",
+      "avoiding excess iodine",
+      "high-protein diet"
+    ],
+    "medical_treatment": [
+      "radioactive iodine therapy",
+      "thyroidectomy (surgical removal)"
+    ],
+    "medications": [
+      "antithyroid drugs (methimazole, propylthiouracil)",
+      "beta-blockers (to manage heart rate)"
+    ],
+    "prevention": [
+      "no specific prevention (manage iodine intake if predisposed)"
+    ],
+    "recommended_specialist": "Endocrinologist",
+    "emergency": true,
+    "description": "A condition in which the thyroid gland produces too much of the hormone thyroxine, accelerating the body's metabolism.",
+    "recovery_time": "6-12 months to stabilize thyroid levels"
+  },
+  "Hypothyroidism": {
+    "name": "Hypothyroidism",
+    "category": "Endocrinology",
+    "severity": "Moderate",
+    "symptoms": [
+      "fatigue",
+      "weight gain",
+      "dry skin",
+      "constipation",
+      "cold sensitivity",
+      "muscle weakness",
+      "memory problems"
+    ],
+    "risk_factors": [
+      "being female",
+      "age over 60",
+      "family history of thyroid disease",
+      "autoimmune diseases",
+      "past thyroid surgery"
+    ],
+    "home_remedies": [
+      "iodine-rich foods",
+      "selenium supplements",
+      "regular exercise",
+      "fiber-rich diet"
+    ],
+    "medical_treatment": [
+      "regular thyroid hormone level testing"
+    ],
+    "medications": [
+      "levothyroxine (synthetic thyroid hormone replacement)"
+    ],
+    "prevention": [
+      "no specific prevention (ensuring adequate dietary iodine is helpful)"
+    ],
+    "recommended_specialist": "Endocrinologist",
+    "emergency": false,
+    "description": "A condition in which the thyroid gland doesn't produce enough thyroid hormone, slowing down the body's metabolic processes.",
+    "recovery_time": "Lifelong thyroid replacement therapy"
+  },
+  "Hepatitis B": {
+    "name": "Hepatitis B",
+    "category": "Gastroenterology",
+    "severity": "Severe",
+    "symptoms": [
+      "yellow skin and eyes (jaundice)",
+      "dark urine",
+      "extreme fatigue",
+      "nausea",
+      "vomiting",
+      "abdominal pain"
+    ],
+    "risk_factors": [
+      "unprotected sex with infected partner",
+      "sharing needles",
+      "living with infected person",
+      "occupational exposure to blood",
+      "infant born to infected mother"
+    ],
+    "home_remedies": [
+      "adequate rest",
+      "high-calorie nutrition",
+      "avoiding alcohol and liver-toxic substances"
+    ],
+    "medical_treatment": [
+      "liver transplant (in end-stage liver failure)",
+      "chronic disease monitoring"
+    ],
+    "medications": [
+      "antiviral medications (tenofovir, entecavir)",
+      "interferon injections"
+    ],
+    "prevention": [
+      "get the Hepatitis B vaccine",
+      "use condoms during sexual contact",
+      "never share needles or personal grooming items"
+    ],
+    "recommended_specialist": "Hepatologist / Gastroenterologist",
+    "emergency": true,
+    "description": "A serious liver infection caused by the hepatitis B virus (HBV), which can become chronic and lead to liver failure, cirrhosis, or liver cancer.",
+    "recovery_time": "1-3 months (acute) or chronic"
+  },
+  "Irritable Bowel Syndrome (IBS)": {
+    "name": "Irritable Bowel Syndrome (IBS)",
+    "category": "Gastroenterology",
+    "severity": "Moderate",
+    "symptoms": [
+      "abdominal cramping",
+      "bloating",
+      "gas",
+      "diarrhea",
+      "constipation",
+      "alternating bowel habits"
+    ],
+    "risk_factors": [
+      "young age (under 50)",
+      "being female",
+      "family history",
+      "anxiety, depression, or stress"
+    ],
+    "home_remedies": [
+      "peppermint oil capsules",
+      "low-FODMAP diet",
+      "stress reduction",
+      "soluble fiber supplements"
+    ],
+    "medical_treatment": [
+      "psychological therapy (hypnotherapy, CBT)",
+      "dietary counseling"
+    ],
+    "medications": [
+      "antispasmodics",
+      "laxatives",
+      "anti-diarrheals",
+      "low-dose antidepressants"
+    ],
+    "prevention": [
+      "eat meals at regular times",
+      "drink plenty of fluids",
+      "avoid trigger foods",
+      "exercise regularly and reduce stress"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": false,
+    "description": "A common gastrointestinal disorder affecting the large intestine, characterized by abdominal pain, cramping, bloating, and changes in bowel habits.",
+    "recovery_time": "Chronic condition (long-term symptom management)"
+  },
+  "Insomnia": {
+    "name": "Insomnia",
+    "category": "Neurology",
+    "severity": "Moderate",
+    "symptoms": [
+      "difficulty falling asleep",
+      "waking up during night",
+      "waking up too early",
+      "daytime fatigue",
+      "irritability",
+      "difficulty concentrating"
+    ],
+    "risk_factors": [
+      "high stress levels",
+      "irregular work shifts",
+      "poor sleep hygiene",
+      "medical or psychiatric disorders",
+      "caffeine/alcohol use"
+    ],
+    "home_remedies": [
+      "cognitive behavioral therapy for insomnia (CBT-I)",
+      "strict sleep schedule",
+      "dark/cool bedroom",
+      "avoiding screens before bed"
+    ],
+    "medical_treatment": [
+      "sleep studies (polysomnography)",
+      "relaxation training"
+    ],
+    "medications": [
+      "melatonin receptor agonists",
+      "sedatives (short-term only)",
+      "orexin receptor antagonists"
+    ],
+    "prevention": [
+      "keep sleep schedule consistent",
+      "stay active during day",
+      "limit caffeine, alcohol, and large meals before bed"
+    ],
+    "recommended_specialist": "Sleep Specialist / Neurologist",
+    "emergency": false,
+    "description": "A common sleep disorder that makes it hard to fall asleep, hard to stay asleep, or causes you to wake up too early and not be able to get back to sleep.",
+    "recovery_time": "Varies (days to chronic months)"
+  },
+  "Juvenile Rheumatoid Arthritis": {
+    "name": "Juvenile Rheumatoid Arthritis",
+    "category": "Pediatrics",
+    "severity": "Moderate",
+    "symptoms": [
+      "joint pain",
+      "joint swelling",
+      "morning joint stiffness",
+      "limping",
+      "fever",
+      "rash",
+      "swollen lymph nodes"
+    ],
+    "risk_factors": [
+      "genetics",
+      "environmental triggers (like viral infections)",
+      "being female"
+    ],
+    "home_remedies": [
+      "low-impact exercises",
+      "warm baths",
+      "regular stretching",
+      "hot/cold therapy"
+    ],
+    "medical_treatment": [
+      "physical therapy",
+      "occupational therapy",
+      "splinting joints to maintain alignment"
+    ],
+    "medications": [
+      "NSAIDs",
+      "disease-modifying antirheumatic drugs (methotrexate)",
+      "biologic agents",
+      "corticosteroids"
+    ],
+    "prevention": [
+      "no known prevention (early diagnosis halts joint damage)"
+    ],
+    "recommended_specialist": "Pediatric Rheumatologist",
+    "emergency": false,
+    "description": "The most common type of arthritis in children under 16, causing persistent joint pain, swelling, and stiffness.",
+    "recovery_time": "Chronic (periods of active flare and remission)"
+  },
+  "Kawasaki Disease": {
+    "name": "Kawasaki Disease",
+    "category": "Pediatrics",
+    "severity": "Severe",
+    "symptoms": [
+      "high fever",
+      "red eyes",
+      "strawberry tongue",
+      "red swollen palms/soles",
+      "peeling skin",
+      "swollen lymph nodes in neck"
+    ],
+    "risk_factors": [
+      "age (under 5 years old)",
+      "being male",
+      "Asian or Pacific Islander descent"
+    ],
+    "home_remedies": [
+      "keeping child comfortable",
+      "cool sponge baths (note: this is a medical emergency requiring hospitalization)"
+    ],
+    "medical_treatment": [
+      "electrocardiogram (ECG) monitoring",
+      "intravenous immunoglobulin (IVIG) therapy"
+    ],
+    "medications": [
+      "high-dose aspirin",
+      "intravenous immune globulin"
+    ],
+    "prevention": [
+      "no known prevention (early treatment prevents coronary artery aneurysms)"
+    ],
+    "recommended_specialist": "Pediatric Cardiologist",
+    "emergency": true,
+    "description": "An acute inflammatory illness of the blood vessels, mainly affecting children under 5, which can lead to serious heart complications if untreated.",
+    "recovery_time": "4-8 weeks with treatment"
+  },
+  "Lupus": {
+    "name": "Lupus",
+    "category": "Immunology",
+    "severity": "Severe",
+    "symptoms": [
+      "butterfly-shaped rash on cheeks",
+      "joint pain",
+      "fatigue",
+      "fever",
+      "sun sensitivity",
+      "hair loss",
+      "kidney problems"
+    ],
+    "risk_factors": [
+      "being female",
+      "age (15-45 years old)",
+      "race (more common in African Americans, Hispanics, Asians)"
+    ],
+    "home_remedies": [
+      "strict sun protection",
+      "anti-inflammatory diet",
+      "regular exercise",
+      "stress management"
+    ],
+    "medical_treatment": [
+      "renal biopsy",
+      "blood filtration (in severe kidney cases)"
+    ],
+    "medications": [
+      "antimalarial drugs (hydroxychloroquine)",
+      "corticosteroids",
+      "immunosuppressants (mycophenolate)",
+      "biologics"
+    ],
+    "prevention": [
+      "avoid direct sunlight, manage stress, get regular physical activity, and quit smoking"
+    ],
+    "recommended_specialist": "Rheumatologist",
+    "emergency": true,
+    "description": "A systemic autoimmune disease that occurs when your body's immune system attacks your own tissues and organs, causing widespread inflammation.",
+    "recovery_time": "Chronic (lifelong flares and remissions)"
+  },
+  "Leukemia": {
+    "name": "Leukemia",
+    "category": "Oncology",
+    "severity": "Severe",
+    "symptoms": [
+      "fatigue",
+      "frequent infections",
+      "easy bruising or bleeding",
+      "swollen lymph nodes",
+      "weight loss",
+      "fever",
+      "night sweats"
+    ],
+    "risk_factors": [
+      "previous cancer treatment",
+      "genetic disorders (Down syndrome)",
+      "exposure to certain chemicals (benzene)",
+      "smoking",
+      "family history"
+    ],
+    "home_remedies": [
+      "high-calorie/high-protein diet",
+      "avoiding raw foods to prevent infection",
+      "gentle exercise"
+    ],
+    "medical_treatment": [
+      "chemotherapy",
+      "radiation therapy",
+      "bone marrow/stem cell transplant",
+      "targeted drug therapy"
+    ],
+    "medications": [
+      "targeted therapy medications (imatinib)",
+      "chemotherapeutic agents",
+      "immunotherapy"
+    ],
+    "prevention": [
+      "avoid chemical exposures like benzene",
+      "quit smoking",
+      "maintain a healthy lifestyle"
+    ],
+    "recommended_specialist": "Oncologist / Hematologist",
+    "emergency": true,
+    "description": "A cancer of the body's blood-forming tissues, including the bone marrow and the lymphatic system, resulting in the overproduction of abnormal white blood cells.",
+    "recovery_time": "Varies (long-term treatment over months to years)"
+  },
+  "Migraine": {
+    "name": "Migraine",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "throbbing headache",
+      "nausea",
+      "vomiting",
+      "sensitivity to light",
+      "sensitivity to sound",
+      "aura"
+    ],
+    "risk_factors": [
+      "family history",
+      "being female",
+      "age (peak in 30s)",
+      "stress",
+      "sensory stimuli",
+      "sleep changes"
+    ],
+    "home_remedies": [
+      "resting in a dark quiet room",
+      "cold compress on forehead",
+      "hydration",
+      "acupressure"
+    ],
+    "medical_treatment": [
+      "biofeedback",
+      "nerve blocks",
+      "transcutaneous electrical nerve stimulation (TENS)"
+    ],
+    "medications": [
+      "triptans (sumatriptan)",
+      "NSAIDs",
+      "preventive beta-blockers",
+      "CGRP inhibitors"
+    ],
+    "prevention": [
+      "maintain regular sleep and meal schedules",
+      "exercise regularly",
+      "identify and avoid trigger foods (aged cheese, MSG)"
+    ],
+    "recommended_specialist": "Neurologist",
+    "emergency": false,
+    "description": "A neurological condition that causes intense, throbbing headaches, often accompanied by nausea, vomiting, and extreme sensitivity to light and sound.",
+    "recovery_time": "4-72 hours (per episode)"
+  },
+  "Meningitis": {
+    "name": "Meningitis",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "stiff neck",
+      "sudden high fever",
+      "severe headache",
+      "confusion",
+      "sensitivity to light",
+      "seizures",
+      "skin rash"
+    ],
+    "risk_factors": [
+      "skipping vaccinations",
+      "age (young children, college students)",
+      "living in community settings",
+      "pregnancy",
+      "weakened immune system"
+    ],
+    "home_remedies": [
+      "strict bed rest",
+      "dark room",
+      "hydration (note: this is a medical emergency requiring immediate hospital care)"
+    ],
+    "medical_treatment": [
+      "intravenous fluid replacement",
+      "airway support",
+      "close hospital monitoring"
+    ],
+    "medications": [
+      "intravenous antibiotics (for bacterial)",
+      "intravenous antiviral medications",
+      "corticosteroids"
+    ],
+    "prevention": [
+      "get vaccinated (meningococcal, Hib, pneumococcal vaccines)",
+      "wash hands frequently",
+      "don't share food or glasses"
+    ],
+    "recommended_specialist": "Neurologist / Infectious Disease Specialist",
+    "emergency": true,
+    "description": "An inflammation of the fluid and membranes (meninges) surrounding your brain and spinal cord, representing a medical emergency when bacterial.",
+    "recovery_time": "2-4 weeks (viral) or months (bacterial)"
+  },
+  "Multiple Sclerosis": {
+    "name": "Multiple Sclerosis",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "numbness or weakness in limbs",
+      "vision problems",
+      "tingling",
+      "lack of coordination",
+      "fatigue",
+      "slurred speech"
+    ],
+    "risk_factors": [
+      "age (20-40 years old)",
+      "being female",
+      "family history",
+      "certain infections (Epstein-Barr)",
+      "smoking",
+      "low vitamin D"
+    ],
+    "home_remedies": [
+      "regular moderate exercise",
+      "cooling environments (heat worsens symptoms)",
+      "balanced diet"
+    ],
+    "medical_treatment": [
+      "physical therapy",
+      "plasmapheresis (plasma exchange)",
+      "occupational therapy"
+    ],
+    "medications": [
+      "disease-modifying therapies (DMTs like interferon)",
+      "oral or IV corticosteroids",
+      "muscle relaxants"
+    ],
+    "prevention": [
+      "no specific prevention (maintaining healthy vitamin D and quitting smoking may reduce risks)"
+    ],
+    "recommended_specialist": "Neurologist",
+    "emergency": true,
+    "description": "A disease in which the immune system eats away at the protective sheath (myelin) that covers nerves, disrupting communication between the brain and body.",
+    "recovery_time": "Chronic (progressive with periods of remission)"
+  },
+  "Narcolepsy": {
+    "name": "Narcolepsy",
+    "category": "Neurology",
+    "severity": "Moderate",
+    "symptoms": [
+      "excessive daytime sleepiness",
+      "sudden loss of muscle tone (cataplexy)",
+      "sleep paralysis",
+      "hallucinations"
+    ],
+    "risk_factors": [
+      "age (onset between 10-30 years)",
+      "family history",
+      "autoimmune predisposition"
+    ],
+    "home_remedies": [
+      "short scheduled daytime naps",
+      "consistent sleep schedule",
+      "avoiding caffeine or alcohol close to bedtime"
+    ],
+    "medical_treatment": [
+      "sleep studies (multiple sleep latency test)",
+      "lifestyle adjustment counseling"
+    ],
+    "medications": [
+      "stimulants (modafinil)",
+      "sodium oxybate",
+      "antidepressants (to control cataplexy)"
+    ],
+    "prevention": [
+      "no known prevention (early diagnosis and management prevents accidents)"
+    ],
+    "recommended_specialist": "Sleep Specialist / Neurologist",
+    "emergency": false,
+    "description": "A chronic sleep disorder characterized by overwhelming daytime drowsiness and sudden attacks of sleep, often with a temporary loss of muscle control.",
+    "recovery_time": "Chronic (lifelong management)"
+  },
+  "Osteoporosis": {
+    "name": "Osteoporosis",
+    "category": "Orthopedics",
+    "severity": "Moderate",
+    "symptoms": [
+      "back pain",
+      "loss of height over time",
+      "stooped posture",
+      "bone fracture that occurs easily"
+    ],
+    "risk_factors": [
+      "being female",
+      "older age",
+      "family history",
+      "small body frame",
+      "hormonal levels (low estrogen/testosterone)",
+      "low calcium intake"
+    ],
+    "home_remedies": [
+      "calcium-rich foods",
+      "vitamin D supplements",
+      "weight-bearing exercise",
+      "fall prevention measures"
+    ],
+    "medical_treatment": [
+      "bone density scanning (DEXA)",
+      "physical therapy for balance"
+    ],
+    "medications": [
+      "bisphosphonates (alendronate)",
+      "hormone replacement therapy",
+      "bone-building drugs (teriparatide)"
+    ],
+    "prevention": [
+      "ensure adequate calcium and vitamin D intake",
+      "do regular weight-bearing exercises",
+      "limit alcohol and quit smoking"
+    ],
+    "recommended_specialist": "Endocrinologist / Rheumatologist",
+    "emergency": false,
+    "description": "A condition in which bones become weak and brittle, making them highly susceptible to fractures, even from minor stress or falls.",
+    "recovery_time": "Chronic condition (long-term bone density support)"
+  },
+  "Otitis Media (Ear Infection)": {
+    "name": "Otitis Media (Ear Infection)",
+    "category": "ENT",
+    "severity": "Mild",
+    "symptoms": [
+      "ear pain",
+      "tugging at ear",
+      "difficulty hearing",
+      "fluid draining from ear",
+      "fever",
+      "loss of balance"
+    ],
+    "risk_factors": [
+      "age (6 months to 2 years)",
+      "group childcare settings",
+      "bottle-feeding while lying down",
+      "air quality (tobacco smoke, pollution)"
+    ],
+    "home_remedies": [
+      "warm compress over affected ear",
+      "resting in upright position",
+      "staying hydrated"
+    ],
+    "medical_treatment": [
+      "myringotomy (ear tubes) for chronic fluid build-up",
+      "ear cleaning"
+    ],
+    "medications": [
+      "oral antibiotics (amoxicillin)",
+      "antibiotic ear drops",
+      "pain-relieving ear drops",
+      "acetaminophen"
+    ],
+    "prevention": [
+      "prevent common colds",
+      "breastfeed if possible",
+      "avoid secondhand smoke exposure",
+      "get pneumococcal vaccines"
+    ],
+    "recommended_specialist": "ENT Specialist / Pediatrician",
+    "emergency": false,
+    "description": "An infection of the middle ear, the air-filled space behind the eardrum, commonly presenting with severe earache and fluid buildup.",
+    "recovery_time": "3-7 days (acute infection)"
+  },
+  "Parkinson's Disease": {
+    "name": "Parkinson's Disease",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "tremor",
+      "slowed movement (bradykinesia)",
+      "rigid muscles",
+      "impaired posture and balance",
+      "speech changes"
+    ],
+    "risk_factors": [
+      "age (onset around 60 or older)",
+      "heredity/genetics",
+      "being male",
+      "exposure to toxins (herbicides, pesticides)"
+    ],
+    "home_remedies": [
+      "regular aerobic exercise",
+      "physical therapy",
+      "speech therapy",
+      "home modifications for safety"
+    ],
+    "medical_treatment": [
+      "deep brain stimulation (DBS) surgery",
+      "occupational therapy"
+    ],
+    "medications": [
+      "levodopa-carbidopa",
+      "dopamine agonists",
+      "MAO-B inhibitors"
+    ],
+    "prevention": [
+      "some research suggests regular aerobic exercise and caffeine consumption may reduce risks"
+    ],
+    "recommended_specialist": "Neurologist",
+    "emergency": false,
+    "description": "A progressive nervous system disorder that affects movement, starting with barely noticeable tremors and progressing to rigid muscles and slowed motion.",
+    "recovery_time": "Chronic (progressive and lifelong)"
+  },
+  "Pancreatitis": {
+    "name": "Pancreatitis",
+    "category": "Gastroenterology",
+    "severity": "Severe",
+    "symptoms": [
+      "upper abdominal pain radiating to back",
+      "pain worsens after eating",
+      "nausea",
+      "vomiting",
+      "fever",
+      "rapid pulse",
+      "oily smelly stools"
+    ],
+    "risk_factors": [
+      "excessive alcohol consumption",
+      "gallstones",
+      "smoking",
+      "high triglyceride levels",
+      "abdominal surgery"
+    ],
+    "home_remedies": [
+      "fasting (under medical supervision)",
+      "low-fat diet",
+      "staying hydrated"
+    ],
+    "medical_treatment": [
+      "intravenous fluids",
+      "gallstone removal procedures",
+      "pancreatic duct stenting",
+      "surgery"
+    ],
+    "medications": [
+      "intravenous pain medications",
+      "pancreatic enzyme supplements (for chronic)"
+    ],
+    "prevention": [
+      "limit alcohol consumption",
+      "maintain a healthy weight to prevent gallstones",
+      "quit smoking"
+    ],
+    "recommended_specialist": "Gastroenterologist",
+    "emergency": true,
+    "description": "Inflammation of the pancreas, an organ behind the stomach that secretes digestive enzymes, representing an acute emergency or a chronic painful state.",
+    "recovery_time": "1-2 weeks (acute) or chronic"
+  },
+  "Polycystic Ovary Syndrome (PCOS)": {
+    "name": "Polycystic Ovary Syndrome (PCOS)",
+    "category": "Endocrinology",
+    "severity": "Moderate",
+    "symptoms": [
+      "irregular periods",
+      "excess facial or body hair",
+      "severe acne",
+      "weight gain",
+      "thinning hair",
+      "infertility"
+    ],
+    "risk_factors": [
+      "excess insulin",
+      "low-grade inflammation",
+      "heredity/family history"
+    ],
+    "home_remedies": [
+      "low-glycemic index diet",
+      "regular exercise",
+      "spearmint tea",
+      "cinnamon supplements"
+    ],
+    "medical_treatment": [
+      "ovulation induction therapy",
+      "laparoscopic ovarian drilling (rare surgery)"
+    ],
+    "medications": [
+      "birth control pills",
+      "metformin",
+      "spironolactone (anti-androgen)"
+    ],
+    "prevention": [
+      "maintain a healthy weight through active lifestyle and balanced diet to control insulin levels"
+    ],
+    "recommended_specialist": "Endocrinologist / Gynecologist",
+    "emergency": false,
+    "description": "A hormonal disorder common among women of reproductive age, characterized by irregular periods, excess androgen levels, and cyst-covered ovaries.",
+    "recovery_time": "Chronic (manageable lifelong condition)"
+  },
+  "Angioedema": {
+    "name": "Angioedema",
+    "category": "Immunology",
+    "severity": "Severe",
+    "symptoms": [
+      "swelling under skin",
+      "hives",
+      "abdominal cramping",
+      "difficulty breathing"
+    ],
+    "risk_factors": [
+      "known allergies",
+      "taking ACE inhibitors",
+      "family history of hereditary angioedema",
+      "recent infection"
+    ],
+    "home_remedies": [
+      "cold compress",
+      "elevating the swollen area",
+      "avoiding known allergens"
+    ],
+    "medical_treatment": [
+      "allergy testing",
+      "airway intubation (in life-threatening throat swelling)"
+    ],
+    "medications": [
+      "oral antihistamines",
+      "corticosteroids",
+      "epinephrine injection",
+      "C1 inhibitor concentrate"
+    ],
+    "prevention": [
+      "avoid known allergens and trigger medications",
+      "carry an epinephrine auto-injector if prescribed"
+    ],
+    "recommended_specialist": "Allergist / Immunologist",
+    "emergency": true,
+    "description": "An area of swelling in the deep layers of the skin, often seen around the eyes, lips, or hands, which can become life-threatening if it blocks the airway.",
+    "recovery_time": "24-72 hours"
+  },
+  "Rheumatoid Arthritis": {
+    "name": "Rheumatoid Arthritis",
+    "category": "Orthopedics",
+    "severity": "Severe",
+    "symptoms": [
+      "tender warm swollen joints",
+      "joint stiffness",
+      "fatigue",
+      "fever",
+      "loss of appetite",
+      "joint deformity over time"
+    ],
+    "risk_factors": [
+      "being female",
+      "age (most commonly starts in 40s-60s)",
+      "family history",
+      "smoking",
+      "environmental exposures"
+    ],
+    "home_remedies": [
+      "low-impact exercise",
+      "omega-3 supplements",
+      "hot/cold therapy",
+      "joint protection aids"
+    ],
+    "medical_treatment": [
+      "joint synovectomy surgery",
+      "physical and occupational therapy",
+      "joint replacement"
+    ],
+    "medications": [
+      "DMARDs (methotrexate)",
+      "biologic agents (adalimumab)",
+      "NSAIDs",
+      "low-dose corticosteroids"
+    ],
+    "prevention": [
+      "quit smoking",
+      "maintain a healthy weight",
+      "avoid joint trauma and stay active"
+    ],
+    "recommended_specialist": "Rheumatologist",
+    "emergency": false,
+    "description": "A chronic progressive autoimmune disorder that primarily attacks the joints, causing painful swelling that can eventually result in bone erosion and joint deformity.",
+    "recovery_time": "Chronic (lifelong management)"
+  },
+  "Rabies": {
+    "name": "Rabies",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "fever",
+      "headache",
+      "excess salivation",
+      "muscle spasms",
+      "fear of water (hydrophobia)",
+      "confusion",
+      "paralysis"
+    ],
+    "risk_factors": [
+      "being bitten or scratched by wild animals (bats, raccoons, dogs)",
+      "traveling to regions with high rabies prevalence",
+      "exploring caves with bats"
+    ],
+    "home_remedies": [
+      "washing animal bite wound with soap and water immediately (note: rabies has no home cure and requires emergency medical intervention)"
+    ],
+    "medical_treatment": [
+      "wound debridement",
+      "intensive supportive ICU care (symptomatic rabies is almost 100% fatal)"
+    ],
+    "medications": [
+      "rabies vaccine",
+      "rabies immune globulin (HRIG) administered immediately post-exposure"
+    ],
+    "prevention": [
+      "vaccinate pets",
+      "avoid contact with wild animals",
+      "receive pre-exposure vaccination if at high risk",
+      "get immediate vaccine after bites"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": true,
+    "description": "A deadly viral disease spread to humans from the saliva of infected animals, causing acute inflammation of the brain and nervous system.",
+    "recovery_time": "Fatal if symptoms appear (vaccine prevents onset)"
+  },
+  "Stroke": {
+    "name": "Stroke",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "face drooping",
+      "arm weakness",
+      "speech difficulty",
+      "sudden numbness",
+      "sudden vision trouble",
+      "loss of balance"
+    ],
+    "risk_factors": [
+      "high blood pressure",
+      "smoking",
+      "diabetes",
+      "high cholesterol",
+      "obesity",
+      "cardiovascular diseases (atrial fibrillation)"
+    ],
+    "home_remedies": [
+      "call emergency services immediately (no home remedies; time is brain)"
+    ],
+    "medical_treatment": [
+      "mechanical thrombectomy (clot removal)",
+      "carotid endarterectomy (surgery)",
+      "stroke rehabilitation (physical therapy)"
+    ],
+    "medications": [
+      "tissue plasminogen activator (tPA - clot buster)",
+      "blood thinners (aspirin, clopidogrel)",
+      "anticoagulants"
+    ],
+    "prevention": [
+      "control high blood pressure",
+      "quit smoking",
+      "maintain a healthy weight and exercise",
+      "manage diabetes and eat a low-sodium diet"
+    ],
+    "recommended_specialist": "Neurologist / Emergency Specialist",
+    "emergency": true,
+    "description": "A medical emergency that occurs when the blood supply to part of your brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients.",
+    "recovery_time": "Months to years (requires long-term rehabilitation)"
+  },
+  "Shingles (Herpes Zoster)": {
+    "name": "Shingles (Herpes Zoster)",
+    "category": "Dermatology",
+    "severity": "Moderate",
+    "symptoms": [
+      "painful burning tingling rash",
+      "fluid-filled blisters",
+      "itching",
+      "fever",
+      "headache",
+      "fatigue"
+    ],
+    "risk_factors": [
+      "older age (over 50)",
+      "having had chickenpox",
+      "weakened immune system",
+      "undergoing cancer treatments",
+      "stress"
+    ],
+    "home_remedies": [
+      "cool baths",
+      "wet compresses",
+      "calamine lotion",
+      "loose-fitting clothing"
+    ],
+    "medical_treatment": [
+      "supportive care",
+      "pain management clinics for postherpetic neuralgia"
+    ],
+    "medications": [
+      "antiviral medications (acyclovir, valacyclovir)",
+      "pain relievers",
+      "topical numbing creams"
+    ],
+    "prevention": [
+      "get the shingles vaccine (Shingrix)",
+      "maintain a strong immune system"
+    ],
+    "recommended_specialist": "Dermatologist / General Physician",
+    "emergency": false,
+    "description": "A viral infection caused by the reactivation of the varicella-zoster virus (the chickenpox virus), resulting in a painful, blistering skin rash on one side of the body.",
+    "recovery_time": "2-4 weeks"
+  },
+  "Sinusitis": {
+    "name": "Sinusitis",
+    "category": "ENT",
+    "severity": "Mild",
+    "symptoms": [
+      "facial pain or pressure",
+      "nasal congestion",
+      "thick nasal discharge",
+      "headache",
+      "cough",
+      "sore throat",
+      "bad breath"
+    ],
+    "risk_factors": [
+      "nasal polyps",
+      "allergies (hay fever)",
+      "asthma",
+      "deviated nasal septum",
+      "smoking"
+    ],
+    "home_remedies": [
+      "steam inhalation",
+      "saline nasal rinse (neti pot)",
+      "warm compress",
+      "hydration"
+    ],
+    "medical_treatment": [
+      "sinus irrigation",
+      "balloon sinuplasty",
+      "endoscopic sinus surgery (for chronic cases)"
+    ],
+    "medications": [
+      "nasal corticosteroid sprays",
+      "decongestants",
+      "oral antibiotics (if bacterial)",
+      "pain relievers"
+    ],
+    "prevention": [
+      "avoid upper respiratory infections",
+      "manage allergies",
+      "avoid cigarette smoke",
+      "use a humidifier if air is dry"
+    ],
+    "recommended_specialist": "ENT Specialist",
+    "emergency": false,
+    "description": "Inflammation or swelling of the tissue lining the sinuses, causing mucus buildup, nasal blockage, and facial pressure.",
+    "recovery_time": "7-14 days (acute) or chronic"
+  },
+  "Tonsillitis": {
+    "name": "Tonsillitis",
+    "category": "ENT",
+    "severity": "Mild",
+    "symptoms": [
+      "red swollen tonsils",
+      "white or yellow coating on tonsils",
+      "sore throat",
+      "difficulty swallowing",
+      "fever",
+      "swollen lymph nodes in neck"
+    ],
+    "risk_factors": [
+      "young age (children)",
+      "frequent exposure to viral or bacterial germs (school settings)"
+    ],
+    "home_remedies": [
+      "saltwater gargle",
+      "warm liquids",
+      "ice pops",
+      "throat lozenges"
+    ],
+    "medical_treatment": [
+      "tonsillectomy (surgical removal for chronic tonsillitis)"
+    ],
+    "medications": [
+      "antibiotics (penicillin for bacterial)",
+      "pain relievers (acetaminophen)"
+    ],
+    "prevention": [
+      "wash hands thoroughly",
+      "avoid sharing food, drinking glasses, or utensils",
+      "replace toothbrush after strep diagnosis"
+    ],
+    "recommended_specialist": "ENT Specialist / Pediatrician",
+    "emergency": false,
+    "description": "An inflammation of the tonsils, the two oval-shaped pads of tissue at the back of the throat, usually caused by a viral or bacterial infection.",
+    "recovery_time": "3-7 days"
+  },
+  "Tetanus": {
+    "name": "Tetanus",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "jaw cramping (lockjaw)",
+      "painful muscle spasms",
+      "muscle stiffness",
+      "difficulty swallowing",
+      "fever",
+      "rapid heart rate"
+    ],
+    "risk_factors": [
+      "being unvaccinated or overdue for booster",
+      "puncture wounds from rusty metal or dirt",
+      "animal bites"
+    ],
+    "home_remedies": [
+      "wound care (cleaning cuts with antiseptic immediately) (note: tetanus requires immediate emergency hospital care)"
+    ],
+    "medical_treatment": [
+      "wound debridement",
+      "airway support/ventilator (if breathing muscles spasm)"
+    ],
+    "medications": [
+      "tetanus immunoglobulin (TIG)",
+      "tetanus vaccine booster",
+      "antibiotics",
+      "muscle relaxants"
+    ],
+    "prevention": [
+      "get the tetanus vaccine and regular booster doses every 10 years",
+      "clean all wounds thoroughly and apply antiseptic"
+    ],
+    "recommended_specialist": "Infectious Disease Specialist",
+    "emergency": true,
+    "description": "A serious bacterial disease caused by Clostridium tetani, which enters the body through cuts and produces a toxin that causes painful muscle spasms and lockjaw.",
+    "recovery_time": "4-6 weeks (requires intensive hospital care)"
+  },
+  "Urinary Tract Infection (UTI)": {
+    "name": "Urinary Tract Infection (UTI)",
+    "category": "Gastroenterology",
+    "severity": "Mild",
+    "symptoms": [
+      "strong urge to urinate",
+      "burning sensation when urinating",
+      "passing frequent small amounts of urine",
+      "cloudy urine",
+      "pelvic pain"
+    ],
+    "risk_factors": [
+      "female anatomy",
+      "sexual activity",
+      "certain types of birth control (diaphragms)",
+      "menopause",
+      "urinary tract abnormalities or blockages"
+    ],
+    "home_remedies": [
+      "drinking plenty of water",
+      "unsweetened cranberry juice",
+      "avoiding bladder irritants (caffeine, alcohol)"
+    ],
+    "medical_treatment": [
+      "cystoscopy (for recurrent infections)",
+      "urinalysis"
+    ],
+    "medications": [
+      "oral antibiotics (nitrofurantoin, trimethoprim-sulfamethoxazole)",
+      "urinary analgesics (phenazopyridine)"
+    ],
+    "prevention": [
+      "drink plenty of fluids",
+      "wipe from front to back",
+      "empty bladder soon after intercourse",
+      "avoid irritating feminine products"
+    ],
+    "recommended_specialist": "Urologist / Gynecologist / General Physician",
+    "emergency": false,
+    "description": "An infection in any part of the urinary system, including the kidneys, ureters, bladder, and urethra, most commonly affecting the bladder.",
+    "recovery_time": "3-5 days with antibiotics"
+  },
+  "Varicose Veins": {
+    "name": "Varicose Veins",
+    "category": "Cardiology",
+    "severity": "Mild",
+    "symptoms": [
+      "dark purple or blue veins",
+      "twisting bulging veins",
+      "aching heavy feeling in legs",
+      "throbbing cramping swelling in legs",
+      "itching around veins"
+    ],
+    "risk_factors": [
+      "older age",
+      "being female",
+      "pregnancy",
+      "family history",
+      "obesity",
+      "standing or sitting for long periods"
+    ],
+    "home_remedies": [
+      "compression stockings",
+      "elevating legs above heart",
+      "regular walking",
+      "avoiding long periods of sitting or standing"
+    ],
+    "medical_treatment": [
+      "sclerotherapy",
+      "laser treatment",
+      "catheter-assisted procedures (radiofrequency ablation)",
+      "vein stripping surgery"
+    ],
+    "medications": [
+      "supportive herbal supplements (horse chestnut extract)"
+    ],
+    "prevention": [
+      "exercise regularly",
+      "maintain a healthy weight",
+      "avoid standing/sitting for long stretches",
+      "elevate legs regularly"
+    ],
+    "recommended_specialist": "Vascular Surgeon",
+    "emergency": false,
+    "description": "Gnarled, enlarged veins, most commonly appearing in the legs and feet, caused by weak or damaged vein valves.",
+    "recovery_time": "1-2 weeks (after surgical procedures)"
+  },
+  "Wilson's Disease": {
+    "name": "Wilson's Disease",
+    "category": "Neurology",
+    "severity": "Severe",
+    "symptoms": [
+      "fatigue",
+      "abdominal pain",
+      "yellowing skin (jaundice)",
+      "brown ring around cornea",
+      "coordination problems",
+      "speech difficulty"
+    ],
+    "risk_factors": [
+      "family history (inherited autosomal recessive trait)"
+    ],
+    "home_remedies": [
+      "low-copper diet (avoiding chocolate, mushrooms, shellfish, nuts)",
+      "using zinc supplements to block copper absorption"
+    ],
+    "medical_treatment": [
+      "liver transplant (for severe liver failure)",
+      "physical and occupational therapy"
+    ],
+    "medications": [
+      "copper chelating agents (penicillamine, trientine)",
+      "zinc acetate"
+    ],
+    "prevention": [
+      "no prevention (inherited disease; genetic screening for family members allows early treatment to prevent damage)"
+    ],
+    "recommended_specialist": "Hepatologist / Gastroenterologist / Neurologist",
+    "emergency": true,
+    "description": "A rare inherited disorder that causes copper to accumulate in your liver, brain, and other vital organs, leading to liver failure or brain damage if untreated.",
+    "recovery_time": "Lifelong medical management"
+  },
+  "X-linked Agammaglobulinemia (XLA)": {
+    "name": "X-linked Agammaglobulinemia (XLA)",
+    "category": "Immunology",
+    "severity": "Severe",
+    "symptoms": [
+      "frequent ear infections",
+      "recurrent pneumonia",
+      "sinus infections",
+      "chronic diarrhea",
+      "skin infections",
+      "joint pain"
+    ],
+    "risk_factors": [
+      "being male (inherited X-linked trait)",
+      "family history of primary immunodeficiency"
+    ],
+    "home_remedies": [
+      "strict hygiene and handwashing",
+      "avoiding crowds during outbreak seasons",
+      "high-calorie nutrition"
+    ],
+    "medical_treatment": [
+      "immunoglobulin replacement therapy infusions",
+      "prophylactic antibiotic therapy"
+    ],
+    "medications": [
+      "intravenous or subcutaneous immunoglobulin (IVIG/SCIG)",
+      "prophylactic antibiotics"
+    ],
+    "prevention": [
+      "no prevention (inherited; genetic counseling and regular IG infusions prevent life-threatening infections)"
+    ],
+    "recommended_specialist": "Immunologist / Allergist",
+    "emergency": true,
+    "description": "An inherited primary immunodeficiency disorder in which the body cannot produce antibodies (immunoglobulins), leaving it highly vulnerable to bacterial infections.",
+    "recovery_time": "Chronic (requires lifelong antibody infusions)"
+  },
+  "Yeast Infection (Candidiasis)": {
+    "name": "Yeast Infection (Candidiasis)",
+    "category": "Gynecology",
+    "severity": "Mild",
+    "symptoms": [
+      "vaginal itching and irritation",
+      "burning sensation during intercourse or urination",
+      "thick white odorless discharge",
+      "redness and swelling"
+    ],
+    "risk_factors": [
+      "antibiotic use",
+      "increased estrogen levels (pregnancy, oral contraceptives)",
+      "uncontrolled diabetes",
+      "impaired immune system"
+    ],
+    "home_remedies": [
+      "eating yogurt with active cultures",
+      "wearing cotton underwear",
+      "avoiding scented hygiene products",
+      "tea tree oil suppositories"
+    ],
+    "medical_treatment": [
+      "hygiene adjustments",
+      "gynecological examination"
+    ],
+    "medications": [
+      "topical antifungal creams (clotrimazole, miconazole)",
+      "oral antifungal tablet (fluconazole)"
+    ],
+    "prevention": [
+      "wear cotton underwear and loose clothing",
+      "avoid douching and scented products",
+      "change out of wet swimsuits or gym clothes immediately"
+    ],
+    "recommended_specialist": "Gynecologist / General Physician",
+    "emergency": false,
+    "description": "A common fungal infection caused by an overgrowth of Candida yeast, most commonly affecting the vaginal area, causing itching, irritation, and discharge.",
+    "recovery_time": "3-7 days with treatment"
+  },
+  "Zollinger-Ellison Syndrome": {
+    "name": "Zollinger-Ellison Syndrome",
+    "category": "Gastroenterology",
+    "severity": "Severe",
+    "symptoms": [
+      "severe abdominal pain",
+      "burning sensation in upper abdomen",
+      "diarrhea",
+      "heartburn",
+      "nausea",
+      "vomiting",
+      "weight loss",
+      "gastrointestinal bleeding"
+    ],
+    "risk_factors": [
+      "family history of Multiple Endocrine Neoplasia type 1 (MEN1)"
+    ],
+    "home_remedies": [
+      "eating small bland meals",
+      "avoiding alcohol, caffeine, and smoking"
+    ],
+    "medical_treatment": [
+      "surgical removal of gastrin-producing tumors (gastrinomas)",
+      "chemotherapy for metastatic tumors",
+      "radiofrequency ablation"
+    ],
+    "medications": [
+      "high-dose proton pump inhibitors (PPIs like omeprazole, lansoprazole)"
+    ],
+    "prevention": [
+      "no known prevention (genetic testing for MEN1 helps catch gastrinomas early before severe ulcers develop)"
+    ],
+    "recommended_specialist": "Gastroenterologist / Oncologist",
+    "emergency": true,
+    "description": "A rare condition in which one or more tumors (gastrinomas) form in your pancreas or the upper part of your small intestine, secreting large amounts of gastrin that cause severe stomach ulcers.",
+    "recovery_time": "Chronic (requires long-term medication/monitoring)"
   }
 }
