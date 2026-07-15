@@ -318,15 +318,6 @@ quantummed-ai/
 
 ---
 
-### Disease Comparison
-![Comparison](images/comparison.png)
-
----
-
-### Analytics Dashboard
-![Analytics](images/analytics.png)
-
----
 
 ## Future Roadmap
 
