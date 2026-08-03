@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="images/banner.png" alt="QuantumMed AI Banner" width="100%">
+</p>
 
 <h1 align="center">⚛️ QuantumMed AI</h1>
 
@@ -22,6 +24,7 @@ Hybrid Quantum-Inspired Clinical Decision Support Platform
 - [Key Highlights](#-key-highlights)
 - [System Architecture](#system-architecture)
 - [Medical Knowledge Base](#-medical-knowledge-base)
+- [Relational SQLite Database](#-relational-sqlite-database)
 - [Quantum Engine](#quantum-engine)
 - [AI Vision Engine](#ai-vision-engine)
 - [Audio Intelligence](#audio-intelligence)
@@ -46,6 +49,8 @@ QuantumMed AI is a hybrid AI-assisted clinical decision support platform that co
 - **Quantum-inspired symptom search** using Grover's Algorithm (Qiskit simulation)
 - **Computer Vision** for skin disease analysis (PyTorch CNN classification)
 - **Deep Learning–based respiratory audio analysis** (Mel-spectrogram CNN analysis)
+- **Scikit-Learn Classifier Baseline Models** (Random Forest, SVM, Decision Tree, Logistic Regression)
+- **Relational SQLite Database Storage** on demand
 - **Explainable AI (XAI)** details maps
 - **Interactive quantum circuit visualization**
 - **Clinical recommendation engine**
@@ -61,8 +66,10 @@ The project is designed for educational and research purposes to demonstrate the
 - **323 unique symptoms** in the diagnostic map
 - **13 medical specialties** categorized across groups
 - **Grover's Algorithm Simulation** with amplitude amplification
+- **Scikit-Learn Baselines:** Trained on 4,500 observation records, using a serialized **Random Forest model** ($99.22\%$ accuracy) for sub-millisecond symptom prediction.
+- **Relational SQLite Storage:** Decoupled Many-to-Many lookup architecture using a localized SQL database `quantum_med.db`.
 - **Explainable AI (XAI)** showing Matched vs. Missing symptoms checklists
-- **CNN Skin Disease Detection** with 8-stage image preprocessing
+- **CNN Skin Disease Detection** with 8-stage image preprocessing and **Global Average Pooling** network architecture
 - **Audio Disease Classification** from respiratory sound spectrograms
 - **Real-time Emergency Detection** with warning notices
 - **PDF Report Generation** with print-friendly layout
@@ -87,8 +94,13 @@ The project is designed for educational and research purposes to demonstrate the
       └───────────────┼────────────────┘
                       ▼
             Recommendation Engine
+                      │
+                      ▼
+             SQL Database Query (On-Demand Lookup)
+                      │
                       ▼
              Explainable AI (XAI)
+                      │
                       ▼
           PDF Report & Dashboard
 ```
@@ -101,11 +113,24 @@ The project is designed for educational and research purposes to demonstrate the
 |--------|------:|
 | Diseases | 90 |
 | Categories | 13 |
-| Symptoms | 323 |
+| Symptoms | 420 (Master Features) |
 | Treatments | Included |
 | Home Remedies | Included |
 | Medications | Included |
 | Emergency Flags | Included |
+
+---
+
+## 🗄️ Relational SQLite Database
+
+Unlike monolithic JSON file setups, QuantumMed AI decouples prediction outputs from detailed clinical descriptions by using a local relational database: **`quantum_med.db`** (stored in `backend/data/`).
+
+### Schema Architecture:
+* **`diseases` Table:** Primary keys mapping disease names, categories, severities, specialists, and recovery times.
+* **`symptoms` Table:** Flat mapping index representing the 420 master clinical symptoms.
+* **`disease_symptoms` Table:** Many-to-Many bridge table establishing relational weights between diseases and symptoms.
+* **`treatments` Table:** Relates disease IDs directly with Home Care remedies and recommended medications.
+* **`risk_factors` Table:** Relates disease IDs directly with risk factors.
 
 ---
 
@@ -137,13 +162,13 @@ Blank Image Detection (Luminance & flat color checks)
 Quality Check (Blur & low resolution detection)
       │
       ▼
-Skin Detection (RGB color bounds + Binary CNN check)
+Skin Detection (RGB color bounds + PyTorch Binary CNN check)
       │
       ▼
 Lesion Detection (Tissue variance check within skin mask)
       │
       ▼
-CNN Classification (Acne, Eczema, Psoriasis, Rosacea, Healthy)
+CNN Classification (Global Average Pooling Architecture)
       │
       ▼
 Confidence Threshold (Rejects if top confidence < 60%)
@@ -151,6 +176,10 @@ Confidence Threshold (Rejects if top confidence < 60%)
       ▼
 Prediction / Rejection
 ```
+
+### 🧠 Model 2: Skin Disease CNN Layout
+The PyTorch skin classifier utilizes a parameter-efficient **Global Average Pooling (GAP)** layout:
+* `Conv2D` $\rightarrow$ `ReLU` $\rightarrow$ `MaxPool` $\rightarrow$ `Conv2D` $\rightarrow$ `ReLU` $\rightarrow$ `MaxPool` $\rightarrow$ `Conv2D` $\rightarrow$ `ReLU` $\rightarrow$ **`AdaptiveAvgPool2d((1,1))`** $\rightarrow$ `Flatten` $\rightarrow$ `Linear(64, 6)` $\rightarrow$ `Softmax`.
 
 ---
 
@@ -170,6 +199,7 @@ An interactive benchmark panel displays complexity scaling side-by-side. At $1,0
 * **Classical Linear Search:** Needs $1,000,000\times M$ operations ($O(N \cdot M)$ complexity).
 * **Quantum Grover Search:** Needs $\approx 1,000$ operations ($O(\sqrt{N})$ complexity).
 * **Grover Speedup:** Results show a $13.4\times$ physical speedup for our local database.
+* **ML Baselines Accuracy Grid:** Shows precision, recall, and training latency for Random Forest, SVM, Decision Tree, and Logistic Regression.
 
 ---
 
@@ -177,24 +207,11 @@ An interactive benchmark panel displays complexity scaling side-by-side. At $1,0
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| POST | `/analyze` | Analyze symptoms (Quantum & Classical matching) |
-| POST | `/analyze-skin` | Validate and analyze skin image |
-| POST | `/analyze-cough` | Analyze respiratory audio |
-| GET | `/diseases` | Retrieve entire disease database |
-| POST | `/compare` | Run Grover vs. Classical algorithm benchmark comparisons |
-
-### 🔹 Example Request: `/analyze`
-```json
-{
-  "symptoms": ["fever", "headache"],
-  "gender": "Female",
-  "age_group": "Adult",
-  "is_pregnant": true,
-  "severities": {
-    "headache": "Severe"
-  }
-}
-```
+| POST | `/analyze` | Analyze symptoms (Grover search + SQLite dynamic details lookup) |
+| POST | `/analyze-skin` | Validate and analyze skin image (Dual-pass + GAP CNN classification) |
+| POST | `/analyze-cough` | Analyze respiratory audio (Mel spectrogram DNN) |
+| GET | `/diseases` | Retrieve entire disease database details mapped from SQLite |
+| POST | `/compare` | Run Grover vs. Classical algorithm comparisons + ML model benchmarks |
 
 ### 🔹 Example Response: `/analyze`
 ```json
@@ -230,33 +247,11 @@ An interactive benchmark panel displays complexity scaling side-by-side. At $1,0
 ### Quick Start (Windows)
 Double-click `Start-QuantumMed.bat` in the root directory. This automatically launches both the FastAPI backend and React frontend in separate terminal windows.
 
-### Manual Setup
-
-**Backend**
+### Database Initialization
+If you need to seed or reset the relational SQLite database from JSON raw mappings, run:
 ```bash
-cd backend
-pip install -r requirements.txt
-python app.py
-# Runs at → http://localhost:8000
+python scripts/import_medical_data.py
 ```
-
-**Frontend**
-```bash
-cd frontend
-npm install
-npm run dev
-# Runs at → http://localhost:5173
-```
-
----
-
-## Usage
-
-1. **Symptom Matching:** Choose input filters, type symptoms, adjust individual severity multipliers (Mild, Moderate, Severe), and run the simulation.
-2. **Skin Scan:** Upload a clear skin patch photo. The system runs the 8-stage preprocessing checks, performs CNN classification, and outputs disease possibilities.
-3. **Cough Scan:** Upload respiratory audio files to check Mel spectrogram classifications.
-4. **Disease Comparison:** Select two conditions to trace symptom differences and overrides.
-5. **PDF Exporter:** Press `📄 Export PDF Report` inside results to print a clinical layout.
 
 ---
 
@@ -266,24 +261,28 @@ npm run dev
 quantummed-ai/
 │
 ├── backend/
-│   ├── app.py
-│   ├── quantum_search.py
-│   ├── classical_search.py
-│   ├── ai_analyzer.py
-│   ├── diseases.json
-│   ├── requirements.txt
-│   └── models/
+│   ├── app.py                      # FastAPI routes & endpoints
+│   ├── database.py                 # SQLite initialization & accessors
+│   ├── quantum_search.py           # Grover's algorithm symptom matching
+│   ├── classical_search.py         # Classical linear search benchmark
+│   ├── ai_analyzer.py              # CNN skin classifier & Spectrogram Audio DNN
+│   ├── ml_compare.py               # Classical ML classifier evaluation
+│   ├── diseases.json               # Raw JSON source database
+│   ├── data/
+│   │   └── quantum_med.db          # SQLite relational database
+│   ├── models/
+│   │   ├── symptom_random_forest.pkl   # Serialized Random Forest model
+│   │   └── symptom_features.pkl        # Serialized feature list mapping
+│   └── requirements.txt
+│
+├── scripts/
+│   └── import_medical_data.py      # Database seeder execution script
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── App.jsx
-│   │   └── index.css
-│   ├── public/
+│   │   ├── App.jsx                 # Dashboard UI, charts, & visualizer
+│   │   └── index.css               # Vanilla CSS styles & layout tokens
 │   └── package.json
-│
-├── docs/
-│   ├── screenshots/
-│   └── architecture/
 │
 ├── images/
 │   ├── banner.png
@@ -316,6 +315,15 @@ quantummed-ai/
 
 ---
 
+### Disease Comparison
+![Comparison](images/comparison.png)
+
+---
+
+### Analytics Dashboard
+![Analytics](images/analytics.png)
+
+---
 
 ## Future Roadmap
 
