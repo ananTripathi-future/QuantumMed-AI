@@ -1,0 +1,1201 @@
+age,sex,symptoms,duration,previous_conditions,risk_factors,disease
+14,Male,morning joint stiffness;swollen lymph nodes;joint swelling;fever;rash;limping,3 days,None,None,Juvenile Rheumatoid Arthritis
+47,Male,high fever;pain behind eyes;fatigue;joint and muscle pain;severe headache;skin rash,2 weeks,Hypercholesterolemia,living or traveling in tropical/subtropical regions;previous infection with a different dengue serotype,Dengue Fever
+18,Female,skin problems;development of a new pigmented or unusual looking growth;irregularly shaped mole,2 weeks,None,fair skin;history of sunburns,Melanoma (Skin Cancer)
+52,Female,tingling;fatigue;lack of coordination;numbness or weakness in limbs;slurred speech,1 week,None,being female,Multiple Sclerosis
+61,Male,small raised bumps;red to brownish-gray patches;skin problems;dry skin;itching,5 days,Asthma,allergies,Eczema (Atopic Dermatitis)
+60,Male,"blanching;red, itchy welts;swelling;skin problems",3 days,Hypertension,known allergies;exercise,Hives (Urticaria)
+23,Female,vomiting;nausea;muscle cramps;dehydration,2 weeks,None,type O blood;reduced or non-existent stomach acid,Cholera
+31,Male,"skin problems;rough to the touch;small, fleshy, grainy bumps",2 days,None,None,Warts
+33,Female,blisters;itching;red rash;dry patches;skin problems,2 days,Type 2 Diabetes,None,Skin Allergy (Contact Dermatitis)
+65,Male,fatigue;fever;congestion;sore throat;runny nose;sneezing;cough,5 days,None,being under 6 years old;crowded settings,Common Cold
+50,Female,abdominal pain;dark urine;yellow skin and eyes (jaundice);vomiting,3 weeks,Asthma,infant born to infected mother,Hepatitis B
+31,Female,feeling of spinning;vomiting;nystagmus (abnormal eye movements);nausea;loss of balance,2 days,Hypercholesterolemia,None,Vertigo
+28,Male,headache;muscle aches;fatigue;chills;cough,2 days,None,None,Influenza (Flu)
+46,Male,fever;muscle aches (especially in back and knees);nausea;headache;sensitivity to light;jaundice;bleeding,2 weeks,None,being unvaccinated;living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+47,Male,oily skin;skin problems;scarring;blackheads,1 week,Hypertension,None,Acne Vulgaris
+46,Female,abdominal pain;speech difficulty;coordination problems;fatigue;yellowing skin (jaundice);brown ring around cornea,1 week,Hypercholesterolemia,family history (inherited autosomal recessive trait),Wilson's Disease
+53,Female,bloating;diarrhea;gas;constipation;abdominal cramping,3 days,Hypercholesterolemia,None,Irritable Bowel Syndrome (IBS)
+64,Female,red eyes;joint pain;rash;headache;fever;muscle pain,1 week,None,None,Zika Virus
+52,Female,"small, fleshy, grainy bumps;flesh-colored;skin problems",5 days,Mild Obesity,None,Warts
+51,Female,misplacing things;memory loss;mood changes;difficulty thinking;confusion;disorientation,2 weeks,Type 2 Diabetes,None,Alzheimer's Disease
+29,Male,skin problems;loss of color in tissues that line inside of mouth,3 days,None,"family history;autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+37,Male,wheezing;coughing attacks;shortness of breath,1 week,None,exposure to smoke;air pollution,Asthma
+65,Female,difficulty closing eye;drooling;facial drooping;headache;jaw pain;loss of taste,3 days,Type 2 Diabetes,None,Bell's Palsy
+30,Female,loss of consciousness;uncontrollable jerking movements;recurrent seizures;temporary confusion,2 weeks,None,dementia,Epilepsy
+8,Female,fever;joint swelling;morning joint stiffness;limping;joint pain;swollen lymph nodes,5 days,None,environmental triggers (like viral infections),Juvenile Rheumatoid Arthritis
+22,Female,swelling under skin;abdominal cramping,3 weeks,Mild Obesity,None,Angioedema
+49,Male,joint redness and swelling;intense joint pain;joint stiffness,1 week,None,None,Gout
+19,Male,facial drooping;headache;drooling;difficulty closing eye,2 days,None,"recent viral infection (herpes simplex, influenza)",Bell's Palsy
+37,Female,skin problems;blackheads;oily skin;scarring,1 week,Asthma,None,Acne Vulgaris
+55,Male,patchy loss of skin color;loss of color in tissues that line inside of mouth,1 week,Type 2 Diabetes,"autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+63,Male,weight loss;increased appetite;anxiety;goiter;rapid heart rate;tremors;heat sensitivity,3 weeks,None,personal history of chronic illnesses like type 1 diabetes,Hyperthyroidism
+42,Female,skin problems;blisters;dry patches,2 days,Asthma,None,Skin Allergy (Contact Dermatitis)
+29,Female,anxiety;sweating;weight loss;rapid heart rate;increased appetite;goiter;heat sensitivity,3 weeks,None,None,Hyperthyroidism
+41,Female,"white, pink or tan;skin problems;rough to the touch",1 week,Hypercholesterolemia,None,Warts
+47,Male,difficulty falling asleep;waking up too early;irritability;daytime fatigue,2 days,None,medical or psychiatric disorders;irregular work shifts,Insomnia
+29,Female,headache;fever;itching;fluid-filled blisters,1 week,Type 2 Diabetes,None,Shingles (Herpes Zoster)
+39,Female,vomiting;sensitivity to sound;sensitivity to light;nausea,3 weeks,Mild Obesity,None,Migraine
+30,Female,nausea;heartburn;severe abdominal pain;burning sensation in upper abdomen;weight loss;vomiting;diarrhea,2 weeks,None,family history of Multiple Endocrine Neoplasia type 1 (MEN1),Zollinger-Ellison Syndrome
+56,Female,bald patches;shedding;scalp itching;thinning hair,1 week,Mild Obesity,significant weight loss;medical conditions like diabetes/lupus,Alopecia
+40,Female,fever;stomach cramps;nausea;diarrhea;vomiting;upset stomach,2 days,Asthma,eating raw or undercooked meats/seafood,Food Poisoning
+33,Female,drooling;loss of taste;facial drooping;difficulty closing eye;headache,1 week,None,None,Bell's Palsy
+57,Female,red swollen tonsils;white or yellow coating on tonsils;difficulty swallowing;fever;sore throat,2 days,None,young age (children);frequent exposure to viral or bacterial germs (school settings),Tonsillitis
+52,Male,dry patches;red rash;itching,3 days,Asthma,"occupational exposure to irritants;exposure to allergens (poison ivy, nickel, latex, cosmetics)",Skin Allergy (Contact Dermatitis)
+44,Female,fever;fatigue;diarrhea often with blood or pus;rectal pain;abdominal pain,1 week,None,None,Ulcerative Colitis
+31,Male,weight loss;increased appetite;rapid heart rate;anxiety;goiter;sweating;tremors,1 week,None,None,Hyperthyroidism
+65,Male,fatigue;sore throat;fever;runny nose;congestion;sneezing,3 days,Hypercholesterolemia,smoking,Common Cold
+35,Female,muscle weakness;constipation;memory problems;fatigue;cold sensitivity;dry skin,3 days,None,None,Hypothyroidism
+57,Female,tremor;rigid muscles;impaired posture and balance;speech changes,1 week,Mild Obesity,None,Parkinson's Disease
+23,Male,body aches;loss of taste or smell;shortness of breath;fever,2 weeks,Type 2 Diabetes,being unvaccinated;older age,COVID-19
+37,Female,sleep disturbances;appetite changes;difficulty concentrating;persistent sadness;fatigue;loss of interest,1 week,None,None,Depression (Clinical)
+34,Male,skin problems;loss of color in tissues that line inside of mouth;premature whitening or graying of hair,5 days,None,"family history;autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+40,Male,shortness of breath;coughing attacks;chest tightness,1 week,None,obesity;exposure to smoke,Asthma
+48,Male,intense joint pain;limited range of motion;warmth in joint;joint stiffness,3 days,None,None,Gout
+54,Male,swollen red bumps;eye problems;enlarged nose;skin problems,5 days,Mild Obesity,being female;fair skin,Rosacea
+49,Female,weight loss;diarrhea often with blood or pus;rectal pain;fever;fatigue;abdominal pain,3 weeks,Type 2 Diabetes,None,Ulcerative Colitis
+43,Female,painful burning tingling rash;fever;itching;fatigue,1 week,Hypertension,stress,Shingles (Herpes Zoster)
+52,Female,"hair loss;skin problems;itchy, ring-shaped rash",2 days,Hypercholesterolemia,close contact with infected animals or people,Ringworm (Fungal Infection)
+31,Female,muscle weakness;dry skin;fatigue;memory problems;weight gain;cold sensitivity,1 week,Asthma,being female;past thyroid surgery,Hypothyroidism
+25,Female,"skin problems;dry, cracked skin that may bleed;itching;burning;red patches of skin covered with thick, silvery scales",3 days,Type 2 Diabetes,obesity,Psoriasis
+70,Female,easy bruising or bleeding;fatigue;weight loss;night sweats;swollen lymph nodes;fever,1 week,Hypercholesterolemia,None,Leukemia
+20,Female,itching;fever;painful burning tingling rash;fatigue;fluid-filled blisters;headache,1 week,Hypertension,None,Shingles (Herpes Zoster)
+28,Male,facial drooping;drooling;jaw pain;loss of taste;headache;difficulty closing eye,2 days,Asthma,None,Bell's Palsy
+43,Female,mood swings;manic episodes;irritability;impulsivity;high energy,2 weeks,Mild Obesity,None,Bipolar Disorder
+61,Female,fever;cough with phlegm;difficulty breathing,1 week,None,None,Pneumonia
+53,Female,stomach pain;fever;fatigue;vomiting;cramps,3 days,Hypertension,consuming contaminated food or water;contact with infected persons,Gastroenteritis (Stomach Bug)
+37,Male,flaky skin on scalp;itching;skin problems;scaly patches;red skin,5 days,None,None,Dandruff (Seborrheic Dermatitis)
+72,Female,weight loss;swollen lymph nodes;frequent infections;night sweats;fever;easy bruising or bleeding,3 weeks,None,None,Leukemia
+24,Female,sensitivity to sound;nausea;sensitivity to light;throbbing headache,3 weeks,Hypercholesterolemia,being female;stress,Migraine
+26,Female,vomiting after coughing;runny nose;severe hacking cough,2 weeks,None,infant age (high complication risk);close contact with infected person,Whooping Cough (Pertussis)
+51,Male,vomiting;sensitivity to sound;throbbing headache;sensitivity to light;aura,3 weeks,Type 2 Diabetes,stress;sensory stimuli,Migraine
+37,Female,low-grade fever;loss of appetite;abdominal swelling;abdominal pain;nausea;vomiting,3 weeks,Mild Obesity,cystic fibrosis;family history,Appendicitis
+65,Male,oily smelly stools;nausea;upper abdominal pain radiating to back;pain worsens after eating;rapid pulse;vomiting;fever,2 weeks,Mild Obesity,None,Pancreatitis
+39,Male,fever;fatigue;weight loss;coughing up blood;chest pain;night sweats,3 weeks,Hypercholesterolemia,substance abuse,Tuberculosis
+50,Male,sun sensitivity;hair loss;joint pain;kidney problems;fever,2 weeks,None,age (15-45 years old),Lupus
+58,Female,severe eye pain;eye redness;tunnel vision;blurry vision;halos around lights,3 weeks,Type 2 Diabetes,None,Glaucoma
+50,Female,visible blood vessels;enlarged nose;swollen red bumps;eye problems,1 week,Hypertension,None,Rosacea
+1,Female,morning joint stiffness;fever;swollen lymph nodes;rash;limping;joint swelling,1 week,None,genetics;environmental triggers (like viral infections),Juvenile Rheumatoid Arthritis
+26,Male,joint stiffness;sleep issues;cognitive difficulties (fibro fog);headaches;fatigue;widespread muscle pain,3 days,None,family history,Fibromyalgia
+19,Male,disorientation;mood changes;difficulty thinking;misplacing things;memory loss,2 weeks,None,None,Alzheimer's Disease
+27,Female,nausea;headache;vomiting;sweating;fever,1 week,Mild Obesity,traveling to or living in tropical regions,Malaria
+58,Female,thick white odorless discharge;vaginal itching and irritation,1 week,Hypertension,None,Yeast Infection (Candidiasis)
+36,Female,misplacing things;confusion;difficulty thinking;mood changes;disorientation,3 weeks,None,down syndrome,Alzheimer's Disease
+25,Female,fever;chest pain;difficulty breathing;chills;cough with phlegm,2 weeks,Hypertension,hospitalization;weakened immune system,Pneumonia
+37,Male,scarring;oily skin;pimples;blackheads,3 days,Type 2 Diabetes,hormonal changes,Acne Vulgaris
+39,Female,gas;bloating;diarrhea;fatigue;iron deficiency anemia;weight loss;abdominal pain,2 weeks,None,None,Celiac Disease
+61,Male,confusion;paralysis;muscle spasms;fever;excess salivation,3 weeks,None,"exploring caves with bats;being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+20,Female,cramps;vomiting;fatigue;stomach pain;nausea;fever,5 days,Hypercholesterolemia,None,Gastroenteritis (Stomach Bug)
+28,Female,cough;congestion;sore throat;fever;fatigue;sneezing,3 days,None,None,Common Cold
+10,Male,joint pain;rash;joint swelling;limping;morning joint stiffness,3 days,None,being female;genetics,Juvenile Rheumatoid Arthritis
+37,Female,sensitivity to sound;throbbing headache;sensitivity to light;nausea;vomiting,2 weeks,Hypercholesterolemia,age (peak in 30s);being female,Migraine
+84,Male,cold hands and feet;fatigue;weakness;chest pain;dizziness,1 week,None,pregnancy,Anemia
+27,Female,runny nose;severe hacking cough;high-pitched intake of breath that sounds like 'whoop';vomiting after coughing,3 weeks,Hypercholesterolemia,being unvaccinated;infant age (high complication risk),Whooping Cough (Pertussis)
+45,Female,difficulty breathing;abdominal cramping,3 weeks,None,known allergies;family history of hereditary angioedema,Angioedema
+53,Female,redness and swelling;burning sensation during intercourse or urination;thick white odorless discharge,3 days,Mild Obesity,impaired immune system,Yeast Infection (Candidiasis)
+23,Female,cloudy urine;burning sensation when urinating;passing frequent small amounts of urine;pelvic pain,3 days,Type 2 Diabetes,certain types of birth control (diaphragms),Urinary Tract Infection (UTI)
+43,Female,joint redness and swelling;limited range of motion;joint stiffness;warmth in joint;intense joint pain,3 days,None,"diet high in purines (red meat, seafood);high blood pressure/diabetes",Gout
+55,Female,"rough to the touch;small, fleshy, grainy bumps;skin problems;white, pink or tan",3 days,Asthma,None,Warts
+58,Female,itching around veins;throbbing cramping swelling in legs;dark purple or blue veins;aching heavy feeling in legs,2 days,Hypercholesterolemia,being female,Varicose Veins
+49,Female,blisters;skin problems;dry patches,1 week,None,occupational exposure to irritants,Skin Allergy (Contact Dermatitis)
+70,Female,frequent infections;fatigue;easy bruising or bleeding;weight loss;night sweats;swollen lymph nodes;fever,3 weeks,None,smoking;exposure to certain chemicals (benzene),Leukemia
+50,Female,rapid heart rate;goiter;increased appetite;sweating;heat sensitivity;tremors;anxiety;weight loss,3 weeks,None,being female;personal history of chronic illnesses like type 1 diabetes,Hyperthyroidism
+34,Female,headache;nasal congestion;sore throat;bad breath;facial pain or pressure,5 days,None,None,Sinusitis
+45,Female,loss of balance;nystagmus (abnormal eye movements);feeling of spinning;dizziness,2 days,Mild Obesity,None,Vertigo
+61,Female,fever;nausea;stomach pain;cramps;vomiting;diarrhea,3 days,None,None,Gastroenteritis (Stomach Bug)
+54,Male,headache;itching;painful burning tingling rash;fluid-filled blisters;fatigue;fever,2 days,Hypercholesterolemia,None,Shingles (Herpes Zoster)
+53,Female,frequent urination;slow-healing sores;increased hunger;darkened skin in certain areas;blurred vision;increased thirst,3 weeks,None,age (over 45),Diabetes Type 2
+29,Female,"itchy, ring-shaped rash;red, scaly, cracked skin;skin problems;hair loss",3 days,Type 2 Diabetes,None,Ringworm (Fungal Infection)
+20,Male,blisters;red rash;swelling;itching;burning sensation;dry cracked skin,2 days,Mild Obesity,stress,Dermatitis (Contact / Seborrheic)
+36,Female,fever;rapid heart rate;jaw cramping (lockjaw);painful muscle spasms;difficulty swallowing,2 weeks,Hypertension,being unvaccinated or overdue for booster;puncture wounds from rusty metal or dirt,Tetanus
+57,Female,fever;excess salivation;headache;confusion;muscle spasms,1 week,Hypertension,"being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+48,Female,fatigue;itching;painful burning tingling rash;fever;headache;fluid-filled blisters,2 days,Hypertension,having had chickenpox;stress,Shingles (Herpes Zoster)
+75,Female,nosebleeds;shortness of breath;dizziness;headache,5 days,None,None,Hypertension (High Blood Pressure)
+20,Female,fever;fatigue;chills;headache;nausea,1 week,Type 2 Diabetes,None,Malaria
+45,Female,uncontrollable jerking movements;recurrent seizures;loss of consciousness;staring spells,1 week,None,None,Epilepsy
+40,Female,recurrent seizures;uncontrollable jerking movements;loss of consciousness;temporary confusion;staring spells,2 weeks,None,stroke or vascular diseases,Epilepsy
+47,Female,painful periods (dysmenorrhea);pelvic pain;heavy bleeding;pain during intercourse,1 week,Hypertension,None,Endometriosis
+64,Female,rapid heart rate;goiter;increased appetite;anxiety;tremors;heat sensitivity,2 weeks,Hypertension,being female,Hyperthyroidism
+22,Male,skin problems;dry skin;itching,1 week,Hypercholesterolemia,None,Eczema (Atopic Dermatitis)
+41,Male,fever;chest pain;night sweats;persistent cough;coughing up blood;weight loss;fatigue,3 weeks,Mild Obesity,substance abuse;weakened immune system (HIV/AIDS),Tuberculosis
+39,Female,painful periods (dysmenorrhea);heavy bleeding;pain during intercourse;fatigue;infertility,2 days,Hypercholesterolemia,None,Endometriosis
+35,Male,fever;muscle aches;headache;swollen lymph nodes;fatigue;joint aches;chills;circular rash,2 days,Asthma,spending time in wooded or grassy areas;having exposed skin in tick habitats,Lyme Disease
+59,Male,fatigue;pain behind eyes;high fever;severe headache;joint and muscle pain,1 week,Hypercholesterolemia,None,Dengue Fever
+43,Female,freckling on sun-exposed areas;high risk of skin cancer;dry skin;severe sunburn from very small sunlight;blistering,1 week,None,family history,Xeroderma Pigmentosum
+37,Male,severe abdominal pain;gastrointestinal bleeding;nausea;vomiting;diarrhea;weight loss;burning sensation in upper abdomen,2 weeks,Hypercholesterolemia,family history of Multiple Endocrine Neoplasia type 1 (MEN1),Zollinger-Ellison Syndrome
+58,Male,"fever;red, swollen area of skin;skin that is warm to the touch",5 days,None,None,Cellulitis
+29,Female,honey-colored crusts;itching;red sores that easily rupture;skin problems,1 week,Type 2 Diabetes,"warm, humid weather",Impetigo
+9,Male,fatigue;loss of appetite;headache;fluid-filled blisters;itchy skin rash,5 days,None,weakened immune system,Chickenpox
+62,Male,fever;night sweats;persistent cough;weight loss;coughing up blood,2 weeks,None,weakened immune system (HIV/AIDS);traveling to high-TB-burden regions,Tuberculosis
+53,Male,joint deformity over time;tender warm swollen joints;fever;fatigue,1 week,None,smoking,Rheumatoid Arthritis
+51,Female,shortness of breath;cough with mucus;fatigue;chest discomfort;slight fever,5 days,Asthma,exposure to irritants on the job;gastric reflux,Bronchitis
+41,Female,nausea;chills;diarrhea;fatigue;high fever,5 days,None,None,Q Fever
+80,Female,weakness;dizziness;chest pain;fatigue;pale skin,1 week,Hypertension,None,Anemia
+60,Female,painful burning tingling rash;fatigue;fever;itching;headache;fluid-filled blisters,2 days,Hypercholesterolemia,older age (over 50),Shingles (Herpes Zoster)
+59,Male,severe acne;thinning hair;irregular periods;infertility;weight gain;excess facial or body hair,2 days,Hypertension,None,Polycystic Ovary Syndrome (PCOS)
+49,Female,"pain radiating to lower abdomen;severe pain in side and back;nausea;pain during urination;pink, red or brown urine",2 weeks,None,None,Kidney Stones
+35,Female,fever;vomiting;stomach cramps;upset stomach,2 days,None,weakened immunity,Food Poisoning
+45,Male,mood changes;frequent urination;weakness;extreme hunger;fatigue;blurred vision;increased thirst,3 weeks,Asthma,None,Diabetes Type 1
+40,Male,"skin that is warm to the touch;fever;red, swollen area of skin",1 week,Mild Obesity,obesity;weakened immune system,Cellulitis
+20,Male,depressive episodes;mood swings;high energy;manic episodes;irritability,3 weeks,None,periods of high stress;having a first-degree relative with bipolar,Bipolar Disorder
+52,Male,drooling;facial drooping;jaw pain;difficulty closing eye;headache;loss of taste,1 week,Mild Obesity,family history,Bell's Palsy
+33,Female,loss of appetite;fatigue;joint deformity over time;tender warm swollen joints;fever;joint stiffness,2 weeks,None,None,Rheumatoid Arthritis
+40,Male,joint pain;grating sensation;stiffness;bone spurs,1 week,Mild Obesity,bone deformities,Osteoarthritis
+25,Male,impaired posture and balance;tremor;rigid muscles;speech changes,3 weeks,None,heredity/genetics;age (onset around 60 or older),Parkinson's Disease
+33,Male,abdominal pain;diarrhea;bloating;fatigue;gas,1 week,Hypertension,down syndrome,Celiac Disease
+26,Female,nausea;aura;vomiting;sensitivity to sound;throbbing headache,2 weeks,Asthma,None,Migraine
+56,Female,"pink, red or brown urine;pain during urination;pain radiating to lower abdomen;severe pain in side and back;nausea",1 week,Asthma,family history,Kidney Stones
+87,Male,aching heavy feeling in legs;dark purple or blue veins;twisting bulging veins;throbbing cramping swelling in legs,3 days,Asthma,None,Varicose Veins
+32,Male,rapid pulse;vomiting;fever;oily smelly stools;pain worsens after eating;upper abdominal pain radiating to back,1 week,Mild Obesity,high triglyceride levels;smoking,Pancreatitis
+59,Male,sore throat;difficulty swallowing;fever;swollen lymph nodes in neck;white or yellow coating on tonsils,2 days,None,young age (children),Tonsillitis
+26,Female,red to brownish-gray patches;skin problems;dry skin,5 days,Hypercholesterolemia,family history of eczema or asthma;stress,Eczema (Atopic Dermatitis)
+39,Female,thick white odorless discharge;vaginal itching and irritation;redness and swelling,1 week,Asthma,None,Yeast Infection (Candidiasis)
+35,Male,arm weakness;sudden numbness;speech difficulty;loss of balance;sudden vision trouble;face drooping,1 week,Mild Obesity,None,Stroke
+54,Male,cough;chills;nausea;high fever;fatigue;severe headache,5 days,Hypertension,consuming raw dairy,Q Fever
+32,Female,"small, fleshy, grainy bumps;skin problems;white, pink or tan;rough to the touch",2 days,Mild Obesity,None,Warts
+65,Female,irritability;waking up during night;waking up too early;difficulty concentrating;difficulty falling asleep,2 days,Hypertension,None,Insomnia
+22,Female,sensitivity to sound;throbbing headache;nausea;aura;vomiting;sensitivity to light,2 weeks,None,None,Migraine
+37,Male,throbbing headache;vomiting;sensitivity to light;aura,1 week,Mild Obesity,age (peak in 30s),Migraine
+21,Male,fatigue;loss of interest;sleep disturbances;persistent sadness;difficulty concentrating,2 weeks,None,abuse of alcohol or drugs,Depression (Clinical)
+18,Male,development of a new pigmented or unusual looking growth;skin problems,3 weeks,None,family history,Melanoma (Skin Cancer)
+28,Male,heartburn;nausea;diarrhea;severe abdominal pain;gastrointestinal bleeding;weight loss;burning sensation in upper abdomen;vomiting,3 weeks,Mild Obesity,None,Zollinger-Ellison Syndrome
+42,Female,vomiting after coughing;runny nose;high-pitched intake of breath that sounds like 'whoop',2 weeks,Hypertension,close contact with infected person;being unvaccinated,Whooping Cough (Pertussis)
+21,Female,infertility;fatigue;painful periods (dysmenorrhea);heavy bleeding,1 week,None,None,Endometriosis
+30,Female,persistent sadness;fatigue;appetite changes;difficulty concentrating,1 week,Hypertension,None,Depression (Clinical)
+36,Male,nausea;stomach pain;diarrhea;headache;body aches;fever,5 days,None,eating contaminated food/shellfish,Norovirus
+51,Female,upset stomach;stomach cramps;diarrhea;nausea;fever,1 week,None,eating raw or undercooked meats/seafood,Food Poisoning
+51,Female,"severe pain in side and back;pain during urination;pain radiating to lower abdomen;pink, red or brown urine;nausea",2 weeks,Type 2 Diabetes,obesity;digestive diseases/surgery,Kidney Stones
+28,Male,sleep paralysis;excessive daytime sleepiness;sudden loss of muscle tone (cataplexy);hallucinations,3 days,Type 2 Diabetes,age (onset between 10-30 years);autoimmune predisposition,Narcolepsy
+36,Male,fever;rapid heart rate;muscle stiffness;difficulty swallowing;jaw cramping (lockjaw);painful muscle spasms,1 week,Mild Obesity,None,Tetanus
+31,Female,fever;vomiting;stomach cramps;nausea;upset stomach;diarrhea,3 days,None,consuming unpasteurized dairy,Food Poisoning
+25,Male,pimples;skin problems;oily skin;blackheads;scarring;whiteheads,2 days,Mild Obesity,oily cosmetics;stress,Acne Vulgaris
+50,Female,speech difficulty;sudden vision trouble;loss of balance;sudden numbness;face drooping,3 weeks,Asthma,smoking,Stroke
+25,Male,difficulty breathing;hives;abdominal cramping;swelling under skin,2 weeks,Mild Obesity,known allergies,Angioedema
+30,Male,frequent urination;blurred vision;slow-healing sores;increased thirst;frequent infections;fatigue;increased hunger;darkened skin in certain areas,3 weeks,None,None,Diabetes Type 2
+24,Female,enlarged nose;swollen red bumps;skin problems;eye problems;facial redness,5 days,Hypertension,fair skin;smoking,Rosacea
+43,Male,nausea;dizziness;feeling of spinning;vomiting;loss of balance,3 days,None,None,Vertigo
+28,Male,nausea;nystagmus (abnormal eye movements);dizziness;feeling of spinning;loss of balance;vomiting,2 days,Mild Obesity,None,Vertigo
+64,Male,loss of balance;sudden vision trouble;sudden numbness;speech difficulty;arm weakness;face drooping,2 weeks,Mild Obesity,None,Stroke
+62,Female,vision problems;numbness or weakness in limbs;fatigue;slurred speech;tingling,1 week,Mild Obesity,age (20-40 years old);low vitamin D,Multiple Sclerosis
+31,Male,fever;persistent cough;night sweats;fatigue;weight loss;chest pain,2 weeks,Asthma,substance abuse,Tuberculosis
+45,Female,cough with phlegm;difficulty breathing;chills;chest pain,3 weeks,Asthma,smoking,Pneumonia
+55,Female,itching;dry patches;red rash;skin problems;blisters,3 days,None,"exposure to allergens (poison ivy, nickel, latex, cosmetics);occupational exposure to irritants",Skin Allergy (Contact Dermatitis)
+53,Female,rapid heart rate;anxiety;sweating;goiter;increased appetite;tremors;heat sensitivity;weight loss,2 weeks,Hypercholesterolemia,None,Hyperthyroidism
+88,Female,frequent infections;fatigue;fever;swollen lymph nodes;easy bruising or bleeding;weight loss;night sweats,3 weeks,Hypercholesterolemia,genetic disorders (Down syndrome),Leukemia
+63,Female,increased thirst;extreme hunger;mood changes;unintended weight loss;weakness;frequent urination;blurred vision;fatigue,1 week,Mild Obesity,geography (further from equator);possible viral triggers,Diabetes Type 1
+57,Female,rigid muscles;impaired posture and balance;slowed movement (bradykinesia),3 weeks,None,"exposure to toxins (herbicides, pesticides);age (onset around 60 or older)",Parkinson's Disease
+33,Male,skin problems;red to brownish-gray patches;dry skin;itching,5 days,None,allergies,Eczema (Atopic Dermatitis)
+41,Female,changes in an existing mole;skin problems;irregularly shaped mole,3 weeks,Hypertension,excessive UV light exposure (tanning beds);fair skin,Melanoma (Skin Cancer)
+36,Male,shedding;thinning hair;bald patches;scalp itching;hair loss,2 days,Hypertension,medical conditions like diabetes/lupus;stress,Alopecia
+39,Male,unintended weight loss;blurred vision;mood changes;frequent urination;weakness;fatigue;increased thirst;extreme hunger,3 weeks,Hypertension,family history,Diabetes Type 1
+33,Female,waking up during night;difficulty concentrating;waking up too early;difficulty falling asleep,1 week,None,medical or psychiatric disorders;high stress levels,Insomnia
+61,Male,nausea;cough;high fever;severe headache;fatigue,2 days,None,None,Q Fever
+57,Male,vomiting;sensitivity to light;aura;throbbing headache;sensitivity to sound,1 week,Asthma,sleep changes,Migraine
+55,Female,darkened skin in certain areas;frequent infections;frequent urination;increased thirst;blurred vision;slow-healing sores,3 weeks,Hypercholesterolemia,None,Diabetes Type 2
+51,Female,shortness of breath;headache;chest pain,5 days,Mild Obesity,older age;excess alcohol,Hypertension (High Blood Pressure)
+52,Male,fever;persistent cough;chest pain;fatigue;weight loss;coughing up blood;night sweats,3 weeks,Hypertension,None,Tuberculosis
+22,Male,yellow skin;dark urine;abdominal pain;fatigue;pale stools,1 week,Hypertension,None,Jaundice
+66,Female,swollen lymph nodes;fever;weight loss;night sweats;easy bruising or bleeding,2 weeks,Hypercholesterolemia,None,Leukemia
+36,Female,severe headache;fatigue;high fever;skin rash,1 week,Mild Obesity,previous infection with a different dengue serotype;living or traveling in tropical/subtropical regions,Dengue Fever
+64,Male,visible blood vessels;swollen red bumps;facial redness;eye problems;enlarged nose,5 days,Type 2 Diabetes,None,Rosacea
+36,Female,shortness of breath;coughing attacks,3 weeks,Mild Obesity,None,Asthma
+25,Male,fatigue;diarrhea;chills;nausea;high fever;cough,1 week,Asthma,"consuming raw dairy;working in agriculture (cattle, sheep, goats)",Q Fever
+32,Female,speech difficulty;brown ring around cornea;abdominal pain;yellowing skin (jaundice);fatigue,2 weeks,None,None,Wilson's Disease
+88,Female,weight loss;swollen lymph nodes;fever;night sweats;frequent infections;easy bruising or bleeding;fatigue,1 week,Hypercholesterolemia,smoking;family history,Leukemia
+22,Male,pelvic pain;strong urge to urinate;passing frequent small amounts of urine,3 days,None,sexual activity;female anatomy,Urinary Tract Infection (UTI)
+50,Female,severe hacking cough;runny nose;high-pitched intake of breath that sounds like 'whoop',1 week,Mild Obesity,infant age (high complication risk),Whooping Cough (Pertussis)
+7,Male,swollen lymph nodes in neck;red swollen palms/soles;red eyes;peeling skin;high fever;strawberry tongue,2 weeks,None,Asian or Pacific Islander descent,Kawasaki Disease
+20,Male,speech difficulty;fatigue;yellowing skin (jaundice);abdominal pain;brown ring around cornea;coordination problems,3 weeks,Hypercholesterolemia,None,Wilson's Disease
+58,Female,slurred speech;lack of coordination;vision problems;numbness or weakness in limbs,2 weeks,Mild Obesity,smoking,Multiple Sclerosis
+33,Male,"red patches of skin covered with thick, silvery scales;itching;dry, cracked skin that may bleed;skin problems",1 week,Hypercholesterolemia,smoking;obesity,Psoriasis
+18,Male,goiter;sweating;rapid heart rate;increased appetite;weight loss;anxiety,3 weeks,None,None,Hyperthyroidism
+61,Female,red skin;skin problems;flaky skin on scalp;itching,5 days,Mild Obesity,None,Dandruff (Seborrheic Dermatitis)
+51,Female,blurry vision;halos around lights;tunnel vision;severe eye pain;gradual loss of peripheral vision,1 week,Hypertension,"high internal eye pressure;medical conditions (diabetes, high BP)",Glaucoma
+61,Male,severe pain in side and back;pain during urination;pain radiating to lower abdomen;nausea,1 week,Asthma,digestive diseases/surgery,Kidney Stones
+78,Female,dizziness;headache;shortness of breath;chest pain;nosebleeds,5 days,None,lack of physical activity,Hypertension (High Blood Pressure)
+51,Female,nausea;stomach cramps;vomiting;upset stomach;diarrhea,5 days,None,None,Food Poisoning
+34,Female,burning sensation in upper abdomen;severe abdominal pain;weight loss;vomiting;heartburn;gastrointestinal bleeding;nausea,1 week,Hypercholesterolemia,None,Zollinger-Ellison Syndrome
+47,Male,fatigue;frequent infections;increased thirst;nausea;frequent urination,3 days,Asthma,age over 25,Gestational Diabetes
+45,Female,passing frequent small amounts of urine;strong urge to urinate;cloudy urine;pelvic pain;burning sensation when urinating,3 days,Type 2 Diabetes,menopause,Urinary Tract Infection (UTI)
+56,Male,sudden numbness;sudden vision trouble;arm weakness;loss of balance;speech difficulty,1 week,Mild Obesity,high blood pressure;cardiovascular diseases (atrial fibrillation),Stroke
+30,Male,skin infections;chronic diarrhea;sinus infections;frequent ear infections,1 week,Hypercholesterolemia,None,X-linked Agammaglobulinemia (XLA)
+40,Female,patchy loss of skin color;loss of color in tissues that line inside of mouth;skin problems,3 days,None,family history,Vitiligo
+21,Male,extreme fatigue;dark urine;nausea;vomiting,1 week,Asthma,occupational exposure to blood,Hepatitis B
+48,Female,joint pain;sinus infections;recurrent pneumonia;chronic diarrhea,1 week,None,None,X-linked Agammaglobulinemia (XLA)
+60,Male,jaw cramping (lockjaw);rapid heart rate;muscle stiffness;painful muscle spasms,1 week,Type 2 Diabetes,None,Tetanus
+19,Male,weight gain;irregular periods;infertility;thinning hair,3 days,None,heredity/family history;excess insulin,Polycystic Ovary Syndrome (PCOS)
+20,Female,dry cough;fever;fatigue;body aches,1 week,None,"underlying health conditions (diabetes, heart issues)",COVID-19
+30,Female,drooling;difficulty closing eye;jaw pain;facial drooping;loss of taste;headache,2 days,None,"recent viral infection (herpes simplex, influenza);lung infection",Bell's Palsy
+65,Male,"small, fleshy, grainy bumps;white, pink or tan;flesh-colored;rough to the touch",3 days,None,weakened immune system,Warts
+51,Male,burning sensation;swelling;dry cracked skin;red rash;blisters;itching,5 days,Hypertension,None,Dermatitis (Contact / Seborrheic)
+26,Male,"skin problems;itching;burning;red patches of skin covered with thick, silvery scales",5 days,Hypertension,stress;smoking,Psoriasis
+28,Male,red swollen tonsils;difficulty swallowing;sore throat;swollen lymph nodes in neck;white or yellow coating on tonsils,2 days,None,None,Tonsillitis
+34,Female,difficulty closing eye;drooling;headache;jaw pain,1 week,None,family history,Bell's Palsy
+36,Female,nausea;loss of balance;feeling of spinning;dizziness;nystagmus (abnormal eye movements);vomiting,5 days,Hypertension,None,Vertigo
+18,Female,limited range of motion;joint redness and swelling;warmth in joint;joint stiffness;intense joint pain,3 days,None,family history,Gout
+49,Female,"red, scaly, cracked skin;hair loss;skin problems;itchy, ring-shaped rash",1 week,Hypertension,living in warm climates;weak immune system,Ringworm (Fungal Infection)
+19,Female,cough;headache;fatigue;muscle aches;chills,3 days,None,None,Influenza (Flu)
+45,Male,cramps;vomiting;fatigue;diarrhea;fever;nausea;stomach pain,2 days,None,contact with infected persons;consuming contaminated food or water,Gastroenteritis (Stomach Bug)
+41,Male,"pink, red or brown urine;pain during urination;severe pain in side and back;nausea;pain radiating to lower abdomen",1 week,Hypercholesterolemia,None,Kidney Stones
+21,Male,abdominal pain;iron deficiency anemia;weight loss;gas;diarrhea;bloating;fatigue,1 week,None,autoimmune thyroid disease;family history,Celiac Disease
+33,Female,chronic diarrhea;skin infections;sinus infections;joint pain,2 weeks,Mild Obesity,family history of primary immunodeficiency,X-linked Agammaglobulinemia (XLA)
+62,Female,loss of appetite;fatigue;fever;joint deformity over time;tender warm swollen joints;joint stiffness,2 weeks,Hypercholesterolemia,being female;smoking,Rheumatoid Arthritis
+61,Male,severe sunburn from very small sunlight;freckling on sun-exposed areas;high risk of skin cancer;blistering,3 weeks,Mild Obesity,None,Xeroderma Pigmentosum
+31,Male,development of a new pigmented or unusual looking growth;skin problems;irregularly shaped mole,1 week,None,excessive UV light exposure (tanning beds),Melanoma (Skin Cancer)
+60,Female,shortness of breath;slight fever;fatigue,5 days,Type 2 Diabetes,None,Bronchitis
+53,Female,changes in an existing mole;skin problems,1 week,None,None,Melanoma (Skin Cancer)
+63,Male,"nausea;pain radiating to lower abdomen;severe pain in side and back;pink, red or brown urine;pain during urination",3 weeks,None,"obesity;diet high in protein, sodium, and sugar",Kidney Stones
+63,Male,sensitivity to light;aura;sensitivity to sound;nausea;throbbing headache,1 week,Hypercholesterolemia,sleep changes,Migraine
+31,Male,skin problems;patchy loss of skin color;loss of color in tissues that line inside of mouth;premature whitening or graying of hair,3 days,None,"family history;autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+25,Male,thinning hair;shedding;hair loss,1 week,None,None,Alopecia
+34,Male,fatigue;pain behind eyes;joint and muscle pain;skin rash;severe headache;high fever,1 week,None,None,Dengue Fever
+40,Female,facial drooping;headache;difficulty closing eye;loss of taste,2 days,Hypercholesterolemia,None,Bell's Palsy
+47,Male,stooped posture;back pain,1 week,Hypercholesterolemia,None,Osteoporosis
+46,Male,weight gain;cold sensitivity;constipation;memory problems;muscle weakness,2 days,Mild Obesity,family history of thyroid disease;being female,Hypothyroidism
+61,Female,irregularly shaped mole;skin problems;changes in an existing mole;development of a new pigmented or unusual looking growth,2 weeks,Hypertension,None,Melanoma (Skin Cancer)
+21,Female,joint stiffness;tender warm swollen joints;fever;loss of appetite,1 week,Type 2 Diabetes,environmental exposures;family history,Rheumatoid Arthritis
+29,Male,bald patches;shedding;hair loss;scalp itching;thinning hair,3 days,Type 2 Diabetes,stress,Alopecia
+51,Female,face drooping;sudden numbness;speech difficulty;arm weakness;loss of balance,1 week,Asthma,None,Stroke
+85,Male,fatigue;cold hands and feet;pale skin;dizziness;weakness,5 days,Hypertension,None,Anemia
+25,Male,severe hacking cough;fever;runny nose,3 weeks,None,close contact with infected person,Whooping Cough (Pertussis)
+51,Female,bald patches;scalp itching;hair loss;thinning hair,2 days,Mild Obesity,family history,Alopecia
+57,Female,headache;sensitivity to light;jaundice;muscle aches (especially in back and knees);nausea,2 weeks,Asthma,living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+7,Female,peeling skin;high fever;strawberry tongue;red swollen palms/soles,1 week,None,age (under 5 years old),Kawasaki Disease
+53,Female,muscle stiffness;jaw cramping (lockjaw);rapid heart rate;painful muscle spasms;fever;difficulty swallowing,2 weeks,None,animal bites,Tetanus
+36,Male,"itching;red patches of skin covered with thick, silvery scales;dry, cracked skin that may bleed;skin problems;burning",5 days,Hypertension,certain infections (like strep throat),Psoriasis
+53,Female,coordination problems;yellowing skin (jaundice);speech difficulty;abdominal pain;brown ring around cornea;fatigue,1 week,Hypertension,family history (inherited autosomal recessive trait),Wilson's Disease
+59,Male,tremors;rapid heart rate;goiter;anxiety;weight loss;increased appetite;sweating,3 weeks,None,None,Hyperthyroidism
+48,Male,increased appetite;goiter;tremors;weight loss;rapid heart rate;sweating,3 weeks,Mild Obesity,personal history of chronic illnesses like type 1 diabetes,Hyperthyroidism
+88,Male,twisting bulging veins;throbbing cramping swelling in legs;aching heavy feeling in legs;dark purple or blue veins,5 days,None,None,Varicose Veins
+20,Female,nausea;headache;sensitivity to light;muscle aches (especially in back and knees);fever;jaundice;bleeding,2 weeks,Asthma,living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+32,Male,dry cough;fatigue;loss of taste or smell;fever;shortness of breath,2 weeks,None,"underlying health conditions (diabetes, heart issues)",COVID-19
+27,Male,dry skin;red to brownish-gray patches;itching,5 days,Type 2 Diabetes,allergies,Eczema (Atopic Dermatitis)
+63,Female,headache;muscle aches;chills;circular rash;swollen lymph nodes;fever;bulls-eye pattern,1 week,Hypercholesterolemia,failing to remove ticks promptly,Lyme Disease
+20,Male,joint stiffness;fatigue;tender warm swollen joints;fever,3 weeks,None,age (most commonly starts in 40s-60s),Rheumatoid Arthritis
+55,Female,abdominal pain;fatigue;dark urine;pale stools;yellow eyes,1 week,Hypertension,blood disorders;excessive alcohol use,Jaundice
+20,Male,sleep issues;cognitive difficulties (fibro fog);widespread muscle pain;fatigue;joint stiffness,3 days,None,None,Fibromyalgia
+35,Male,body aches;loss of taste or smell;fatigue;dry cough;fever;shortness of breath,3 weeks,None,None,COVID-19
+64,Female,pelvic pain;cloudy urine;burning sensation when urinating,3 days,Type 2 Diabetes,menopause,Urinary Tract Infection (UTI)
+37,Male,waking up too early;difficulty concentrating;irritability;daytime fatigue;waking up during night;difficulty falling asleep,2 days,Asthma,caffeine/alcohol use,Insomnia
+5,Male,joint swelling;limping;fever;morning joint stiffness;joint pain;rash,5 days,None,being female;environmental triggers (like viral infections),Juvenile Rheumatoid Arthritis
+44,Male,tenderness;grating sensation;stiffness;joint pain;bone spurs;loss of flexibility,3 days,Hypercholesterolemia,genetics;bone deformities,Osteoarthritis
+25,Female,changes in an existing mole;skin problems;development of a new pigmented or unusual looking growth;irregularly shaped mole,1 week,Asthma,fair skin;excessive UV light exposure (tanning beds),Melanoma (Skin Cancer)
+50,Female,"rough to the touch;skin problems;flesh-colored;small, fleshy, grainy bumps",5 days,Mild Obesity,None,Warts
+59,Female,fatigue;dry skin;muscle weakness;constipation;cold sensitivity;memory problems,2 days,Type 2 Diabetes,family history of thyroid disease,Hypothyroidism
+46,Female,iron deficiency anemia;abdominal pain;fatigue;weight loss;bloating;gas,3 weeks,None,down syndrome,Celiac Disease
+48,Female,vomiting;loss of balance;feeling of spinning;dizziness,5 days,Asthma,migraines;older age,Vertigo
+38,Male,loss of appetite;vomiting;abdominal pain;nausea,3 weeks,None,age (10-30 years old);family history,Appendicitis
+47,Female,fever;fatigue;bulls-eye pattern;circular rash;chills;headache;joint aches;muscle aches,2 days,None,spending time in wooded or grassy areas;having exposed skin in tick habitats,Lyme Disease
+32,Female,yellowing skin (jaundice);fatigue;coordination problems;abdominal pain;speech difficulty;brown ring around cornea,2 weeks,None,family history (inherited autosomal recessive trait),Wilson's Disease
+20,Male,oily smelly stools;upper abdominal pain radiating to back;nausea;pain worsens after eating;rapid pulse,1 week,Type 2 Diabetes,gallstones;abdominal surgery,Pancreatitis
+19,Male,persistent cough;weight loss;coughing up blood;fever;chest pain,2 weeks,None,substance abuse;traveling to high-TB-burden regions,Tuberculosis
+81,Female,frequent infections;fever;easy bruising or bleeding;weight loss;fatigue;night sweats,1 week,None,None,Leukemia
+30,Female,fever;runny nose;high-pitched intake of breath that sounds like 'whoop';vomiting after coughing;severe hacking cough,2 weeks,Type 2 Diabetes,close contact with infected person,Whooping Cough (Pertussis)
+30,Female,numbness or weakness in limbs;vision problems;tingling;fatigue;lack of coordination;slurred speech,3 weeks,None,None,Multiple Sclerosis
+31,Female,pelvic pain;cloudy urine;passing frequent small amounts of urine;burning sensation when urinating;strong urge to urinate,1 week,Asthma,menopause,Urinary Tract Infection (UTI)
+62,Male,sore throat;sneezing;congestion;cough;fatigue;fever;runny nose,5 days,None,time of year (fall/winter);smoking,Common Cold
+63,Female,infertility;pelvic pain;heavy bleeding;pain during intercourse,5 days,Asthma,short menstrual cycles,Endometriosis
+49,Female,skin problems;honey-colored crusts,2 days,Type 2 Diabetes,None,Impetigo
+59,Female,fatigue;yellow skin;dark urine;pale stools,3 days,Hypertension,None,Jaundice
+60,Female,numbness or weakness in limbs;vision problems;slurred speech;fatigue,3 weeks,Type 2 Diabetes,age (20-40 years old);family history,Multiple Sclerosis
+64,Female,depressive episodes;irritability;high energy;impulsivity,1 week,Asthma,None,Bipolar Disorder
+43,Female,"center turns white when pressed;swelling;blanching;red, itchy welts",3 days,None,None,Hives (Urticaria)
+59,Female,fever;frequent infections;swollen lymph nodes;night sweats;weight loss,1 week,Type 2 Diabetes,previous cancer treatment,Leukemia
+21,Female,coughing up blood;weight loss;night sweats;fever;persistent cough;chest pain,1 week,Hypertension,None,Tuberculosis
+51,Female,blistering;severe sunburn from very small sunlight;freckling on sun-exposed areas,2 weeks,None,None,Xeroderma Pigmentosum
+31,Male,swelling under skin;abdominal cramping,3 weeks,None,None,Angioedema
+34,Female,pain during urination;pain radiating to lower abdomen;severe pain in side and back,1 week,Hypertension,digestive diseases/surgery,Kidney Stones
+60,Male,"blanching;swelling;red, itchy welts",1 week,None,recent infection;temperature extremes,Hives (Urticaria)
+40,Female,warmth in joint;limited range of motion;intense joint pain;joint redness and swelling,3 days,None,high blood pressure/diabetes,Gout
+39,Female,intense itching directly at night;pimple-like skin rash;scales or blisters,2 days,Asthma,close physical contact with an infected person,Scabies
+24,Female,fatigue;joint stiffness;headaches;sleep issues;widespread muscle pain;cognitive difficulties (fibro fog),3 days,None,being female;severe physical/emotional trauma,Fibromyalgia
+40,Male,high fever;severe headache;pain behind eyes;fatigue;joint and muscle pain;skin rash,2 weeks,Asthma,previous infection with a different dengue serotype,Dengue Fever
+3,Female,red swollen palms/soles;red eyes;peeling skin;strawberry tongue;high fever,1 week,None,None,Kawasaki Disease
+25,Male,blurry vision;severe eye pain;tunnel vision;halos around lights,3 weeks,None,"medical conditions (diabetes, high BP)",Glaucoma
+55,Female,dark purple or blue veins;itching around veins;twisting bulging veins,3 days,Asthma,None,Varicose Veins
+59,Female,persistent sadness;appetite changes;difficulty concentrating;fatigue;loss of interest;sleep disturbances,1 week,None,major life changes or trauma,Depression (Clinical)
+35,Female,loss of interest;appetite changes;sleep disturbances;fatigue;persistent sadness,2 weeks,Asthma,None,Depression (Clinical)
+63,Female,vaginal itching and irritation;burning sensation during intercourse or urination,3 days,Asthma,impaired immune system,Yeast Infection (Candidiasis)
+4,Female,red swollen palms/soles;peeling skin;high fever;strawberry tongue,3 weeks,None,being male;Asian or Pacific Islander descent,Kawasaki Disease
+53,Male,chest pain;nosebleeds;headache,2 days,Hypertension,None,Hypertension (High Blood Pressure)
+20,Male,weight gain;excess facial or body hair;thinning hair;infertility;severe acne;irregular periods,1 week,None,low-grade inflammation,Polycystic Ovary Syndrome (PCOS)
+53,Female,fatigue;bloating;weight loss;gas;abdominal pain,3 weeks,Hypertension,None,Celiac Disease
+35,Female,headache;bleeding;jaundice;muscle aches (especially in back and knees);nausea;sensitivity to light;fever,3 weeks,Mild Obesity,None,Yellow Fever
+36,Female,nausea;vomiting;abdominal pain;abdominal swelling;low-grade fever;loss of appetite,1 week,None,None,Appendicitis
+41,Male,kidney problems;fever;hair loss;sun sensitivity;joint pain;fatigue;butterfly-shaped rash on cheeks,2 weeks,None,None,Lupus
+58,Male,fever;runny nose;fatigue;congestion;cough;sneezing;sore throat,5 days,Asthma,None,Common Cold
+86,Male,weakness;pale skin;fatigue;cold hands and feet,5 days,None,pregnancy,Anemia
+58,Female,excess facial or body hair;weight gain;infertility;irregular periods;thinning hair;severe acne,1 week,Hypertension,excess insulin,Polycystic Ovary Syndrome (PCOS)
+27,Female,freckling on sun-exposed areas;severe sunburn from very small sunlight;dry skin;high risk of skin cancer,1 week,Type 2 Diabetes,None,Xeroderma Pigmentosum
+27,Male,irritability;waking up during night;difficulty falling asleep;daytime fatigue;waking up too early;difficulty concentrating,3 days,Mild Obesity,irregular work shifts;caffeine/alcohol use,Insomnia
+56,Female,diarrhea;headache;nausea;stomach pain;body aches,5 days,Hypertension,poor hand hygiene,Norovirus
+59,Female,coordination problems;fatigue;brown ring around cornea;yellowing skin (jaundice),1 week,Mild Obesity,family history (inherited autosomal recessive trait),Wilson's Disease
+61,Male,goiter;tremors;weight loss;increased appetite;heat sensitivity;sweating,2 weeks,None,personal history of chronic illnesses like type 1 diabetes,Hyperthyroidism
+62,Male,increased thirst;weakness;fatigue;extreme hunger;frequent urination;blurred vision;unintended weight loss,3 weeks,Asthma,geography (further from equator);possible viral triggers,Diabetes Type 1
+51,Female,chest tightness;coughing attacks;wheezing,1 week,None,None,Asthma
+7,Male,fluid-filled blisters;fever;fatigue;loss of appetite,3 days,None,None,Chickenpox
+37,Female,fatigue;headache;fluid-filled blisters;fever;painful burning tingling rash;itching,1 week,Asthma,None,Shingles (Herpes Zoster)
+61,Male,speech difficulty;yellowing skin (jaundice);brown ring around cornea;abdominal pain;coordination problems,1 week,Hypertension,family history (inherited autosomal recessive trait),Wilson's Disease
+56,Female,red eyes;fever;joint pain;headache,1 week,Asthma,lacking immunity;unprotected sex with an infected partner,Zika Virus
+83,Female,frequent infections;easy bruising or bleeding;fever;weight loss;fatigue;swollen lymph nodes;night sweats,1 week,None,exposure to certain chemicals (benzene);smoking,Leukemia
+32,Female,stomach pain;vomiting;diarrhea;fatigue;fever;cramps,2 days,Hypercholesterolemia,contact with infected persons;poor hand hygiene,Gastroenteritis (Stomach Bug)
+55,Male,sleep disturbances;appetite changes;persistent sadness;difficulty concentrating;fatigue,2 weeks,None,major life changes or trauma;family history,Depression (Clinical)
+61,Male,cramps;stomach pain;diarrhea;nausea;vomiting,2 days,None,None,Gastroenteritis (Stomach Bug)
+18,Male,chest discomfort;cough with mucus;fatigue,3 days,None,None,Bronchitis
+33,Female,"dry, cracked skin that may bleed;red patches of skin covered with thick, silvery scales;skin problems;burning;itching",2 days,Asthma,family history,Psoriasis
+33,Male,chest pain;difficulty breathing;fever;cough with phlegm;chills,1 week,Asthma,weakened immune system;age (under 2 or over 65),Pneumonia
+24,Female,fever;rectal pain;weight loss;fatigue;diarrhea often with blood or pus,1 week,Hypertension,age (usually before 30);family history,Ulcerative Colitis
+58,Male,vomiting;nausea;pain worsens after eating;fever;oily smelly stools;rapid pulse,3 weeks,Hypercholesterolemia,gallstones,Pancreatitis
+48,Male,butterfly-shaped rash on cheeks;fatigue;hair loss;fever;joint pain;sun sensitivity,3 weeks,Type 2 Diabetes,None,Lupus
+58,Male,muscle weakness;cold sensitivity;constipation;fatigue;memory problems;weight gain;dry skin,3 days,Hypertension,being female,Hypothyroidism
+57,Male,sneezing;congestion;sore throat;cough;fatigue;runny nose;fever,2 days,Asthma,None,Common Cold
+25,Female,headache;diarrhea;body aches;nausea;stomach pain;fever;vomiting,5 days,Type 2 Diabetes,"eating in crowded settings (schools, cruise ships);eating contaminated food/shellfish",Norovirus
+65,Female,joint pain;chronic diarrhea;skin infections;frequent ear infections,2 weeks,Asthma,being male (inherited X-linked trait);family history of primary immunodeficiency,X-linked Agammaglobulinemia (XLA)
+32,Male,nausea;cramps;vomiting;fever;diarrhea,5 days,Asthma,poor hand hygiene;contact with infected persons,Gastroenteritis (Stomach Bug)
+42,Female,diarrhea;body aches;headache;stomach pain;vomiting;fever;nausea,1 week,None,eating contaminated food/shellfish;poor hand hygiene,Norovirus
+56,Male,pain during urination;severe pain in side and back;pain radiating to lower abdomen,1 week,None,"diet high in protein, sodium, and sugar",Kidney Stones
+46,Male,joint redness and swelling;limited range of motion;intense joint pain,5 days,Type 2 Diabetes,family history,Gout
+59,Male,"itchy, ring-shaped rash;red, scaly, cracked skin;skin problems",2 days,Mild Obesity,None,Ringworm (Fungal Infection)
+60,Female,scaly patches;red skin;itching,2 days,Mild Obesity,oily skin;stress,Dandruff (Seborrheic Dermatitis)
+36,Female,hallucinations;excessive daytime sleepiness;sleep paralysis,1 week,Mild Obesity,family history,Narcolepsy
+49,Male,fever;fear of water (hydrophobia);headache;paralysis;excess salivation;confusion;muscle spasms,2 weeks,Mild Obesity,None,Rabies
+50,Male,difficulty thinking;memory loss;misplacing things;confusion;disorientation,2 weeks,Asthma,poor cardiovascular health,Alzheimer's Disease
+46,Male,hives;abdominal cramping;swelling under skin;difficulty breathing,1 week,Hypercholesterolemia,None,Angioedema
+73,Male,weakness;fatigue;dizziness;chest pain,2 days,None,None,Anemia
+52,Male,muscle cramps;watery diarrhea (rice-water stools);nausea,1 week,Asthma,poor sanitary conditions,Cholera
+38,Male,burning sensation;blisters;dry cracked skin;itching,2 days,Type 2 Diabetes,exposure to skin irritants,Dermatitis (Contact / Seborrheic)
+75,Female,aching heavy feeling in legs;throbbing cramping swelling in legs;itching around veins;twisting bulging veins;dark purple or blue veins,3 days,Type 2 Diabetes,None,Varicose Veins
+21,Female,nystagmus (abnormal eye movements);vomiting;dizziness;feeling of spinning;loss of balance;nausea,3 days,Type 2 Diabetes,head injury;certain medications,Vertigo
+35,Female,"center turns white when pressed;skin problems;blanching;swelling;red, itchy welts",1 week,None,None,Hives (Urticaria)
+39,Male,fever;vomiting;upper abdominal pain radiating to back;oily smelly stools;pain worsens after eating;rapid pulse,3 weeks,Asthma,None,Pancreatitis
+45,Female,gradual loss of peripheral vision;blurry vision;halos around lights;eye redness;severe eye pain,1 week,Hypercholesterolemia,high internal eye pressure;family history of glaucoma,Glaucoma
+32,Female,scalp itching;thinning hair;shedding;bald patches,3 days,None,None,Alopecia
+21,Female,fatigue;nausea;chills;sweating;headache;vomiting;fever,2 weeks,None,None,Malaria
+28,Male,sweating;goiter;anxiety;rapid heart rate;weight loss;increased appetite,2 weeks,Hypertension,family history of Grave's disease;being female,Hyperthyroidism
+77,Male,itching around veins;aching heavy feeling in legs;twisting bulging veins;throbbing cramping swelling in legs;dark purple or blue veins,5 days,Asthma,family history;being female,Varicose Veins
+53,Male,rapid pulse;vomiting;nausea;pain worsens after eating;fever;upper abdominal pain radiating to back,3 weeks,Type 2 Diabetes,abdominal surgery;high triglyceride levels,Pancreatitis
+47,Female,burning sensation when urinating;cloudy urine;strong urge to urinate,5 days,Hypercholesterolemia,None,Urinary Tract Infection (UTI)
+18,Female,extreme hunger;increased thirst;blurred vision;unintended weight loss;fatigue;weakness;mood changes;frequent urination,1 week,None,genetics,Diabetes Type 1
+41,Female,fatigue;fever;diarrhea;cramps;nausea;stomach pain;vomiting,3 days,None,None,Gastroenteritis (Stomach Bug)
+30,Female,facial redness;visible blood vessels;enlarged nose;swollen red bumps;eye problems,5 days,Type 2 Diabetes,age (30-50 years old);fair skin,Rosacea
+36,Male,"small, fleshy, grainy bumps;skin problems;flesh-colored",5 days,Mild Obesity,biting nails or cuticle picking;weakened immune system,Warts
+39,Female,difficulty hearing;tugging at ear;ear pain;loss of balance;fever;fluid draining from ear,5 days,None,None,Otitis Media (Ear Infection)
+2,Female,red eyes;peeling skin;high fever;red swollen palms/soles,2 weeks,None,Asian or Pacific Islander descent,Kawasaki Disease
+29,Female,muscle spasms;excess salivation;headache;paralysis;fever;fear of water (hydrophobia);confusion,3 weeks,Hypercholesterolemia,"being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+57,Female,rapid heart rate;fever;jaw cramping (lockjaw);painful muscle spasms;difficulty swallowing,1 week,Hypertension,puncture wounds from rusty metal or dirt,Tetanus
+34,Female,fever;muscle aches;headache;fatigue;chills;sweats;cough,2 days,None,weak immune system,Influenza (Flu)
+38,Male,patchy loss of skin color;loss of color in tissues that line inside of mouth,2 days,Asthma,"autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+33,Female,muscle pain;joint pain;rash;red eyes;fever;headache,2 days,Mild Obesity,unprotected sex with an infected partner;traveling to areas with active Zika transmission,Zika Virus
+44,Female,headaches;widespread muscle pain;cognitive difficulties (fibro fog);sleep issues,1 week,Hypercholesterolemia,severe physical/emotional trauma;family history,Fibromyalgia
+24,Male,loss of appetite;fever;tender warm swollen joints;joint stiffness,2 weeks,Hypertension,being female,Rheumatoid Arthritis
+46,Male,"skin problems;small, fleshy, grainy bumps;rough to the touch;white, pink or tan",3 days,None,None,Warts
+64,Male,"pink, red or brown urine;severe pain in side and back;nausea",2 weeks,Hypertension,None,Kidney Stones
+28,Female,bloating;alternating bowel habits;abdominal cramping;diarrhea;gas;constipation,2 days,Mild Obesity,family history;young age (under 50),Irritable Bowel Syndrome (IBS)
+20,Female,fatigue;iron deficiency anemia;weight loss;abdominal pain;gas;bloating;diarrhea,1 week,Hypertension,family history;type 1 diabetes,Celiac Disease
+35,Female,nausea;vomiting;upset stomach;fever,1 week,Hypercholesterolemia,consuming unpasteurized dairy,Food Poisoning
+63,Female,fever;rectal pain;fatigue;diarrhea often with blood or pus,3 weeks,None,family history;race/ethnicity (higher in Ashkenazi Jews),Ulcerative Colitis
+60,Female,nausea;frequent urination;frequent infections;increased thirst;fatigue,2 days,None,age over 25,Gestational Diabetes
+54,Female,constipation;alternating bowel habits;bloating;diarrhea;gas;abdominal cramping,2 days,None,young age (under 50),Irritable Bowel Syndrome (IBS)
+41,Male,fatigue;sneezing;sore throat;cough;fever;runny nose;congestion,3 days,Hypertension,None,Common Cold
+45,Male,misplacing things;difficulty thinking;disorientation;mood changes,3 weeks,None,poor cardiovascular health,Alzheimer's Disease
+76,Male,pale skin;chest pain;cold hands and feet;fatigue;weakness,5 days,Type 2 Diabetes,None,Anemia
+21,Male,fever;fatigue;nausea;diarrhea;cramps;stomach pain;vomiting,5 days,Mild Obesity,None,Gastroenteritis (Stomach Bug)
+19,Male,vomiting;sensitivity to sound;aura;throbbing headache;nausea,3 weeks,None,stress,Migraine
+33,Female,iron deficiency anemia;gas;bloating;fatigue;weight loss,3 weeks,None,None,Celiac Disease
+64,Female,severe eye pain;eye redness;blurry vision;gradual loss of peripheral vision;tunnel vision;halos around lights,3 weeks,None,age over 60;family history of glaucoma,Glaucoma
+28,Male,skin problems;red to brownish-gray patches;itching;small raised bumps,2 days,Type 2 Diabetes,stress;allergies,Eczema (Atopic Dermatitis)
+28,Female,body aches;headache;vomiting;nausea;stomach pain;fever;diarrhea,3 days,Hypercholesterolemia,poor hand hygiene;eating contaminated food/shellfish,Norovirus
+61,Male,dizziness;feeling of spinning;loss of balance;vomiting,2 days,None,None,Vertigo
+53,Female,red skin;flaky skin on scalp;scaly patches,5 days,Asthma,oily skin,Dandruff (Seborrheic Dermatitis)
+38,Male,vomiting;extreme fatigue;yellow skin and eyes (jaundice);abdominal pain;nausea;dark urine,2 weeks,Hypercholesterolemia,sharing needles,Hepatitis B
+36,Female,excess salivation;headache;muscle spasms;confusion;fever,2 weeks,Hypertension,"traveling to regions with high rabies prevalence;being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+43,Male,wheezing;chest tightness,1 week,Type 2 Diabetes,air pollution;obesity,Asthma
+49,Male,nausea;sensitivity to sound;aura;vomiting;sensitivity to light,2 weeks,Hypercholesterolemia,being female;sensory stimuli,Migraine
+36,Male,sore throat;cough;runny nose;sneezing;fever;congestion;fatigue,3 days,Hypercholesterolemia,None,Common Cold
+14,Female,strawberry tongue;high fever;swollen lymph nodes in neck;peeling skin;red eyes,3 weeks,None,None,Kawasaki Disease
+61,Male,itching around veins;twisting bulging veins;dark purple or blue veins;aching heavy feeling in legs;throbbing cramping swelling in legs,2 days,Asthma,older age;standing or sitting for long periods,Varicose Veins
+33,Female,rapid pulse;oily smelly stools;vomiting;fever;pain worsens after eating;nausea,2 weeks,Hypercholesterolemia,smoking,Pancreatitis
+42,Female,sweating;increased appetite;heat sensitivity;tremors;rapid heart rate;anxiety;weight loss,3 weeks,Type 2 Diabetes,being female;personal history of chronic illnesses like type 1 diabetes,Hyperthyroidism
+40,Male,high fever;severe headache;chills;nausea;fatigue,5 days,None,None,Q Fever
+21,Male,night sweats;chest pain;fever;persistent cough;fatigue,2 weeks,Type 2 Diabetes,substance abuse,Tuberculosis
+65,Male,memory loss;confusion;disorientation;misplacing things;mood changes,2 weeks,Asthma,older age,Alzheimer's Disease
+46,Female,watery diarrhea (rice-water stools);vomiting;dehydration;muscle cramps;nausea,2 weeks,None,reduced or non-existent stomach acid,Cholera
+76,Female,shortness of breath;nosebleeds;dizziness;headache;chest pain,1 week,Hypercholesterolemia,None,Hypertension (High Blood Pressure)
+55,Female,loss of flexibility;grating sensation;tenderness;stiffness,3 days,None,None,Osteoarthritis
+52,Male,aching heavy feeling in legs;twisting bulging veins;throbbing cramping swelling in legs,1 week,Type 2 Diabetes,None,Varicose Veins
+52,Male,gas;weight loss;abdominal pain;diarrhea;iron deficiency anemia;bloating;fatigue,1 week,None,autoimmune thyroid disease;down syndrome,Celiac Disease
+22,Female,oily smelly stools;vomiting;nausea;fever;pain worsens after eating;rapid pulse,2 weeks,Asthma,None,Pancreatitis
+18,Male,upper abdominal pain radiating to back;nausea;pain worsens after eating;rapid pulse;oily smelly stools;fever,2 weeks,None,smoking,Pancreatitis
+1,Male,fever;limping;rash;morning joint stiffness;joint pain;swollen lymph nodes;joint swelling,1 week,None,None,Juvenile Rheumatoid Arthritis
+61,Male,muscle spasms;headache;excess salivation;fever;fear of water (hydrophobia);paralysis,3 weeks,Hypertension,None,Rabies
+37,Female,vaginal itching and irritation;burning sensation during intercourse or urination;thick white odorless discharge;redness and swelling,1 week,Hypercholesterolemia,impaired immune system,Yeast Infection (Candidiasis)
+61,Male,runny nose;cough;fever;fatigue;sneezing,1 week,Asthma,being under 6 years old;smoking,Common Cold
+40,Female,"flesh-colored;rough to the touch;skin problems;white, pink or tan",3 days,Hypercholesterolemia,None,Warts
+43,Female,stooped posture;back pain;loss of height over time;bone fracture that occurs easily,1 week,None,hormonal levels (low estrogen/testosterone);being female,Osteoporosis
+40,Female,bald patches;scalp itching;thinning hair,1 week,Type 2 Diabetes,medical conditions like diabetes/lupus,Alopecia
+55,Female,loss of height over time;bone fracture that occurs easily,3 days,None,small body frame,Osteoporosis
+18,Female,thick nasal discharge;bad breath;facial pain or pressure;headache;cough;sore throat;nasal congestion,3 days,None,allergies (hay fever),Sinusitis
+26,Female,cough with phlegm;fever;difficulty breathing;chills,3 weeks,None,None,Pneumonia
+26,Male,infertility;weight gain;thinning hair;severe acne,5 days,None,low-grade inflammation;heredity/family history,Polycystic Ovary Syndrome (PCOS)
+48,Female,nausea;throbbing headache;sensitivity to light;sensitivity to sound;vomiting;aura,1 week,None,family history;age (peak in 30s),Migraine
+42,Male,hair loss;skin problems,2 days,None,sharing clothing or towels,Ringworm (Fungal Infection)
+18,Male,fatigue;coughing up blood;fever;persistent cough;weight loss,2 weeks,None,None,Tuberculosis
+88,Male,chest pain;dizziness;headache;shortness of breath;nosebleeds,5 days,None,None,Hypertension (High Blood Pressure)
+18,Female,nausea;muscle cramps;watery diarrhea (rice-water stools),2 weeks,None,type O blood,Cholera
+31,Female,nausea;extreme fatigue;abdominal pain;vomiting;dark urine,1 week,Mild Obesity,None,Hepatitis B
+37,Male,pimples;blackheads;scarring;oily skin;skin problems;whiteheads,3 days,Asthma,certain medications,Acne Vulgaris
+63,Female,bone spurs;loss of flexibility;stiffness;tenderness;grating sensation,3 days,Hypercholesterolemia,repeated stress on joint,Osteoarthritis
+25,Male,stomach cramps;diarrhea;upset stomach;nausea,1 week,None,weakened immunity;eating raw or undercooked meats/seafood,Food Poisoning
+22,Female,strong urge to urinate;pelvic pain;cloudy urine,3 days,Type 2 Diabetes,menopause,Urinary Tract Infection (UTI)
+19,Male,fever;joint deformity over time;loss of appetite;joint stiffness;tender warm swollen joints;fatigue,3 weeks,None,age (most commonly starts in 40s-60s),Rheumatoid Arthritis
+2,Male,red swollen palms/soles;strawberry tongue;peeling skin;red eyes,1 week,None,None,Kawasaki Disease
+49,Male,recurrent pneumonia;skin infections;sinus infections;frequent ear infections;chronic diarrhea;joint pain,2 weeks,Hypercholesterolemia,being male (inherited X-linked trait),X-linked Agammaglobulinemia (XLA)
+56,Male,aching heavy feeling in legs;itching around veins;dark purple or blue veins,1 week,None,family history,Varicose Veins
+55,Female,"swelling;red, itchy welts;skin problems",1 week,None,known allergies;temperature extremes,Hives (Urticaria)
+26,Female,severe headache;pain behind eyes;skin rash;joint and muscle pain;high fever,3 weeks,None,None,Dengue Fever
+50,Male,hives;swelling under skin;abdominal cramping;difficulty breathing,1 week,Mild Obesity,recent infection;taking ACE inhibitors,Angioedema
+7,Female,joint pain;joint swelling;limping;swollen lymph nodes;rash;morning joint stiffness;fever,1 week,None,None,Juvenile Rheumatoid Arthritis
+28,Male,kidney problems;fever;butterfly-shaped rash on cheeks;fatigue;hair loss;joint pain;sun sensitivity,1 week,Mild Obesity,"age (15-45 years old);race (more common in African Americans, Hispanics, Asians)",Lupus
+60,Female,"itching;burning;dry, cracked skin that may bleed;skin problems;red patches of skin covered with thick, silvery scales",2 days,Hypercholesterolemia,certain infections (like strep throat);obesity,Psoriasis
+58,Female,mood changes;memory loss;misplacing things;difficulty thinking,2 weeks,None,down syndrome;poor cardiovascular health,Alzheimer's Disease
+30,Male,sun sensitivity;hair loss;fatigue;joint pain;fever,1 week,Type 2 Diabetes,age (15-45 years old);being female,Lupus
+58,Female,headache;vomiting;fever;sweating;nausea,1 week,None,None,Malaria
+49,Male,nausea;throbbing headache;aura;sensitivity to sound;vomiting,3 weeks,Hypercholesterolemia,sensory stimuli;family history,Migraine
+28,Male,skin rash;joint and muscle pain;fatigue;severe headache;pain behind eyes;high fever,2 weeks,Asthma,None,Dengue Fever
+59,Female,fatigue;diarrhea;cough;severe headache;chills,5 days,None,"working in agriculture (cattle, sheep, goats)",Q Fever
+58,Male,rapid heart rate;increased appetite;anxiety;heat sensitivity;sweating;weight loss;goiter;tremors,2 weeks,None,None,Hyperthyroidism
+34,Female,fatigue;blurred vision;frequent urination;increased thirst;darkened skin in certain areas;slow-healing sores;frequent infections,3 weeks,None,age (over 45),Diabetes Type 2
+59,Female,sudden loss of muscle tone (cataplexy);sleep paralysis;excessive daytime sleepiness;hallucinations,1 week,Type 2 Diabetes,None,Narcolepsy
+39,Male,development of a new pigmented or unusual looking growth;irregularly shaped mole,1 week,None,history of sunburns,Melanoma (Skin Cancer)
+35,Female,increased thirst;slow-healing sores;darkened skin in certain areas;blurred vision;increased hunger;fatigue;frequent infections;frequent urination,1 week,Type 2 Diabetes,age (over 45),Diabetes Type 2
+38,Female,fever;sweats;chills;muscle aches;fatigue;cough;headache,1 week,Hypercholesterolemia,"chronic illnesses (diabetes, asthma);weak immune system",Influenza (Flu)
+46,Male,fatigue;sleep disturbances;appetite changes;persistent sadness;loss of interest;difficulty concentrating,3 weeks,Hypertension,certain medications;chronic illnesses,Depression (Clinical)
+63,Male,chest pain;nosebleeds;dizziness;shortness of breath;headache,2 days,Hypercholesterolemia,None,Hypertension (High Blood Pressure)
+62,Male,nosebleeds;shortness of breath;chest pain;dizziness,3 days,None,older age;excess alcohol,Hypertension (High Blood Pressure)
+55,Male,cramps;fever;vomiting;diarrhea;nausea,2 days,Mild Obesity,None,Gastroenteritis (Stomach Bug)
+54,Female,burning sensation when urinating;passing frequent small amounts of urine;cloudy urine,1 week,Hypertension,sexual activity;urinary tract abnormalities or blockages,Urinary Tract Infection (UTI)
+53,Female,weight loss;fever;fatigue;abdominal pain;diarrhea often with blood or pus;rectal pain,1 week,None,None,Ulcerative Colitis
+37,Male,severe headache;cough;nausea;chills;fatigue;high fever;diarrhea,5 days,Mild Obesity,"consuming raw dairy;working in agriculture (cattle, sheep, goats)",Q Fever
+51,Male,chest tightness;coughing attacks;shortness of breath;wheezing,3 weeks,Hypercholesterolemia,air pollution;obesity,Asthma
+61,Female,weakness;cold hands and feet;dizziness;fatigue;chest pain,2 days,None,family history,Anemia
+53,Female,stomach cramps;fever;upset stomach;vomiting,1 week,None,None,Food Poisoning
+46,Female,disorientation;mood changes;memory loss;difficulty thinking;misplacing things,3 weeks,Asthma,None,Alzheimer's Disease
+21,Male,blisters;red rash;itching;dry patches;skin problems,5 days,Asthma,None,Skin Allergy (Contact Dermatitis)
+18,Male,fatigue;brown ring around cornea;coordination problems;abdominal pain;yellowing skin (jaundice),1 week,None,family history (inherited autosomal recessive trait),Wilson's Disease
+29,Female,passing frequent small amounts of urine;cloudy urine;strong urge to urinate;pelvic pain,1 week,Mild Obesity,menopause;urinary tract abnormalities or blockages,Urinary Tract Infection (UTI)
+62,Female,loss of color in tissues that line inside of mouth;premature whitening or graying of hair,3 days,None,family history,Vitiligo
+46,Female,irritability;impulsivity;manic episodes;high energy;mood swings,3 weeks,None,drug or alcohol abuse;having a first-degree relative with bipolar,Bipolar Disorder
+51,Female,red sores that easily rupture;skin problems,5 days,None,crowded conditions,Impetigo
+52,Female,red rash;blisters;itching,5 days,None,"exposure to allergens (poison ivy, nickel, latex, cosmetics)",Skin Allergy (Contact Dermatitis)
+41,Male,difficulty swallowing;fever;jaw cramping (lockjaw);muscle stiffness;rapid heart rate;painful muscle spasms,1 week,Hypercholesterolemia,puncture wounds from rusty metal or dirt,Tetanus
+62,Male,nausea;fatigue;frequent infections,1 week,Hypertension,None,Gestational Diabetes
+37,Female,fluid-filled blisters;fatigue;headache;itching;painful burning tingling rash,3 days,Mild Obesity,weakened immune system;having had chickenpox,Shingles (Herpes Zoster)
+38,Female,runny nose;severe hacking cough;high-pitched intake of breath that sounds like 'whoop',2 weeks,None,close contact with infected person;being unvaccinated,Whooping Cough (Pertussis)
+30,Male,itching;burning sensation;dry cracked skin;blisters;red rash;swelling,2 days,None,None,Dermatitis (Contact / Seborrheic)
+83,Female,itching around veins;throbbing cramping swelling in legs;aching heavy feeling in legs,1 week,Mild Obesity,family history,Varicose Veins
+31,Female,fever;chills;difficulty breathing,2 weeks,None,"smoking;chronic lung disease (COPD, asthma)",Pneumonia
+51,Male,temporary confusion;recurrent seizures;staring spells;uncontrollable jerking movements;loss of consciousness,3 weeks,Mild Obesity,None,Epilepsy
+62,Male,grating sensation;joint pain;loss of flexibility;bone spurs,5 days,Hypercholesterolemia,genetics;joint injuries,Osteoarthritis
+50,Female,"blanching;skin problems;swelling;red, itchy welts",3 days,None,exercise;recent infection,Hives (Urticaria)
+34,Male,stomach cramps;nausea;vomiting;upset stomach,2 days,Hypercholesterolemia,None,Food Poisoning
+3,Female,red eyes;strawberry tongue;peeling skin;red swollen palms/soles;high fever,2 weeks,None,Asian or Pacific Islander descent;being male,Kawasaki Disease
+46,Male,loss of taste;headache;jaw pain;difficulty closing eye;facial drooping,2 days,Hypercholesterolemia,None,Bell's Palsy
+21,Female,loss of taste;jaw pain;difficulty closing eye;drooling,5 days,Hypercholesterolemia,family history,Bell's Palsy
+21,Male,watery diarrhea (rice-water stools);nausea;dehydration,3 weeks,None,None,Cholera
+88,Female,swollen lymph nodes;fever;frequent infections;night sweats;fatigue;easy bruising or bleeding,2 weeks,Hypercholesterolemia,None,Leukemia
+53,Female,shortness of breath;coughing attacks;chest tightness,1 week,None,None,Asthma
+18,Male,hair loss;fever;fatigue;butterfly-shaped rash on cheeks;sun sensitivity,2 weeks,None,"race (more common in African Americans, Hispanics, Asians)",Lupus
+58,Male,stomach cramps;nausea;fever;diarrhea;upset stomach,3 days,Type 2 Diabetes,None,Food Poisoning
+24,Female,redness and swelling;vaginal itching and irritation;burning sensation during intercourse or urination,1 week,Asthma,None,Yeast Infection (Candidiasis)
+35,Female,vomiting;throbbing headache;aura;sensitivity to sound;nausea,2 weeks,None,None,Migraine
+54,Female,changes in an existing mole;irregularly shaped mole,1 week,Mild Obesity,having many moles;fair skin,Melanoma (Skin Cancer)
+42,Female,"red, swollen area of skin;skin problems;fever;pain or tenderness;skin that is warm to the touch",5 days,None,injuries/cuts;obesity,Cellulitis
+34,Female,chronic cough;sore throat;heartburn;chest pain,1 week,Asthma,pregnancy,GERD (Acid Reflux)
+19,Female,small raised bumps;red to brownish-gray patches;itching;skin problems,3 days,None,None,Eczema (Atopic Dermatitis)
+40,Male,joint stiffness;joint redness and swelling;intense joint pain,3 days,None,family history,Gout
+79,Male,dizziness;fatigue;chest pain;cold hands and feet,5 days,Hypertension,None,Anemia
+60,Male,fever;diarrhea often with blood or pus;weight loss;abdominal pain;rectal pain,1 week,Mild Obesity,family history;age (usually before 30),Ulcerative Colitis
+60,Male,burrow tracks on skin;intense itching directly at night,5 days,None,"close physical contact with an infected person;crowded living environments (nursing homes, prisons)",Scabies
+65,Male,vomiting;nystagmus (abnormal eye movements);feeling of spinning;nausea,3 days,Asthma,None,Vertigo
+50,Male,fever;cough with phlegm;chills;chest pain,1 week,Type 2 Diabetes,smoking,Pneumonia
+18,Male,hallucinations;sleep paralysis,1 week,None,age (onset between 10-30 years),Narcolepsy
+21,Female,frequent urination;frequent infections;nausea;increased thirst;fatigue,5 days,Hypercholesterolemia,None,Gestational Diabetes
+62,Male,diarrhea often with blood or pus;abdominal pain;weight loss;fatigue;rectal pain,1 week,Hypercholesterolemia,race/ethnicity (higher in Ashkenazi Jews);family history,Ulcerative Colitis
+36,Male,freckling on sun-exposed areas;dry skin;blistering;high risk of skin cancer;severe sunburn from very small sunlight,2 weeks,Hypercholesterolemia,family history;consanguineous marriage in parents (autosomal recessive),Xeroderma Pigmentosum
+40,Male,loss of height over time;back pain,1 week,Mild Obesity,None,Osteoporosis
+53,Female,freckling on sun-exposed areas;high risk of skin cancer;blistering;severe sunburn from very small sunlight;dry skin,1 week,None,None,Xeroderma Pigmentosum
+60,Female,"small, fleshy, grainy bumps;white, pink or tan;rough to the touch;skin problems;flesh-colored",2 days,Asthma,None,Warts
+49,Male,fatigue;cold sensitivity;memory problems;constipation;weight gain,5 days,Mild Obesity,past thyroid surgery,Hypothyroidism
+32,Female,vaginal itching and irritation;thick white odorless discharge;redness and swelling;burning sensation during intercourse or urination,2 days,None,antibiotic use,Yeast Infection (Candidiasis)
+30,Female,slight fever;shortness of breath;chest discomfort;fatigue,5 days,None,None,Bronchitis
+36,Female,diarrhea;alternating bowel habits;constipation;abdominal cramping;bloating;gas,3 days,None,young age (under 50),Irritable Bowel Syndrome (IBS)
+48,Female,headache;fever;nausea;jaundice;muscle aches (especially in back and knees),1 week,Hypercholesterolemia,living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+11,Male,red eyes;peeling skin;strawberry tongue;high fever;swollen lymph nodes in neck,1 week,None,age (under 5 years old),Kawasaki Disease
+19,Male,swelling;dry cracked skin;blisters;itching;burning sensation,3 days,None,cold dry weather,Dermatitis (Contact / Seborrheic)
+53,Male,jaundice;bleeding;fever;sensitivity to light;nausea,2 weeks,None,living in or traveling to jungle/forested areas of Africa/South America;being unvaccinated,Yellow Fever
+27,Female,frequent urination;darkened skin in certain areas;increased hunger;frequent infections;fatigue;blurred vision;slow-healing sores;increased thirst,3 weeks,Hypercholesterolemia,physical inactivity;being overweight,Diabetes Type 2
+57,Female,"hair loss;itchy, ring-shaped rash",1 week,Hypertension,close contact with infected animals or people;living in warm climates,Ringworm (Fungal Infection)
+56,Female,chills;cough with phlegm;difficulty breathing,1 week,Mild Obesity,hospitalization;smoking,Pneumonia
+47,Female,muscle pain;joint pain;rash;headache;red eyes,1 week,Hypertension,lacking immunity,Zika Virus
+20,Female,fear of water (hydrophobia);fever;paralysis;excess salivation;headache;muscle spasms,2 weeks,None,"being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+42,Male,confusion;headache;excess salivation;fever;paralysis,2 weeks,Hypercholesterolemia,exploring caves with bats,Rabies
+24,Male,oily smelly stools;rapid pulse;upper abdominal pain radiating to back;nausea;fever;pain worsens after eating;vomiting,2 weeks,Mild Obesity,None,Pancreatitis
+48,Male,skin problems;fever;skin that is warm to the touch,1 week,Type 2 Diabetes,chronic swelling (lymphedema);injuries/cuts,Cellulitis
+38,Female,nausea;dehydration;watery diarrhea (rice-water stools),2 weeks,Type 2 Diabetes,None,Cholera
+34,Female,"skin problems;fever;pain or tenderness;red, swollen area of skin",3 days,None,chronic swelling (lymphedema),Cellulitis
+28,Female,vaginal itching and irritation;thick white odorless discharge;redness and swelling;burning sensation during intercourse or urination,3 days,None,uncontrolled diabetes;impaired immune system,Yeast Infection (Candidiasis)
+34,Male,stomach pain;diarrhea;fever;nausea;headache;vomiting;body aches,5 days,Hypercholesterolemia,eating contaminated food/shellfish,Norovirus
+21,Female,blisters;dry patches;skin problems,2 days,None,occupational exposure to irritants,Skin Allergy (Contact Dermatitis)
+49,Male,red rash;blisters;dry cracked skin;itching;burning sensation,5 days,Mild Obesity,None,Dermatitis (Contact / Seborrheic)
+21,Female,oily skin;whiteheads;skin problems;pimples,3 days,Hypercholesterolemia,None,Acne Vulgaris
+64,Female,fever;loss of taste or smell;shortness of breath;body aches;dry cough,3 weeks,Asthma,None,COVID-19
+50,Female,stooped posture;back pain;loss of height over time;bone fracture that occurs easily,5 days,Mild Obesity,low calcium intake;small body frame,Osteoporosis
+65,Male,tremor;impaired posture and balance;rigid muscles;speech changes,2 weeks,None,being male;heredity/genetics,Parkinson's Disease
+64,Female,blurry vision;halos around lights;tunnel vision;severe eye pain;eye redness;gradual loss of peripheral vision,1 week,None,None,Glaucoma
+65,Male,infertility;thinning hair;irregular periods;excess facial or body hair;severe acne,1 week,Type 2 Diabetes,low-grade inflammation;excess insulin,Polycystic Ovary Syndrome (PCOS)
+18,Male,dry cracked skin;itching;red rash;swelling;blisters,3 days,None,exposure to skin irritants,Dermatitis (Contact / Seborrheic)
+36,Male,cough;runny nose;sneezing;sore throat;fever,5 days,Asthma,being under 6 years old,Common Cold
+25,Male,chronic cough;difficulty swallowing;heartburn;regurgitation of food or acid;chest pain,3 days,None,None,GERD (Acid Reflux)
+36,Male,uncontrollable jerking movements;temporary confusion;staring spells;recurrent seizures;loss of consciousness,1 week,Type 2 Diabetes,family history,Epilepsy
+43,Male,memory problems;constipation;fatigue;weight gain;dry skin,5 days,Mild Obesity,None,Hypothyroidism
+43,Male,dry skin;red to brownish-gray patches;small raised bumps;itching;skin problems,5 days,None,None,Eczema (Atopic Dermatitis)
+44,Male,loss of appetite;abdominal swelling;nausea;vomiting;abdominal pain,3 weeks,Hypercholesterolemia,cystic fibrosis,Appendicitis
+43,Male,wheezing;shortness of breath;coughing attacks,2 weeks,Type 2 Diabetes,None,Asthma
+19,Female,dizziness;feeling of spinning;vomiting;loss of balance,2 days,None,migraines,Vertigo
+43,Female,intense joint pain;joint stiffness;limited range of motion;warmth in joint,5 days,Asthma,"diet high in purines (red meat, seafood);high blood pressure/diabetes",Gout
+35,Male,tugging at ear;loss of balance;fluid draining from ear;ear pain;fever,2 days,None,"age (6 months to 2 years);air quality (tobacco smoke, pollution)",Otitis Media (Ear Infection)
+52,Female,frequent infections;night sweats;fatigue;fever;swollen lymph nodes;easy bruising or bleeding,3 weeks,None,exposure to certain chemicals (benzene),Leukemia
+41,Male,abdominal pain;vomiting;abdominal swelling;loss of appetite;nausea,1 week,None,family history;cystic fibrosis,Appendicitis
+73,Male,pale skin;fatigue;chest pain;dizziness;weakness;cold hands and feet,5 days,Type 2 Diabetes,None,Anemia
+39,Female,"dry, cracked skin that may bleed;itching;burning;skin problems;red patches of skin covered with thick, silvery scales",1 week,Hypercholesterolemia,obesity,Psoriasis
+20,Female,fatigue;shortness of breath;slight fever;chest discomfort;cough with mucus,5 days,Type 2 Diabetes,gastric reflux,Bronchitis
+41,Female,burning sensation during intercourse or urination;redness and swelling,5 days,None,None,Yeast Infection (Candidiasis)
+29,Female,pain behind eyes;fatigue;skin rash;joint and muscle pain,3 weeks,Hypertension,living or traveling in tropical/subtropical regions;previous infection with a different dengue serotype,Dengue Fever
+62,Male,fatigue;sleep issues;cognitive difficulties (fibro fog);widespread muscle pain,1 week,Mild Obesity,severe physical/emotional trauma;being female,Fibromyalgia
+27,Female,fatigue;frequent urination;frequent infections;slow-healing sores;increased hunger;blurred vision;increased thirst,3 weeks,Type 2 Diabetes,None,Diabetes Type 2
+67,Male,chest pain;dizziness;headache,5 days,Hypertension,high-sodium diet;excess weight,Hypertension (High Blood Pressure)
+46,Female,fever;diarrhea often with blood or pus;abdominal pain;weight loss;fatigue;rectal pain,3 weeks,Hypercholesterolemia,None,Ulcerative Colitis
+83,Male,cold hands and feet;dizziness;fatigue;weakness;chest pain,2 days,Mild Obesity,None,Anemia
+31,Female,"red patches of skin covered with thick, silvery scales;itching;skin problems;burning;dry, cracked skin that may bleed",5 days,None,stress;smoking,Psoriasis
+51,Female,fever;red swollen tonsils;white or yellow coating on tonsils;swollen lymph nodes in neck;sore throat;difficulty swallowing,2 days,None,frequent exposure to viral or bacterial germs (school settings);young age (children),Tonsillitis
+19,Female,fatigue;painful periods (dysmenorrhea);pelvic pain;heavy bleeding,1 week,None,short menstrual cycles,Endometriosis
+50,Male,headache;chills;joint aches;bulls-eye pattern;circular rash;muscle aches;swollen lymph nodes,5 days,None,spending time in wooded or grassy areas;failing to remove ticks promptly,Lyme Disease
+18,Male,nausea;muscle cramps;watery diarrhea (rice-water stools),3 weeks,None,type O blood;reduced or non-existent stomach acid,Cholera
+61,Female,heavy bleeding;painful periods (dysmenorrhea);fatigue;pelvic pain;pain during intercourse,1 week,Type 2 Diabetes,None,Endometriosis
+36,Female,wheezing;shortness of breath,3 weeks,None,family history,Asthma
+35,Female,difficulty concentrating;sleep disturbances;loss of interest;fatigue,3 weeks,None,None,Depression (Clinical)
+26,Male,pale stools;yellow eyes;dark urine;abdominal pain,1 week,None,excessive alcohol use,Jaundice
+44,Male,chest pain;chills;fever,2 weeks,Mild Obesity,hospitalization,Pneumonia
+25,Male,fatigue;difficulty concentrating;loss of interest;appetite changes;persistent sadness;sleep disturbances,1 week,Hypercholesterolemia,chronic illnesses,Depression (Clinical)
+35,Male,sore throat;headache;cough;thick nasal discharge;bad breath;facial pain or pressure;nasal congestion,2 days,None,deviated nasal septum;asthma,Sinusitis
+10,Male,fever;loss of appetite;fatigue;itchy skin rash,1 week,None,being unvaccinated;weakened immune system,Chickenpox
+44,Male,fever;chest pain;fatigue;coughing up blood;persistent cough,2 weeks,Type 2 Diabetes,traveling to high-TB-burden regions;substance abuse,Tuberculosis
+63,Female,joint deformity over time;fever;tender warm swollen joints;loss of appetite;fatigue,3 weeks,Hypertension,None,Rheumatoid Arthritis
+49,Male,rapid heart rate;anxiety;weight loss;tremors;increased appetite;sweating;goiter;heat sensitivity,3 weeks,None,personal history of chronic illnesses like type 1 diabetes;being female,Hyperthyroidism
+47,Male,"flesh-colored;white, pink or tan;small, fleshy, grainy bumps;skin problems",3 days,Type 2 Diabetes,None,Warts
+29,Male,skin problems;facial redness;eye problems;visible blood vessels;swollen red bumps;enlarged nose,2 days,None,family history,Rosacea
+48,Female,nystagmus (abnormal eye movements);feeling of spinning;dizziness;loss of balance;nausea;vomiting,2 days,Mild Obesity,None,Vertigo
+32,Female,hallucinations;sleep paralysis,3 days,None,None,Narcolepsy
+59,Female,fever;vomiting;nausea;diarrhea;upset stomach,3 days,Mild Obesity,None,Food Poisoning
+38,Male,"pain radiating to lower abdomen;nausea;severe pain in side and back;pink, red or brown urine;pain during urination",2 weeks,None,digestive diseases/surgery,Kidney Stones
+47,Female,chills;difficulty breathing;chest pain;fever,1 week,Asthma,None,Pneumonia
+51,Female,strong urge to urinate;pelvic pain;burning sensation when urinating,5 days,None,None,Urinary Tract Infection (UTI)
+63,Female,dry patches;itching;red rash,1 week,None,occupational exposure to irritants;frequent handwashing,Skin Allergy (Contact Dermatitis)
+19,Female,tenderness;grating sensation;stiffness;loss of flexibility;bone spurs,1 week,None,None,Osteoarthritis
+54,Male,muscle cramps;nausea;vomiting;dehydration;watery diarrhea (rice-water stools),1 week,Hypertension,None,Cholera
+37,Female,frequent infections;slow-healing sores;darkened skin in certain areas;fatigue;increased hunger;frequent urination,3 weeks,None,age (over 45);being overweight,Diabetes Type 2
+86,Female,fever;swollen lymph nodes;fatigue;frequent infections;easy bruising or bleeding,2 weeks,Mild Obesity,exposure to certain chemicals (benzene);genetic disorders (Down syndrome),Leukemia
+25,Female,joint and muscle pain;severe headache;skin rash;pain behind eyes;fatigue;high fever,1 week,Mild Obesity,living or traveling in tropical/subtropical regions,Dengue Fever
+8,Female,limping;rash;joint swelling;swollen lymph nodes;fever,5 days,None,environmental triggers (like viral infections);genetics,Juvenile Rheumatoid Arthritis
+53,Male,abdominal cramping;alternating bowel habits;constipation;diarrhea,2 days,Type 2 Diabetes,family history;young age (under 50),Irritable Bowel Syndrome (IBS)
+14,Female,red swollen palms/soles;peeling skin;high fever;red eyes;swollen lymph nodes in neck;strawberry tongue,1 week,None,being male,Kawasaki Disease
+39,Male,thinning hair;irregular periods;weight gain;excess facial or body hair;infertility,2 days,Hypertension,None,Polycystic Ovary Syndrome (PCOS)
+58,Female,skin problems;patchy loss of skin color;premature whitening or graying of hair;loss of color in tissues that line inside of mouth,3 days,None,"autoimmune conditions (thyroid disease, alopecia areata);family history",Vitiligo
+40,Male,sleep issues;joint stiffness;fatigue;widespread muscle pain;cognitive difficulties (fibro fog);headaches,1 week,Type 2 Diabetes,severe physical/emotional trauma;being female,Fibromyalgia
+22,Male,nausea;vomiting;abdominal swelling;abdominal pain;loss of appetite;low-grade fever,2 weeks,None,cystic fibrosis,Appendicitis
+61,Female,blurry vision;tunnel vision;severe eye pain;eye redness;gradual loss of peripheral vision,2 weeks,None,"medical conditions (diabetes, high BP);family history of glaucoma",Glaucoma
+31,Male,fatigue;shortness of breath;loss of taste or smell;body aches,1 week,Mild Obesity,None,COVID-19
+48,Male,abdominal pain;dark urine;yellow skin and eyes (jaundice);vomiting;nausea;extreme fatigue,2 weeks,Mild Obesity,occupational exposure to blood,Hepatitis B
+56,Female,staring spells;uncontrollable jerking movements;recurrent seizures;loss of consciousness;temporary confusion,1 week,Asthma,stroke or vascular diseases,Epilepsy
+42,Female,abdominal pain;bloating;diarrhea;iron deficiency anemia;weight loss;fatigue;gas,2 weeks,None,type 1 diabetes;down syndrome,Celiac Disease
+52,Female,nausea;frequent infections;increased thirst;frequent urination;fatigue,1 week,Type 2 Diabetes,overweight before pregnancy;gestational diabetes in prior pregnancy,Gestational Diabetes
+3,Male,fever;morning joint stiffness;limping;swollen lymph nodes;joint swelling;rash;joint pain,3 days,None,None,Juvenile Rheumatoid Arthritis
+57,Male,skin problems;loss of color in tissues that line inside of mouth;patchy loss of skin color;premature whitening or graying of hair,1 week,Asthma,"autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+62,Female,loss of interest;difficulty concentrating;persistent sadness;fatigue;appetite changes,1 week,None,abuse of alcohol or drugs,Depression (Clinical)
+19,Male,eye problems;swollen red bumps;skin problems;facial redness;visible blood vessels;enlarged nose,5 days,None,age (30-50 years old),Rosacea
+46,Female,flaky skin on scalp;red skin;scaly patches;skin problems;itching,3 days,None,None,Dandruff (Seborrheic Dermatitis)
+64,Female,burning sensation during intercourse or urination;thick white odorless discharge;redness and swelling,5 days,Asthma,"increased estrogen levels (pregnancy, oral contraceptives)",Yeast Infection (Candidiasis)
+38,Female,difficulty breathing;hives;swelling under skin,2 weeks,None,known allergies,Angioedema
+23,Male,vomiting;abdominal pain;nausea;extreme fatigue;yellow skin and eyes (jaundice);dark urine,2 weeks,Asthma,unprotected sex with infected partner,Hepatitis B
+60,Male,dry cough;body aches;fever;loss of taste or smell;fatigue;shortness of breath,3 weeks,Hypercholesterolemia,being unvaccinated,COVID-19
+19,Female,painful periods (dysmenorrhea);pelvic pain;heavy bleeding;pain during intercourse,5 days,None,family history of endometriosis,Endometriosis
+23,Male,constipation;abdominal cramping;gas;alternating bowel habits;bloating;diarrhea,5 days,None,None,Irritable Bowel Syndrome (IBS)
+45,Female,vomiting;abdominal pain;dark urine;yellow skin and eyes (jaundice);extreme fatigue,3 weeks,None,sharing needles,Hepatitis B
+52,Female,redness and swelling;thick white odorless discharge;vaginal itching and irritation,1 week,Hypercholesterolemia,None,Yeast Infection (Candidiasis)
+59,Male,twisting bulging veins;itching around veins;dark purple or blue veins;throbbing cramping swelling in legs;aching heavy feeling in legs,1 week,None,None,Varicose Veins
+64,Male,iron deficiency anemia;weight loss;fatigue;gas;bloating;diarrhea,2 weeks,Mild Obesity,down syndrome;type 1 diabetes,Celiac Disease
+35,Female,recurrent seizures;uncontrollable jerking movements;staring spells;loss of consciousness,3 weeks,Hypercholesterolemia,None,Epilepsy
+57,Female,dizziness;fatigue;cold hands and feet;pale skin;weakness;chest pain,1 week,Mild Obesity,poor diet,Anemia
+39,Male,fatigue;yellowing skin (jaundice);speech difficulty;brown ring around cornea;coordination problems;abdominal pain,2 weeks,None,family history (inherited autosomal recessive trait),Wilson's Disease
+7,Male,joint swelling;limping;fever;rash;swollen lymph nodes;joint pain;morning joint stiffness,5 days,None,genetics,Juvenile Rheumatoid Arthritis
+32,Female,burrow tracks on skin;pimple-like skin rash;scales or blisters,3 days,Hypercholesterolemia,"crowded living environments (nursing homes, prisons)",Scabies
+62,Female,fatigue;fever;vomiting;nausea;chills,1 week,Asthma,None,Malaria
+36,Male,difficulty concentrating;daytime fatigue;waking up during night;irritability;waking up too early;difficulty falling asleep,5 days,Asthma,None,Insomnia
+36,Male,swelling under skin;hives;abdominal cramping,1 week,None,None,Angioedema
+48,Female,sudden vision trouble;face drooping;speech difficulty;arm weakness,3 weeks,None,smoking,Stroke
+42,Male,loss of consciousness;staring spells;uncontrollable jerking movements;recurrent seizures;temporary confusion,2 weeks,Mild Obesity,stroke or vascular diseases,Epilepsy
+45,Female,muscle cramps;dehydration;vomiting,3 weeks,None,type O blood;reduced or non-existent stomach acid,Cholera
+12,Female,strawberry tongue;red swollen palms/soles;high fever;peeling skin;swollen lymph nodes in neck;red eyes,2 weeks,None,Asian or Pacific Islander descent;being male,Kawasaki Disease
+45,Male,pain behind eyes;severe headache;fatigue;skin rash;joint and muscle pain;high fever,2 weeks,None,living or traveling in tropical/subtropical regions,Dengue Fever
+58,Male,regurgitation of food or acid;sore throat;chest pain;difficulty swallowing,1 week,None,smoking,GERD (Acid Reflux)
+57,Male,skin problems;small raised bumps;itching;red to brownish-gray patches;dry skin,3 days,Asthma,allergies;environmental irritants,Eczema (Atopic Dermatitis)
+58,Male,fatigue;sore throat;cough;congestion;fever,5 days,Type 2 Diabetes,weakened immune system,Common Cold
+6,Female,itchy skin rash;fever;headache;loss of appetite;fatigue,5 days,None,None,Chickenpox
+44,Male,jaundice;sensitivity to light;fever;headache;nausea;muscle aches (especially in back and knees);bleeding,1 week,None,living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+41,Male,fatigue;cough;chills;diarrhea;nausea;high fever;severe headache,3 days,Asthma,"consuming raw dairy;working in agriculture (cattle, sheep, goats)",Q Fever
+43,Male,difficulty breathing;abdominal cramping;hives;swelling under skin,3 weeks,None,taking ACE inhibitors;family history of hereditary angioedema,Angioedema
+30,Female,dark urine;yellow skin and eyes (jaundice);nausea;abdominal pain;vomiting,3 weeks,Hypercholesterolemia,occupational exposure to blood,Hepatitis B
+19,Female,loss of consciousness;uncontrollable jerking movements;staring spells;temporary confusion;recurrent seizures,1 week,None,brain infections (meningitis);dementia,Epilepsy
+60,Male,headache;drooling;jaw pain;facial drooping;difficulty closing eye,2 days,Hypertension,"recent viral infection (herpes simplex, influenza)",Bell's Palsy
+63,Male,itching;blisters;dry patches;skin problems;red rash,3 days,None,frequent handwashing,Skin Allergy (Contact Dermatitis)
+19,Female,coughing up blood;night sweats;persistent cough;fever;chest pain;fatigue;weight loss,1 week,None,substance abuse,Tuberculosis
+55,Female,hair loss;skin problems,5 days,Type 2 Diabetes,weak immune system;close contact with infected animals or people,Ringworm (Fungal Infection)
+50,Female,fever;skin that is warm to the touch;skin problems,5 days,Hypercholesterolemia,obesity;injuries/cuts,Cellulitis
+30,Female,loss of taste;jaw pain;drooling;headache;facial drooping,5 days,Hypertension,pregnancy,Bell's Palsy
+23,Male,shedding;scalp itching;thinning hair,3 days,Type 2 Diabetes,None,Alopecia
+24,Female,sensitivity to light;sudden high fever;skin rash;confusion;stiff neck;severe headache,2 weeks,None,None,Meningitis
+54,Male,severe eye pain;halos around lights;tunnel vision;blurry vision,1 week,Hypercholesterolemia,high internal eye pressure,Glaucoma
+33,Male,alternating bowel habits;bloating;abdominal cramping;gas;constipation,3 days,Hypertension,family history,Irritable Bowel Syndrome (IBS)
+50,Male,skin infections;frequent ear infections;chronic diarrhea;recurrent pneumonia;joint pain,1 week,None,family history of primary immunodeficiency,X-linked Agammaglobulinemia (XLA)
+76,Male,throbbing cramping swelling in legs;itching around veins;twisting bulging veins;aching heavy feeling in legs,5 days,None,None,Varicose Veins
+36,Male,fatigue;nausea;frequent urination,3 days,None,None,Gestational Diabetes
+20,Male,jaundice;bleeding;nausea;fever;sensitivity to light;headache,2 weeks,None,None,Yellow Fever
+39,Female,visible blood vessels;skin problems;eye problems;enlarged nose;facial redness;swollen red bumps,2 days,Asthma,being female,Rosacea
+36,Male,shortness of breath;chest tightness;wheezing,3 weeks,Hypercholesterolemia,None,Asthma
+42,Male,burning sensation;red rash;blisters;dry cracked skin;swelling;itching,5 days,None,stress;cold dry weather,Dermatitis (Contact / Seborrheic)
+32,Female,diarrhea;fever;nausea;cramps;stomach pain,2 days,Hypertension,consuming contaminated food or water,Gastroenteritis (Stomach Bug)
+37,Male,sudden loss of muscle tone (cataplexy);excessive daytime sleepiness;hallucinations;sleep paralysis,1 week,Hypertension,family history;autoimmune predisposition,Narcolepsy
+37,Male,fever;fatigue;tender warm swollen joints;loss of appetite;joint deformity over time,3 weeks,None,None,Rheumatoid Arthritis
+31,Female,bone fracture that occurs easily;back pain;stooped posture,5 days,None,hormonal levels (low estrogen/testosterone),Osteoporosis
+49,Male,"swelling;skin problems;center turns white when pressed;red, itchy welts;blanching",3 days,Mild Obesity,exercise,Hives (Urticaria)
+63,Female,fatigue;fluid-filled blisters;painful burning tingling rash;fever;itching,5 days,None,None,Shingles (Herpes Zoster)
+63,Male,infertility;thinning hair;weight gain;excess facial or body hair;irregular periods,5 days,Type 2 Diabetes,excess insulin,Polycystic Ovary Syndrome (PCOS)
+54,Female,joint pain;chronic diarrhea;frequent ear infections;sinus infections,3 weeks,None,None,X-linked Agammaglobulinemia (XLA)
+49,Male,skin problems;dry skin;itching;red to brownish-gray patches;small raised bumps,3 days,Hypertension,None,Eczema (Atopic Dermatitis)
+52,Female,headache;painful burning tingling rash;fluid-filled blisters;itching;fatigue,5 days,Hypertension,None,Shingles (Herpes Zoster)
+5,Female,fatigue;headache;fluid-filled blisters;loss of appetite;fever,3 days,None,None,Chickenpox
+32,Female,thinning hair;shedding;scalp itching,1 week,None,None,Alopecia
+55,Female,irregularly shaped mole;development of a new pigmented or unusual looking growth;skin problems,2 weeks,Hypertension,fair skin;having many moles,Melanoma (Skin Cancer)
+47,Male,headache;fever;fatigue;cough;chills;sweats;muscle aches,5 days,Asthma,older age or young childhood,Influenza (Flu)
+34,Female,skin problems;premature whitening or graying of hair,2 days,Mild Obesity,family history,Vitiligo
+29,Female,gas;iron deficiency anemia;weight loss;bloating;abdominal pain;fatigue,3 weeks,Mild Obesity,autoimmune thyroid disease;type 1 diabetes,Celiac Disease
+60,Male,diarrhea;nausea;vomiting;stomach pain;fatigue,1 week,None,None,Gastroenteritis (Stomach Bug)
+56,Male,chest tightness;coughing attacks;shortness of breath;wheezing,2 weeks,Asthma,allergies,Asthma
+60,Female,abdominal pain;nausea;extreme fatigue;vomiting,3 weeks,Type 2 Diabetes,occupational exposure to blood,Hepatitis B
+35,Male,skin problems;loss of color in tissues that line inside of mouth,2 days,Hypercholesterolemia,family history,Vitiligo
+27,Female,blistering;dry skin;severe sunburn from very small sunlight;high risk of skin cancer,1 week,None,consanguineous marriage in parents (autosomal recessive);family history,Xeroderma Pigmentosum
+52,Female,"hair loss;red, scaly, cracked skin",2 days,Hypertension,close contact with infected animals or people;sharing clothing or towels,Ringworm (Fungal Infection)
+58,Female,pale stools;dark urine;yellow skin;yellow eyes,1 week,Hypertension,certain medications;exposure to hepatitis viruses,Jaundice
+18,Female,gastrointestinal bleeding;severe abdominal pain;burning sensation in upper abdomen;heartburn;vomiting;weight loss,2 weeks,None,None,Zollinger-Ellison Syndrome
+57,Male,pelvic pain;strong urge to urinate;passing frequent small amounts of urine;cloudy urine,3 days,None,sexual activity,Urinary Tract Infection (UTI)
+33,Male,blurry vision;tunnel vision;eye redness;halos around lights,3 weeks,None,family history of glaucoma,Glaucoma
+57,Female,limited range of motion;intense joint pain;joint stiffness;joint redness and swelling;warmth in joint,1 week,None,alcohol use,Gout
+27,Female,skin infections;joint pain;recurrent pneumonia;frequent ear infections;sinus infections,2 weeks,None,family history of primary immunodeficiency,X-linked Agammaglobulinemia (XLA)
+64,Female,irregularly shaped mole;skin problems;changes in an existing mole,3 weeks,None,None,Melanoma (Skin Cancer)
+59,Female,burning sensation;swelling;itching;red rash;dry cracked skin,3 days,Type 2 Diabetes,exposure to skin irritants,Dermatitis (Contact / Seborrheic)
+24,Female,"itchy, ring-shaped rash;red, scaly, cracked skin;skin problems",5 days,Hypertension,None,Ringworm (Fungal Infection)
+61,Male,sudden loss of muscle tone (cataplexy);excessive daytime sleepiness,5 days,Type 2 Diabetes,age (onset between 10-30 years);autoimmune predisposition,Narcolepsy
+43,Female,persistent sadness;loss of interest;difficulty concentrating;sleep disturbances;appetite changes;fatigue,1 week,Hypercholesterolemia,certain medications;chronic illnesses,Depression (Clinical)
+22,Male,"itching;dry, cracked skin that may bleed;skin problems;burning",2 days,None,stress,Psoriasis
+23,Female,patchy loss of skin color;skin problems;premature whitening or graying of hair;loss of color in tissues that line inside of mouth,2 days,None,None,Vitiligo
+63,Female,persistent cough;coughing up blood;fatigue;fever;weight loss;chest pain,3 weeks,Asthma,None,Tuberculosis
+49,Male,weakness;increased thirst;mood changes;fatigue;frequent urination;unintended weight loss,3 weeks,Type 2 Diabetes,None,Diabetes Type 1
+20,Female,memory loss;mood changes;difficulty thinking;misplacing things,1 week,None,past head trauma,Alzheimer's Disease
+49,Male,pain worsens after eating;rapid pulse;fever;upper abdominal pain radiating to back;vomiting;oily smelly stools,3 weeks,None,None,Pancreatitis
+51,Female,sleep issues;widespread muscle pain;fatigue;cognitive difficulties (fibro fog);joint stiffness,1 week,Asthma,None,Fibromyalgia
+20,Female,sensitivity to light;headache;fever;bleeding;nausea,2 weeks,Hypercholesterolemia,living in or traveling to jungle/forested areas of Africa/South America;being unvaccinated,Yellow Fever
+18,Male,face drooping;speech difficulty;sudden numbness;loss of balance,2 weeks,None,high blood pressure,Stroke
+29,Female,itching;headache;fatigue;fever;fluid-filled blisters,3 days,Type 2 Diabetes,None,Shingles (Herpes Zoster)
+47,Male,diarrhea;nausea;vomiting;fever;headache;body aches;stomach pain,3 days,None,"eating contaminated food/shellfish;eating in crowded settings (schools, cruise ships)",Norovirus
+34,Male,fatigue;frequent urination;frequent infections,5 days,None,gestational diabetes in prior pregnancy,Gestational Diabetes
+59,Male,weight loss;fatigue;coughing up blood;fever;night sweats;chest pain;persistent cough,3 weeks,Hypertension,None,Tuberculosis
+58,Male,extreme fatigue;nausea;dark urine;vomiting;abdominal pain;yellow skin and eyes (jaundice),2 weeks,None,living with infected person,Hepatitis B
+19,Female,fever;white or yellow coating on tonsils;difficulty swallowing;swollen lymph nodes in neck;red swollen tonsils,2 days,None,frequent exposure to viral or bacterial germs (school settings);young age (children),Tonsillitis
+55,Male,headache;fever;muscle spasms;paralysis;confusion;excess salivation;fear of water (hydrophobia),2 weeks,Hypertension,"being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+33,Male,"skin problems;hair loss;red, scaly, cracked skin",5 days,Hypertension,None,Ringworm (Fungal Infection)
+23,Female,fever;body aches;dry cough;shortness of breath;loss of taste or smell,1 week,Hypertension,"underlying health conditions (diabetes, heart issues)",COVID-19
+42,Male,grating sensation;stiffness;joint pain;bone spurs;tenderness;loss of flexibility,1 week,None,None,Osteoarthritis
+25,Female,red rash;skin problems;dry patches,3 days,Hypercholesterolemia,None,Skin Allergy (Contact Dermatitis)
+22,Female,skin problems;oily skin;pimples;whiteheads,5 days,None,oily cosmetics,Acne Vulgaris
+39,Male,sneezing;congestion;sore throat;fatigue;cough;runny nose;fever,2 days,None,smoking,Common Cold
+58,Female,blisters;itching;dry patches,5 days,Type 2 Diabetes,frequent handwashing,Skin Allergy (Contact Dermatitis)
+41,Male,persistent cough;chest pain;fever;night sweats;coughing up blood;weight loss,3 weeks,None,weakened immune system (HIV/AIDS),Tuberculosis
+43,Female,body aches;loss of taste or smell;fever;shortness of breath;dry cough,3 weeks,Asthma,None,COVID-19
+46,Female,difficulty closing eye;facial drooping;headache;jaw pain;loss of taste,5 days,None,None,Bell's Palsy
+6,Male,joint swelling;rash;limping;fever;morning joint stiffness,5 days,None,genetics,Juvenile Rheumatoid Arthritis
+51,Female,frequent urination;fatigue;slow-healing sores;blurred vision;darkened skin in certain areas;increased thirst;frequent infections;increased hunger,2 weeks,Type 2 Diabetes,None,Diabetes Type 2
+34,Male,pain behind eyes;high fever;severe headache;joint and muscle pain;fatigue;skin rash,2 weeks,None,living or traveling in tropical/subtropical regions,Dengue Fever
+61,Male,dry skin;small raised bumps;red to brownish-gray patches;itching,2 days,Hypertension,stress;allergies,Eczema (Atopic Dermatitis)
+38,Female,swelling under skin;abdominal cramping;hives,2 weeks,Hypertension,None,Angioedema
+18,Male,dizziness;nausea;vomiting;nystagmus (abnormal eye movements);feeling of spinning;loss of balance,1 week,None,None,Vertigo
+20,Male,rapid heart rate;painful muscle spasms;difficulty swallowing;jaw cramping (lockjaw),3 weeks,Hypercholesterolemia,None,Tetanus
+83,Male,twisting bulging veins;dark purple or blue veins;throbbing cramping swelling in legs;itching around veins,1 week,None,family history,Varicose Veins
+18,Male,patchy loss of skin color;loss of color in tissues that line inside of mouth,5 days,None,None,Vitiligo
+64,Male,blisters;swelling;itching;burning sensation;red rash;dry cracked skin,1 week,Mild Obesity,None,Dermatitis (Contact / Seborrheic)
+62,Male,"small, fleshy, grainy bumps;skin problems;flesh-colored;white, pink or tan",5 days,Mild Obesity,sharing towels/public showers;weakened immune system,Warts
+35,Male,chills;circular rash;headache;swollen lymph nodes;fatigue;bulls-eye pattern;fever,2 days,Type 2 Diabetes,failing to remove ticks promptly,Lyme Disease
+43,Male,loss of color in tissues that line inside of mouth;patchy loss of skin color,5 days,Asthma,None,Vitiligo
+62,Female,runny nose;high-pitched intake of breath that sounds like 'whoop';severe hacking cough;fever,2 weeks,None,infant age (high complication risk),Whooping Cough (Pertussis)
+32,Male,"itching;skin problems;red patches of skin covered with thick, silvery scales;dry, cracked skin that may bleed",2 days,None,smoking;family history,Psoriasis
+62,Male,"red, itchy welts;swelling;blanching;center turns white when pressed",1 week,Hypercholesterolemia,known allergies;exercise,Hives (Urticaria)
+9,Male,limping;fever;swollen lymph nodes;morning joint stiffness;joint swelling;rash;joint pain,2 days,None,None,Juvenile Rheumatoid Arthritis
+24,Female,runny nose;vomiting after coughing;high-pitched intake of breath that sounds like 'whoop';fever;severe hacking cough,1 week,Hypercholesterolemia,close contact with infected person,Whooping Cough (Pertussis)
+41,Female,burrow tracks on skin;scales or blisters,1 week,Hypertension,None,Scabies
+77,Female,aching heavy feeling in legs;twisting bulging veins;dark purple or blue veins,1 week,None,None,Varicose Veins
+18,Male,dizziness;nystagmus (abnormal eye movements);vomiting;loss of balance;feeling of spinning,1 week,None,head injury,Vertigo
+40,Male,face drooping;speech difficulty;sudden vision trouble;loss of balance;arm weakness;sudden numbness,3 weeks,Asthma,high blood pressure;obesity,Stroke
+46,Male,"rough to the touch;small, fleshy, grainy bumps;flesh-colored;skin problems",3 days,Mild Obesity,None,Warts
+58,Male,joint stiffness;sleep issues;headaches;widespread muscle pain,1 week,Asthma,severe physical/emotional trauma;rheumatoid arthritis or lupus,Fibromyalgia
+57,Male,fever;red swollen tonsils;difficulty swallowing;sore throat;swollen lymph nodes in neck;white or yellow coating on tonsils,2 days,Asthma,young age (children);frequent exposure to viral or bacterial germs (school settings),Tonsillitis
+39,Male,pain worsens after eating;oily smelly stools;rapid pulse;fever;upper abdominal pain radiating to back;nausea;vomiting,2 weeks,None,gallstones,Pancreatitis
+18,Male,bald patches;shedding;hair loss;thinning hair;scalp itching,1 week,None,family history,Alopecia
+35,Male,"burning;dry, cracked skin that may bleed;red patches of skin covered with thick, silvery scales;itching",5 days,None,None,Psoriasis
+49,Female,burning sensation in upper abdomen;vomiting;diarrhea;gastrointestinal bleeding;severe abdominal pain;weight loss,2 weeks,Asthma,None,Zollinger-Ellison Syndrome
+56,Male,chest pain;heartburn;sore throat;difficulty swallowing;regurgitation of food or acid,2 days,Mild Obesity,None,GERD (Acid Reflux)
+21,Female,confusion;difficulty thinking;mood changes;misplacing things;memory loss;disorientation,2 weeks,None,past head trauma,Alzheimer's Disease
+32,Female,joint deformity over time;joint stiffness;fever;tender warm swollen joints;loss of appetite,3 weeks,None,age (most commonly starts in 40s-60s),Rheumatoid Arthritis
+51,Male,intense itching directly at night;burrow tracks on skin;scales or blisters,2 days,Hypercholesterolemia,"crowded living environments (nursing homes, prisons)",Scabies
+54,Male,shortness of breath;headache;dizziness;nosebleeds;chest pain,5 days,Hypercholesterolemia,excess alcohol,Hypertension (High Blood Pressure)
+29,Female,sore throat;fatigue;congestion;sneezing;runny nose;cough,3 days,Hypercholesterolemia,None,Common Cold
+29,Male,yellow skin;fatigue;pale stools;abdominal pain,5 days,None,None,Jaundice
+37,Male,tremor;slowed movement (bradykinesia);impaired posture and balance;speech changes;rigid muscles,3 weeks,None,"heredity/genetics;exposure to toxins (herbicides, pesticides)",Parkinson's Disease
+28,Male,face drooping;sudden numbness;arm weakness;loss of balance,2 weeks,Hypertension,high blood pressure;obesity,Stroke
+31,Female,abdominal cramping;swelling under skin,3 weeks,Hypercholesterolemia,None,Angioedema
+52,Female,eye redness;halos around lights;tunnel vision;severe eye pain;gradual loss of peripheral vision,1 week,None,"family history of glaucoma;medical conditions (diabetes, high BP)",Glaucoma
+52,Male,itching;dry patches;blisters,2 days,Mild Obesity,frequent handwashing;occupational exposure to irritants,Skin Allergy (Contact Dermatitis)
+37,Female,nausea;diarrhea;stomach pain;fever;headache;body aches,5 days,Hypercholesterolemia,poor hand hygiene,Norovirus
+50,Male,muscle stiffness;fever;jaw cramping (lockjaw);rapid heart rate,1 week,Hypertension,animal bites;being unvaccinated or overdue for booster,Tetanus
+59,Male,difficulty hearing;ear pain;tugging at ear;loss of balance;fluid draining from ear;fever,1 week,Asthma,"air quality (tobacco smoke, pollution)",Otitis Media (Ear Infection)
+32,Female,depressive episodes;high energy;irritability;mood swings,2 weeks,Hypercholesterolemia,None,Bipolar Disorder
+46,Male,fever;skin problems;skin that is warm to the touch;pain or tenderness,2 days,None,None,Cellulitis
+23,Male,skin problems;blisters;red rash;dry patches;itching,5 days,None,"exposure to allergens (poison ivy, nickel, latex, cosmetics);occupational exposure to irritants",Skin Allergy (Contact Dermatitis)
+33,Female,swelling under skin;difficulty breathing,2 weeks,Hypertension,None,Angioedema
+49,Male,difficulty falling asleep;waking up during night;daytime fatigue;waking up too early;difficulty concentrating,2 days,None,None,Insomnia
+55,Male,stiff neck;severe headache;seizures;sudden high fever;skin rash,2 weeks,Asthma,None,Meningitis
+29,Female,appetite changes;fatigue;loss of interest;sleep disturbances;difficulty concentrating,3 weeks,Mild Obesity,major life changes or trauma,Depression (Clinical)
+41,Female,muscle aches;headache;swollen lymph nodes;bulls-eye pattern;fever;circular rash;joint aches,3 days,None,failing to remove ticks promptly,Lyme Disease
+25,Male,bad breath;headache;nasal congestion;facial pain or pressure;thick nasal discharge,5 days,None,smoking;nasal polyps,Sinusitis
+38,Female,dry patches;skin problems;red rash,1 week,Mild Obesity,frequent handwashing,Skin Allergy (Contact Dermatitis)
+38,Female,limited range of motion;intense joint pain;joint stiffness;joint redness and swelling;warmth in joint,5 days,Asthma,None,Gout
+34,Male,slow-healing sores;increased thirst;increased hunger;darkened skin in certain areas;fatigue;frequent urination;blurred vision;frequent infections,3 weeks,Asthma,None,Diabetes Type 2
+64,Female,skin problems;honey-colored crusts;red sores that easily rupture;itching,2 days,Type 2 Diabetes,None,Impetigo
+58,Male,dizziness;loss of balance;nystagmus (abnormal eye movements);feeling of spinning;vomiting,2 days,Type 2 Diabetes,older age,Vertigo
+40,Female,joint stiffness;intense joint pain;warmth in joint;limited range of motion;joint redness and swelling,5 days,Hypertension,None,Gout
+63,Female,bleeding;muscle aches (especially in back and knees);jaundice;sensitivity to light;headache;fever,2 weeks,None,living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+44,Male,loss of taste;headache;drooling;jaw pain;difficulty closing eye,1 week,Asthma,family history,Bell's Palsy
+21,Male,joint stiffness;widespread muscle pain;cognitive difficulties (fibro fog);sleep issues,5 days,Type 2 Diabetes,None,Fibromyalgia
+2,Male,high fever;red swollen palms/soles;strawberry tongue;swollen lymph nodes in neck;red eyes;peeling skin,3 weeks,None,Asian or Pacific Islander descent,Kawasaki Disease
+56,Male,nausea;abdominal pain;vomiting;low-grade fever;abdominal swelling,1 week,None,age (10-30 years old),Appendicitis
+45,Female,fever;fatigue;fluid-filled blisters;painful burning tingling rash;itching,3 days,Asthma,having had chickenpox;older age (over 50),Shingles (Herpes Zoster)
+47,Female,upper abdominal pain radiating to back;pain worsens after eating;nausea;fever;rapid pulse;oily smelly stools,2 weeks,Mild Obesity,smoking,Pancreatitis
+10,Female,fever;loss of appetite;fluid-filled blisters;fatigue;headache,2 days,None,None,Chickenpox
+22,Male,kidney problems;fever;joint pain;fatigue;hair loss,3 weeks,Mild Obesity,"race (more common in African Americans, Hispanics, Asians)",Lupus
+63,Male,difficulty breathing;abdominal cramping;hives;swelling under skin,3 weeks,Mild Obesity,family history of hereditary angioedema,Angioedema
+18,Female,wheezing;coughing attacks;chest tightness,2 weeks,None,allergies;exposure to smoke,Asthma
+65,Female,back pain;stooped posture;loss of height over time;bone fracture that occurs easily,1 week,None,low calcium intake;small body frame,Osteoporosis
+34,Female,heavy bleeding;pelvic pain;fatigue;pain during intercourse;painful periods (dysmenorrhea);infertility,3 days,Mild Obesity,None,Endometriosis
+25,Male,shedding;hair loss;thinning hair;scalp itching;bald patches,5 days,None,medical conditions like diabetes/lupus,Alopecia
+45,Female,limited range of motion;intense joint pain;joint stiffness,2 days,Hypercholesterolemia,obesity,Gout
+14,Female,fever;loss of appetite;fluid-filled blisters;itchy skin rash,1 week,None,working in a school/childcare facility;being unvaccinated,Chickenpox
+40,Female,vomiting;sensitivity to sound;throbbing headache;sensitivity to light;nausea,3 weeks,None,being female;sensory stimuli,Migraine
+60,Female,jaw cramping (lockjaw);muscle stiffness;fever;painful muscle spasms;difficulty swallowing,2 weeks,Type 2 Diabetes,being unvaccinated or overdue for booster,Tetanus
+46,Female,manic episodes;depressive episodes;mood swings;impulsivity,1 week,None,periods of high stress,Bipolar Disorder
+57,Female,nystagmus (abnormal eye movements);vomiting;loss of balance;feeling of spinning,5 days,Asthma,migraines,Vertigo
+31,Female,itching;headache;fatigue;fluid-filled blisters;fever,5 days,None,undergoing cancer treatments,Shingles (Herpes Zoster)
+33,Female,"hair loss;itchy, ring-shaped rash;skin problems;red, scaly, cracked skin",2 days,None,None,Ringworm (Fungal Infection)
+78,Male,dizziness;chest pain;weakness;pale skin;fatigue,1 week,None,chronic diseases;pregnancy,Anemia
+63,Female,scaly patches;skin problems;flaky skin on scalp,3 days,None,stress,Dandruff (Seborrheic Dermatitis)
+29,Female,sore throat;thick nasal discharge;bad breath;nasal congestion;cough;headache,3 days,None,None,Sinusitis
+48,Female,scaly patches;red skin;flaky skin on scalp,1 week,None,oily skin,Dandruff (Seborrheic Dermatitis)
+35,Female,"pink, red or brown urine;pain during urination;nausea",1 week,Type 2 Diabetes,"diet high in protein, sodium, and sugar",Kidney Stones
+45,Female,joint pain;chronic diarrhea;recurrent pneumonia;skin infections,3 weeks,Asthma,being male (inherited X-linked trait),X-linked Agammaglobulinemia (XLA)
+42,Male,"center turns white when pressed;skin problems;blanching;red, itchy welts",1 week,Asthma,None,Hives (Urticaria)
+48,Male,shortness of breath;fever;dry cough;body aches,3 weeks,Mild Obesity,older age;immunodeficiency,COVID-19
+48,Female,"red, scaly, cracked skin;skin problems",3 days,Mild Obesity,close contact with infected animals or people;living in warm climates,Ringworm (Fungal Infection)
+18,Male,hallucinations;sleep paralysis;sudden loss of muscle tone (cataplexy);excessive daytime sleepiness,2 days,None,family history;autoimmune predisposition,Narcolepsy
+20,Male,patchy loss of skin color;loss of color in tissues that line inside of mouth,3 days,None,"family history;autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+40,Female,intense joint pain;joint redness and swelling;limited range of motion,3 days,Hypercholesterolemia,"diet high in purines (red meat, seafood);family history",Gout
+42,Female,fever;loss of appetite;fatigue;tender warm swollen joints;joint deformity over time;joint stiffness,1 week,Hypercholesterolemia,smoking;family history,Rheumatoid Arthritis
+65,Female,coordination problems;speech difficulty;yellowing skin (jaundice);abdominal pain,1 week,None,family history (inherited autosomal recessive trait),Wilson's Disease
+58,Female,unintended weight loss;increased thirst;weakness;frequent urination;mood changes;fatigue,1 week,Type 2 Diabetes,genetics,Diabetes Type 1
+43,Male,dry skin;red to brownish-gray patches;itching;skin problems,3 days,None,allergies,Eczema (Atopic Dermatitis)
+59,Female,vomiting after coughing;high-pitched intake of breath that sounds like 'whoop';runny nose;fever;severe hacking cough,2 weeks,None,infant age (high complication risk);being unvaccinated,Whooping Cough (Pertussis)
+60,Female,butterfly-shaped rash on cheeks;joint pain;sun sensitivity;fever;hair loss;kidney problems;fatigue,2 weeks,Mild Obesity,"race (more common in African Americans, Hispanics, Asians)",Lupus
+57,Male,vomiting;watery diarrhea (rice-water stools);nausea,2 weeks,Asthma,type O blood;sharing food/water with infected people,Cholera
+6,Male,fever;itchy skin rash;headache;fluid-filled blisters;loss of appetite;fatigue,2 days,None,None,Chickenpox
+19,Female,severe sunburn from very small sunlight;dry skin;high risk of skin cancer,3 weeks,None,None,Xeroderma Pigmentosum
+35,Male,hives;difficulty breathing;swelling under skin;abdominal cramping,2 weeks,None,known allergies,Angioedema
+57,Female,bleeding;muscle aches (especially in back and knees);jaundice;fever;sensitivity to light,3 weeks,Hypercholesterolemia,living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+60,Male,high fever;pain behind eyes;skin rash;severe headache,2 weeks,None,None,Dengue Fever
+32,Female,diarrhea;stomach pain;cramps;nausea;fatigue,3 days,Type 2 Diabetes,consuming contaminated food or water,Gastroenteritis (Stomach Bug)
+19,Female,pelvic pain;painful periods (dysmenorrhea);fatigue;infertility;heavy bleeding,3 days,None,None,Endometriosis
+56,Female,night sweats;persistent cough;fever;weight loss;fatigue;chest pain;coughing up blood,2 weeks,Asthma,None,Tuberculosis
+57,Male,sleep paralysis;excessive daytime sleepiness,2 days,None,None,Narcolepsy
+51,Female,"hair loss;skin problems;red, scaly, cracked skin",1 week,Hypertension,None,Ringworm (Fungal Infection)
+38,Male,painful muscle spasms;muscle stiffness;jaw cramping (lockjaw);rapid heart rate;fever,1 week,Type 2 Diabetes,animal bites;being unvaccinated or overdue for booster,Tetanus
+37,Female,"red, swollen area of skin;skin that is warm to the touch;fever",3 days,Type 2 Diabetes,injuries/cuts;skin conditions like eczema,Cellulitis
+58,Female,paralysis;headache;muscle spasms;fear of water (hydrophobia);excess salivation,1 week,Mild Obesity,traveling to regions with high rabies prevalence,Rabies
+45,Female,fatigue;joint deformity over time;loss of appetite;joint stiffness,1 week,None,family history,Rheumatoid Arthritis
+67,Male,pale skin;chest pain;dizziness;fatigue,1 week,Mild Obesity,family history;pregnancy,Anemia
+64,Female,itching;red sores that easily rupture;skin problems,1 week,None,None,Impetigo
+37,Male,red sores that easily rupture;honey-colored crusts;skin problems,2 days,None,"warm, humid weather;crowded conditions",Impetigo
+20,Male,daytime fatigue;irritability;difficulty concentrating;waking up during night;difficulty falling asleep,5 days,Mild Obesity,poor sleep hygiene;high stress levels,Insomnia
+35,Male,headache;rash;joint pain;red eyes;fever;muscle pain,5 days,Hypertension,None,Zika Virus
+25,Male,abdominal swelling;low-grade fever;loss of appetite;abdominal pain;nausea,3 weeks,Mild Obesity,family history;age (10-30 years old),Appendicitis
+27,Female,sensitivity to light;jaundice;nausea;fever;headache,1 week,Hypertension,being unvaccinated,Yellow Fever
+52,Male,strong urge to urinate;pelvic pain;burning sensation when urinating;cloudy urine,5 days,Hypercholesterolemia,certain types of birth control (diaphragms),Urinary Tract Infection (UTI)
+48,Male,slowed movement (bradykinesia);impaired posture and balance;speech changes;rigid muscles;tremor,3 weeks,Hypertension,being male,Parkinson's Disease
+47,Male,fever;sweats;cough;muscle aches;chills;fatigue,1 week,None,None,Influenza (Flu)
+18,Male,confusion;sensitivity to light;severe headache;sudden high fever;seizures;skin rash,2 weeks,None,pregnancy,Meningitis
+83,Female,dizziness;headache;shortness of breath;nosebleeds,1 week,Asthma,older age;high-sodium diet,Hypertension (High Blood Pressure)
+29,Male,changes in an existing mole;development of a new pigmented or unusual looking growth;skin problems,1 week,Asthma,None,Melanoma (Skin Cancer)
+28,Female,headache;difficulty closing eye;jaw pain;loss of taste,3 days,Hypercholesterolemia,family history,Bell's Palsy
+62,Male,vomiting after coughing;severe hacking cough;fever;runny nose;high-pitched intake of breath that sounds like 'whoop',3 weeks,Mild Obesity,close contact with infected person,Whooping Cough (Pertussis)
+58,Female,muscle weakness;cold sensitivity;memory problems;fatigue;constipation;dry skin;weight gain,5 days,None,None,Hypothyroidism
+52,Male,flaky skin on scalp;skin problems;red skin;scaly patches,3 days,None,stress,Dandruff (Seborrheic Dermatitis)
+43,Male,high fever;joint and muscle pain;severe headache;skin rash;fatigue;pain behind eyes,2 weeks,None,previous infection with a different dengue serotype;living or traveling in tropical/subtropical regions,Dengue Fever
+25,Female,frequent infections;darkened skin in certain areas;increased thirst;fatigue;blurred vision;slow-healing sores;frequent urination,2 weeks,None,physical inactivity;age (over 45),Diabetes Type 2
+26,Female,loss of taste or smell;shortness of breath;body aches;fever,1 week,Hypertension,"underlying health conditions (diabetes, heart issues);older age",COVID-19
+35,Female,frequent infections;increased thirst;frequent urination,5 days,Hypertension,age over 25;gestational diabetes in prior pregnancy,Gestational Diabetes
+31,Female,memory problems;cold sensitivity;weight gain;dry skin;fatigue,2 days,Hypertension,being female;autoimmune diseases,Hypothyroidism
+38,Female,vomiting;nausea;muscle cramps;watery diarrhea (rice-water stools);dehydration,1 week,Mild Obesity,poor sanitary conditions,Cholera
+62,Female,burrow tracks on skin;intense itching directly at night;pimple-like skin rash;scales or blisters,1 week,Mild Obesity,"crowded living environments (nursing homes, prisons);close physical contact with an infected person",Scabies
+57,Male,gas;fatigue;weight loss;diarrhea;iron deficiency anemia;bloating,3 weeks,Hypercholesterolemia,None,Celiac Disease
+48,Male,skin problems;loss of color in tissues that line inside of mouth,2 days,Asthma,"autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+41,Male,patchy loss of skin color;loss of color in tissues that line inside of mouth,2 days,None,"family history;autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+52,Female,speech difficulty;loss of balance;sudden numbness;face drooping;sudden vision trouble,3 weeks,Mild Obesity,None,Stroke
+37,Male,waking up during night;irritability;difficulty concentrating;waking up too early;daytime fatigue,2 days,None,None,Insomnia
+38,Male,hair loss;bald patches;shedding,3 days,None,None,Alopecia
+41,Male,fatigue;increased hunger;frequent urination;frequent infections;darkened skin in certain areas;increased thirst,1 week,None,high blood pressure/cholesterol;age (over 45),Diabetes Type 2
+40,Male,yellowing skin (jaundice);fatigue;abdominal pain;speech difficulty;coordination problems;brown ring around cornea,1 week,Hypertension,family history (inherited autosomal recessive trait),Wilson's Disease
+24,Male,jaundice;fever;sensitivity to light;muscle aches (especially in back and knees);nausea,1 week,Mild Obesity,being unvaccinated;living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+45,Male,nausea;loss of appetite;low-grade fever;vomiting,3 weeks,Asthma,cystic fibrosis,Appendicitis
+55,Female,slowed movement (bradykinesia);impaired posture and balance;rigid muscles;tremor,1 week,Asthma,being male;age (onset around 60 or older),Parkinson's Disease
+56,Male,"itchy, ring-shaped rash;red, scaly, cracked skin;hair loss",3 days,None,None,Ringworm (Fungal Infection)
+23,Male,heartburn;regurgitation of food or acid;difficulty swallowing;sore throat;chronic cough,2 days,Asthma,pregnancy;obesity,GERD (Acid Reflux)
+32,Female,fever;difficulty hearing;tugging at ear;fluid draining from ear;loss of balance,3 days,None,group childcare settings,Otitis Media (Ear Infection)
+60,Female,nausea;diarrhea;fever;stomach cramps;vomiting;upset stomach,5 days,Hypertension,poor food handling;eating raw or undercooked meats/seafood,Food Poisoning
+42,Male,fever;nausea;sensitivity to light;jaundice;headache;bleeding;muscle aches (especially in back and knees),3 weeks,Hypertension,None,Yellow Fever
+18,Female,diarrhea;severe headache;nausea;cough;fatigue,3 days,None,consuming raw dairy;being a veterinarian or laboratory worker,Q Fever
+27,Female,scarring;blackheads;oily skin;pimples,5 days,Hypertension,None,Acne Vulgaris
+33,Female,blurred vision;fatigue;extreme hunger;unintended weight loss;increased thirst;frequent urination;mood changes,2 weeks,Hypertension,genetics;possible viral triggers,Diabetes Type 1
+48,Female,fatigue;darkened skin in certain areas;blurred vision;increased thirst;increased hunger;slow-healing sores;frequent urination,1 week,Hypertension,high blood pressure/cholesterol;physical inactivity,Diabetes Type 2
+30,Male,chills;high fever;nausea;severe headache;diarrhea;fatigue;cough,2 days,None,"working in agriculture (cattle, sheep, goats)",Q Fever
+62,Female,throbbing headache;aura;sensitivity to light;sensitivity to sound,2 weeks,None,sleep changes;being female,Migraine
+11,Male,peeling skin;swollen lymph nodes in neck;red swollen palms/soles;high fever;strawberry tongue,2 weeks,None,Asian or Pacific Islander descent;age (under 5 years old),Kawasaki Disease
+49,Male,development of a new pigmented or unusual looking growth;skin problems;changes in an existing mole,3 weeks,Mild Obesity,excessive UV light exposure (tanning beds),Melanoma (Skin Cancer)
+1,Female,high fever;red swollen palms/soles;red eyes;swollen lymph nodes in neck;peeling skin;strawberry tongue,3 weeks,None,being male;age (under 5 years old),Kawasaki Disease
+25,Male,facial redness;enlarged nose;swollen red bumps;eye problems;skin problems;visible blood vessels,5 days,Mild Obesity,family history;being female,Rosacea
+52,Male,"white, pink or tan;rough to the touch;flesh-colored",1 week,None,weakened immune system;sharing towels/public showers,Warts
+29,Male,flaky skin on scalp;skin problems;itching,1 week,None,stress,Dandruff (Seborrheic Dermatitis)
+58,Female,blurred vision;frequent urination;slow-healing sores;increased thirst;fatigue;increased hunger;darkened skin in certain areas;frequent infections,2 weeks,Asthma,family history;physical inactivity,Diabetes Type 2
+24,Male,sore throat;chronic cough;difficulty swallowing;heartburn;regurgitation of food or acid,2 days,None,smoking,GERD (Acid Reflux)
+58,Male,slurred speech;lack of coordination;vision problems;tingling,1 week,Mild Obesity,None,Multiple Sclerosis
+48,Female,headache;fatigue;cough;chills;muscle aches;sweats,3 days,Hypercholesterolemia,None,Influenza (Flu)
+9,Male,joint swelling;rash;joint pain;morning joint stiffness;limping;swollen lymph nodes,1 week,None,None,Juvenile Rheumatoid Arthritis
+51,Female,fever;skin that is warm to the touch;skin problems,1 week,Mild Obesity,None,Cellulitis
+39,Female,itching;honey-colored crusts;skin problems,3 days,Type 2 Diabetes,"broken skin (cuts, scrapes);warm, humid weather",Impetigo
+38,Female,burning sensation when urinating;passing frequent small amounts of urine;pelvic pain;cloudy urine,3 days,Mild Obesity,urinary tract abnormalities or blockages,Urinary Tract Infection (UTI)
+43,Female,joint stiffness;fatigue;widespread muscle pain;headaches,3 days,Asthma,severe physical/emotional trauma;family history,Fibromyalgia
+35,Male,confusion;fever;paralysis;excess salivation;headache;fear of water (hydrophobia),1 week,Asthma,exploring caves with bats,Rabies
+53,Female,dry patches;itching;skin problems;red rash;blisters,1 week,Asthma,None,Skin Allergy (Contact Dermatitis)
+59,Female,irritability;impulsivity;high energy;mood swings;manic episodes,2 weeks,Type 2 Diabetes,None,Bipolar Disorder
+41,Female,blisters;red rash;dry patches;skin problems,5 days,Hypercholesterolemia,occupational exposure to irritants,Skin Allergy (Contact Dermatitis)
+63,Female,stomach cramps;vomiting;fever;diarrhea;upset stomach;nausea,2 days,None,None,Food Poisoning
+64,Male,loss of taste or smell;body aches;fatigue;dry cough,3 weeks,Hypertension,immunodeficiency;older age,COVID-19
+56,Male,severe sunburn from very small sunlight;high risk of skin cancer;dry skin;blistering;freckling on sun-exposed areas,2 weeks,None,family history;consanguineous marriage in parents (autosomal recessive),Xeroderma Pigmentosum
+37,Male,memory loss;mood changes;disorientation;difficulty thinking,2 weeks,None,None,Alzheimer's Disease
+65,Female,muscle stiffness;painful muscle spasms;jaw cramping (lockjaw);rapid heart rate;fever;difficulty swallowing,3 weeks,Asthma,animal bites,Tetanus
+53,Female,abdominal pain;fatigue;brown ring around cornea;coordination problems;yellowing skin (jaundice);speech difficulty,2 weeks,None,family history (inherited autosomal recessive trait),Wilson's Disease
+24,Male,fluid draining from ear;ear pain;loss of balance;fever;difficulty hearing;tugging at ear,2 days,Hypercholesterolemia,bottle-feeding while lying down;age (6 months to 2 years),Otitis Media (Ear Infection)
+27,Female,facial pain or pressure;headache;thick nasal discharge;nasal congestion;bad breath,1 week,None,allergies (hay fever),Sinusitis
+54,Female,blurred vision;extreme hunger;frequent urination;unintended weight loss;mood changes;increased thirst;weakness;fatigue,2 weeks,None,geography (further from equator),Diabetes Type 1
+23,Female,stomach cramps;diarrhea;nausea;vomiting,5 days,Hypercholesterolemia,weakened immunity;consuming unpasteurized dairy,Food Poisoning
+56,Female,impulsivity;manic episodes;mood swings;irritability;high energy,3 weeks,None,having a first-degree relative with bipolar,Bipolar Disorder
+65,Male,throbbing headache;aura;sensitivity to light;nausea,3 weeks,Hypercholesterolemia,None,Migraine
+33,Male,cloudy urine;pelvic pain;passing frequent small amounts of urine;burning sensation when urinating;strong urge to urinate,5 days,Hypercholesterolemia,None,Urinary Tract Infection (UTI)
+55,Female,joint aches;muscle aches;chills;headache;fatigue;circular rash;bulls-eye pattern;fever,1 week,Asthma,failing to remove ticks promptly,Lyme Disease
+43,Female,headache;nasal congestion;cough;sore throat;thick nasal discharge;bad breath;facial pain or pressure,2 days,None,nasal polyps,Sinusitis
+20,Female,wheezing;chest tightness;shortness of breath;coughing attacks,3 weeks,Hypercholesterolemia,None,Asthma
+11,Female,itchy skin rash;fluid-filled blisters;loss of appetite;fatigue,5 days,None,working in a school/childcare facility;being unvaccinated,Chickenpox
+36,Male,chills;chest pain;fever,3 weeks,Type 2 Diabetes,hospitalization,Pneumonia
+32,Female,loss of color in tissues that line inside of mouth;premature whitening or graying of hair;skin problems;patchy loss of skin color,3 days,Hypercholesterolemia,family history,Vitiligo
+35,Male,skin problems;loss of color in tissues that line inside of mouth;patchy loss of skin color;premature whitening or graying of hair,1 week,Hypercholesterolemia,None,Vitiligo
+55,Female,night sweats;coughing up blood;chest pain;fever;weight loss;fatigue;persistent cough,3 weeks,Hypertension,working in healthcare;weakened immune system (HIV/AIDS),Tuberculosis
+64,Female,burning sensation during intercourse or urination;thick white odorless discharge,3 days,Type 2 Diabetes,antibiotic use;impaired immune system,Yeast Infection (Candidiasis)
+43,Female,fever;cough with phlegm;chills;difficulty breathing;chest pain,2 weeks,Mild Obesity,hospitalization,Pneumonia
+10,Male,swollen lymph nodes in neck;red swollen palms/soles;high fever;red eyes;peeling skin,2 weeks,None,age (under 5 years old),Kawasaki Disease
+41,Male,sudden numbness;arm weakness;loss of balance;speech difficulty;face drooping;sudden vision trouble,2 weeks,None,None,Stroke
+63,Male,nausea;loss of balance;nystagmus (abnormal eye movements);dizziness,2 days,None,certain medications;head injury,Vertigo
+65,Female,nausea;vomiting;feeling of spinning;nystagmus (abnormal eye movements),1 week,None,older age;inner ear infections,Vertigo
+59,Male,weight loss;gastrointestinal bleeding;burning sensation in upper abdomen;heartburn;severe abdominal pain;diarrhea;vomiting;nausea,2 weeks,Mild Obesity,None,Zollinger-Ellison Syndrome
+55,Male,yellowing skin (jaundice);brown ring around cornea;abdominal pain;speech difficulty;fatigue;coordination problems,1 week,Hypertension,None,Wilson's Disease
+40,Female,pain during intercourse;infertility;fatigue;painful periods (dysmenorrhea),1 week,Mild Obesity,family history of endometriosis,Endometriosis
+41,Female,"swelling;skin problems;red, itchy welts;blanching;center turns white when pressed",3 days,Type 2 Diabetes,recent infection;stress,Hives (Urticaria)
+6,Female,fever;limping;joint pain;rash;joint swelling,5 days,None,None,Juvenile Rheumatoid Arthritis
+19,Male,honey-colored crusts;skin problems,1 week,None,"warm, humid weather;broken skin (cuts, scrapes)",Impetigo
+79,Male,aching heavy feeling in legs;dark purple or blue veins;itching around veins,3 days,None,None,Varicose Veins
+59,Male,kidney problems;fever;joint pain;butterfly-shaped rash on cheeks;fatigue;hair loss;sun sensitivity,1 week,None,"race (more common in African Americans, Hispanics, Asians)",Lupus
+28,Female,"red, scaly, cracked skin;hair loss;skin problems;itchy, ring-shaped rash",1 week,Asthma,None,Ringworm (Fungal Infection)
+50,Female,loss of interest;persistent sadness;difficulty concentrating;fatigue;appetite changes,1 week,Mild Obesity,None,Depression (Clinical)
+49,Male,stiff neck;confusion;severe headache;seizures;sensitivity to light;skin rash;sudden high fever,2 weeks,Mild Obesity,weakened immune system,Meningitis
+25,Female,"white, pink or tan;skin problems;rough to the touch;flesh-colored;small, fleshy, grainy bumps",5 days,Hypercholesterolemia,biting nails or cuticle picking;young age,Warts
+63,Male,impaired posture and balance;tremor;slowed movement (bradykinesia);rigid muscles,1 week,None,being male;age (onset around 60 or older),Parkinson's Disease
+46,Male,swollen lymph nodes in neck;red swollen tonsils;white or yellow coating on tonsils;difficulty swallowing;fever,2 days,Hypertension,None,Tonsillitis
+59,Female,fatigue;stomach pain;nausea;fever;vomiting;diarrhea,5 days,Mild Obesity,consuming contaminated food or water;poor hand hygiene,Gastroenteritis (Stomach Bug)
+22,Female,headaches;cognitive difficulties (fibro fog);joint stiffness;widespread muscle pain;sleep issues,5 days,Hypertension,rheumatoid arthritis or lupus;being female,Fibromyalgia
+18,Male,"flesh-colored;rough to the touch;white, pink or tan",5 days,None,sharing towels/public showers,Warts
+37,Female,thick white odorless discharge;burning sensation during intercourse or urination;redness and swelling,5 days,None,None,Yeast Infection (Candidiasis)
+55,Female,"pain during urination;severe pain in side and back;pink, red or brown urine;pain radiating to lower abdomen",1 week,None,obesity;dehydration,Kidney Stones
+33,Male,fatigue;sweating;headache;chills;fever,2 weeks,None,traveling to or living in tropical regions;being pregnant,Malaria
+42,Female,"center turns white when pressed;swelling;red, itchy welts",5 days,Hypercholesterolemia,recent infection,Hives (Urticaria)
+56,Male,slurred speech;fatigue;numbness or weakness in limbs;tingling;vision problems,1 week,Hypercholesterolemia,None,Multiple Sclerosis
+59,Female,rigid muscles;tremor;slowed movement (bradykinesia),1 week,Hypertension,"exposure to toxins (herbicides, pesticides)",Parkinson's Disease
+43,Male,cough;sweats;fever;fatigue;chills,2 days,Mild Obesity,None,Influenza (Flu)
+47,Female,muscle aches;cough;headache;fever;fatigue;sweats,1 week,None,None,Influenza (Flu)
+57,Female,ear pain;fever;fluid draining from ear;tugging at ear;difficulty hearing;loss of balance,3 days,Asthma,group childcare settings;age (6 months to 2 years),Otitis Media (Ear Infection)
+60,Female,sun sensitivity;fatigue;fever;kidney problems;hair loss;butterfly-shaped rash on cheeks;joint pain,1 week,None,"race (more common in African Americans, Hispanics, Asians)",Lupus
+51,Female,burning sensation;blisters;itching;swelling;dry cracked skin;red rash,3 days,Hypertension,None,Dermatitis (Contact / Seborrheic)
+63,Female,difficulty hearing;loss of balance;fluid draining from ear;tugging at ear,5 days,Hypertension,None,Otitis Media (Ear Infection)
+31,Female,"dry, cracked skin that may bleed;red patches of skin covered with thick, silvery scales;burning;skin problems",1 week,None,certain infections (like strep throat);family history,Psoriasis
+19,Male,high-pitched intake of breath that sounds like 'whoop';runny nose;vomiting after coughing;fever;severe hacking cough,3 weeks,None,being unvaccinated,Whooping Cough (Pertussis)
+38,Female,infertility;pain during intercourse;pelvic pain;fatigue,3 days,Type 2 Diabetes,family history of endometriosis,Endometriosis
+33,Female,facial pain or pressure;nasal congestion;bad breath;cough;sore throat;headache;thick nasal discharge,3 days,None,nasal polyps;smoking,Sinusitis
+46,Male,fever;runny nose;high-pitched intake of breath that sounds like 'whoop';vomiting after coughing,1 week,None,close contact with infected person;being unvaccinated,Whooping Cough (Pertussis)
+24,Male,vomiting;nausea;loss of appetite;abdominal swelling;abdominal pain;low-grade fever,3 weeks,Asthma,cystic fibrosis,Appendicitis
+21,Male,difficulty breathing;abdominal cramping;swelling under skin;hives,3 weeks,Type 2 Diabetes,family history of hereditary angioedema,Angioedema
+45,Female,vomiting;upset stomach;diarrhea;stomach cramps;nausea;fever,5 days,Asthma,None,Food Poisoning
+48,Male,recurrent seizures;staring spells;uncontrollable jerking movements;temporary confusion;loss of consciousness,2 weeks,Hypertension,dementia,Epilepsy
+48,Female,swollen lymph nodes in neck;fever;sore throat;difficulty swallowing;white or yellow coating on tonsils;red swollen tonsils,5 days,Hypertension,None,Tonsillitis
+21,Male,red rash;skin problems;dry patches,1 week,Type 2 Diabetes,frequent handwashing,Skin Allergy (Contact Dermatitis)
+53,Female,excess facial or body hair;severe acne;thinning hair;weight gain,1 week,None,heredity/family history,Polycystic Ovary Syndrome (PCOS)
+57,Female,"blanching;swelling;red, itchy welts;center turns white when pressed;skin problems",2 days,Type 2 Diabetes,None,Hives (Urticaria)
+43,Male,pain during urination;pain radiating to lower abdomen;severe pain in side and back,2 weeks,None,digestive diseases/surgery;dehydration,Kidney Stones
+38,Female,sudden high fever;confusion;sensitivity to light;skin rash;stiff neck;seizures;severe headache,2 weeks,Hypercholesterolemia,living in community settings;weakened immune system,Meningitis
+29,Male,sensitivity to light;seizures;stiff neck;skin rash;confusion,2 weeks,None,pregnancy,Meningitis
+35,Male,fatigue;tender warm swollen joints;joint stiffness;joint deformity over time;fever;loss of appetite,1 week,Asthma,None,Rheumatoid Arthritis
+41,Male,dark urine;vomiting;nausea;yellow skin and eyes (jaundice);extreme fatigue;abdominal pain,2 weeks,Asthma,sharing needles,Hepatitis B
+63,Male,sinus infections;recurrent pneumonia;joint pain;chronic diarrhea,1 week,Type 2 Diabetes,being male (inherited X-linked trait);family history of primary immunodeficiency,X-linked Agammaglobulinemia (XLA)
+54,Female,diarrhea;bloating;abdominal cramping;constipation;alternating bowel habits,3 days,None,None,Irritable Bowel Syndrome (IBS)
+76,Female,pale skin;dizziness;fatigue;weakness;chest pain;cold hands and feet,2 days,None,family history;intestinal disorders,Anemia
+74,Male,fever;easy bruising or bleeding;weight loss;swollen lymph nodes;night sweats;fatigue,3 weeks,Hypercholesterolemia,smoking;previous cancer treatment,Leukemia
+28,Female,cognitive difficulties (fibro fog);fatigue;headaches;widespread muscle pain;sleep issues;joint stiffness,5 days,Asthma,family history;severe physical/emotional trauma,Fibromyalgia
+30,Male,joint aches;headache;muscle aches;circular rash;swollen lymph nodes;fever;bulls-eye pattern;chills,3 days,None,spending time in wooded or grassy areas;failing to remove ticks promptly,Lyme Disease
+24,Female,joint pain;headache;muscle pain;red eyes;rash,3 days,None,None,Zika Virus
+46,Female,weight loss;persistent cough;coughing up blood;chest pain;fever,1 week,Type 2 Diabetes,None,Tuberculosis
+59,Male,vomiting;fatigue;headache;sweating;chills;nausea;fever,3 weeks,None,young childhood,Malaria
+39,Male,blistering;dry skin;severe sunburn from very small sunlight,1 week,Asthma,None,Xeroderma Pigmentosum
+60,Male,lack of coordination;tingling;fatigue;numbness or weakness in limbs;vision problems,1 week,Hypercholesterolemia,age (20-40 years old);certain infections (Epstein-Barr),Multiple Sclerosis
+53,Female,small raised bumps;itching;red to brownish-gray patches,5 days,None,None,Eczema (Atopic Dermatitis)
+42,Male,"pain or tenderness;skin problems;red, swollen area of skin;fever;skin that is warm to the touch",1 week,Hypertension,weakened immune system,Cellulitis
+50,Female,daytime fatigue;difficulty falling asleep;irritability;difficulty concentrating;waking up during night;waking up too early,2 days,None,caffeine/alcohol use,Insomnia
+59,Female,vomiting;abdominal pain;loss of appetite;abdominal swelling,2 weeks,Type 2 Diabetes,None,Appendicitis
+38,Male,enlarged nose;skin problems;facial redness;visible blood vessels;swollen red bumps;eye problems,2 days,Type 2 Diabetes,None,Rosacea
+24,Female,increased appetite;weight loss;sweating;anxiety;rapid heart rate;tremors;heat sensitivity;goiter,3 weeks,None,personal history of chronic illnesses like type 1 diabetes;being female,Hyperthyroidism
+35,Male,premature whitening or graying of hair;patchy loss of skin color;loss of color in tissues that line inside of mouth,3 days,None,"autoimmune conditions (thyroid disease, alopecia areata);family history",Vitiligo
+31,Female,pelvic pain;painful periods (dysmenorrhea);infertility;pain during intercourse;heavy bleeding;fatigue,3 days,Mild Obesity,starting periods at early age;never giving birth,Endometriosis
+48,Female,weight gain;thinning hair;severe acne;irregular periods;infertility,2 days,Hypertension,None,Polycystic Ovary Syndrome (PCOS)
+65,Female,sensitivity to light;nausea;throbbing headache;vomiting;aura,1 week,Type 2 Diabetes,None,Migraine
+40,Female,dehydration;watery diarrhea (rice-water stools);muscle cramps;vomiting,1 week,Hypercholesterolemia,None,Cholera
+22,Female,"severe pain in side and back;pink, red or brown urine;nausea;pain radiating to lower abdomen;pain during urination",3 weeks,Hypercholesterolemia,None,Kidney Stones
+14,Female,fever;swollen lymph nodes;joint pain;rash;morning joint stiffness;joint swelling;limping,2 days,None,None,Juvenile Rheumatoid Arthritis
+34,Male,shortness of breath;fatigue;slight fever;cough with mucus,1 week,Type 2 Diabetes,cigarette smoke;gastric reflux,Bronchitis
+40,Male,tremor;speech changes;impaired posture and balance,2 weeks,Asthma,age (onset around 60 or older),Parkinson's Disease
+43,Male,pimple-like skin rash;scales or blisters,2 days,Type 2 Diabetes,None,Scabies
+46,Male,strong urge to urinate;pelvic pain;passing frequent small amounts of urine,5 days,Hypertension,None,Urinary Tract Infection (UTI)
+42,Female,high-pitched intake of breath that sounds like 'whoop';fever;severe hacking cough,2 weeks,None,None,Whooping Cough (Pertussis)
+28,Male,difficulty concentrating;waking up too early;irritability;difficulty falling asleep;daytime fatigue;waking up during night,3 days,None,None,Insomnia
+31,Female,persistent cough;fatigue;chest pain;night sweats;fever,2 weeks,Type 2 Diabetes,None,Tuberculosis
+54,Female,frequent urination;unintended weight loss;mood changes;increased thirst;extreme hunger;blurred vision;fatigue,3 weeks,None,None,Diabetes Type 1
+32,Male,"skin problems;red, scaly, cracked skin",3 days,Hypertension,sharing clothing or towels;weak immune system,Ringworm (Fungal Infection)
+48,Female,skin problems;blackheads;whiteheads;oily skin,1 week,None,family history,Acne Vulgaris
+54,Male,fever;fatigue;chest pain;coughing up blood;weight loss,2 weeks,Hypercholesterolemia,None,Tuberculosis
+24,Female,tender warm swollen joints;joint deformity over time;loss of appetite;fatigue;joint stiffness;fever,2 weeks,Asthma,smoking;environmental exposures,Rheumatoid Arthritis
+20,Male,difficulty closing eye;jaw pain;drooling;headache;facial drooping;loss of taste,1 week,None,None,Bell's Palsy
+32,Female,wheezing;chest tightness;coughing attacks;shortness of breath,3 weeks,Mild Obesity,allergies;family history,Asthma
+50,Male,"skin problems;red, itchy welts;center turns white when pressed;blanching;swelling",2 days,Type 2 Diabetes,stress,Hives (Urticaria)
+88,Male,headache;chest pain;shortness of breath;nosebleeds,2 days,None,older age,Hypertension (High Blood Pressure)
+28,Female,vomiting;rapid pulse;nausea;upper abdominal pain radiating to back;pain worsens after eating;fever,1 week,None,gallstones;abdominal surgery,Pancreatitis
+58,Female,speech difficulty;coordination problems;brown ring around cornea;abdominal pain,2 weeks,None,None,Wilson's Disease
+59,Male,cold hands and feet;chest pain;fatigue;dizziness;pale skin,1 week,None,None,Anemia
+49,Female,severe sunburn from very small sunlight;blistering;freckling on sun-exposed areas;high risk of skin cancer,3 weeks,None,None,Xeroderma Pigmentosum
+55,Female,sinus infections;recurrent pneumonia;frequent ear infections;skin infections;joint pain,3 weeks,None,being male (inherited X-linked trait),X-linked Agammaglobulinemia (XLA)
+21,Male,back pain;loss of height over time,5 days,Mild Obesity,older age,Osteoporosis
+45,Female,darkened skin in certain areas;slow-healing sores;frequent urination;blurred vision;increased hunger;increased thirst,2 weeks,Type 2 Diabetes,None,Diabetes Type 2
+19,Male,excess salivation;fever;fear of water (hydrophobia);confusion;headache;paralysis,3 weeks,None,"being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+30,Female,headache;sweating;fever;vomiting;fatigue,2 weeks,Hypertension,None,Malaria
+41,Male,tenderness;stiffness;joint pain;loss of flexibility;grating sensation,2 days,None,obesity,Osteoarthritis
+52,Male,chills;chest pain;cough with phlegm;fever;difficulty breathing,2 weeks,Hypertension,None,Pneumonia
+33,Female,watery diarrhea (rice-water stools);vomiting;dehydration;nausea;muscle cramps,3 weeks,Type 2 Diabetes,reduced or non-existent stomach acid,Cholera
+31,Male,confusion;muscle spasms;fear of water (hydrophobia);fever;paralysis;excess salivation;headache,3 weeks,None,"being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+21,Female,"pink, red or brown urine;pain during urination;nausea;pain radiating to lower abdomen",2 weeks,None,digestive diseases/surgery,Kidney Stones
+40,Female,stooped posture;back pain,5 days,None,None,Osteoporosis
+22,Female,skin infections;joint pain;recurrent pneumonia;chronic diarrhea,2 weeks,Hypertension,being male (inherited X-linked trait);family history of primary immunodeficiency,X-linked Agammaglobulinemia (XLA)
+18,Male,fatigue;chills;sweats;fever;headache;cough;muscle aches,5 days,None,None,Influenza (Flu)
+65,Male,dizziness;cold hands and feet;chest pain;weakness;fatigue;pale skin,2 days,None,None,Anemia
+31,Male,nausea;throbbing headache;sensitivity to light;aura;sensitivity to sound,1 week,Hypercholesterolemia,None,Migraine
+53,Female,skin problems;blisters;red rash,1 week,None,occupational exposure to irritants,Skin Allergy (Contact Dermatitis)
+62,Male,bulls-eye pattern;circular rash;fatigue;joint aches;chills;headache;muscle aches;swollen lymph nodes;fever,5 days,None,having exposed skin in tick habitats,Lyme Disease
+63,Female,shedding;hair loss;thinning hair,3 days,None,medical conditions like diabetes/lupus,Alopecia
+53,Female,"itchy, ring-shaped rash;hair loss",5 days,None,weak immune system,Ringworm (Fungal Infection)
+56,Female,cognitive difficulties (fibro fog);joint stiffness;fatigue;sleep issues;headaches;widespread muscle pain,1 week,Hypercholesterolemia,None,Fibromyalgia
+31,Male,dark urine;nausea;yellow skin and eyes (jaundice);vomiting;extreme fatigue,3 weeks,Hypertension,occupational exposure to blood,Hepatitis B
+38,Male,red rash;itching;dry cracked skin;burning sensation;blisters,1 week,None,allergies;cold dry weather,Dermatitis (Contact / Seborrheic)
+50,Female,speech changes;tremor;rigid muscles;slowed movement (bradykinesia),1 week,None,age (onset around 60 or older);being male,Parkinson's Disease
+80,Male,nosebleeds;shortness of breath;headache,1 week,Hypercholesterolemia,excess weight,Hypertension (High Blood Pressure)
+31,Female,pelvic pain;strong urge to urinate;cloudy urine,3 days,Type 2 Diabetes,certain types of birth control (diaphragms);sexual activity,Urinary Tract Infection (UTI)
+22,Male,dry skin;severe sunburn from very small sunlight;freckling on sun-exposed areas;high risk of skin cancer,2 weeks,Type 2 Diabetes,None,Xeroderma Pigmentosum
+68,Female,shortness of breath;headache;chest pain;dizziness,5 days,None,lack of physical activity;family history,Hypertension (High Blood Pressure)
+37,Male,bald patches;scalp itching;thinning hair;shedding,1 week,Hypercholesterolemia,None,Alopecia
+24,Female,fever;muscle stiffness;painful muscle spasms;difficulty swallowing;rapid heart rate;jaw cramping (lockjaw),2 weeks,Hypertension,None,Tetanus
+59,Female,fatigue;vision problems;numbness or weakness in limbs;lack of coordination,2 weeks,None,smoking,Multiple Sclerosis
+75,Female,headache;chest pain;nosebleeds;shortness of breath,2 days,Hypertension,family history;excess weight,Hypertension (High Blood Pressure)
+43,Male,high risk of skin cancer;freckling on sun-exposed areas;dry skin;severe sunburn from very small sunlight;blistering,1 week,Mild Obesity,family history;consanguineous marriage in parents (autosomal recessive),Xeroderma Pigmentosum
+47,Male,vision problems;numbness or weakness in limbs;tingling;lack of coordination;fatigue,3 weeks,Type 2 Diabetes,age (20-40 years old);being female,Multiple Sclerosis
+26,Male,eye redness;tunnel vision;gradual loss of peripheral vision;halos around lights;severe eye pain;blurry vision,3 weeks,Hypercholesterolemia,None,Glaucoma
+51,Male,fever;red swollen tonsils;swollen lymph nodes in neck;white or yellow coating on tonsils;sore throat,1 week,None,young age (children),Tonsillitis
+30,Female,abdominal cramping;bloating;constipation;gas;diarrhea;alternating bowel habits,3 days,None,young age (under 50);family history,Irritable Bowel Syndrome (IBS)
+41,Female,skin problems;itching;small raised bumps,3 days,Hypertension,None,Eczema (Atopic Dermatitis)
+30,Female,stomach pain;nausea;cramps;fatigue;vomiting;diarrhea,2 days,None,consuming contaminated food or water;poor hand hygiene,Gastroenteritis (Stomach Bug)
+59,Female,cold hands and feet;fatigue;chest pain;dizziness;weakness,5 days,Type 2 Diabetes,None,Anemia
+62,Male,misplacing things;memory loss;disorientation;confusion,3 weeks,Type 2 Diabetes,None,Alzheimer's Disease
+50,Male,sensitivity to sound;nausea;vomiting;sensitivity to light;throbbing headache,1 week,Asthma,None,Migraine
+59,Male,blurry vision;halos around lights;severe eye pain;gradual loss of peripheral vision;tunnel vision,1 week,None,extreme nearsightedness;age over 60,Glaucoma
+29,Male,abdominal pain;rectal pain;weight loss;diarrhea often with blood or pus;fatigue,2 weeks,None,race/ethnicity (higher in Ashkenazi Jews);age (usually before 30),Ulcerative Colitis
+62,Female,shortness of breath;fever;body aches;fatigue;dry cough,2 weeks,None,None,COVID-19
+35,Male,diarrhea;upset stomach;nausea;stomach cramps,1 week,Type 2 Diabetes,None,Food Poisoning
+53,Male,pain or tenderness;skin that is warm to the touch;fever;skin problems,5 days,None,weakened immune system,Cellulitis
+46,Female,facial redness;eye problems;swollen red bumps;skin problems;enlarged nose;visible blood vessels,1 week,Hypertension,family history;fair skin,Rosacea
+59,Female,fever;confusion;headache;muscle spasms;excess salivation;paralysis;fear of water (hydrophobia),2 weeks,None,"being bitten or scratched by wild animals (bats, raccoons, dogs)",Rabies
+44,Female,heartburn;gastrointestinal bleeding;weight loss;burning sensation in upper abdomen;nausea;vomiting;diarrhea;severe abdominal pain,1 week,Mild Obesity,family history of Multiple Endocrine Neoplasia type 1 (MEN1),Zollinger-Ellison Syndrome
+48,Female,mood changes;disorientation;difficulty thinking;misplacing things;memory loss,3 weeks,Mild Obesity,past head trauma,Alzheimer's Disease
+44,Male,dry patches;itching;blisters;red rash;skin problems,3 days,Hypercholesterolemia,"frequent handwashing;exposure to allergens (poison ivy, nickel, latex, cosmetics)",Skin Allergy (Contact Dermatitis)
+26,Female,blistering;severe sunburn from very small sunlight;dry skin;freckling on sun-exposed areas,2 weeks,None,consanguineous marriage in parents (autosomal recessive);family history,Xeroderma Pigmentosum
+48,Male,fatigue;muscle aches;chills;fever;headache;cough;sweats,3 days,None,pregnancy;older age or young childhood,Influenza (Flu)
+55,Female,development of a new pigmented or unusual looking growth;irregularly shaped mole,3 weeks,Hypertension,history of sunburns,Melanoma (Skin Cancer)
+34,Male,waking up during night;daytime fatigue;difficulty falling asleep;waking up too early;difficulty concentrating;irritability,5 days,Type 2 Diabetes,None,Insomnia
+44,Male,sensitivity to sound;sensitivity to light;throbbing headache;nausea;aura;vomiting,3 weeks,Type 2 Diabetes,None,Migraine
+57,Female,yellow eyes;pale stools;dark urine;fatigue,5 days,Asthma,excessive alcohol use,Jaundice
+43,Female,pain behind eyes;fatigue;skin rash;severe headache;joint and muscle pain,3 weeks,None,None,Dengue Fever
+27,Male,sore throat;bad breath;headache;facial pain or pressure;nasal congestion,1 week,Hypertension,asthma,Sinusitis
+31,Female,abdominal cramping;constipation;diarrhea;alternating bowel habits,2 days,None,young age (under 50),Irritable Bowel Syndrome (IBS)
+61,Male,staring spells;temporary confusion;recurrent seizures;uncontrollable jerking movements;loss of consciousness,2 weeks,Hypertension,stroke or vascular diseases;brain infections (meningitis),Epilepsy
+62,Female,nausea;sensitivity to light;bleeding;fever;muscle aches (especially in back and knees);jaundice,2 weeks,Hypercholesterolemia,None,Yellow Fever
+42,Female,redness and swelling;burning sensation during intercourse or urination;thick white odorless discharge;vaginal itching and irritation,5 days,Mild Obesity,antibiotic use,Yeast Infection (Candidiasis)
+53,Male,nausea;dehydration;watery diarrhea (rice-water stools);muscle cramps,1 week,Hypercholesterolemia,reduced or non-existent stomach acid;sharing food/water with infected people,Cholera
+56,Female,blurred vision;unintended weight loss;weakness;increased thirst;fatigue;extreme hunger;frequent urination;mood changes,3 weeks,Hypertension,family history,Diabetes Type 1
+58,Male,sensitivity to light;headache;muscle aches (especially in back and knees);bleeding;jaundice,2 weeks,Type 2 Diabetes,None,Yellow Fever
+25,Male,muscle cramps;watery diarrhea (rice-water stools);dehydration;vomiting,3 weeks,Hypercholesterolemia,None,Cholera
+59,Female,hives;swelling under skin;abdominal cramping,1 week,Hypercholesterolemia,family history of hereditary angioedema,Angioedema
+46,Male,loss of appetite;nausea;vomiting;low-grade fever,2 weeks,None,None,Appendicitis
+21,Female,abdominal pain;weight loss;rectal pain;fever;diarrhea often with blood or pus;fatigue,3 weeks,Type 2 Diabetes,family history;age (usually before 30),Ulcerative Colitis
+36,Male,loss of taste or smell;body aches;shortness of breath;dry cough,2 weeks,None,being unvaccinated;immunodeficiency,COVID-19
+62,Male,burning sensation when urinating;pelvic pain;cloudy urine;passing frequent small amounts of urine;strong urge to urinate,3 days,None,None,Urinary Tract Infection (UTI)
+44,Female,severe acne;weight gain;irregular periods;thinning hair;infertility,5 days,None,heredity/family history,Polycystic Ovary Syndrome (PCOS)
+28,Female,fatigue;chest discomfort;slight fever;shortness of breath,1 week,Mild Obesity,None,Bronchitis
+61,Female,fatigue;coughing up blood;weight loss;fever;night sweats;chest pain,3 weeks,Hypertension,working in healthcare;substance abuse,Tuberculosis
+32,Male,widespread muscle pain;joint stiffness;fatigue;cognitive difficulties (fibro fog);headaches,5 days,Hypertension,rheumatoid arthritis or lupus;family history,Fibromyalgia
+47,Female,skin problems;patchy loss of skin color,1 week,Asthma,"autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+39,Male,"skin problems;rough to the touch;small, fleshy, grainy bumps;white, pink or tan",5 days,Mild Obesity,weakened immune system,Warts
+48,Female,hallucinations;sudden loss of muscle tone (cataplexy),2 days,Hypercholesterolemia,age (onset between 10-30 years);family history,Narcolepsy
+13,Male,fatigue;loss of appetite;fluid-filled blisters;fever,2 days,None,working in a school/childcare facility,Chickenpox
+88,Male,fatigue;weight loss;easy bruising or bleeding;swollen lymph nodes;frequent infections;fever;night sweats,3 weeks,None,previous cancer treatment,Leukemia
+62,Male,shortness of breath;nosebleeds;chest pain;dizziness;headache,5 days,None,None,Hypertension (High Blood Pressure)
+48,Female,vomiting;nausea;fatigue;diarrhea;cramps,1 week,None,None,Gastroenteritis (Stomach Bug)
+32,Male,blisters;itching;red rash;burning sensation;dry cracked skin;swelling,3 days,None,None,Dermatitis (Contact / Seborrheic)
+61,Female,fever;red eyes;headache;rash;joint pain,5 days,Mild Obesity,unprotected sex with an infected partner;lacking immunity,Zika Virus
+38,Male,shortness of breath;chest discomfort;cough with mucus;fatigue,5 days,Mild Obesity,None,Bronchitis
+24,Female,yellow eyes;yellow skin;fatigue;pale stools;dark urine,3 days,Mild Obesity,exposure to hepatitis viruses;excessive alcohol use,Jaundice
+61,Male,shortness of breath;fatigue;slight fever,5 days,Hypertension,exposure to irritants on the job,Bronchitis
+51,Female,blisters;swelling;red rash;burning sensation;dry cracked skin;itching,3 days,Hypercholesterolemia,None,Dermatitis (Contact / Seborrheic)
+26,Female,blurred vision;increased thirst;increased hunger;fatigue;slow-healing sores;darkened skin in certain areas,3 weeks,Mild Obesity,physical inactivity;age (over 45),Diabetes Type 2
+51,Female,headaches;fatigue;cognitive difficulties (fibro fog);joint stiffness,3 days,Hypercholesterolemia,None,Fibromyalgia
+39,Female,coughing up blood;chest pain;persistent cough;weight loss;fever;night sweats;fatigue,2 weeks,None,working in healthcare,Tuberculosis
+44,Male,fever;nausea;upset stomach;diarrhea;stomach cramps;vomiting,2 days,Hypertension,None,Food Poisoning
+52,Female,small raised bumps;itching;red to brownish-gray patches,3 days,None,allergies,Eczema (Atopic Dermatitis)
+34,Female,skin problems;visible blood vessels;enlarged nose;swollen red bumps;facial redness,3 days,Hypertension,None,Rosacea
+35,Female,slurred speech;vision problems;lack of coordination;fatigue;tingling,3 weeks,Hypertension,None,Multiple Sclerosis
+50,Male,loss of appetite;joint deformity over time;tender warm swollen joints;joint stiffness;fever;fatigue,1 week,None,family history;age (most commonly starts in 40s-60s),Rheumatoid Arthritis
+58,Female,misplacing things;disorientation;memory loss;confusion,3 weeks,Type 2 Diabetes,None,Alzheimer's Disease
+5,Female,high fever;red eyes;strawberry tongue;swollen lymph nodes in neck;peeling skin,3 weeks,None,age (under 5 years old);being male,Kawasaki Disease
+41,Male,wheezing;shortness of breath;chest tightness;coughing attacks,2 weeks,None,exposure to smoke;family history,Asthma
+21,Female,yellow skin;pale stools;abdominal pain;fatigue;yellow eyes;dark urine,3 days,None,None,Jaundice
+33,Male,abdominal pain;vomiting;low-grade fever;nausea,2 weeks,Hypercholesterolemia,family history;cystic fibrosis,Appendicitis
+53,Male,dark urine;abdominal pain;yellow skin;pale stools;fatigue;yellow eyes,2 days,None,None,Jaundice
+53,Female,yellow skin and eyes (jaundice);extreme fatigue;dark urine;vomiting,1 week,Hypertension,None,Hepatitis B
+58,Male,skin problems;flesh-colored;rough to the touch,3 days,Hypertension,biting nails or cuticle picking,Warts
+63,Female,fatigue;bloating;weight loss;gas;iron deficiency anemia;abdominal pain;diarrhea,2 weeks,None,down syndrome;autoimmune thyroid disease,Celiac Disease
+32,Female,burning sensation during intercourse or urination;thick white odorless discharge,5 days,Hypercholesterolemia,None,Yeast Infection (Candidiasis)
+55,Female,chest discomfort;shortness of breath;fatigue,1 week,Asthma,cigarette smoke;exposure to irritants on the job,Bronchitis
+39,Female,loss of balance;fever;tugging at ear;difficulty hearing,1 week,Hypercholesterolemia,None,Otitis Media (Ear Infection)
+22,Female,joint pain;skin infections;sinus infections;recurrent pneumonia;frequent ear infections,2 weeks,Mild Obesity,family history of primary immunodeficiency,X-linked Agammaglobulinemia (XLA)
+60,Female,skin problems;irregularly shaped mole;development of a new pigmented or unusual looking growth;changes in an existing mole,1 week,Asthma,fair skin,Melanoma (Skin Cancer)
+58,Female,sensitivity to light;confusion;severe headache;stiff neck;skin rash;seizures,3 weeks,Asthma,None,Meningitis
+39,Male,waking up too early;daytime fatigue;difficulty falling asleep;waking up during night,5 days,Hypercholesterolemia,high stress levels;medical or psychiatric disorders,Insomnia
+52,Female,skin problems;patchy loss of skin color;loss of color in tissues that line inside of mouth,2 days,Asthma,"autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+18,Female,"small, fleshy, grainy bumps;rough to the touch;skin problems",2 days,None,None,Warts
+21,Male,difficulty breathing;fever;chills;cough with phlegm,3 weeks,None,"weakened immune system;chronic lung disease (COPD, asthma)",Pneumonia
+23,Female,warmth in joint;joint stiffness;joint redness and swelling;intense joint pain,2 days,None,alcohol use;obesity,Gout
+29,Female,shedding;bald patches;hair loss;scalp itching,3 days,Type 2 Diabetes,older age;family history,Alopecia
+18,Male,difficulty swallowing;jaw cramping (lockjaw);painful muscle spasms;fever;muscle stiffness;rapid heart rate,1 week,None,None,Tetanus
+5,Male,limping;swollen lymph nodes;morning joint stiffness;joint swelling;joint pain;rash;fever,5 days,None,being female;genetics,Juvenile Rheumatoid Arthritis
+43,Female,swelling;skin problems;center turns white when pressed,1 week,Mild Obesity,temperature extremes,Hives (Urticaria)
+20,Female,skin problems;red sores that easily rupture,1 week,None,"crowded conditions;broken skin (cuts, scrapes)",Impetigo
+51,Male,tremors;rapid heart rate;goiter;heat sensitivity;sweating;anxiety,2 weeks,Asthma,family history of Grave's disease;being female,Hyperthyroidism
+57,Male,yellow skin and eyes (jaundice);abdominal pain;nausea;vomiting;dark urine;extreme fatigue,2 weeks,None,occupational exposure to blood;living with infected person,Hepatitis B
+58,Female,tingling;lack of coordination;numbness or weakness in limbs;fatigue;slurred speech,2 weeks,None,family history;smoking,Multiple Sclerosis
+49,Male,vomiting after coughing;high-pitched intake of breath that sounds like 'whoop';runny nose,2 weeks,Mild Obesity,close contact with infected person;infant age (high complication risk),Whooping Cough (Pertussis)
+28,Male,increased thirst;increased hunger;frequent infections;frequent urination;blurred vision;fatigue,1 week,Hypertension,high blood pressure/cholesterol,Diabetes Type 2
+29,Male,numbness or weakness in limbs;slurred speech;fatigue;lack of coordination;vision problems,2 weeks,None,family history,Multiple Sclerosis
+40,Male,halos around lights;blurry vision;severe eye pain;eye redness;gradual loss of peripheral vision;tunnel vision,1 week,Asthma,high internal eye pressure,Glaucoma
+80,Male,shortness of breath;headache;dizziness;chest pain;nosebleeds,2 days,None,None,Hypertension (High Blood Pressure)
+32,Male,muscle cramps;watery diarrhea (rice-water stools);vomiting,2 weeks,Hypertension,type O blood;sharing food/water with infected people,Cholera
+24,Male,diarrhea;upset stomach;nausea;stomach cramps;fever,2 days,None,weakened immunity,Food Poisoning
+26,Male,bloating;diarrhea;abdominal cramping;gas,1 week,Type 2 Diabetes,None,Irritable Bowel Syndrome (IBS)
+51,Male,fluid draining from ear;loss of balance;fever;ear pain;tugging at ear;difficulty hearing,2 days,None,None,Otitis Media (Ear Infection)
+48,Female,fatigue;heavy bleeding;painful periods (dysmenorrhea);infertility,2 days,None,None,Endometriosis
+52,Female,appetite changes;sleep disturbances;fatigue;loss of interest;difficulty concentrating;persistent sadness,2 weeks,None,None,Depression (Clinical)
+56,Female,scalp itching;bald patches;hair loss;thinning hair,5 days,Asthma,older age,Alopecia
+47,Female,darkened skin in certain areas;slow-healing sores;fatigue;frequent urination;increased hunger;increased thirst;blurred vision,3 weeks,None,None,Diabetes Type 2
+64,Male,pimple-like skin rash;scales or blisters;burrow tracks on skin;intense itching directly at night,2 days,Mild Obesity,"crowded living environments (nursing homes, prisons);close physical contact with an infected person",Scabies
+21,Female,red swollen tonsils;sore throat;swollen lymph nodes in neck;fever;white or yellow coating on tonsils;difficulty swallowing,3 days,Hypercholesterolemia,None,Tonsillitis
+37,Female,painful muscle spasms;muscle stiffness;difficulty swallowing;jaw cramping (lockjaw);fever,2 weeks,None,animal bites;being unvaccinated or overdue for booster,Tetanus
+50,Female,blisters;itching;red rash,2 days,None,None,Skin Allergy (Contact Dermatitis)
+65,Male,hallucinations;sudden loss of muscle tone (cataplexy);excessive daytime sleepiness,3 days,Hypertension,autoimmune predisposition;age (onset between 10-30 years),Narcolepsy
+23,Male,thinning hair;bald patches;shedding;hair loss,1 week,Hypercholesterolemia,medical conditions like diabetes/lupus,Alopecia
+21,Female,sensitivity to sound;nausea;vomiting;aura;throbbing headache,2 weeks,Mild Obesity,None,Migraine
+47,Female,widespread muscle pain;joint stiffness;cognitive difficulties (fibro fog);sleep issues,5 days,Hypercholesterolemia,None,Fibromyalgia
+44,Female,speech difficulty;arm weakness;sudden vision trouble;face drooping;sudden numbness,3 weeks,Hypercholesterolemia,diabetes;obesity,Stroke
+19,Male,gas;abdominal cramping;diarrhea;alternating bowel habits;constipation;bloating,5 days,None,being female,Irritable Bowel Syndrome (IBS)
+3,Female,fluid-filled blisters;headache;itchy skin rash;fatigue;loss of appetite,2 days,None,weakened immune system;working in a school/childcare facility,Chickenpox
+43,Male,persistent sadness;fatigue;appetite changes;difficulty concentrating;loss of interest,3 weeks,Mild Obesity,abuse of alcohol or drugs,Depression (Clinical)
+39,Male,sleep issues;cognitive difficulties (fibro fog);joint stiffness;headaches,5 days,Type 2 Diabetes,family history,Fibromyalgia
+48,Female,joint and muscle pain;high fever;severe headache;fatigue,3 weeks,Asthma,previous infection with a different dengue serotype;living or traveling in tropical/subtropical regions,Dengue Fever
+59,Female,loss of color in tissues that line inside of mouth;patchy loss of skin color,2 days,None,"autoimmune conditions (thyroid disease, alopecia areata)",Vitiligo
+39,Male,chronic diarrhea;joint pain;sinus infections;skin infections;recurrent pneumonia,3 weeks,Mild Obesity,None,X-linked Agammaglobulinemia (XLA)
+52,Male,pimple-like skin rash;burrow tracks on skin,1 week,Hypertension,"crowded living environments (nursing homes, prisons)",Scabies
+40,Female,severe headache;nausea;diarrhea;fatigue;cough;high fever;chills,2 days,None,None,Q Fever
+30,Female,passing frequent small amounts of urine;strong urge to urinate;burning sensation when urinating,1 week,None,menopause,Urinary Tract Infection (UTI)
+66,Male,chest pain;headache;dizziness,2 days,Mild Obesity,lack of physical activity;family history,Hypertension (High Blood Pressure)
+59,Male,tugging at ear;fever;loss of balance;fluid draining from ear;difficulty hearing;ear pain,2 days,Type 2 Diabetes,None,Otitis Media (Ear Infection)
+48,Male,goiter;anxiety;sweating;rapid heart rate;increased appetite;weight loss,3 weeks,None,None,Hyperthyroidism
+18,Male,fever;fatigue;loss of appetite;joint stiffness;joint deformity over time;tender warm swollen joints,3 weeks,None,age (most commonly starts in 40s-60s);being female,Rheumatoid Arthritis
+56,Male,sensitivity to light;seizures;stiff neck;confusion;sudden high fever,1 week,None,weakened immune system,Meningitis
+20,Male,nausea;headache;sensitivity to light;bleeding;jaundice;muscle aches (especially in back and knees);fever,2 weeks,None,being unvaccinated;living in or traveling to jungle/forested areas of Africa/South America,Yellow Fever
+18,Male,sensitivity to sound;sensitivity to light;vomiting;nausea,1 week,None,None,Migraine
+85,Male,cold hands and feet;dizziness;fatigue;pale skin;chest pain,2 days,Hypertension,intestinal disorders;poor diet,Anemia
+39,Male,scarring;blackheads;oily skin;whiteheads;skin problems,3 days,Asthma,None,Acne Vulgaris
+18,Female,"red patches of skin covered with thick, silvery scales;skin problems;dry, cracked skin that may bleed",3 days,None,None,Psoriasis
+47,Female,weight gain;excess facial or body hair;irregular periods;thinning hair;severe acne;infertility,5 days,Type 2 Diabetes,heredity/family history;excess insulin,Polycystic Ovary Syndrome (PCOS)
+18,Male,eye redness;tunnel vision;halos around lights;severe eye pain;blurry vision,1 week,None,None,Glaucoma
+52,Male,low-grade fever;nausea;loss of appetite;abdominal pain;abdominal swelling,3 weeks,Mild Obesity,family history;cystic fibrosis,Appendicitis

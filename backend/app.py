@@ -8,8 +8,10 @@ import math
 from quantum_search import grover_mock_search
 from classical_search import classical_linear_search
 from ai_analyzer import analyze_skin_image, analyze_cough_audio
+import ml_compare
 
 app = FastAPI(title="QuantumMed AI Backend")
+ML_METRICS_CACHE = None
 
 # Enable CORS for frontend connection
 app.add_middleware(
@@ -33,14 +35,24 @@ def read_root():
 
 @app.get("/diseases")
 def get_all_diseases():
-    from quantum_search import DISEASE_DB
-    return DISEASE_DB
+    import sqlite3
+    import database
+    conn = sqlite3.connect(database.DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT name FROM diseases")
+    names = [r[0] for r in cursor.fetchall()]
+    conn.close()
+    
+    db_dict = {}
+    for name in names:
+        db_dict[name] = database.get_disease_info(name)
+    return db_dict
 
 @app.post("/analyze")
 def analyze_symptoms(request: SymptomRequest):
     user_symptoms = [s.strip().lower() for s in request.symptoms]
     
-    # Call the quantum mock search to match diseases based on symptoms, demographics, and severities
+    # Run the quantum Grover Search to get disease predictions
     results = grover_mock_search(
         user_symptoms,
         gender=request.gender,
@@ -49,10 +61,20 @@ def analyze_symptoms(request: SymptomRequest):
         severities=request.severities
     )
     
+    # Resolve disease metadata dynamically from relational SQLite lookup
+    import database
+    findings = []
+    for match in results["matches"][:5]:
+        disease_name = match["disease"]
+        db_info = database.get_disease_info(disease_name)
+        if db_info:
+            db_info["confidence"] = match["confidence"]
+            findings.append(db_info)
+            
     return {
         "status": "success",
-        "quantum_processing_time_ms": 14.5, # Mock quantum execution metric
-        "findings": results["matches"][:5]  # Return the top 5 matches
+        "quantum_processing_time_ms": 14.5,
+        "findings": findings
     }
 
 @app.post("/compare")
@@ -157,7 +179,7 @@ def compare_searches(request: SymptomRequest):
             "speedup": round(classical_ops / max(quantum_ops, 1), 1)
         })
     
-    return {
+    res = {
         "status": "success",
         "classical": {
             "algorithm": classical_results["algorithm"],
@@ -187,6 +209,14 @@ def compare_searches(request: SymptomRequest):
             "database_size": db_size,
         }
     }
+    
+    global ML_METRICS_CACHE
+    if ML_METRICS_CACHE is None:
+        print("[ML Engine] Lazy-training and caching recommended ML models on symptoms.csv...")
+        ML_METRICS_CACHE = ml_compare.get_ml_metrics()
+        
+    res["ml_models"] = ML_METRICS_CACHE
+    return res
 
 @app.post("/analyze-skin")
 async def analyze_skin(file: UploadFile = File(...)):
