@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumMed AI - Dataset Statistical Analytics Dashboard</title>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #0F172A;
+            color: #E2E8F0;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #38BDF8;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #94A3B8;
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 1400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .card {
+            background-color: #1E293B;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            color: #38BDF8;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 12px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 6px;
+            border: 1px solid #475569;
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        footer {
+            margin-top: 60px;
+            color: #64748B;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>⚛️ QuantumMed AI</h1>
+        <p>Dataset Statistical Analytics Dashboard — symptoms.csv (4,500 Observations)</p>
+    </header>
+    
+    <div class="container">
+        <div class="card full-width">
+            <h2>Combined Analytics Sheet (All Graphs Grid)</h2>
+            <img src="combined_statistical_plots.png" alt="Combined Plots">
+        </div>
+        
+        <div class="card">
+            <h2>1. Distribution of Symptoms per Patient Record</h2>
+            <img src="symptom_distribution_histogram.png" alt="Histogram">
+        </div>
+        
+        <div class="card">
+            <h2>2. Spread and Outliers (Symptom Counts)</h2>
+            <img src="symptom_count_boxplot.png" alt="Box Plot">
+        </div>
+        
+        <div class="card">
+            <h2>3. Correlation Heatmap (Top 15 Symptoms Relationship)</h2>
+            <img src="symptom_correlation_heatmap.png" alt="Heatmap">
+        </div>
+        
+        <div class="card">
+            <h2>4. Top 10 Diseases by Record Count</h2>
+            <img src="top_diseases_bar_chart.png" alt="Bar Chart">
+        </div>
+    </div>
+    
+    <footer>
+        QuantumMed AI Project &copy; 2026. Built with Python, Pandas, Matplotlib, and Seaborn.
+    </footer>
+</body>
+</html>
