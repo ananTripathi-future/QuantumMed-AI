@@ -16,6 +16,12 @@ Hybrid Quantum-Inspired Clinical Decision Support Platform
   <img src="https://img.shields.io/badge/Qiskit-Quantum-6929C4?style=for-the-badge" alt="Qiskit" />
 </p>
 
+<p align="center">
+  <a href="https://quantum-med-ai.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Vercel-blueviolet?style=for-the-badge&logo=vercel" alt="Live Demo" />
+  </a>
+</p>
+
 ---
 
 # 📑 Table of Contents
