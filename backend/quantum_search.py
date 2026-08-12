@@ -1,8 +1,12 @@
-from qiskit import QuantumCircuit
-from qiskit_aer import AerSimulator
+try:
+    from qiskit import QuantumCircuit
+    from qiskit_aer import AerSimulator
+    HAS_QISKIT = True
+except ImportError:
+    HAS_QISKIT = False
+
 import random
 import math
-
 import json
 import os
 
@@ -65,16 +69,22 @@ def grover_mock_search(user_symptoms, gender="Any", age_group="Adult", is_pregna
     total_query_weight = sum(symptom_weights.values())
 
     # 2. Qiskit circuit setup to simulate superposition and measurement
-    qc = QuantumCircuit(2, 2)
-    qc.h([0, 1])  # Put qubits in superposition
-    qc.measure([0, 1], [0, 1])
-    
-    # Run the circuit on the local Aer simulator
-    simulator = AerSimulator()
-    job = simulator.run(qc, shots=1)
-    result = job.result()
-    counts = result.get_counts(qc)
-    print(f"[Quantum State Measurement] Grover Search Sub-routine ran. State: {counts}")
+    if HAS_QISKIT:
+        qc = QuantumCircuit(2, 2)
+        qc.h([0, 1])  # Put qubits in superposition
+        qc.measure([0, 1], [0, 1])
+        
+        # Run the circuit on the local Aer simulator
+        simulator = AerSimulator()
+        job = simulator.run(qc, shots=1)
+        result = job.result()
+        counts = result.get_counts(qc)
+        print(f"[Quantum State Measurement] Grover Search Sub-routine ran. State: {counts}")
+    else:
+        # Fallback simulation
+        state = random.choice(['00', '01', '10', '11'])
+        counts = {state: 1}
+        print(f"[Quantum State Fallback] Grover Search simulated. State: {counts}")
     
     # 3. Match calculations using weighted symptom overlap (acting as our amplified oracle result)
     comparisons_made = 0
