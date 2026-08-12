@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Activity, Stethoscope, Search, ShieldCheck, HeartPulse, Camera, Mic, Upload, Pill, Coffee, CheckCircle, Zap, BarChart3, Trophy, TrendingUp, Cpu, Atom, AlertTriangle } from 'lucide-react';
 import './index.css';
 
-const API_URL = "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 const getHospitalTriggers = (match) => {
   const triggers = [

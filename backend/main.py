@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI, File, UploadFile, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
@@ -11,13 +11,14 @@ from ai_analyzer import analyze_skin_image, analyze_cough_audio
 import ml_compare
 
 app = FastAPI(title="QuantumMed AI Backend")
+api_router = APIRouter()
 ML_METRICS_CACHE = None
 
 # Enable CORS for frontend connection
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -29,11 +30,11 @@ class SymptomRequest(BaseModel):
     is_pregnant: bool = False
     severities: dict[str, str] = {}
 
-@app.get("/")
+@api_router.get("/")
 def read_root():
     return {"message": "Welcome to the QuantumMed AI API! Status: Quantum Processor Online"}
 
-@app.get("/diseases")
+@api_router.get("/diseases")
 def get_all_diseases():
     import sqlite3
     import database
@@ -48,7 +49,7 @@ def get_all_diseases():
         db_dict[name] = database.get_disease_info(name)
     return db_dict
 
-@app.post("/analyze")
+@api_router.post("/analyze")
 def analyze_symptoms(request: SymptomRequest):
     user_symptoms = [s.strip().lower() for s in request.symptoms]
     
@@ -77,7 +78,7 @@ def analyze_symptoms(request: SymptomRequest):
         "findings": findings
     }
 
-@app.post("/compare")
+@api_router.post("/compare")
 def compare_searches(request: SymptomRequest):
     """
     Run BOTH classical and quantum searches on the same input,
@@ -218,18 +219,22 @@ def compare_searches(request: SymptomRequest):
     res["ml_models"] = ML_METRICS_CACHE
     return res
 
-@app.post("/analyze-skin")
+@api_router.post("/analyze-skin")
 async def analyze_skin(file: UploadFile = File(...)):
     contents = await file.read()
     results = analyze_skin_image(contents)
     return {"status": "success", "ai_findings": results}
 
-@app.post("/analyze-cough")
+@api_router.post("/analyze-cough")
 async def analyze_cough(file: UploadFile = File(...)):
     contents = await file.read()
     results = analyze_cough_audio(contents)
     return {"status": "success", "ai_findings": results}
 
+# Include the router both under the root path and under the '/api' prefix for full compatibility
+app.include_router(api_router)
+app.include_router(api_router, prefix="/api")
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=8000)

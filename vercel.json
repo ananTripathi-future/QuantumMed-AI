@@ -1,0 +1,15 @@
+{
+  "services": {
+    "frontend": {
+      "root": "frontend",
+      "framework": "vite",
+      "routePrefix": "/"
+    },
+    "backend": {
+      "root": "backend",
+      "entrypoint": "main:app",
+      "framework": "fastapi",
+      "routePrefix": "/api"
+    }
+  }
+}
