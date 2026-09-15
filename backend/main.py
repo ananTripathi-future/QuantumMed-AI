@@ -1,7 +1,7 @@
-from fastapi import FastAPI, File, UploadFile, APIRouter
+from fastapi import FastAPI, File, UploadFile, APIRouter, Body
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional, Dict
 import time
 import math
 
@@ -10,11 +10,22 @@ from classical_search import classical_linear_search
 from ai_analyzer import analyze_skin_image, analyze_cough_audio
 import ml_compare
 
-app = FastAPI(title="QuantumMed AI Backend")
+# 10-Pillar Extension Modules
+import pqc_security
+import qrng_security
+import qaoa_optimizer
+import multimodal_fusion
+import uncertainty_engine
+import xai_engine
+import digital_twin
+import temporal_diff
+import hitl_workflow
+import research_lab
+
+app = FastAPI(title="QuantumMed AI Backend", version="2.0.0")
 api_router = APIRouter()
 ML_METRICS_CACHE = None
 
-# Enable CORS for frontend connection
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -30,9 +41,29 @@ class SymptomRequest(BaseModel):
     is_pregnant: bool = False
     severities: dict[str, str] = {}
 
+class MultimodalRequest(BaseModel):
+    symptoms: List[str]
+    gender: str = "Any"
+    age_group: str = "Adult"
+    is_pregnant: bool = False
+    severities: dict[str, str] = {}
+    vitals: Optional[Dict[str, float]] = None
+    medical_history: Optional[List[str]] = None
+    patient_id: str = "demo_patient"
+
+class TemporalRequest(BaseModel):
+    report_t1: str
+    report_t2: str
+
+class HITLRequest(BaseModel):
+    consultation_id: str
+    clinician_name: str
+    review_status: str
+    clinician_notes: str
+
 @api_router.get("/")
 def read_root():
-    return {"message": "Welcome to the QuantumMed AI API! Status: Quantum Processor Online"}
+    return {"message": "Welcome to QuantumMed AI Research Platform! Status: Quantum & AI Processors Online"}
 
 @api_router.get("/diseases")
 def get_all_diseases():
@@ -52,8 +83,6 @@ def get_all_diseases():
 @api_router.post("/analyze")
 def analyze_symptoms(request: SymptomRequest):
     user_symptoms = [s.strip().lower() for s in request.symptoms]
-    
-    # Run the quantum Grover Search to get disease predictions
     results = grover_mock_search(
         user_symptoms,
         gender=request.gender,
@@ -62,7 +91,6 @@ def analyze_symptoms(request: SymptomRequest):
         severities=request.severities
     )
     
-    # Resolve disease metadata dynamically from relational SQLite lookup
     import database
     findings = []
     for match in results["matches"][:5]:
@@ -72,21 +100,23 @@ def analyze_symptoms(request: SymptomRequest):
             db_info["confidence"] = match["confidence"]
             findings.append(db_info)
             
+    # Compute Explainability & Uncertainty
+    xai = xai_engine.generate_explainable_ai_report(findings, user_symptoms)
+    top_conf = findings[0]["confidence"] if findings else 0.0
+    unc = uncertainty_engine.evaluate_prediction_uncertainty(top_conf, len(user_symptoms))
+            
     return {
         "status": "success",
         "quantum_processing_time_ms": 14.5,
-        "findings": findings
+        "findings": findings,
+        "xai_explainability": xai,
+        "uncertainty_safety": unc
     }
 
 @api_router.post("/compare")
 def compare_searches(request: SymptomRequest):
-    """
-    Run BOTH classical and quantum searches on the same input,
-    measure their performance, and return a detailed comparison.
-    """
     user_symptoms = [s.strip().lower() for s in request.symptoms]
     
-    # --- Run Classical Search with timing ---
     classical_start = time.perf_counter()
     classical_results = classical_linear_search(
         user_symptoms,
@@ -98,7 +128,6 @@ def compare_searches(request: SymptomRequest):
     classical_end = time.perf_counter()
     classical_time_ms = round((classical_end - classical_start) * 1000, 4)
     
-    # --- Run Quantum Search with timing ---
     quantum_start = time.perf_counter()
     quantum_results = grover_mock_search(
         user_symptoms,
@@ -110,65 +139,14 @@ def compare_searches(request: SymptomRequest):
     quantum_end = time.perf_counter()
     quantum_time_ms = round((quantum_end - quantum_start) * 1000, 4)
     
-    # --- SIMULATE MASSIVE DATABASE DEMO ---
-    # Intercept 'simulate 1m scale' to explicitly demonstrate the condition where Quantum wins
-    is_massive_scale = any("simulate 1m scale" in s for s in user_symptoms)
-    if is_massive_scale:
-        user_symptoms = [s for s in user_symptoms if "simulate 1m scale" not in s]
-        if not user_symptoms:
-            user_symptoms = ["fever"] # Fallback symptom
-        
-        # Artificially scale up the physical timings 
-        # (Simulating real-world O(N) lag for 1,000,000 linear checks)
-        classical_time_ms += 3250.75  # ~3.2 seconds
-        quantum_time_ms += 12.30      # Quantum states compute large spaces instantaneously
-        
-        # Override base size
-        classical_results["database_size"] = 1000000
-        quantum_results["database_size"] = 1000000
-        
-    # --- Compute comparison metrics ---
     db_size = classical_results["database_size"]
-    
-    # Theoretical complexity comparison
-    classical_theoretical_ops = db_size * len(user_symptoms)  # O(N*M)
-    quantum_theoretical_ops = max(1, int(math.sqrt(db_size)))  # O(√N)
-    
+    classical_theoretical_ops = db_size * len(user_symptoms)
+    quantum_theoretical_ops = max(1, int(math.sqrt(db_size)))
     speedup_factor = round(classical_theoretical_ops / max(quantum_theoretical_ops, 1), 2)
     
-    # Match quality analysis
     classical_matches = classical_results["matches"]
     quantum_matches = quantum_results["matches"]
     
-    classical_diseases = set(m["disease"] for m in classical_matches)
-    quantum_diseases = set(m["disease"] for m in quantum_matches)
-    
-    common_matches = classical_diseases.intersection(quantum_diseases)
-    
-    # Determine the winner dynamically
-    if quantum_time_ms <= classical_time_ms:
-        winner = "quantum"
-    else:
-        winner = "classical"
-        
-    winner_reasons = []
-    
-    if winner == "classical":
-        winner_reasons.append(f"Classical Search executed faster physically ({classical_time_ms} ms vs {quantum_time_ms} ms).")
-        winner_reasons.append(f"For tiny databases ({db_size} records), the overhead of establishing a Quantum state outpaces the linear runtime.")
-    else:
-        winner_reasons.append(f"Quantum Search executed faster physically ({quantum_time_ms} ms vs {classical_time_ms} ms).")
-    
-    if quantum_theoretical_ops < classical_theoretical_ops:
-        winner_reasons.append(f"Theoretically, Quantum requires only {quantum_theoretical_ops} ops vs Classical's {classical_theoretical_ops} checks.")
-    
-    if speedup_factor > 1:
-        winner_reasons.append(f"Grover's algorithm provides a {speedup_factor}x theoretical speedup.")
-        
-    winner_reasons.append(f"As the database scales, Quantum's O(√N) algorithm massively outperforms Classical's O(N×M).")
-    winner_reasons.append(f"Both algorithms independently found {len(common_matches)} common matches, proving identical accuracy.")
-    
-    # Scalability projections
     scale_projections = []
     for scale in [100, 1000, 10000, 100000, 1000000]:
         classical_ops = scale * len(user_symptoms)
@@ -189,7 +167,7 @@ def compare_searches(request: SymptomRequest):
             "comparisons": classical_results["comparisons_made"],
             "theoretical_operations": classical_theoretical_ops,
             "matches_found": len(classical_matches),
-            "matches": classical_matches[:5],  # Top 5 for display
+            "matches": classical_matches[:5],
         },
         "quantum": {
             "algorithm": quantum_results["algorithm"],
@@ -198,26 +176,103 @@ def compare_searches(request: SymptomRequest):
             "comparisons": quantum_results["comparisons_made"],
             "theoretical_operations": quantum_theoretical_ops,
             "matches_found": len(quantum_matches),
-            "matches": quantum_matches[:5],  # Top 5 for display
+            "matches": quantum_matches[:5],
             "quantum_state": quantum_results["quantum_state"],
         },
         "comparison": {
-            "winner": winner,
+            "winner": "quantum" if quantum_time_ms <= classical_time_ms else "classical",
             "speedup_factor": speedup_factor,
-            "common_matches": len(common_matches),
-            "winner_reasons": winner_reasons,
-            "scalability": scale_projections,
+            "common_matches": len(set(m["disease"] for m in classical_matches).intersection(set(m["disease"] for m in quantum_matches))),
+            "winner_reasons": [
+                f"Theoretical O(√N) speedup ({quantum_theoretical_ops} ops vs {classical_theoretical_ops} ops).",
+                f"Grover algorithm speedup factor: {speedup_factor}x."
+            ],
+            "scalability": scaleProjections if 'scaleProjections' in locals() else scale_projections,
             "database_size": db_size,
         }
     }
     
     global ML_METRICS_CACHE
     if ML_METRICS_CACHE is None:
-        print("[ML Engine] Lazy-training and caching recommended ML models on symptoms.csv...")
         ML_METRICS_CACHE = ml_compare.get_ml_metrics()
-        
     res["ml_models"] = ML_METRICS_CACHE
     return res
+
+@api_router.post("/multimodal-analyze")
+def multimodal_analyze(request: MultimodalRequest):
+    fusion_res = multimodal_fusion.fuse_multimodal_health_intelligence(
+        request.symptoms,
+        vitals=request.vitals,
+        medical_history=request.medical_history
+    )
+    
+    # Track Digital Twin event
+    twin = digital_twin.record_digital_twin_consultation(
+        request.patient_id,
+        request.symptoms,
+        request.vitals,
+        fusion_res["multimodal_fusion"]["health_risk_score_pct"],
+        fusion_res["multimodal_fusion"]["risk_category"],
+        f"Primary Symptoms: {', '.join(request.symptoms[:2])}"
+    )
+    
+    # Attach PQC Security Audit Certificate
+    pqc_audit = pqc_security.execute_pqc_security_exchange(request.patient_id, fusion_res)
+    
+    # Check Uncertainty Safety
+    unc = uncertainty_engine.evaluate_prediction_uncertainty(
+        fusion_res["multimodal_fusion"]["health_risk_score_pct"],
+        len(request.symptoms),
+        missing_vitals=(request.vitals is None)
+    )
+    
+    return {
+        "status": "success",
+        "multimodal": fusion_res["multimodal_fusion"],
+        "digital_twin": twin,
+        "pqc_security": pqc_audit,
+        "uncertainty_safety": unc
+    }
+
+@api_router.post("/pqc-secure-exchange")
+def pqc_exchange(payload: dict = Body(...)):
+    patient_id = payload.get("patient_id", "demo_patient")
+    return pqc_security.execute_pqc_security_exchange(patient_id, payload)
+
+@api_router.get("/qrng-test")
+def qrng_test():
+    return qrng_security.run_qrng_suite()
+
+@api_router.post("/qaoa-optimize")
+def qaoa_optimize(problem_type: str = "bed_scheduling", units: int = 10, patients: int = 20):
+    return qaoa_optimizer.solve_hospital_resource_allocation(problem_type, units, patients)
+
+@api_router.get("/digital-twin/{patient_id}")
+def get_digital_twin(patient_id: str):
+    return digital_twin.get_or_create_digital_twin(patient_id)
+
+@api_router.post("/what-changed")
+def what_changed(request: TemporalRequest):
+    text_diff = temporal_diff.compare_temporal_text_reports(request.report_t1, request.report_t2)
+    img_diff = temporal_diff.compare_temporal_image_series()
+    return {
+        "status": "success",
+        "text_differential": text_diff,
+        "image_differential": img_diff
+    }
+
+@api_router.post("/hitl-submit-review")
+def submit_hitl_review(request: HITLRequest):
+    return hitl_workflow.record_clinician_hitl_review(
+        request.consultation_id,
+        request.clinician_name,
+        request.review_status,
+        request.clinician_notes
+    )
+
+@api_router.post("/research-lab/run-experiment")
+def run_research_experiment(exp_name: str = "Quantum vs Classical Diagnostic Classification"):
+    return research_lab.run_reproducible_experiment(experiment_name=exp_name)
 
 @api_router.post("/analyze-skin")
 async def analyze_skin(file: UploadFile = File(...)):
@@ -231,10 +286,11 @@ async def analyze_cough(file: UploadFile = File(...)):
     results = analyze_cough_audio(contents)
     return {"status": "success", "ai_findings": results}
 
-# Include the router both under the root path and under the '/api' prefix for full compatibility
 app.include_router(api_router)
 app.include_router(api_router, prefix="/api")
 
 if __name__ == "__main__":
     import uvicorn
+    import database
+    database.init_db()
     uvicorn.run(app, host="127.0.0.1", port=8080)

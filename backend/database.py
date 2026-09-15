@@ -15,7 +15,7 @@ def init_db():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # Create tables matching the normalized relational schema
+    # Base schema tables
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS diseases (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -51,7 +51,7 @@ def init_db():
     CREATE TABLE IF NOT EXISTS treatments (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         disease_id INTEGER,
-        home_remedies TEXT, -- Semi-colon separated strings
+        home_remedies TEXT,
         medications TEXT,
         medical_treatment TEXT,
         FOREIGN KEY (disease_id) REFERENCES diseases(id)
@@ -64,6 +64,111 @@ def init_db():
         disease_id INTEGER,
         factor TEXT,
         FOREIGN KEY (disease_id) REFERENCES diseases(id)
+    )
+    """)
+
+    # --- 10-Pillar Extension Schema Tables ---
+
+    # Patient Digital Twin tables
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS patient_digital_twins (
+        patient_id TEXT PRIMARY KEY,
+        name TEXT,
+        age INTEGER,
+        gender TEXT,
+        baseline_vitals TEXT,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )
+    """)
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS patient_health_events (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        patient_id TEXT,
+        timestamp TEXT,
+        symptoms TEXT,
+        vitals TEXT,
+        risk_score REAL,
+        risk_category TEXT,
+        findings TEXT,
+        FOREIGN KEY (patient_id) REFERENCES patient_digital_twins(patient_id)
+    )
+    """)
+
+    # PQC & QRNG Security logs
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS pqc_security_logs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        session_id TEXT UNIQUE,
+        kem_algorithm TEXT,
+        dsa_algorithm TEXT,
+        public_key_fingerprint TEXT,
+        signature_status TEXT,
+        timestamp TEXT
+    )
+    """)
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS qrng_entropy_tests (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        bitstring TEXT,
+        entropy_score REAL,
+        monobit_pass INTEGER,
+        runs_pass INTEGER,
+        timestamp TEXT
+    )
+    """)
+
+    # Temporal Comparisons ("What Changed?")
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS temporal_comparisons (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        patient_id TEXT,
+        timestamp_t1 TEXT,
+        timestamp_t2 TEXT,
+        improved_markers TEXT,
+        worsened_markers TEXT,
+        new_risk_factors TEXT
+    )
+    """)
+
+    # QAOA Optimization logs
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS qaoa_optimization_logs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        problem_type TEXT,
+        classical_runtime_ms REAL,
+        quantum_runtime_ms REAL,
+        optimality_gap REAL,
+        timestamp TEXT
+    )
+    """)
+
+    # Research Lab Experiments
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS research_experiments (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        experiment_name TEXT,
+        dataset_name TEXT,
+        model_type TEXT,
+        accuracy REAL,
+        f1_score REAL,
+        auroc REAL,
+        parameters_count INTEGER,
+        runtime_ms REAL,
+        timestamp TEXT
+    )
+    """)
+
+    # Human-in-the-Loop Reviews
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS hitl_reviews (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        consultation_id TEXT UNIQUE,
+        clinician_name TEXT,
+        review_status TEXT,
+        clinician_notes TEXT,
+        decision_timestamp TEXT
     )
     """)
     
@@ -83,13 +188,11 @@ def seed_db_from_json(json_path):
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    # Load JSON data
     with open(json_path, "r", encoding="utf-8") as f:
         diseases_data = json.load(f)
         
     for disease_name, info in diseases_data.items():
         try:
-            # Insert disease
             cursor.execute("""
             INSERT OR IGNORE INTO diseases (name, category, severity, description, recommended_specialist, emergency, recovery_time)
             VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -103,11 +206,9 @@ def seed_db_from_json(json_path):
                 info.get("recovery_time", "")
             ))
             
-            # Get disease ID
             cursor.execute("SELECT id FROM diseases WHERE name = ?", (disease_name,))
             disease_id = cursor.fetchone()[0]
             
-            # Insert symptoms
             symptoms = info.get("symptoms", [])
             for sym in symptoms:
                 sym_clean = sym.strip().lower()
@@ -115,13 +216,11 @@ def seed_db_from_json(json_path):
                 cursor.execute("SELECT id FROM symptoms WHERE name = ?", (sym_clean,))
                 sym_id = cursor.fetchone()[0]
                 
-                # Insert disease_symptoms link
                 cursor.execute("""
                 INSERT OR IGNORE INTO disease_symptoms (disease_id, symptom_id, association_strength)
                 VALUES (?, ?, ?)
-                """, (disease_id, sym_id, 1.0)) # Default weight is 1.0
+                """, (disease_id, sym_id, 1.0))
                 
-            # Insert treatments
             home_remedies = ";".join(info.get("home_remedies", []))
             medications = ";".join(info.get("medications", []))
             medical_treatment = ";".join(info.get("medical_treatment", []))
@@ -131,7 +230,6 @@ def seed_db_from_json(json_path):
             VALUES (?, ?, ?, ?)
             """, (disease_id, home_remedies, medications, medical_treatment))
             
-            # Insert risk factors
             risk_factors = info.get("risk_factors", [])
             for rf in risk_factors:
                 cursor.execute("""
@@ -157,7 +255,6 @@ def get_disease_info(disease_name):
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
     
-    # Retrieve base disease details
     cursor.execute("SELECT * FROM diseases WHERE name = ?", (disease_name,))
     row = cursor.fetchone()
     if not row:
@@ -167,7 +264,6 @@ def get_disease_info(disease_name):
     disease_info = dict(row)
     disease_id = disease_info["id"]
     
-    # Retrieve symptoms
     cursor.execute("""
     SELECT s.name FROM symptoms s
     JOIN disease_symptoms ds ON ds.symptom_id = s.id
@@ -175,7 +271,6 @@ def get_disease_info(disease_name):
     """, (disease_id,))
     disease_info["symptoms"] = [r["name"] for r in cursor.fetchall()]
     
-    # Retrieve treatments
     cursor.execute("SELECT * FROM treatments WHERE disease_id = ?", (disease_id,))
     t_row = cursor.fetchone()
     if t_row:
@@ -187,15 +282,9 @@ def get_disease_info(disease_name):
         disease_info["medications"] = []
         disease_info["medical_treatment"] = []
         
-    # Retrieve risk factors
     cursor.execute("SELECT factor FROM risk_factors WHERE disease_id = ?", (disease_id,))
     disease_info["risk_factors"] = [r["factor"] for r in cursor.fetchall()]
     
-    # Clean output formatting
     disease_info["emergency"] = True if disease_info["emergency"] == 1 else False
-    
-    # Match key formatting with diseases.json schema for backward compatibility
-    disease_info["recommended_specialist"] = disease_info["recommended_specialist"]
-    
     conn.close()
     return disease_info
