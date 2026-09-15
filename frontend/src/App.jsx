@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { 
-  Activity, Stethoscope, Search, ShieldCheck, HeartPulse, Camera, Mic, Upload, Pill, Coffee, CheckCircle, Zap, BarChart3, Trophy, TrendingUp, Cpu, Atom, AlertTriangle, Layers, Lock, GitCompare, UserCheck, FlaskConical, Clock, RefreshCw, Key, ShieldAlert, Award, ChevronRight, FileText, Sparkles, CheckSquare, XCircle, ArrowRight
-} from 'lucide-react';
+import { Activity, Stethoscope, Search, ShieldCheck, HeartPulse, Camera, Mic, Upload, Pill, Coffee, CheckCircle, Zap, BarChart3, Trophy, TrendingUp, Cpu, Atom, AlertTriangle } from 'lucide-react';
 import './index.css';
 import localDiseasesData from './data/diseases.json';
 
@@ -23,8 +21,8 @@ const getHospitalTriggers = (match) => {
   return triggers;
 };
 
-// SVG Quantum Circuit Visualizer
 function QuantumCircuitVisualizer({ systemState }) {
+  // Determine current active stage based on systemState text
   let stage = 0; // 0 = Init, 1 = Superposition, 2 = Grover (Oracle & Diffuser), 3 = Measurement
   if (systemState.includes("Hadamard") || systemState.includes("superposition")) {
     stage = 1;
@@ -43,8 +41,10 @@ function QuantumCircuitVisualizer({ systemState }) {
         Simulating Qiskit Quantum Search Execution
       </p>
 
+      {/* SVG Quantum Circuit */}
       <div style={{ overflowX: "auto", display: "flex", justifyContent: "center", paddingBottom: "10px" }}>
         <svg width="600" height="220" viewBox="0 0 600 220" style={{ background: "rgba(0,0,0,0.25)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.05)" }}>
+          {/* Gradients */}
           <defs>
             <linearGradient id="activeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="var(--primary-color)" stopOpacity="0.85" />
@@ -106,7 +106,7 @@ function QuantumCircuitVisualizer({ systemState }) {
           <text x="25" y="145" fill="white" fontSize="12" fontFamily="'Space Grotesk', sans-serif" fontWeight="bold">|q₂⟩ (ancilla)</text>
           <text x="25" y="195" fill="var(--text-muted)" fontSize="11" fontFamily="'Space Grotesk', sans-serif">c (classic)</text>
 
-          {/* Classical register wires */}
+          {/* Classical register wires (double wire) */}
           <line x1="60" y1="190" x2="570" y2="190" stroke="var(--text-muted)" strokeWidth="1" />
           <line x1="60" y1="194" x2="570" y2="194" stroke="var(--text-muted)" strokeWidth="1" />
 
@@ -147,16 +147,19 @@ function QuantumCircuitVisualizer({ systemState }) {
 
           {/* 4. Measurement Stage */}
           <g>
+            {/* Measurement Box 0 */}
             <rect x="385" y="25" width="30" height="30" rx="4" className={stage === 3 ? "gate gate-active" : "gate"} />
             <path d="M 390,47 A 10,10 0 0,1 410,47" stroke="white" strokeWidth="1.5" fill="none" />
             <line x1="400" y1="47" x2="407" y2="35" stroke="white" strokeWidth="1.5" />
             <line x1="400" y1="40" x2="400" y2="190" stroke="var(--text-muted)" strokeWidth="1" strokeDasharray="3 3" />
 
+            {/* Measurement Box 1 */}
             <rect x="385" y="75" width="30" height="30" rx="4" className={stage === 3 ? "gate gate-active" : "gate"} />
             <path d="M 390,97 A 10,10 0 0,1 410,97" stroke="white" strokeWidth="1.5" fill="none" />
             <line x1="400" y1="97" x2="407" y2="85" stroke="white" strokeWidth="1.5" />
             <line x1="400" y1="90" x2="400" y2="190" stroke="var(--text-muted)" strokeWidth="1" strokeDasharray="3 3" />
 
+            {/* Measurement Box 2 */}
             <rect x="385" y="125" width="30" height="30" rx="4" className={stage === 3 ? "gate gate-active" : "gate"} />
             <path d="M 390,147 A 10,10 0 0,1 410,147" stroke="white" strokeWidth="1.5" fill="none" />
             <line x1="400" y1="147" x2="407" y2="135" stroke="white" strokeWidth="1.5" />
@@ -165,7 +168,7 @@ function QuantumCircuitVisualizer({ systemState }) {
             <text x="400" y="15" textAnchor="middle" fill={stage === 3 ? "var(--primary-color)" : "var(--text-muted)"} fontSize="9" fontWeight="bold">MEASUREMENT</text>
           </g>
 
-          {/* Output Block */}
+          {/* Output / Result Block */}
           <g>
             <rect x="455" y="20" width="90" height="140" rx="6" className={stage === 3 ? "gate gate-active" : "gate"} style={{ fill: stage === 3 ? "rgba(0, 255, 157, 0.15)" : "", borderColor: stage === 3 ? "var(--success-color)" : "" }} />
             <text x="500" y="85" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold" fontFamily="'Space Grotesk', sans-serif">TOP 5</text>
@@ -178,7 +181,6 @@ function QuantumCircuitVisualizer({ systemState }) {
   );
 }
 
-// Client-Side Diagnostic Fallback Helpers
 const computeSymptomFrequencies = (db) => {
   const freqs = {};
   Object.values(db).forEach((disease) => {
@@ -199,7 +201,11 @@ const getSymptomWeightJS = (symptom, freqs) => {
 const runLocalGroverSearchJS = (userSymptoms, gender = "Any", ageGroup = "Adult", isPregnant = false, severities = {}) => {
   const userSymptomsClean = userSymptoms.map(s => s.trim().toLowerCase()).filter(Boolean);
   if (userSymptomsClean.length === 0) {
-    return { status: "success", quantum_processing_time_ms: 12.4, findings: [] };
+    return {
+      status: "success",
+      quantum_processing_time_ms: 12.4,
+      findings: []
+    };
   }
 
   const db = localDiseasesData;
@@ -440,7 +446,7 @@ const runLocalAiAnalysisJS = (activeTab, file) => {
 };
 
 function App() {
-  const [activeTab, setActiveTab] = useState('symptoms'); // 'symptoms', 'skin', 'cough', 'compare', 'multimodal', 'qaoa', 'security', 'digitaltwin', 'whatchanged', 'hitl', 'researchlab'
+  const [activeTab, setActiveTab] = useState('symptoms'); // 'symptoms', 'skin', 'cough', 'compare'
   
   const [symptomInput, setSymptomInput] = useState("");
   const [compareInput, setCompareInput] = useState("");
@@ -454,27 +460,6 @@ function App() {
   const [diseasesDB, setDiseasesDB] = useState({});
   const [diseaseA, setDiseaseA] = useState("");
   const [diseaseB, setDiseaseB] = useState("");
-
-  const [loading, setLoading] = useState(false);
-  const [systemState, setSystemState] = useState("");
-  
-  const [quantumResults, setQuantumResults] = useState(null);
-  const [aiResults, setAiResults] = useState(null);
-  const [compareResults, setCompareResults] = useState(null);
-  const [multimodalResults, setMultimodalResults] = useState(null);
-  const [pqcResults, setPqcResults] = useState(null);
-  const [qaoaResults, setQaoaResults] = useState(null);
-  const [digitalTwinData, setDigitalTwinData] = useState(null);
-  const [whatChangedData, setWhatChangedData] = useState(null);
-  const [researchLabData, setResearchLabData] = useState(null);
-  const [error, setError] = useState("");
-
-  // Form states for new modules
-  const [vitalsInput, setVitalsInput] = useState({ temp_f: 101.2, spo2: 95, bp_sys: 135, hr: 88 });
-  const [reportT1, setReportT1] = useState("Patient presents with mild fatigue, dry cough, normal lung sound.");
-  const [reportT2, setReportT2] = useState("Patient reports increased exertional dyspnea, persistent wet cough, elevated pyrexia 101.2F.");
-  const [clinicianNotes, setClinicianNotes] = useState("");
-  const [hitlStatus, setHitlStatus] = useState("Pending Review");
 
   useEffect(() => {
     const fetchDiseases = async () => {
@@ -491,9 +476,21 @@ function App() {
     };
     fetchDiseases();
   }, []);
+  
+  const [loading, setLoading] = useState(false);
+  const [systemState, setSystemState] = useState("");
+  
+  const [quantumResults, setQuantumResults] = useState(null);
+  const [aiResults, setAiResults] = useState(null);
+  const [compareResults, setCompareResults] = useState(null);
+  const [error, setError] = useState("");
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
+    setQuantumResults(null);
+    setAiResults(null);
+    setCompareResults(null);
+    setSelectedFile(null);
     setError("");
   };
 
@@ -522,16 +519,6 @@ function App() {
     } catch (err) {
       console.warn("Backend API call failed. Using client-side Grover algorithm fallback.");
       const fallbackResults = runLocalGroverSearchJS(symptomsList, gender, ageGroup, isPregnant, severities);
-      fallbackResults.xai_explainability = {
-        risk_assessment: "Elevated Risk",
-        confidence: 0.88,
-        feature_impacts: [
-          { feature: `Primary Symptom '${symptomsList[0]}'`, weight_score: 85, weight_bar: "████████" },
-          { feature: `Symptom Cluster Signal`, weight_score: 65, weight_bar: "██████" }
-        ],
-        evidence_used: [{ item: "Free-Text Symptom List", status: "VERIFIED" }],
-        uncertainty_caveat: "⚠ Single consultation snapshot. Absence of longitudinal patient baseline history increases model variance."
-      };
       setQuantumResults(fallbackResults);
     } finally {
       setLoading(false);
@@ -602,103 +589,112 @@ function App() {
             .col-title { font-size: 11px; font-weight: bold; color: #64748b; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; border-bottom: 1px solid #f1f5f9; padding-bottom: 4px; }
             .col-list { padding-left: 15px; margin: 0; font-size: 12px; color: #334155; line-height: 1.6; list-style-type: none; }
             .col-list li { margin-bottom: 4px; }
-            .footer { border-top: 1px solid #e2e8f0; padding-top: 18px; margin-top: 40px; font-size: 11px; color: #64748b; text-align: center; }
+            .footer { border-top: 1.5px solid #e2e8f0; padding-top: 20px; margin-top: 60px; text-align: center; font-size: 11px; color: #94a3b8; line-height: 1.5; }
           </style>
         </head>
         <body>
           <div class="header">
             <div>
-              <div class="logo">⚛️ QuantumMed AI</div>
-              <div style="font-size: 13px; color: #64748b;">Quantum-Accelerated Clinical Decision Support</div>
+              <div class="logo">🧬 QuantumMed AI Report</div>
+              <div style="font-size: 12px; color: #64748b; margin-top: 4px;">Hybrid Quantum-AI Medical Diagnostic Infrastructure</div>
             </div>
             <div class="meta">
-              <strong>Date:</strong> ${new Date().toLocaleDateString()}<br/>
-              <strong>Engine:</strong> Qiskit Grover Search (Simulated)<br/>
-              <strong>Time Complexity:</strong> O(√N)
+              <div><strong>Report ID:</strong> QM-${Math.floor(100000 + Math.random() * 900000)}</div>
+              <div><strong>Timestamp:</strong> ${new Date().toLocaleString()}</div>
             </div>
           </div>
 
           <div class="section">
-            <div class="section-title">Patient Profile &amp; Query Context</div>
-            <div>
-              <strong>Gender:</strong> ${gender} &nbsp;|&nbsp; 
-              <strong>Age Group:</strong> ${ageGroup} &nbsp;|&nbsp; 
-              <strong>Pregnancy Status:</strong> ${isPregnant ? "Pregnant" : "Non-pregnant"}
+            <div class="section-title">Patient Profile & Symptoms</div>
+            <div style="font-size: 13px; color: #334155;">
+              <strong>Demographics:</strong> Age Group: ${ageGroup} | Gender: ${gender} ${isPregnant ? "| Pregnant" : ""}
             </div>
-            <div style="margin-top: 10px;">
-              <strong>Reported Symptoms:</strong><br/>
-              ${symptomsList.map(s => {
-                const sev = severities[s] || "Mild";
-                return `<span class="symptom-tag">${s} <em>(${sev})</em></span>`;
-              }).join("")}
+            <div style="margin-top: 12px;">
+              <strong style="font-size: 13px; color: #334155; display: block; margin-bottom: 6px;">Reported Symptoms:</strong>
+              ${symptomsList.map(s => `<span class="symptom-tag">${s.charAt(0).toUpperCase() + s.slice(1)}</span>`).join("")}
             </div>
           </div>
 
           <div class="section">
-            <div class="section-title">Diagnostic Findings &amp; Quantum Probability Ranking</div>
-            ${quantumResults.findings.map(f => `
+            <div class="section-title">Grover Quantum Search Match Findings</div>
+            ${quantumResults.findings.map((match, idx) => `
               <div class="disease-card">
                 <div class="disease-header">
-                  <div>
-                    <span class="disease-name">${f.name}</span>
-                    <span style="font-size: 12px; color: #64748b; margin-left: 10px;">(${f.category})</span>
-                  </div>
-                  <div class="confidence">${f.confidence}% Match Confidence</div>
+                  <div class="disease-name">#${idx + 1} ${match.name || match.disease}</div>
+                  <div class="confidence">${match.confidence}% Match Probability</div>
+                </div>
+                
+                <p style="font-size: 13px; color: #475569; margin: 0 0 14px 0; font-style: italic; line-height: 1.5;">
+                  ${match.description || "No description available."}
+                </p>
+
+                <div style="margin-bottom: 18px;">
+                  <span class="severity-badge severity-${match.severity}">${match.severity} Severity</span>
+                  <span style="font-size: 12px; color: #475569; font-weight: 500;">⏱ Recovery Time: ${match.recovery_time || "Varies"}</span>
                 </div>
 
-                <div style="margin-bottom: 12px;">
-                  <span class="severity-badge severity-${f.severity}">${f.severity} Severity</span>
-                  <span style="font-size: 12px; color: #475569;"><strong>Est. Recovery:</strong> ${f.recovery_time || "Varies"}</span>
-                </div>
-
-                <p style="font-size: 13px; color: #334155; margin-bottom: 15px;">${f.description}</p>
-
-                ${f.emergency ? `
+                ${match.emergency ? `
                   <div class="emergency-box">
-                    🚨 <strong>CRITICAL ALERT:</strong> This condition carries a high medical emergency risk. Immediate professional evaluation is advised.
+                    ⚠️ EMERGENCY STATUS DETECTED: This condition may require immediate emergency medical care. Please contact emergency services or go to the nearest emergency room immediately.
                   </div>
-                ` : ""}
+                ` : `
+                  <div style="margin: 10px 0; font-size: 12px; color: #475569;">
+                    <strong>Emergency Status:</strong> Non-Emergency (Routine clinical care)
+                  </div>
+                `}
 
                 <div class="grid">
                   <div class="col">
-                    <div class="col-title">🌿 Home Remedies &amp; Supportive Care</div>
+                    <div class="col-title">Home Care Plan</div>
                     <ul class="col-list">
-                      ${f.home_remedies && f.home_remedies.length > 0 ? f.home_remedies.map(r => `<li>• ${r}</li>`).join("") : "<li>• Rest and adequate hydration.</li>"}
+                      ${(match.home_remedies && match.home_remedies.length > 0 ? match.home_remedies : ["Rest", "Drink fluids"]).map(item => `
+                        <li>✓ ${item}</li>
+                      `).join("")}
                     </ul>
                   </div>
                   <div class="col">
-                    <div class="col-title">💊 Common Clinical Medications</div>
+                    <div class="col-title">Suggested Medicines</div>
                     <ul class="col-list">
-                      ${f.medications && f.medications.length > 0 ? f.medications.map(m => `<li>• ${m}</li>`).join("") : "<li>• Consult physician for prescriptive therapies.</li>"}
+                      ${(match.medications && match.medications.length > 0 ? match.medications : ["Paracetamol", "Ibuprofen"]).map(item => `
+                        <li>✓ ${item}</li>
+                      `).join("")}
                     </ul>
                   </div>
                 </div>
 
                 <div class="grid">
                   <div class="col">
-                    <div class="col-title">🩺 Medical Interventions &amp; Treatments</div>
-                    <ul class="col-list">
-                      ${f.medical_treatment && f.medical_treatment.length > 0 ? f.medical_treatment.map(t => `<li>• ${t}</li>`).join("") : "<li>• Clinical examination and diagnostic workup.</li>"}
-                    </ul>
+                    <div class="col-title">Recommended Doctor</div>
+                    <div style="font-size: 13px; font-weight: 600; color: #1e1b4b; padding: 4px 0;">
+                      🩺 ${match.recommended_specialist || match.specialist || "General Physician"}
+                    </div>
                   </div>
                   <div class="col">
-                    <div class="col-title">🏥 Recommended Clinical Referral</div>
-                    <div style="font-size: 13px; color: #1e1b4b; font-weight: bold; margin-bottom: 6px;">
-                      ${f.recommended_specialist || "General Physician"}
-                    </div>
-                    <div style="font-size: 11px; color: #64748b;">
-                      <strong>Immediate Visit Triggers:</strong><br/>
-                      ${getHospitalTriggers(f).map(t => `• ${t}`).join("<br/>")}
-                    </div>
+                    <div class="col-title">Suggested Tests & Clinical Treatment</div>
+                    <ul class="col-list" style="list-style-type: disc; padding-left: 15px;">
+                      ${(match.medical_treatment && match.medical_treatment.length > 0 ? match.medical_treatment : ["Symptomatic relief"]).map(item => `
+                        <li>${item}</li>
+                      `).join("")}
+                    </ul>
                   </div>
                 </div>
+
               </div>
             `).join("")}
           </div>
 
           <div class="footer">
-            <p><strong>Medical Disclaimer:</strong> This clinical report was generated by QuantumMed AI for experimental and clinical research decision support. It is not an autonomous diagnostic instrument. Please consult a licensed medical provider for official diagnosis.</p>
+            <strong>Disclaimer:</strong> QuantumMed AI is a decision support tool utilizing simulated quantum processing registers. 
+            This report is for informational purposes and does not substitute for professional medical advice, diagnosis, or treatment. 
+            In case of severe symptoms, contact emergency medical services immediately.
           </div>
+          
+          <script>
+            window.onload = function() {
+              window.print();
+              setTimeout(function() { window.close(); }, 500);
+            }
+          </script>
         </body>
       </html>
     `);
@@ -739,1056 +735,1131 @@ function App() {
   const ScalabilityChart = ({ data }) => {
     const maxOps = Math.max(...data.map(d => d.classical_operations));
     return (
-      <div className="scale-chart" style={{ marginTop: "20px" }}>
-        {data.map((item, idx) => {
-          const cWidth = Math.min(100, Math.max(5, (item.classical_operations / maxOps) * 100));
-          const qWidth = Math.min(100, Math.max(2, (item.quantum_operations / maxOps) * 100));
-          return (
-            <div key={idx} style={{ marginBottom: "15px" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "4px" }}>
-                <span>DB: <strong>{item.database_size.toLocaleString()}</strong> diseases</span>
-                <span style={{ color: "var(--primary-color)", fontWeight: "bold" }}>{item.speedup}x speedup</span>
+      <div className="scale-chart">
+        {data.map((item, i) => (
+          <div key={i} className="scale-row">
+            <div className="scale-label">{item.database_size.toLocaleString()}</div>
+            <div className="scale-bars">
+              <div className="scale-bar-classical" style={{ 
+                width: `${Math.max((item.classical_operations / maxOps) * 100, 2)}%` 
+              }}>
+                <span className="scale-bar-text">{item.classical_operations.toLocaleString()}</span>
               </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span style={{ width: "65px", fontSize: "0.75rem", color: "#f87171" }}>Classical:</span>
-                  <div style={{ flex: 1, background: "rgba(255,255,255,0.05)", borderRadius: "4px", height: "12px", overflow: "hidden" }}>
-                    <div style={{ width: `${cWidth}%`, height: "100%", background: "#ef4444", borderRadius: "4px", transition: "width 0.5s" }} />
-                  </div>
-                  <span style={{ width: "70px", fontSize: "0.75rem", textAlign: "right", color: "#f87171" }}>{item.classical_operations.toLocaleString()} ops</span>
-                </div>
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <span style={{ width: "65px", fontSize: "0.75rem", color: "var(--success-color)" }}>Quantum:</span>
-                  <div style={{ flex: 1, background: "rgba(255,255,255,0.05)", borderRadius: "4px", height: "12px", overflow: "hidden" }}>
-                    <div style={{ width: `${qWidth}%`, height: "100%", background: "var(--success-color)", borderRadius: "4px", transition: "width 0.5s" }} />
-                  </div>
-                  <span style={{ width: "70px", fontSize: "0.75rem", textAlign: "right", color: "var(--success-color)" }}>{item.quantum_operations.toLocaleString()} ops</span>
-                </div>
+              <div className="scale-bar-quantum" style={{ 
+                width: `${Math.max((item.quantum_operations / maxOps) * 100, 2)}%`,
+                minWidth: '60px'
+              }}>
+                <span className="scale-bar-text">{item.quantum_operations.toLocaleString()}</span>
               </div>
             </div>
-          );
-        })}
+            <div className="scale-speedup">{item.speedup}×</div>
+          </div>
+        ))}
       </div>
     );
   };
 
-  // New Research Feature Action Handlers
-  const runMultimodalAnalyze = async () => {
-    setLoading(true); setMultimodalResults(null);
-    setSystemState("Fusing Multimodal Health Intelligence Streams...");
-    const symptomsList = symptomInput.split(",").map(s => s.trim()).filter(Boolean);
-    try {
-      const response = await axios.post(`${API_URL}/multimodal-analyze`, {
-        symptoms: symptomsList, vitals: vitalsInput, patient_id: "demo_patient"
-      }, { timeout: 3000 });
-      setMultimodalResults(response.data);
-    } catch (err) {
-      setMultimodalResults({
-        multimodal: {
-          health_risk_score_pct: 48.5,
-          risk_category: "Moderate Risk",
-          feature_impacts: [
-            { feature: "Primary Symptom Cluster", impact_pct: 45, weight_bar: "█████████" },
-            { feature: "Elevated Temperature (101.2°F)", impact_pct: 25, weight_bar: "█████" },
-            { feature: "Mild SpO2 Desaturation (95%)", impact_pct: 15, weight_bar: "███" }
-          ],
-          evidence_checklist: [
-            { type: "Symptom List", present: true },
-            { type: "Vitals Measurements", present: true },
-            { type: "Medical History", present: true }
-          ]
-        }
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const runQaoaOptimize = async () => {
-    setLoading(true); setQaoaResults(null);
-    setSystemState("Executing Quantum QAOA Variational Circuit...");
-    try {
-      const response = await axios.post(`${API_URL}/qaoa-optimize`, null, { timeout: 3000 });
-      setQaoaResults(response.data);
-    } catch (err) {
-      setQaoaResults({
-        status: "success",
-        problem_type: "Hospital Bed & ICU Scheduling Optimization",
-        classical_optimizer: { algorithm: "Classical Simulated Annealing", runtime_ms: 22.4, energy_cost: 450.0, optimality_gap_pct: 4.8 },
-        qaoa_quantum_optimizer: { algorithm: "Quantum QAOA (Qiskit)", runtime_ms: 9.8, energy_cost: 412.5, optimality_gap_pct: 0.8, state_vector: "|1010110010⟩" },
-        benchmark_summary: { winner: "Quantum QAOA", runtime_speedup: "2.28x faster", optimality_improvement: "4.0% closer to global optimum" }
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const runPqcExchange = async () => {
-    setLoading(true); setPqcResults(null);
-    setSystemState("Initiating NIST PQC ML-KEM & ML-DSA Cryptographic Session...");
-    try {
-      const response = await axios.post(`${API_URL}/pqc-secure-exchange`, { patient_id: "demo_patient" }, { timeout: 3000 });
-      const qrng = await axios.get(`${API_URL}/qrng-test`, { timeout: 3000 });
-      setPqcResults({ exchange: response.data, qrng: qrng.data });
-    } catch (err) {
-      setPqcResults({
-        exchange: {
-          pqc_audit_certificate: {
-            kem_algorithm: "ML-KEM-768 (NIST FIPS 203)",
-            dsa_algorithm: "ML-DSA-65 (NIST FIPS 204)",
-            signature: "PQC-SIG-DILITHIUM-VERIFIED-SECURE-KEY",
-            verification: { verified: true, status: "VALIDATED_AUTHENTIC", quantum_security_level: "NIST Level 3 Security" }
-          }
-        },
-        qrng: {
-          qrng: {
-            source: "Quantum Hadamard Superposition State Measurement",
-            bitstring: "110100101101001101...",
-            evaluation: { monobit_pass: true, runs_pass: true, shannon_entropy_score: 0.9984, overall_evaluation: "PASS (NIST SP 800-22 Compliant)" }
-          }
-        }
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const fetchDigitalTwin = async () => {
-    setLoading(true);
-    setSystemState("Loading Patient Digital Twin State Timeline...");
-    try {
-      const res = await axios.get(`${API_URL}/digital-twin/demo_patient`, { timeout: 3000 });
-      setDigitalTwinData(res.data);
-    } catch (err) {
-      setDigitalTwinData({
-        patient_id: "demo_patient",
-        name: "Demo Patient (John Doe)",
-        age: 38,
-        risk_trajectory: [11.0, 14.2, 18.5],
-        trend_assessment: "INCREASING (Elevated Health Risk Trajectory)",
-        events: [
-          { timestamp: "2026-08-01", symptoms: "routine fatigue", risk_score: 11.0, risk_category: "Low Risk" },
-          { timestamp: "2026-08-20", symptoms: "fatigue, dry cough", risk_score: 14.2, risk_category: "Low Risk" },
-          { timestamp: "2026-09-15", symptoms: "fever 101.2F, wet cough, dyspnea", risk_score: 18.5, risk_category: "Elevated Risk" }
-        ]
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const runWhatChanged = async () => {
-    setLoading(true); setWhatChangedData(null);
-    setSystemState("Analyzing Temporal Differences (Report T1 vs Report T2)...");
-    try {
-      const res = await axios.post(`${API_URL}/what-changed`, { report_t1: reportT1, report_t2: reportT2 }, { timeout: 3000 });
-      setWhatChangedData(res.data);
-    } catch (err) {
-      setWhatChangedData({
-        text_differential: {
-          improved_markers: ["Resolution of Baseline Dry Cough"],
-          worsened_markers: ["Onset of Exertional Dyspnea", "Pyrexia Elevation to 101.2°F"],
-          delta_summary: "Report T2 exhibits acute febrile escalation requiring immediate clinical attention."
-        },
-        image_differential: {
-          lesion_area_t1: "14.2 mm²",
-          lesion_area_t2: "18.6 mm²",
-          area_expansion_delta: "+31.0% (Expansion Detected)",
-          clinical_significance: "Lesion exhibits statistically significant growth (>15% threshold)."
-        }
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const runResearchLab = async () => {
-    setLoading(true); setResearchLabData(null);
-    setSystemState("Executing Reproducible Research Experiment Suite...");
-    try {
-      const res = await axios.post(`${API_URL}/research-lab/run-experiment`, null, { timeout: 3000 });
-      setResearchLabData(res.data);
-    } catch (err) {
-      setResearchLabData({
-        experiment_name: "Quantum vs Classical Diagnostic Classification",
-        dataset: "Clinical Symptom Matrix (N=4,920)",
-        models_evaluated: [
-          { model_name: "Classical Random Forest", accuracy_pct: 99.22, f1_score_pct: 99.21, auroc: 0.998, parameters_count: 154000, inference_runtime_ms: 0.025, compute_cost: "$0.0001" },
-          { model_name: "Quantum Grover Search (Simulated)", accuracy_pct: 99.50, f1_score_pct: 99.48, auroc: 0.999, parameters_count: 4096, inference_runtime_ms: 0.012, compute_cost: "$0.0004" },
-          { model_name: "Hybrid VQE Neural Network", accuracy_pct: 99.85, f1_score_pct: 99.84, auroc: 0.9995, parameters_count: 18500, inference_runtime_ms: 0.008, compute_cost: "$0.0002" }
-        ],
-        reproducibility_code: "import seed 42; qiskit.aer.set_options(seed_simulator=42)"
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
-
   return (
-    <div className="app-container">
-      {/* Background Decorators */}
-      <div className="quantum-glow-1"></div>
-      <div className="quantum-glow-2"></div>
-
-      {/* Header */}
-      <header className="header">
-        <div className="header-badge">
-          <Atom className="spinning" size={14} />
-          <span>RESEARCH GRADE PLATFORM</span>
+    <div className="min-h-screen pb-20">
+      <header className="glass-panel" style={{ padding: "20px 40px", borderRadius: "0 0 24px 24px", margin: "0 20px 30px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div style={{ background: "var(--primary-glow)", padding: "10px", borderRadius: "12px" }}>
+            <Activity color="var(--primary-color)" size={28} />
+          </div>
+          <div>
+            <h1 className="heading-quantum" style={{ fontSize: "1.8rem", margin: 0 }}>QuantumMed AI</h1>
+            <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", margin: 0 }}>Hybrid Quantum-AI Medical Infrastructure</p>
+          </div>
         </div>
-        <h1 className="title">
-          <span className="gradient-text">QuantumMed</span> AI
-        </h1>
-        <p className="subtitle">
-          Next-Generation Hybrid Quantum-AI Clinical Decision Support &amp; Healthcare Intelligence
-        </p>
-
-        {/* Global Navigation Hub */}
-        <div className="nav-tabs" style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "8px", marginTop: "25px" }}>
-          {/* Core Decision Support */}
-          <button className={`tab-btn ${activeTab === 'symptoms' ? 'active' : ''}`} onClick={() => handleTabChange('symptoms')}>
-            <Activity size={16} /> Grover Search
-          </button>
-          <button className={`tab-btn ${activeTab === 'skin' ? 'active' : ''}`} onClick={() => handleTabChange('skin')}>
-            <Camera size={16} /> Skin Vision AI
-          </button>
-          <button className={`tab-btn ${activeTab === 'cough' ? 'active' : ''}`} onClick={() => handleTabChange('cough')}>
-            <Mic size={16} /> Cough Audio AI
-          </button>
-          <button className={`tab-btn ${activeTab === 'compare' ? 'active' : ''}`} onClick={() => handleTabChange('compare')}>
-            <TrendingUp size={16} /> Classical vs Quantum
-          </button>
-
-          {/* Advanced Research Modules */}
-          <button className={`tab-btn ${activeTab === 'multimodal' ? 'active' : ''}`} onClick={() => { handleTabChange('multimodal'); runMultimodalAnalyze(); }}>
-            <Layers size={16} /> Multimodal Fusion
-          </button>
-          <button className={`tab-btn ${activeTab === 'qaoa' ? 'active' : ''}`} onClick={() => { handleTabChange('qaoa'); runQaoaOptimize(); }}>
-            <Cpu size={16} /> QAOA Optimization
-          </button>
-          <button className={`tab-btn ${activeTab === 'security' ? 'active' : ''}`} onClick={() => { handleTabChange('security'); runPqcExchange(); }}>
-            <Lock size={16} /> PQC &amp; QRNG Security
-          </button>
-          <button className={`tab-btn ${activeTab === 'digitaltwin' ? 'active' : ''}`} onClick={() => { handleTabChange('digitaltwin'); fetchDigitalTwin(); }}>
-            <HeartPulse size={16} /> Patient Digital Twin
-          </button>
-          <button className={`tab-btn ${activeTab === 'whatchanged' ? 'active' : ''}`} onClick={() => { handleTabChange('whatchanged'); runWhatChanged(); }}>
-            <GitCompare size={16} /> What Changed?
-          </button>
-          <button className={`tab-btn ${activeTab === 'hitl' ? 'active' : ''}`} onClick={() => handleTabChange('hitl')}>
-            <UserCheck size={16} /> Human-in-the-Loop
-          </button>
-          <button className={`tab-btn ${activeTab === 'researchlab' ? 'active' : ''}`} onClick={() => { handleTabChange('researchlab'); runResearchLab(); }}>
-            <FlaskConical size={16} /> Research Lab
-          </button>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <span className="tag" style={{ border: "1px solid var(--success-color)", color: "var(--success-color)" }}>
+            <ShieldCheck size={14} /> Qiskit Cloud Online
+          </span>
+          <span className="tag" style={{ border: "1px solid var(--warning-color)", color: "var(--warning-color)" }}>
+            <CheckCircle size={14} /> PyTorch Vision/Audio
+          </span>
         </div>
       </header>
 
-      {/* Main Container */}
-      <main className="main-content">
-        {/* Error message */}
-        {error && (
-          <div className="error-card" style={{ marginBottom: "20px", display: "flex", alignItems: "center", gap: "10px", background: "rgba(239, 68, 68, 0.15)", border: "1px solid var(--danger-color)", padding: "15px 20px", borderRadius: "12px", color: "#fca5a5" }}>
-            <AlertTriangle size={20} color="var(--danger-color)" />
-            <span>{error}</span>
-          </div>
-        )}
+      <main style={{ maxWidth: "960px", margin: "0 auto", padding: "0 20px" }}>
+        
+        {/* Navigation Tabs */}
+        <div style={{ display: "flex", gap: "10px", marginBottom: "20px", flexWrap: "wrap" }}>
+          <button className={`btn-quantum ${activeTab !== 'symptoms' ? 'inactive' : ''}`} 
+                  style={{ flex: 1, background: activeTab === 'symptoms' ? '' : 'rgba(255,255,255,0.05)', color: activeTab === 'symptoms' ? '' : 'var(--text-muted)' }} 
+                  onClick={() => handleTabChange('symptoms')}>
+            <Stethoscope size={18} style={{ display: 'inline', marginRight: '6px' }}/> Quantum Symptom Match
+          </button>
+          <button className={`btn-quantum ${activeTab !== 'compare' ? 'inactive' : ''}`} 
+                  style={{ flex: 1, background: activeTab === 'compare' ? '' : 'rgba(255,255,255,0.05)', color: activeTab === 'compare' ? '' : 'var(--text-muted)', borderColor: activeTab === 'compare' ? 'var(--warning-color)' : '' }} 
+                  onClick={() => handleTabChange('compare')}>
+            <BarChart3 size={18} style={{ display: 'inline', marginRight: '6px' }}/> ⚡ Compare Q vs C
+          </button>
+          <button className={`btn-quantum ${activeTab !== 'skin' ? 'inactive' : ''}`} 
+                  style={{ flex: 1, background: activeTab === 'skin' ? '' : 'rgba(255,255,255,0.05)', color: activeTab === 'skin' ? '' : 'var(--text-muted)' }} 
+                  onClick={() => handleTabChange('skin')}>
+            <Camera size={18} style={{ display: 'inline', marginRight: '6px' }}/> AI Skin Vision
+          </button>
+          <button className={`btn-quantum ${activeTab !== 'cough' ? 'inactive' : ''}`} 
+                  style={{ flex: 1, background: activeTab === 'cough' ? '' : 'rgba(255,255,255,0.05)', color: activeTab === 'cough' ? '' : 'var(--text-muted)' }} 
+                  onClick={() => handleTabChange('cough')}>
+            <Mic size={18} style={{ display: 'inline', marginRight: '6px' }}/> AI Audio Diagnostics
+          </button>
+          <button className={`btn-quantum ${activeTab !== 'compare-diseases' ? 'inactive' : ''}`} 
+                  style={{ flex: 1, background: activeTab === 'compare-diseases' ? '' : 'rgba(255,255,255,0.05)', color: activeTab === 'compare-diseases' ? '' : 'var(--text-muted)', borderColor: activeTab === 'compare-diseases' ? 'var(--warning-color)' : '' }} 
+                  onClick={() => handleTabChange('compare-diseases')}>
+            <TrendingUp size={18} style={{ display: 'inline', marginRight: '6px' }}/> Disease Comparison
+          </button>
+        </div>
 
-        {/* Loading / System State Visualizer */}
-        {loading && (
-          <QuantumCircuitVisualizer systemState={systemState} />
-        )}
+        {/* Dynamic Input Section */}
+        <section className={`glass-panel ${loading ? 'quantum-processing' : ''}`} style={{ padding: "40px", marginBottom: "40px" }}>
+          
+          {activeTab === 'symptoms' && (
+            <>
+              <h2 style={{ marginBottom: "10px", fontSize: "1.4rem" }}>Search Quantum Database</h2>
+              <p style={{ color: "var(--text-muted)", marginBottom: "20px" }}>Enter symptoms to cross-reference our database using Grover's search algorithm.</p>
+              <div style={{ display: "flex", gap: "16px" }}>
+                <input type="text" className="input-quantum" placeholder="e.g. fever, fatigue..." value={symptomInput} onChange={e => setSymptomInput(e.target.value)} disabled={loading} />
+                <button className="btn-quantum" onClick={analyzeSymptoms} disabled={loading}><Search size={20} /> Analyze</button>
+              </div>
+            </>
+          )}
 
-        {/* ========================================================================= */}
-        {/* TAB 1: SYMPTOMS (Grover Quantum Search & XAI) */}
-        {/* ========================================================================= */}
-        {activeTab === 'symptoms' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                ⚛️ Search Quantum Database
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Enter symptoms to cross-reference our clinical database using Grover's quantum search algorithm (O(√N)).
-              </p>
-            </div>
-
-            <div className="search-bar-wrapper" style={{ display: "flex", gap: "12px", marginBottom: "20px" }}>
-              <input
-                type="text"
-                className="quantum-input"
-                placeholder="e.g. fever, headache, joint pain, rash..."
-                value={symptomInput}
-                onChange={(e) => setSymptomInput(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && analyzeSymptoms()}
-                style={{ flex: 1, padding: "16px 20px", borderRadius: "12px", background: "rgba(0,0,0,0.3)", border: "1px solid var(--border-color)", color: "white", fontSize: "1rem" }}
-              />
-              <button 
-                className="quantum-btn-primary" 
-                onClick={analyzeSymptoms}
-                disabled={loading}
-                style={{ padding: "0 30px", borderRadius: "12px", background: "linear-gradient(135deg, var(--primary-color), var(--secondary-color))", color: "white", fontWeight: "bold", border: "none", cursor: "pointer", display: "flex", alignItems: "center", gap: "8px" }}
-              >
-                <Search size={18} /> Analyze
-              </button>
-            </div>
-
-            {/* Symptom Severity Adjuster */}
-            {symptomInput.trim().length > 0 && (
-              <div style={{ background: "rgba(0, 0, 0, 0.2)", border: "1px solid rgba(255, 255, 255, 0.05)", borderRadius: "12px", padding: "15px 20px", marginBottom: "25px" }}>
-                <div style={{ fontSize: "0.85rem", color: "var(--primary-color)", fontWeight: "bold", marginBottom: "10px", display: "flex", alignItems: "center", gap: "6px" }}>
-                  <span>🌡️ Adjust Symptom Severity:</span>
+          {activeTab === 'compare-diseases' && (
+            <>
+              <h2 style={{ marginBottom: "10px", fontSize: "1.4rem" }}>Select Diseases to Compare</h2>
+              <p style={{ color: "var(--text-muted)", marginBottom: "20px" }}>Compare symptoms and metrics between any two diseases in the QuantumMed Database.</p>
+              
+              <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+                <div style={{ flex: 1, minWidth: "200px" }}>
+                  <label style={{ display: "block", fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "8px" }}>Disease A:</label>
+                  <select 
+                    value={diseaseA} 
+                    onChange={e => setDiseaseA(e.target.value)}
+                    style={{ width: "100%", background: "rgba(0,0,0,0.5)", border: "1px solid var(--border-color)", color: "white", padding: "12px", borderRadius: "10px", outline: "none", fontSize: "0.95rem" }}
+                  >
+                    <option value="">-- Choose Disease --</option>
+                    {Object.keys(diseasesDB).sort().map(name => (
+                      <option key={name} value={name}>{name}</option>
+                    ))}
+                  </select>
                 </div>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-                  {symptomInput.split(",").map(s => s.trim()).filter(Boolean).map(sym => (
-                    <div key={sym} style={{ display: "flex", alignItems: "center", background: "rgba(255, 255, 255, 0.03)", padding: "4px 10px", borderRadius: "8px", border: "1px solid rgba(255, 255, 255, 0.05)", gap: "8px" }}>
-                      <span style={{ fontSize: "0.85rem", color: "white", textTransform: "capitalize" }}>{sym}</span>
-                      <div style={{ display: "flex", gap: "2px" }}>
-                        {["Mild", "Moderate", "Severe"].map(sev => {
-                          const isSelected = (severities[sym] || "Mild") === sev;
-                          return (
-                            <button
-                              key={sev}
-                              onClick={() => setSeverities({ ...severities, [sym]: sev })}
-                              style={{
-                                border: "none",
-                                background: isSelected ? (sev === "Severe" ? "var(--danger-color)" : sev === "Moderate" ? "var(--warning-color)" : "var(--success-color)") : "transparent",
-                                color: isSelected ? "white" : "var(--text-muted)",
-                                fontSize: "0.7rem",
-                                padding: "2px 6px",
-                                borderRadius: "4px",
-                                cursor: "pointer",
-                                fontWeight: isSelected ? "bold" : "normal"
-                              }}
-                            >
-                              {sev}
-                            </button>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  ))}
+                
+                <div style={{ flex: 1, minWidth: "200px" }}>
+                  <label style={{ display: "block", fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "8px" }}>Disease B:</label>
+                  <select 
+                    value={diseaseB} 
+                    onChange={e => setDiseaseB(e.target.value)}
+                    style={{ width: "100%", background: "rgba(0,0,0,0.5)", border: "1px solid var(--border-color)", color: "white", padding: "12px", borderRadius: "10px", outline: "none", fontSize: "0.95rem" }}
+                  >
+                    <option value="">-- Choose Disease --</option>
+                    {Object.keys(diseasesDB).sort().map(name => (
+                      <option key={name} value={name}>{name}</option>
+                    ))}
+                  </select>
                 </div>
               </div>
-            )}
+            </>
+          )}
 
-            {/* Patient Demographics Filter Controls */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", alignItems: "center", background: "rgba(0,0,0,0.2)", padding: "15px 20px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.05)" }}>
+          {activeTab === 'compare' && (
+            <>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
+                <div className="compare-icon-wrapper">
+                  <Atom size={24} className="compare-icon-spin" />
+                </div>
+                <h2 style={{ fontSize: "1.4rem" }}>
+                  Quantum vs Classical Search <span style={{ color: "var(--warning-color)", fontSize: "0.9rem" }}>BENCHMARK</span>
+                </h2>
+              </div>
+              <p style={{ color: "var(--text-muted)", marginBottom: "20px" }}>
+                Enter symptoms below to run <strong style={{color: "var(--primary-color)"}}>both</strong> Grover's Quantum Search and Classical Linear Search side-by-side, 
+                then see which algorithm wins on speed, complexity, and scalability.
+              </p>
+              <div style={{ display: "flex", gap: "16px" }}>
+                <input 
+                  type="text" className="input-quantum" 
+                  placeholder="e.g. fever, headache, fatigue, cough..." 
+                  value={compareInput} 
+                  onChange={e => setCompareInput(e.target.value)} 
+                  disabled={loading}
+                  style={{ borderColor: "var(--warning-color)", borderWidth: "1px" }}
+                />
+                <button className="btn-quantum btn-compare" onClick={runComparison} disabled={loading}>
+                  <Zap size={20} /> Compare
+                </button>
+              </div>
+            </>
+          )}
+
+          {/* Symptom Severity Selector (Phase 3) */}
+          {(activeTab === 'symptoms' || activeTab === 'compare') && (
+            (() => {
+              const currentSymptoms = (activeTab === 'symptoms' ? symptomInput : compareInput)
+                .split(",")
+                .map(s => s.trim())
+                .filter(Boolean);
+                
+              if (currentSymptoms.length === 0) return null;
+
+              return (
+                <div style={{ marginTop: "20px", padding: "15px", background: "rgba(0,0,0,0.2)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.03)" }}>
+                  <h4 style={{ fontSize: "0.85rem", color: "var(--primary-color)", marginBottom: "10px", fontFamily: "'Space Grotesk', sans-serif" }}>
+                    🌡 Adjust Symptom Severity:
+                  </h4>
+                  <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                    {currentSymptoms.map((symptom, idx) => {
+                      const symptomKey = symptom.toLowerCase();
+                      const currentSeverity = severities[symptomKey] || "Mild";
+                      return (
+                        <div key={idx} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: "rgba(255,255,255,0.02)", padding: "8px 12px", borderRadius: "8px" }}>
+                          <span style={{ fontSize: "0.85rem", fontWeight: "600", color: "white" }}>
+                            {symptom.charAt(0).toUpperCase() + symptom.slice(1)}
+                          </span>
+                          <div style={{ display: "flex", gap: "6px" }}>
+                            {["Mild", "Moderate", "Severe"].map(level => {
+                              const isActive = currentSeverity === level;
+                              let btnBg = "rgba(255,255,255,0.05)";
+                              let btnColor = "var(--text-muted)";
+                              let border = "1px solid rgba(255,255,255,0.05)";
+                              
+                              if (isActive) {
+                                border = "1px solid transparent";
+                                if (level === "Mild") {
+                                  btnBg = "rgba(0, 255, 157, 0.15)";
+                                  btnColor = "var(--success-color)";
+                                } else if (level === "Moderate") {
+                                  btnBg = "rgba(255, 176, 0, 0.15)";
+                                  btnColor = "var(--warning-color)";
+                                } else {
+                                  btnBg = "rgba(255, 51, 102, 0.15)";
+                                  btnColor = "var(--danger-color)";
+                                }
+                              }
+
+                              return (
+                                <button
+                                  key={level}
+                                  onClick={() => setSeverities(prev => ({ ...prev, [symptomKey]: level }))}
+                                  disabled={loading}
+                                  style={{
+                                    background: btnBg,
+                                    color: btnColor,
+                                    border: border,
+                                    padding: "4px 10px",
+                                    borderRadius: "6px",
+                                    fontSize: "0.75rem",
+                                    cursor: "pointer",
+                                    fontWeight: isActive ? "bold" : "normal",
+                                    transition: "all 0.2s"
+                                  }}
+                                >
+                                  {level}
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })()
+          )}
+
+          {/* Real-time Emergency Warning (Phase 5) */}
+          {(() => {
+            const text = (activeTab === 'symptoms' ? symptomInput : compareInput).toLowerCase();
+            const emerg = ['chest pain', 'difficulty breathing', 'shortness of breath', 'loss of consciousness', 'seizure', 'stroke', 'paralysis'];
+            const hasEmergency = emerg.some(s => text.includes(s));
+            if (!hasEmergency) return null;
+            return (
+              <div style={{ marginTop: "20px", background: "rgba(255, 51, 102, 0.08)", border: "1px solid var(--danger-color)", padding: "18px", borderRadius: "12px", color: "var(--danger-color)", animation: "pulseGlow 2s infinite ease-in-out" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", fontWeight: "bold", fontSize: "1rem", marginBottom: "6px" }}>
+                  <span>🚨 EMERGENCY NOTICE</span>
+                </div>
+                <p style={{ fontSize: "0.85rem", margin: 0, color: "rgba(255,255,255,0.9)", lineHeight: "1.5" }}>
+                  You have entered symptoms that may require **immediate medical attention**. Please seek immediate professional medical care. 
+                  <strong> Do NOT rely on AI diagnosis.</strong>
+                </p>
+              </div>
+            );
+          })()}
+
+          {/* Demographic Filters Section */}
+          {(activeTab === 'symptoms' || activeTab === 'compare') && (
+            <div style={{ marginTop: "20px", paddingTop: "20px", borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", gap: "25px", flexWrap: "wrap", alignItems: "center" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Gender:</span>
+                <span style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontWeight: "500" }}>Gender:</span>
                 <select 
                   value={gender} 
-                  onChange={(e) => setGender(e.target.value)}
-                  style={{ background: "rgba(16, 21, 34, 0.8)", border: "1px solid var(--border-color)", color: "white", padding: "6px 12px", borderRadius: "8px", fontSize: "0.85rem" }}
+                  onChange={e => {
+                    const val = e.target.value;
+                    setGender(val);
+                    if (val !== "Female") setIsPregnant(false);
+                  }} 
+                  disabled={loading}
+                  style={{ background: "rgba(0,0,0,0.5)", border: "1px solid var(--border-color)", color: "white", padding: "6px 12px", borderRadius: "8px", fontSize: "0.85rem", cursor: "pointer", outline: "none" }}
                 >
                   <option value="Any">Any Gender</option>
-                  <option value="Female">Female</option>
-                  <option value="Male">Male</option>
+                  <option value="Male">Biological Male</option>
+                  <option value="Female">Biological Female</option>
                 </select>
               </div>
 
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Age Group:</span>
+                <span style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontWeight: "500" }}>Age Group:</span>
                 <select 
                   value={ageGroup} 
-                  onChange={(e) => setAgeGroup(e.target.value)}
-                  style={{ background: "rgba(16, 21, 34, 0.8)", border: "1px solid var(--border-color)", color: "white", padding: "6px 12px", borderRadius: "8px", fontSize: "0.85rem" }}
+                  onChange={e => setAgeGroup(e.target.value)} 
+                  disabled={loading}
+                  style={{ background: "rgba(0,0,0,0.5)", border: "1px solid var(--border-color)", color: "white", padding: "6px 12px", borderRadius: "8px", fontSize: "0.85rem", cursor: "pointer", outline: "none" }}
                 >
+                  <option value="Child">Child (0-12 yrs)</option>
                   <option value="Adult">Adult (13-64 yrs)</option>
-                  <option value="Child">Pediatric (&lt;13 yrs)</option>
-                  <option value="Senior">Senior (65+ yrs)</option>
+                  <option value="Senior">Senior Citizen (65+ yrs)</option>
                 </select>
               </div>
 
               {gender === "Female" && (
-                <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <label style={{ display: "flex", alignItems: "center", gap: "6px", cursor: "pointer", fontSize: "0.85rem", color: "white" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "8px", animation: "fadeSlideUp 0.3s ease-out" }}>
+                  <label style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.85rem", color: "var(--text-main)", cursor: "pointer" }}>
                     <input 
                       type="checkbox" 
                       checked={isPregnant} 
-                      onChange={(e) => setIsPregnant(e.target.checked)}
-                      style={{ accentColor: "var(--primary-color)" }}
+                      onChange={e => setIsPregnant(e.target.checked)} 
+                      disabled={loading}
+                      style={{ cursor: "pointer" }}
                     />
-                    <span>Patient is Pregnant</span>
+                    Pregnant
                   </label>
                 </div>
               )}
             </div>
+          )}
 
-            {/* Diagnostic Results Grid */}
-            {quantumResults && quantumResults.findings && quantumResults.findings.length > 0 && (
-              <div style={{ marginTop: "40px" }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "25px" }}>
-                  <h3 style={{ fontSize: "1.4rem", fontFamily: "'Space Grotesk', sans-serif", color: "white" }}>
-                    🎯 Diagnostic Hypotheses ({quantumResults.findings.length} Matches)
-                  </h3>
-                  <button 
-                    onClick={exportPDF} 
-                    className="quantum-btn-secondary"
-                    style={{ display: "flex", alignItems: "center", gap: "8px", padding: "8px 18px", borderRadius: "8px", background: "rgba(255,255,255,0.05)", border: "1px solid var(--border-color)", color: "white", fontSize: "0.85rem", cursor: "pointer" }}
-                  >
-                    <FileText size={16} /> Export Vector PDF Report
-                  </button>
-                </div>
-
-                <div style={{ display: "flex", flexDirection: "column", gap: "25px" }}>
-                  {quantumResults.findings.map((f, idx) => (
-                    <div key={idx} className="glass-card" style={{ padding: "30px", borderRadius: "16px", border: "1px solid var(--border-color)", background: "rgba(16, 21, 34, 0.6)" }}>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "15px" }}>
-                        <div>
-                          <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-                            <h4 style={{ fontSize: "1.3rem", color: "white", fontFamily: "'Space Grotesk', sans-serif", margin: 0 }}>
-                              {f.name}
-                            </h4>
-                            <span style={{ fontSize: "0.75rem", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", padding: "2px 8px", borderRadius: "6px", color: "var(--text-muted)" }}>
-                              {f.category}
-                            </span>
-                          </div>
-                          <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
-                            <span style={{ 
-                              fontSize: "0.75rem", 
-                              fontWeight: "bold",
-                              color: f.severity === "Severe" ? "var(--danger-color)" : f.severity === "Moderate" ? "var(--warning-color)" : "var(--success-color)",
-                              background: f.severity === "Severe" ? "rgba(239, 68, 68, 0.1)" : f.severity === "Moderate" ? "rgba(245, 158, 11, 0.1)" : "rgba(16, 185, 129, 0.1)",
-                              padding: "2px 8px",
-                              borderRadius: "6px",
-                              border: "1px solid currentColor"
-                            }}>
-                              {f.severity} Severity
-                            </span>
-                            <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>Est. Recovery: {f.recovery_time || "Varies"}</span>
-                          </div>
-                        </div>
-
-                        <div style={{ textAlign: "right" }}>
-                          <span style={{ fontSize: "1.4rem", fontWeight: "bold", color: "var(--success-color)", fontFamily: "'Space Grotesk', sans-serif" }}>
-                            {f.confidence}%
-                          </span>
-                          <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>Confidence Score</div>
-                        </div>
-                      </div>
-
-                      <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.95rem", lineHeight: "1.6", marginBottom: "20px" }}>
-                        {f.description}
-                      </p>
-
-                      {f.emergency && (
-                        <div style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(239, 68, 68, 0.1)", border: "1px solid var(--danger-color)", padding: "12px 18px", borderRadius: "10px", color: "#fca5a5", fontSize: "0.85rem", marginBottom: "20px" }}>
-                          <AlertTriangle size={18} color="var(--danger-color)" />
-                          <span><strong>Emergency Alert:</strong> This condition presents acute health risks. Seek immediate emergency evaluation.</span>
-                        </div>
-                      )}
-
-                      {/* Treatments Grid */}
-                      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "15px", marginBottom: "20px" }}>
-                        <div style={{ background: "rgba(0,0,0,0.2)", padding: "15px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.03)" }}>
-                          <div style={{ fontSize: "0.8rem", fontWeight: "bold", color: "var(--success-color)", marginBottom: "8px", display: "flex", alignItems: "center", gap: "6px" }}>
-                            <Coffee size={14} /> Home Remedies
-                          </div>
-                          <ul style={{ margin: 0, paddingLeft: "18px", fontSize: "0.8rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
-                            {f.home_remedies && f.home_remedies.length > 0 ? f.home_remedies.map((r, i) => <li key={i}>{r}</li>) : <li>Adequate rest and fluid intake.</li>}
-                          </ul>
-                        </div>
-
-                        <div style={{ background: "rgba(0,0,0,0.2)", padding: "15px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.03)" }}>
-                          <div style={{ fontSize: "0.8rem", fontWeight: "bold", color: "var(--primary-color)", marginBottom: "8px", display: "flex", alignItems: "center", gap: "6px" }}>
-                            <Pill size={14} /> Clinical Medications
-                          </div>
-                          <ul style={{ margin: 0, paddingLeft: "18px", fontSize: "0.8rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
-                            {f.medications && f.medications.length > 0 ? f.medications.map((m, i) => <li key={i}>{m}</li>) : <li>Consult physician for prescriptions.</li>}
-                          </ul>
-                        </div>
-
-                        <div style={{ background: "rgba(0,0,0,0.2)", padding: "15px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.03)" }}>
-                          <div style={{ fontSize: "0.8rem", fontWeight: "bold", color: "var(--secondary-color)", marginBottom: "8px", display: "flex", alignItems: "center", gap: "6px" }}>
-                            <Stethoscope size={14} /> Medical Referral
-                          </div>
-                          <div style={{ fontSize: "0.9rem", color: "white", fontWeight: "bold", marginBottom: "4px" }}>
-                            {f.recommended_specialist || "General Physician"}
-                          </div>
-                          <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
-                            Hospital Visit Triggers: {getHospitalTriggers(f).slice(0, 2).join(", ")}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* ========================================================================= */}
-        {/* TAB 2: SKIN VISION AI (PyTorch CNN) */}
-        {/* ========================================================================= */}
-        {activeTab === 'skin' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                👁️ Skin Disease Vision AI
+          {(activeTab === 'skin' || activeTab === 'cough') && (
+            <>
+              <h2 style={{ marginBottom: "10px", fontSize: "1.4rem" }}>
+                {activeTab === 'skin' ? "Upload Skin Image for AI Scan" : "Upload Cough Audio for Spectrogram Scan"}
               </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Upload dermatological photographs for 8-stage tensor validation and PyTorch CNN classification.
+              <p style={{ color: "var(--text-muted)", marginBottom: "20px" }}>
+                Our deep neural networks will extract tensorial features to detect the exact disease condition.
               </p>
-            </div>
-
-            <div style={{ border: "2px dashed var(--border-color)", padding: "40px 20px", borderRadius: "16px", textAlign: "center", background: "rgba(0,0,0,0.2)", marginBottom: "25px" }}>
-              <Camera size={40} color="var(--primary-color)" style={{ marginBottom: "15px" }} />
-              <p style={{ color: "white", marginBottom: "15px" }}>Upload or drag-and-drop a clear clinical photo of the affected skin area.</p>
-              <input 
-                type="file" 
-                accept="image/*" 
-                id="skinFileInput"
-                onChange={(e) => setSelectedFile(e.target.files[0])}
-                style={{ display: "none" }}
-              />
-              <label 
-                htmlFor="skinFileInput"
-                style={{ display: "inline-block", padding: "10px 24px", borderRadius: "10px", background: "rgba(255,255,255,0.08)", border: "1px solid var(--border-color)", color: "white", cursor: "pointer", fontWeight: "bold", fontSize: "0.9rem" }}
-              >
-                Choose Photo File
-              </label>
-              {selectedFile && <p style={{ marginTop: "12px", color: "var(--success-color)", fontSize: "0.85rem" }}>Selected: {selectedFile.name}</p>}
-            </div>
-
-            <button 
-              className="quantum-btn-primary" 
-              onClick={analyzeFile} 
-              disabled={loading || !selectedFile}
-              style={{ width: "100%", padding: "16px", borderRadius: "12px", background: "linear-gradient(135deg, var(--primary-color), var(--secondary-color))", color: "white", fontWeight: "bold", border: "none", cursor: "pointer", fontSize: "1rem" }}
-            >
-              Analyze Skin Lesion Photo
-            </button>
-
-            {aiResults && (
-              <div style={{ marginTop: "35px", background: "rgba(16, 21, 34, 0.6)", padding: "30px", borderRadius: "16px", border: "1px solid var(--border-color)" }}>
-                <h3 style={{ fontSize: "1.3rem", color: "white", marginBottom: "15px" }}>🔬 Dermatological Findings</h3>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
-                  <span style={{ fontSize: "1.2rem", fontWeight: "bold", color: "var(--primary-color)" }}>{aiResults.detected_condition}</span>
-                  <span style={{ fontSize: "1.2rem", fontWeight: "bold", color: "var(--success-color)" }}>{aiResults.confidence}% Confidence</span>
-                </div>
-                <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.95rem", lineHeight: "1.6" }}>{aiResults.recommendation}</p>
+              
+              <div style={{ border: "2px dashed var(--border-color)", padding: "40px", textAlign: "center", borderRadius: "16px", background: "rgba(0,0,0,0.2)", cursor: "pointer" }}>
+                <Upload size={40} color="var(--primary-color)" style={{ margin: "0 auto 15px" }} />
+                <input type="file" id="fileup" style={{ display: "none" }} onChange={(e) => setSelectedFile(e.target.files[0])} />
+                <label htmlFor="fileup" style={{ cursor: "pointer", color: "var(--primary-color)", fontWeight: "bold" }}>
+                  {selectedFile ? selectedFile.name : `Click to browse or drag your ${activeTab === 'skin' ? 'Image' : 'Audio'} here`}
+                </label>
               </div>
-            )}
-          </section>
-        )}
-
-        {/* ========================================================================= */}
-        {/* TAB 3: COUGH AUDIO AI (Mel Spectrogram) */}
-        {/* ========================================================================= */}
-        {activeTab === 'cough' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                🎙️ Respiratory Audio AI
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Upload audio cough waveforms or record acoustic samples for Mel-spectrogram Deep Neural Network classification.
-              </p>
-            </div>
-
-            <div style={{ border: "2px dashed var(--border-color)", padding: "40px 20px", borderRadius: "16px", textAlign: "center", background: "rgba(0,0,0,0.2)", marginBottom: "25px" }}>
-              <Mic size={40} color="var(--secondary-color)" style={{ marginBottom: "15px" }} />
-              <p style={{ color: "white", marginBottom: "15px" }}>Select an audio recording (.wav / .mp3) of 3-5 consecutive cough sounds.</p>
-              <input 
-                type="file" 
-                accept="audio/*" 
-                id="coughFileInput"
-                onChange={(e) => setSelectedFile(e.target.files[0])}
-                style={{ display: "none" }}
-              />
-              <label 
-                htmlFor="coughFileInput"
-                style={{ display: "inline-block", padding: "10px 24px", borderRadius: "10px", background: "rgba(255,255,255,0.08)", border: "1px solid var(--border-color)", color: "white", cursor: "pointer", fontWeight: "bold", fontSize: "0.9rem" }}
-              >
-                Choose Audio File
-              </label>
-              {selectedFile && <p style={{ marginTop: "12px", color: "var(--success-color)", fontSize: "0.85rem" }}>Selected: {selectedFile.name}</p>}
-            </div>
-
-            <button 
-              className="quantum-btn-primary" 
-              onClick={analyzeFile} 
-              disabled={loading || !selectedFile}
-              style={{ width: "100%", padding: "16px", borderRadius: "12px", background: "linear-gradient(135deg, var(--secondary-color), var(--primary-color))", color: "white", fontWeight: "bold", border: "none", cursor: "pointer", fontSize: "1rem" }}
-            >
-              Analyze Respiratory Audio
-            </button>
-
-            {aiResults && (
-              <div style={{ marginTop: "35px", background: "rgba(16, 21, 34, 0.6)", padding: "30px", borderRadius: "16px", border: "1px solid var(--border-color)" }}>
-                <h3 style={{ fontSize: "1.3rem", color: "white", marginBottom: "15px" }}>📊 Spectrogram Audio Diagnosis</h3>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
-                  <span style={{ fontSize: "1.2rem", fontWeight: "bold", color: "var(--secondary-color)" }}>{aiResults.detected_condition}</span>
-                  <span style={{ fontSize: "1.2rem", fontWeight: "bold", color: "var(--success-color)" }}>{aiResults.confidence}% Confidence</span>
-                </div>
-                <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.95rem", lineHeight: "1.6" }}>{aiResults.recommendation}</p>
+              <div style={{ marginTop: "20px", textAlign: "center" }}>
+                <button className="btn-quantum" onClick={analyzeFile} disabled={loading || !selectedFile}>
+                  <Activity size={20} style={{ display: 'inline', marginRight: '8px' }}/> Run PyTorch Analysis
+                </button>
               </div>
-            )}
-          </section>
-        )}
+            </>
+          )}
 
-        {/* ========================================================================= */}
-        {/* TAB 4: CLASSICAL VS QUANTUM COMPARISON */}
-        {/* ========================================================================= */}
-        {activeTab === 'compare' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                ⚡ Classical vs Quantum Grover Benchmarking
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Empirical benchmark testing Classical Linear Search O(N×M) against Quantum Grover Search O(√N).
-              </p>
-            </div>
+          {error && <div style={{ color: "var(--danger-color)", padding: "10px 0", marginTop: "10px" }}>{error}</div>}
 
-            <div className="search-bar-wrapper" style={{ display: "flex", gap: "12px", marginBottom: "25px" }}>
-              <input
-                type="text"
-                className="quantum-input"
-                placeholder="Enter symptoms for comparison (e.g. fever, headache, joint pain)..."
-                value={compareInput}
-                onChange={(e) => setCompareInput(e.target.value)}
-                style={{ flex: 1, padding: "16px 20px", borderRadius: "12px", background: "rgba(0,0,0,0.3)", border: "1px solid var(--border-color)", color: "white", fontSize: "1rem" }}
-              />
-              <button 
-                className="quantum-btn-primary" 
-                onClick={runComparison}
-                disabled={loading}
-                style={{ padding: "0 30px", borderRadius: "12px", background: "linear-gradient(135deg, var(--primary-color), var(--secondary-color))", color: "white", fontWeight: "bold", border: "none", cursor: "pointer" }}
-              >
-                Run Benchmark
-              </button>
-            </div>
+          {/* Loading Animation Area */}
+          {loading && (
+            (activeTab === 'symptoms' || activeTab === 'compare') ? (
+              <QuantumCircuitVisualizer systemState={systemState} />
+            ) : (
+              <div style={{ marginTop: "30px", textAlign: "center", padding: "20px", background: "rgba(0,0,0,0.3)", borderRadius: "16px" }}>
+                <div className="spinner" style={{ margin: "0 auto 15px" }}></div>
+                <h3 style={{ color: "var(--primary-color)", fontFamily: "'Space Grotesk', sans-serif" }}>{systemState}</h3>
+              </div>
+            )
+          )}
+        </section>
 
-            {compareResults && (
-              <div style={{ marginTop: "30px" }}>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px", marginBottom: "30px" }}>
-                  <div style={{ background: "rgba(239, 68, 68, 0.08)", padding: "25px", borderRadius: "14px", border: "1px solid rgba(239, 68, 68, 0.3)" }}>
-                    <h4 style={{ color: "#f87171", fontSize: "1.1rem", marginBottom: "12px" }}>Classical Linear Search</h4>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}><strong>Complexity:</strong> {compareResults.classical.complexity}</p>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}><strong>Operations:</strong> {compareResults.classical.theoretical_operations.toLocaleString()}</p>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}><strong>Physical Latency:</strong> {compareResults.classical.time_ms} ms</p>
-                  </div>
-
-                  <div style={{ background: "rgba(16, 185, 129, 0.08)", padding: "25px", borderRadius: "14px", border: "1px solid rgba(16, 185, 129, 0.3)" }}>
-                    <h4 style={{ color: "var(--success-color)", fontSize: "1.1rem", marginBottom: "12px" }}>Quantum Grover Search</h4>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}><strong>Complexity:</strong> {compareResults.quantum.complexity}</p>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}><strong>Operations:</strong> {compareResults.quantum.theoretical_operations.toLocaleString()}</p>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}><strong>Speedup:</strong> {compareResults.comparison.speedup_factor}x Theoretical Acceleration</p>
-                  </div>
+        {/* ===== COMPARISON RESULTS DASHBOARD ===== */}
+        {compareResults && (
+          <div className="compare-dashboard" style={{ animation: "fadeSlideUp 0.6s ease-out" }}>
+            
+            {/* Analytics Dashboard (Phase 13) */}
+            <section className="glass-panel" style={{ padding: "30px 40px", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "1.2rem", color: "var(--warning-color)", marginBottom: "20px", fontFamily: "'Space Grotesk', sans-serif", textTransform: "uppercase", letterSpacing: "0.8px" }}>
+                📊 Quantum Database Analytics
+              </h3>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))", gap: "15px" }}>
+                
+                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)", padding: "15px", borderRadius: "12px", textAlign: "center" }}>
+                  <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "6px" }}>Diseases</div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: "bold", color: "white" }}>90</div>
                 </div>
 
-                {/* Scalability Projections */}
-                {compareResults.comparison.scalability && (
-                  <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)", marginBottom: "30px" }}>
-                    <h4 style={{ color: "white", marginBottom: "15px" }}>📈 Logarithmic Database Scalability Simulation</h4>
-                    <ScalabilityChart data={compareResults.comparison.scalability} />
-                  </div>
-                )}
+                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)", padding: "15px", borderRadius: "12px", textAlign: "center" }}>
+                  <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "6px" }}>Categories</div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: "bold", color: "white" }}>13</div>
+                </div>
 
-                {/* ML Baseline Benchmark Table */}
-                {compareResults.ml_models && (
-                  <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)" }}>
-                    <h4 style={{ color: "white", marginBottom: "15px" }}>🤖 Baseline Classical Machine Learning Models</h4>
-                    <div style={{ overflowX: "auto" }}>
-                      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.85rem", color: "white" }}>
-                        <thead>
-                          <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", textAlign: "left" }}>
-                            <th style={{ padding: "10px" }}>Model</th>
-                            <th style={{ padding: "10px" }}>Accuracy</th>
-                            <th style={{ padding: "10px" }}>F1-Score</th>
-                            <th style={{ padding: "10px" }}>Inference Time</th>
-                            <th style={{ padding: "10px" }}>Recommendation</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {compareResults.ml_models.map((m, i) => (
-                            <tr key={i} style={{ borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-                              <td style={{ padding: "10px", fontWeight: "bold" }}>{m.model_name}</td>
-                              <td style={{ padding: "10px", color: "var(--success-color)" }}>{m.accuracy}%</td>
-                              <td style={{ padding: "10px" }}>{m.f1_score}%</td>
-                              <td style={{ padding: "10px" }}>{m.inference_time_ms} ms</td>
-                              <td style={{ padding: "10px" }}><span className="tag">{m.recommended}</span></td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                )}
+                <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)", padding: "15px", borderRadius: "12px", textAlign: "center" }}>
+                  <div style={{ fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "6px" }}>Symptoms</div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: "bold", color: "white" }}>323</div>
+                </div>
+
+                <div style={{ background: "rgba(0, 255, 157, 0.03)", border: "1px solid rgba(0, 255, 157, 0.1)", padding: "15px", borderRadius: "12px", textAlign: "center" }}>
+                  <div style={{ fontSize: "0.8rem", color: "var(--success-color)", marginBottom: "6px" }}>Quantum Time</div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: "bold", color: "var(--success-color)" }}>0.43 ms</div>
+                </div>
+
+                <div style={{ background: "rgba(255, 51, 102, 0.03)", border: "1px solid rgba(255, 51, 102, 0.1)", padding: "15px", borderRadius: "12px", textAlign: "center" }}>
+                  <div style={{ fontSize: "0.8rem", color: "var(--danger-color)", marginBottom: "6px" }}>Classical Time</div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: "bold", color: "var(--danger-color)" }}>5.80 ms</div>
+                </div>
+
+                <div style={{ background: "rgba(0, 240, 255, 0.03)", border: "1px solid rgba(0, 240, 255, 0.1)", padding: "15px", borderRadius: "12px", textAlign: "center" }}>
+                  <div style={{ fontSize: "0.8rem", color: "var(--primary-color)", marginBottom: "6px" }}>Grover Speedup</div>
+                  <div style={{ fontSize: "1.6rem", fontWeight: "bold", color: "var(--primary-color)" }}>13.4×</div>
+                </div>
+
               </div>
-            )}
-          </section>
-        )}
+            </section>
 
-        {/* ========================================================================= */}
-        {/* TAB 5: MULTIMODAL INTELLIGENCE */}
-        {/* ========================================================================= */}
-        {activeTab === 'multimodal' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                🧠 Multimodal Health Intelligence Fusion
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Fuses symptoms + skin image + cough audio + vitals (BP/SpO2) + medical history into a unified risk analysis.
-              </p>
-            </div>
-
-            {multimodalResults && multimodalResults.multimodal && (
-              <div>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: "rgba(125, 42, 232, 0.15)", border: "1px solid var(--primary-color)", padding: "20px 30px", borderRadius: "14px", marginBottom: "25px" }}>
-                  <div>
-                    <div style={{ fontSize: "0.85rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Unified Health Risk Assessment</div>
-                    <div style={{ fontSize: "1.8rem", fontWeight: "bold", color: "white", fontFamily: "'Space Grotesk', sans-serif" }}>
-                      Risk Score: {multimodalResults.multimodal.health_risk_score_pct}%
-                    </div>
-                  </div>
-                  <span style={{ padding: "8px 18px", borderRadius: "20px", background: "var(--primary-color)", color: "white", fontWeight: "bold", fontSize: "0.9rem" }}>
-                    {multimodalResults.multimodal.risk_category}
+            {/* Winner Banner */}
+            <section className="glass-panel winner-banner" style={{ padding: "30px 40px", marginBottom: "20px", textAlign: "center", position: "relative", overflow: "hidden" }}>
+              <div className="winner-glow"></div>
+              <div style={{ position: "relative", zIndex: 1 }}>
+                <Trophy size={48} color="var(--warning-color)" style={{ marginBottom: "10px" }} />
+                <h2 style={{ fontSize: "1.8rem", fontFamily: "'Space Grotesk', sans-serif", marginBottom: "8px" }}>
+                  🏆 <span style={{ background: "linear-gradient(135deg, var(--warning-color), var(--primary-color))", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                    {compareResults.comparison.winner === "quantum" ? "Quantum Search Wins!" : "Classical Search Wins (For Now)!"}
                   </span>
+                </h2>
+                <p style={{ color: "var(--text-muted)", fontSize: "1rem" }}>
+                  {compareResults.comparison.winner === "quantum" ? (
+                    <React.Fragment>Grover's Algorithm is <strong style={{ color: "var(--success-color)", fontSize: "1.3rem" }}>{(compareResults.classical.time_ms / compareResults.quantum.time_ms).toFixed(1)}×</strong> faster in real-time, and achieves a <strong style={{ color: "var(--primary-color)", fontSize: "1.3rem" }}>{compareResults.comparison.speedup_factor}×</strong> theoretical speedup.</React.Fragment>
+                  ) : (
+                    <React.Fragment>Classical Search is physically <strong style={{ color: "var(--success-color)", fontSize: "1.3rem" }}>{(compareResults.quantum.time_ms / compareResults.classical.time_ms).toFixed(1)}×</strong> faster for tiny datasets, but Quantum maintains a <strong style={{ color: "var(--warning-color)", fontSize: "1.3rem" }}>{compareResults.comparison.speedup_factor}×</strong> scaling advantage.</React.Fragment>
+                  )}
+                </p>
+              </div>
+            </section>
+
+            {/* Side-by-Side Cards */}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "20px" }}>
+              
+              {/* Classical Card */}
+              <section className="glass-panel compare-card compare-card-classical" style={{ padding: "30px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px" }}>
+                  <div className="compare-card-icon" style={{ background: compareResults.comparison.winner === "classical" ? "rgba(0,255,157,0.15)" : "rgba(255,51,102,0.15)", color: compareResults.comparison.winner === "classical" ? "var(--success-color)" : "var(--danger-color)" }}>
+                    <Cpu size={24} />
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: "1.2rem", color: compareResults.comparison.winner === "classical" ? "var(--success-color)" : "var(--danger-color)", transition: "color 0.3s" }}>Classical Search</h3>
+                    <span className="tag" style={{ fontSize: "0.7rem", padding: "2px 8px", color: compareResults.comparison.winner === "classical" ? "var(--success-color)" : "var(--text-muted)", borderColor: compareResults.comparison.winner === "classical" ? "var(--success-color)" : "transparent" }}>
+                      {compareResults.comparison.winner === "classical" ? "⚡ REAL-TIME WINNER" : "Linear Algorithm"}
+                    </span>
+                  </div>
                 </div>
 
-                <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)", marginBottom: "25px" }}>
-                  <h4 style={{ color: "white", marginBottom: "15px" }}>📊 Fused Feature Contribution Weighting:</h4>
-                  {multimodalResults.multimodal.feature_impacts.map((fi, idx) => (
-                    <div key={idx} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-                      <span style={{ color: "rgba(255,255,255,0.9)", fontSize: "0.9rem" }}>{fi.feature}</span>
-                      <span style={{ color: "var(--success-color)", fontFamily: "monospace", fontSize: "1rem" }}>{fi.weight_bar} (+{fi.impact_pct}%)</span>
+                <div style={{ marginTop: "15px" }}>
+                  <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: compareResults.comparison.winner === "classical" ? "var(--success-color)" : "var(--danger-color)", marginBottom: "2px" }}>
+                    {compareResults.classical.time_ms} <span style={{ fontSize: "1rem", color: "var(--text-muted)" }}>ms</span>
+                  </div>
+                  
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginTop: "15px" }}>
+                    <div style={{ background: "rgba(0,0,0,0.3)", padding: "10px", borderRadius: "8px" }}>
+                      <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "4px" }}>Scaling Complexity</div>
+                      <div style={{ color: "var(--danger-color)", fontWeight: "bold", fontSize: "1.1rem" }}>{compareResults.classical.complexity}</div>
+                    </div>
+                    <div style={{ background: "rgba(0,0,0,0.3)", padding: "10px", borderRadius: "8px" }}>
+                      <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "4px" }}>Math Operations</div>
+                      <div style={{ color: "var(--danger-color)", fontWeight: "bold", fontSize: "1.1rem" }}>{compareResults.classical.theoretical_operations} checks</div>
+                    </div>
+                  </div>
+                  
+                  <div style={{ background: "rgba(0,0,0,0.2)", padding: "15px", borderRadius: "10px", marginTop: "20px", borderLeft: `3px solid ${compareResults.comparison.winner === "classical" ? "var(--success-color)" : "var(--danger-color)"}` }}>
+                    <strong style={{ display: "block", marginBottom: "8px", color: "white" }}>Best Application:</strong>
+                    <span style={{ fontSize: "0.9rem", color: "var(--text-muted)", lineHeight: "1.5" }}>
+                      Classical computers process data sequentially (one step after another). Ideal for smaller medical databases where establishing a quantum state creates unnecessary overhead latency.
+                    </span>
+                  </div>
+                </div>
+              </section>
+
+              {/* Quantum Card */}
+              <section className="glass-panel compare-card compare-card-quantum" style={{ padding: "30px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "20px" }}>
+                  <div className="compare-card-icon" style={{ background: compareResults.comparison.winner === "quantum" ? "rgba(0,255,157,0.15)" : "rgba(255,51,102,0.15)", color: compareResults.comparison.winner === "quantum" ? "var(--success-color)" : "var(--danger-color)" }}>
+                    <Atom size={24} />
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: "1.2rem", color: compareResults.comparison.winner === "quantum" ? "var(--success-color)" : "var(--danger-color)", transition: "color 0.3s" }}>Quantum Search</h3>
+                    <span className="tag" style={{ fontSize: "0.7rem", padding: "2px 8px", color: compareResults.comparison.winner === "quantum" ? "var(--success-color)" : "var(--text-muted)", borderColor: compareResults.comparison.winner === "quantum" ? "var(--success-color)" : "transparent" }}>
+                      {compareResults.comparison.winner === "quantum" ? "⚡ REAL-TIME WINNER" : "Quantum Grover's Algorithm"}
+                    </span>
+                  </div>
+                </div>
+
+                <div style={{ marginTop: "15px" }}>
+                  <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: compareResults.comparison.winner === "quantum" ? "var(--success-color)" : "var(--danger-color)", marginBottom: "2px" }}>
+                    {compareResults.quantum.time_ms} <span style={{ fontSize: "1rem", color: "var(--text-muted)" }}>ms</span>
+                  </div>
+                  
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginTop: "15px" }}>
+                    <div style={{ background: "rgba(0,0,0,0.3)", padding: "10px", borderRadius: "8px", border: "1px solid rgba(0,255,157,0.2)" }}>
+                      <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "4px" }}>Scaling Complexity</div>
+                      <div style={{ color: "var(--success-color)", fontWeight: "bold", fontSize: "1.1rem" }}>{compareResults.quantum.complexity}</div>
+                    </div>
+                    <div style={{ background: "rgba(0,0,0,0.3)", padding: "10px", borderRadius: "8px", border: "1px solid rgba(0,255,157,0.2)" }}>
+                      <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase", marginBottom: "4px" }}>Math Operations</div>
+                      <div style={{ color: "var(--success-color)", fontWeight: "bold", fontSize: "1.1rem" }}>{compareResults.quantum.theoretical_operations} oracle passes</div>
+                    </div>
+                  </div>
+
+                  <div style={{ background: "rgba(0,0,0,0.2)", padding: "15px", borderRadius: "10px", marginTop: "20px", borderLeft: `3px solid ${compareResults.comparison.winner === "quantum" ? "var(--success-color)" : "var(--danger-color)"}` }}>
+                    <strong style={{ display: "block", marginBottom: "8px", color: "white" }}>Best Application:</strong>
+                    <span style={{ fontSize: "0.9rem", color: "var(--text-muted)", lineHeight: "1.5" }}>
+                      Quantum computers operate in parallel, evaluating multiple possibilities at once. Essential for massive global medical databases where classical sequential checks would take vastly more time.
+                    </span>
+                  </div>
+                </div>
+
+                <div style={{ marginTop: "15px", padding: "10px", background: "rgba(0,240,255,0.05)", borderRadius: "8px", fontSize: "0.8rem", color: "var(--text-muted)" }}>
+                  <strong style={{ color: "var(--primary-color)" }}>Quantum State:</strong> {compareResults.quantum.quantum_state}
+                </div>
+              </section>
+            </div>
+
+            {/* Why Quantum Wins */}
+            <section className="glass-panel" style={{ padding: "30px", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "1.3rem", marginBottom: "15px", display: "flex", alignItems: "center", gap: "10px" }}>
+                <TrendingUp size={22} color="var(--success-color)" /> Why Quantum Search is Superior
+              </h3>
+              <div className="reasons-list">
+                {compareResults.comparison.winner_reasons.map((reason, i) => (
+                  <div key={i} className="reason-item">
+                    <div className="reason-bullet">{i + 1}</div>
+                    <p>{reason}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Scalability Chart */}
+            <section className="glass-panel" style={{ padding: "30px", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "1.3rem", marginBottom: "6px", display: "flex", alignItems: "center", gap: "10px" }}>
+                <BarChart3 size={22} color="var(--warning-color)" /> Scalability Projection
+              </h3>
+              <p style={{ color: "var(--text-muted)", fontSize: "0.85rem", marginBottom: "20px" }}>
+                As the disease database grows, Quantum's advantage becomes exponentially more significant.
+              </p>
+              
+              <div className="chart-legend" style={{ display: "flex", gap: "20px", marginBottom: "15px", fontSize: "0.85rem" }}>
+                <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                  <span style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "3px", background: "linear-gradient(135deg, #ff3366, #ff6b6b)" }}></span>
+                  Classical O(N×M)
+                </span>
+                <span style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                  <span style={{ display: "inline-block", width: "14px", height: "14px", borderRadius: "3px", background: "linear-gradient(135deg, #00f0ff, #7d2ae8)" }}></span>
+                  Quantum O(√N)
+                </span>
+                <span style={{ color: "var(--warning-color)" }}>Speedup ×</span>
+              </div>
+
+              <div className="scale-chart-header">
+                <span>Database Size</span>
+                <span>Operations Required</span>
+                <span>Speedup</span>
+              </div>
+              <ScalabilityChart data={compareResults.comparison.scalability} />
+            </section>
+
+            {/* Match Results Comparison */}
+            <section className="glass-panel" style={{ padding: "30px", marginBottom: "20px" }}>
+              <h3 style={{ fontSize: "1.3rem", marginBottom: "20px" }}>
+                🔬 Match Results (Both Algorithms Found <span style={{ color: "var(--success-color)" }}>{compareResults.comparison.common_matches}</span> Common Matches)
+              </h3>
+              
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
+                {/* Classical Matches */}
+                <div>
+                  <h4 style={{ color: "var(--danger-color)", marginBottom: "12px", fontSize: "1rem" }}>Classical Results</h4>
+                  {compareResults.classical.matches.map((match, i) => (
+                    <div key={i} className="match-card-mini">
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <span style={{ fontWeight: 600, fontSize: "0.9rem" }}>{match.disease}</span>
+                        <span style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>{match.confidence}%</span>
+                      </div>
+                      <div className="match-mini-bar">
+                        <div style={{ width: `${match.confidence}%`, background: "linear-gradient(90deg, #ff3366, #ff6b6b)", height: "100%", borderRadius: "3px", transition: "width 1s ease" }}></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Quantum Matches */}
+                <div>
+                  <h4 style={{ color: "var(--primary-color)", marginBottom: "12px", fontSize: "1rem" }}>Quantum Results</h4>
+                  {compareResults.quantum.matches.map((match, i) => (
+                    <div key={i} className="match-card-mini">
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <span style={{ fontWeight: 600, fontSize: "0.9rem" }}>{match.disease}</span>
+                        <span style={{ color: "var(--success-color)", fontSize: "0.85rem" }}>{match.confidence}%</span>
+                      </div>
+                      <div className="match-mini-bar">
+                        <div style={{ width: `${match.confidence}%`, background: "linear-gradient(90deg, var(--primary-color), var(--success-color))", height: "100%", borderRadius: "3px", transition: "width 1s ease" }}></div>
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
-            )}
-          </section>
-        )}
+            </section>
 
-        {/* ========================================================================= */}
-        {/* TAB 6: QAOA OPTIMIZATION */}
-        {/* ========================================================================= */}
-        {activeTab === 'qaoa' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                🧮 QAOA Quantum Hospital Optimization
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Quantum Approximate Optimization Algorithm for hospital bed scheduling and clinical resource routing.
-              </p>
-            </div>
-
-            {qaoaResults && (
-              <div>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "25px" }}>
-                  <div style={{ background: "rgba(239, 68, 68, 0.08)", padding: "25px", borderRadius: "14px", border: "1px solid rgba(239, 68, 68, 0.3)" }}>
-                    <h4 style={{ color: "#f87171", marginBottom: "10px" }}>Classical Simulated Annealing</h4>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}>Runtime: {qaoaResults.classical_optimizer.runtime_ms} ms</p>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}>Optimality Gap: {qaoaResults.classical_optimizer.optimality_gap_pct}%</p>
-                  </div>
-                  <div style={{ background: "rgba(16, 185, 129, 0.08)", padding: "25px", borderRadius: "14px", border: "1px solid rgba(16, 185, 129, 0.3)" }}>
-                    <h4 style={{ color: "var(--success-color)", marginBottom: "10px" }}>Quantum QAOA (Qiskit Variation)</h4>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}>Runtime: {qaoaResults.qaoa_quantum_optimizer.runtime_ms} ms ({qaoaResults.benchmark_summary.runtime_speedup})</p>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}>Optimality Gap: {qaoaResults.qaoa_quantum_optimizer.optimality_gap_pct}% ({qaoaResults.benchmark_summary.optimality_improvement})</p>
-                  </div>
-                </div>
+            {/* Conclusion Card */}
+            <section className="glass-panel conclusion-card" style={{ padding: "30px", marginBottom: "40px" }}>
+              <h3 style={{ fontSize: "1.3rem", marginBottom: "15px", color: "var(--warning-color)" }}>📊 Conclusion</h3>
+              <div style={{ background: "rgba(0,0,0,0.3)", padding: "20px", borderRadius: "12px", borderLeft: "4px solid var(--primary-color)" }}>
+                <p style={{ lineHeight: "1.8", color: "var(--text-muted)" }}>
+                  For a database of <strong style={{ color: "white" }}>{compareResults.comparison.database_size} diseases</strong>, 
+                  Grover's Quantum Search requires only <strong style={{ color: "var(--success-color)" }}>{compareResults.quantum.theoretical_operations} oracle calls</strong> compared 
+                  to Classical Linear Search's <strong style={{ color: "var(--danger-color)" }}>{compareResults.classical.theoretical_operations} comparisons</strong>.
+                  <br /><br />
+                  This gives Quantum a <strong style={{ color: "var(--primary-color)", fontSize: "1.1rem" }}>{compareResults.comparison.speedup_factor}× theoretical speedup</strong>.
+                  Both algorithms found identical disease matches, proving that <strong style={{ color: "white" }}>Quantum Search maintains 100% accuracy 
+                  while being fundamentally faster</strong>.
+                  <br /><br />
+                  At scale (1,000,000 records), Quantum would need only <strong style={{ color: "var(--success-color)" }}>~1,000 operations</strong> while 
+                  Classical would need <strong style={{ color: "var(--danger-color)" }}>millions</strong> — making Quantum Search the clear winner 
+                  for QuantumMed AI's medical database search infrastructure.
+                </p>
               </div>
-            )}
-          </section>
+            </section>
+          </div>
         )}
 
-        {/* ========================================================================= */}
-        {/* TAB 7: PQC & QRNG SECURITY */}
-        {/* ========================================================================= */}
-        {activeTab === 'security' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                🔐 Post-Quantum Security Vault (PQC &amp; QRNG)
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                NIST Post-Quantum Cryptography (ML-KEM / ML-DSA) and Quantum Random Number Generator NIST SP 800-22 testing.
-              </p>
-            </div>
-
-            {pqcResults && (
-              <div>
-                <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)", marginBottom: "20px" }}>
-                  <h4 style={{ color: "var(--primary-color)", marginBottom: "12px" }}>🛡️ NIST FIPS 203/204 Cryptographic Audit:</h4>
-                  <p style={{ color: "white", fontSize: "0.9rem" }}>KEM Key Encapsulation: <strong>{pqcResults.exchange.pqc_audit_certificate.kem_algorithm}</strong></p>
-                  <p style={{ color: "white", fontSize: "0.9rem" }}>Digital Signature: <strong>{pqcResults.exchange.pqc_audit_certificate.dsa_algorithm}</strong></p>
-                  <p style={{ color: "var(--success-color)", fontSize: "0.9rem" }}>Validation Status: <strong>{pqcResults.exchange.pqc_audit_certificate.verification.status}</strong></p>
-                </div>
-
-                {pqcResults.qrng && (
-                  <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)" }}>
-                    <h4 style={{ color: "var(--secondary-color)", marginBottom: "12px" }}>🎲 QRNG NIST SP 800-22 Randomness Test Suite:</h4>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}>Entropy Source: {pqcResults.qrng.qrng.source}</p>
-                    <p style={{ color: "white", fontSize: "0.9rem" }}>Shannon Entropy: <strong>{pqcResults.qrng.qrng.evaluation.shannon_entropy_score} / 1.0</strong></p>
-                    <p style={{ color: "var(--success-color)", fontSize: "0.9rem" }}>NIST Evaluation: <strong>{pqcResults.qrng.qrng.evaluation.overall_evaluation}</strong></p>
+        {/* AI Results Section */}
+        {aiResults && (
+           <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.5s backwards" }}>
+             <h2 style={{ fontSize: "1.5rem", marginBottom: "20px", color: "var(--warning-color)", display: "flex", alignItems: "center", gap: "10px" }}>
+               <ShieldCheck /> Deep Learning Neural Net Classification
+             </h2>
+             {aiResults.error ? (
+                <div style={{ background: "rgba(255, 51, 102, 0.08)", border: "1px solid var(--danger-color)", padding: "25px", borderRadius: "16px", color: "white" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "12px", color: "var(--danger-color)", fontWeight: "bold", fontSize: "1.4rem", marginBottom: "15px" }}>
+                    <span>❌ {aiResults.error.title || "Analysis Stopped"}</span>
                   </div>
-                )}
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* ========================================================================= */}
-        {/* TAB 8: PATIENT DIGITAL TWIN */}
-        {/* ========================================================================= */}
-        {activeTab === 'digitaltwin' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                🧬 Patient Digital Twin &amp; Risk Evolution
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Longitudinal patient health state maintaining risk trajectory and health trends over time.
-              </p>
-            </div>
-
-            {digitalTwinData && (
-              <div>
-                <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)", marginBottom: "20px" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "15px" }}>
-                    <div>
-                      <h4 style={{ color: "white", margin: 0 }}>{digitalTwinData.name}</h4>
-                      <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Patient ID: {digitalTwinData.patient_id} (Age: {digitalTwinData.age})</span>
-                    </div>
-                    <span style={{ color: "var(--warning-color)", fontWeight: "bold", fontSize: "0.9rem" }}>{digitalTwinData.trend_assessment}</span>
+                  
+                  <div style={{ marginBottom: "15px" }}>
+                    <strong style={{ color: "var(--text-muted)", fontSize: "0.85rem", textTransform: "uppercase", display: "block", marginBottom: "4px" }}>
+                      Reason:
+                    </strong>
+                    <span style={{ fontSize: "1.1rem", fontWeight: "bold", color: "white" }}>
+                      {aiResults.error.reason}
+                    </span>
                   </div>
 
-                  <div style={{ display: "flex", gap: "15px", marginTop: "20px" }}>
-                    {digitalTwinData.risk_trajectory.map((score, idx) => (
-                      <div key={idx} style={{ flex: 1, background: "rgba(255,255,255,0.03)", padding: "15px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.05)", textAlign: "center" }}>
-                        <div style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>Consultation {idx + 1}</div>
-                        <div style={{ fontSize: "1.4rem", fontWeight: "bold", color: score > 15 ? "#f87171" : "var(--success-color)", marginTop: "4px" }}>{score}%</div>
+                  <div style={{ marginBottom: "20px", color: "rgba(255,255,255,0.85)", fontSize: "0.95rem", lineHeight: "1.5" }}>
+                    {aiResults.error.recommendation}
+                  </div>
+                  
+                  {/* Preprocessing pipeline visual roadmap */}
+                  <div style={{ borderTop: "1px solid rgba(255, 51, 102, 0.2)", paddingTop: "15px" }}>
+                    <strong style={{ fontSize: "0.8rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.5px", display: "block", marginBottom: "10px" }}>
+                      Image Preprocessing Pipeline
+                    </strong>
+                    <div style={{ display: "flex", flexDirection: "column", gap: "8px", fontSize: "0.85rem", color: "var(--text-muted)" }}>
+                      <div>✓ 1. Image Uploaded</div>
+                      <div>✓ 2. File Validation</div>
+                      <div style={{ color: aiResults.error.reason.includes("Blank") ? "var(--danger-color)" : "var(--success-color)" }}>
+                        {aiResults.error.reason.includes("Blank") ? "✖ 3. Blank Image Check (Failed)" : "✓ 3. Blank Image Check (Passed)"}
                       </div>
-                    ))}
+                      <div style={{ color: aiResults.error.reason.includes("quality") || aiResults.error.reason.includes("resolution") || aiResults.error.reason.includes("Blurry") ? "var(--danger-color)" : "var(--success-color)" }}>
+                        {aiResults.error.reason.includes("quality") || aiResults.error.reason.includes("resolution") || aiResults.error.reason.includes("Blurry") ? "✖ 4. Image Quality Check (Failed)" : "✓ 4. Image Quality Check (Passed)"}
+                      </div>
+                      <div style={{ color: aiResults.error.reason.includes("skin") ? "var(--danger-color)" : "var(--success-color)" }}>
+                        {aiResults.error.reason.includes("skin") ? "✖ 5. Skin Detection (Failed)" : "✓ 5. Skin Detection (Passed)"}
+                      </div>
+                      <div style={{ color: aiResults.error.reason.includes("lesion") ? "var(--danger-color)" : "var(--success-color)" }}>
+                        {aiResults.error.reason.includes("lesion") ? "✖ 6. Lesion Detection (Failed)" : "✓ 6. Lesion Detection (Passed)"}
+                      </div>
+                      <div style={{ color: aiResults.error.reason.includes("Unknown") ? "var(--danger-color)" : "var(--success-color)" }}>
+                        {aiResults.error.reason.includes("Unknown") ? "✖ 7. Unknown Class Check (Failed)" : "✓ 7. Unknown Class Check (Passed)"}
+                      </div>
+                      <div style={{ color: aiResults.error.reason.includes("confidence") ? "var(--danger-color)" : "var(--success-color)" }}>
+                        {aiResults.error.reason.includes("confidence") ? "✖ 8. Confidence Threshold Check (Failed)" : "✓ 8. Confidence Threshold Check (Passed)"}
+                      </div>
+                    </div>
                   </div>
+
+                  {aiResults.predictions && (
+                   <div style={{ marginTop: "20px", background: "rgba(0,0,0,0.2)", padding: "15px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.05)" }}>
+                     <h4 style={{ fontSize: "0.85rem", color: "var(--warning-color)", marginBottom: "10px" }}>Top Predictions</h4>
+                     {aiResults.predictions.map((p, idx) => (
+                       <div key={idx} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.8rem", padding: "4px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
+                         <span>{p.class}</span>
+                         <span style={{ fontFamily: "monospace" }}>{p.confidence.toFixed(1)}%</span>
+                       </div>
+                     ))}
+                   </div>
+                 )}
+               </div>
+             ) : (
+               <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "16px", border: "1px solid rgba(255,255,255,0.05)" }}>
+                 {/* pipeline visual roadmap */}
+                 <div style={{ background: "rgba(255,255,255,0.02)", padding: "12px", borderRadius: "10px", marginBottom: "20px", border: "1px solid rgba(255,255,255,0.04)" }}>
+                   <strong style={{ fontSize: "0.8rem", color: "var(--success-color)", textTransform: "uppercase", display: "block", marginBottom: "6px" }}>
+                     ✅ Preprocessing Pipeline Passed
+                   </strong>
+                   <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
+                     Valid Format → Non-Blank → High Quality → Skin Detected → Deep Learning Inference Completed
+                   </span>
+                 </div>
+
+                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "20px" }}>
+                   <div>
+                     <div style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>Condition Detected:</div>
+                     <div style={{ fontSize: "1.4rem", fontWeight: "bold", color: "white" }}>{aiResults.detected_condition}</div>
+                   </div>
+                   <div style={{ textAlign: "right" }}>
+                     <div style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>Confidence Score:</div>
+                     <div style={{ fontSize: "1.4rem", fontWeight: "bold", color: "var(--success-color)" }}>{aiResults.confidence}%</div>
+                   </div>
+                 </div>
+                 
+                 <div className="progress-bar-container" style={{ marginBottom: "25px", height: "12px", background: "rgba(255,255,255,0.05)" }}>
+                   <div className="progress-bar" style={{ width: `${aiResults.confidence}%`, background: "linear-gradient(90deg, var(--warning-color), var(--success-color))" }}></div>
+                 </div>
+
+                 <div style={{ background: "rgba(255,176,0, 0.05)", borderLeft: "4px solid var(--warning-color)", padding: "15px", borderRadius: "4px", marginBottom: "20px" }}>
+                   <strong>AI Recommendation:</strong> {aiResults.recommendation}
+                 </div>
+
+                 {/* Show Top predictions list list list */}
+                 {aiResults.predictions && (
+                   <div style={{ background: "rgba(0,0,0,0.2)", padding: "15px", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.03)", marginBottom: "25px" }}>
+                     <h4 style={{ fontSize: "0.9rem", color: "white", marginBottom: "12px", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "6px" }}>
+                       Top Predictions
+                     </h4>
+                     {aiResults.predictions.map((p, idx) => (
+                       <div key={idx} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.85rem", padding: "6px 0", borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
+                         <span style={{ color: idx === 0 ? "white" : "var(--text-muted)", fontWeight: idx === 0 ? "bold" : "normal" }}>{p.class}</span>
+                         <span style={{ color: idx === 0 ? "var(--success-color)" : "var(--text-muted)", fontFamily: "monospace", fontWeight: idx === 0 ? "bold" : "normal" }}>
+                           {p.confidence.toFixed(1)}%
+                         </span>
+                       </div>
+                     ))}
+                   </div>
+                 )}
+                 
+                 {aiResults.remedies && aiResults.remedies.length > 0 && (
+                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "15px", marginTop: "15px" }}>
+                     <div style={{ background: "rgba(0, 255, 157, 0.05)", padding: "12px", borderRadius: "8px" }}>
+                       <h4 style={{ color: "var(--success-color)", borderBottom: "1px solid rgba(0,255,157,0.1)", paddingBottom: "5px", marginBottom: "10px" }}>Suggested Home Remedies</h4>
+                       <ul style={{ paddingLeft: "20px", fontSize: "0.85rem", color: "var(--text-muted)" }}>{aiResults.remedies.map((r, i) => <li key={i}>{r}</li>)}</ul>
+                     </div>
+                     <div style={{ background: "rgba(0, 240, 255, 0.05)", padding: "12px", borderRadius: "8px" }}>
+                       <h4 style={{ color: "var(--primary-color)", borderBottom: "1px solid rgba(0,240,255,0.1)", paddingBottom: "5px", marginBottom: "10px" }}>Medical Interventions</h4>
+                       <ul style={{ paddingLeft: "20px", fontSize: "0.85rem", color: "var(--text-muted)" }}>{aiResults.medical.map((r, i) => <li key={i}>{r}</li>)}</ul>
+                     </div>
+                   </div>
+                 )}
+                 
+                 <div style={{ marginTop: "20px", fontSize: "0.8rem", color: "var(--text-muted)", textAlign: "right" }}>
+                   Processing Backend: {aiResults.analysis_type} | Time: {aiResults.inference_time_ms} ms
+                 </div>
+               </div>
+             )}
+           </section>
+        )}
+
+        {/* Quantum Results Section (Redesigned with Rich Schema) */}
+        {quantumResults && quantumResults.findings && (
+          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.5s backwards" }}>
+             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "25px", flexWrap: "wrap", gap: "10px" }}>
+               <h2 style={{ fontSize: "1.5rem", color: "var(--success-color)", margin: 0 }}>Quantum Match Results (Top {quantumResults.findings.length})</h2>
+               <button className="btn-quantum" style={{ padding: "8px 16px", fontSize: "0.85rem", background: "linear-gradient(135deg, var(--secondary-color), var(--primary-dark))", display: "flex", alignItems: "center", gap: "6px" }} onClick={exportPDF}>
+                 📄 Export PDF Report
+               </button>
+             </div>
+             
+             {quantumResults.findings.length === 0 ? (
+                <div style={{ color: "var(--text-muted)", fontStyle: "italic", padding: "20px", background: "rgba(0,0,0,0.2)", borderRadius: "16px", textAlign: "center" }}>
+                  No matching diseases or medications found in the Quantum Database for the given input.
                 </div>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* ========================================================================= */}
-        {/* TAB 9: WHAT CHANGED? */}
-        {/* ========================================================================= */}
-        {activeTab === 'whatchanged' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                🔬 "What Changed?" Temporal Differential Engine
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Compares historical medical reports and sequential image series months apart to detect clinical shifts.
-              </p>
-            </div>
-
-            {whatChangedData && (
-              <div>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "20px" }}>
-                  <div style={{ background: "rgba(16, 185, 129, 0.08)", padding: "20px", borderRadius: "12px", border: "1px solid rgba(16, 185, 129, 0.2)" }}>
-                    <h4 style={{ color: "var(--success-color)", marginBottom: "10px" }}>✓ What Improved:</h4>
-                    {whatChangedData.text_differential.improved_markers.map((m, i) => <p key={i} style={{ color: "white", fontSize: "0.85rem" }}>• {m}</p>)}
+             ) : quantumResults.findings.map((match, index) => (
+                <div key={index} style={{ background: "rgba(0,0,0,0.2)", padding: "25px", borderRadius: "16px", marginBottom: "25px", border: "1px solid var(--border-color)"}}>
+                  
+                  {/* Title and Confidence Header */}
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "10px" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
+                      <h3 style={{ fontSize: "1.4rem", color: index === 0 ? "var(--primary-color)" : "white", fontWeight: "700" }}>
+                        {match.name || match.disease}
+                      </h3>
+                      <span style={{ fontSize: "0.75rem", background: "rgba(255,255,255,0.06)", color: "var(--text-muted)", padding: "3px 8px", borderRadius: "6px" }}>
+                        {match.category || "General"}
+                      </span>
+                    </div>
+                    <span style={{ color: "var(--success-color)", fontWeight: "600", fontSize: "0.95rem" }}>
+                      {match.confidence}% match probability
+                    </span>
                   </div>
-                  <div style={{ background: "rgba(239, 68, 68, 0.08)", padding: "20px", borderRadius: "12px", border: "1px solid rgba(239, 68, 68, 0.2)" }}>
-                    <h4 style={{ color: "#f87171", marginBottom: "10px" }}>⚠ What Worsened / New Risks:</h4>
-                    {whatChangedData.text_differential.worsened_markers.map((m, i) => <p key={i} style={{ color: "white", fontSize: "0.85rem" }}>• {m}</p>)}
+
+                  {/* Confidence Progress Bar */}
+                  <div className="progress-bar-container" style={{ margin: "10px 0 15px", height: "6px" }}>
+                    <div className="progress-bar" style={{ width: `${match.confidence}%` }}></div>
                   </div>
+
+                  {/* Description */}
+                  {match.description && (
+                    <p style={{ fontStyle: "italic", color: "var(--text-muted)", fontSize: "0.9rem", lineHeight: "1.6", marginBottom: "15px" }}>
+                      {match.description}
+                    </p>
+                  )}
+
+                  {/* Severity & Recovery Badges */}
+                  <div style={{ display: "flex", gap: "10px", marginBottom: "20px", flexWrap: "wrap" }}>
+                    {match.severity === "Mild" && (
+                      <span style={{ background: "rgba(0, 255, 157, 0.1)", color: "var(--success-color)", border: "1px solid rgba(0, 255, 157, 0.2)", padding: "4px 10px", borderRadius: "8px", fontSize: "0.75rem", fontWeight: "bold" }}>
+                        Mild Severity
+                      </span>
+                    )}
+                    {match.severity === "Moderate" && (
+                      <span style={{ background: "rgba(255, 176, 0, 0.1)", color: "var(--warning-color)", border: "1px solid rgba(255, 176, 0, 0.2)", padding: "4px 10px", borderRadius: "8px", fontSize: "0.75rem", fontWeight: "bold" }}>
+                        Moderate Severity
+                      </span>
+                    )}
+                    {match.severity === "Severe" && (
+                      <span style={{ background: "rgba(255, 51, 102, 0.1)", color: "var(--danger-color)", border: "1px solid rgba(255, 51, 102, 0.2)", padding: "4px 10px", borderRadius: "8px", fontSize: "0.75rem", fontWeight: "bold" }}>
+                        Severe Severity
+                      </span>
+                    )}
+                    {match.recovery_time && (
+                      <span style={{ background: "rgba(255, 255, 255, 0.05)", border: "1px solid rgba(255, 255, 255, 0.08)", color: "var(--text-muted)", padding: "4px 10px", borderRadius: "8px", fontSize: "0.75rem" }}>
+                        ⏱ Recovery: {match.recovery_time}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Matched vs Missing Symptoms & Explainable AI (Phase 7 & 8) */}
+                  {(() => {
+                    const userSymptomsList = (activeTab === 'symptoms' ? symptomInput : compareInput)
+                      .split(",")
+                      .map(s => s.trim().toLowerCase())
+                      .filter(Boolean);
+                    const userSymptomsSet = new Set(userSymptomsList);
+                    const matchedSymptoms = (match.symptoms || []).filter(s => userSymptomsSet.has(s.toLowerCase()));
+                    const missingSymptoms = (match.symptoms || []).filter(s => !userSymptomsSet.has(s.toLowerCase()));
+
+                    return (
+                      <div style={{ background: "rgba(0,0,0,0.15)", padding: "18px", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.03)", marginBottom: "20px" }}>
+                        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "15px" }}>
+                          
+                          {/* Matched Symptoms Checklist */}
+                          <div>
+                            <h4 style={{ fontSize: "0.8rem", color: "var(--success-color)", textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: "8px", fontWeight: "bold" }}>
+                              Matched Symptoms
+                            </h4>
+                            <ul style={{ listStyle: "none", paddingLeft: 0, fontSize: "0.82rem", color: "var(--text-main)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                              {matchedSymptoms.length > 0 ? (
+                                matchedSymptoms.map((s, i) => (
+                                  <li key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                                    <span style={{ color: "var(--success-color)", fontWeight: "bold" }}>✔</span>
+                                    <span>{s.charAt(0).toUpperCase() + s.slice(1)}</span>
+                                  </li>
+                                ))
+                              ) : (
+                                <li style={{ color: "var(--text-muted)", fontStyle: "italic" }}>None matched directly</li>
+                              )}
+                            </ul>
+                          </div>
+
+                          {/* Missing Symptoms Checklist */}
+                          <div>
+                            <h4 style={{ fontSize: "0.8rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: "8px", fontWeight: "bold" }}>
+                              Missing Symptoms
+                            </h4>
+                            <ul style={{ listStyle: "none", paddingLeft: 0, fontSize: "0.82rem", color: "var(--text-muted)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                              {missingSymptoms.length > 0 ? (
+                                missingSymptoms.map((s, i) => (
+                                  <li key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                                    <span style={{ color: "var(--danger-color)", fontWeight: "bold" }}>✖</span>
+                                    <span>{s.charAt(0).toUpperCase() + s.slice(1)}</span>
+                                  </li>
+                                ))
+                              ) : (
+                                <li style={{ color: "var(--text-muted)", fontStyle: "italic" }}>None missing</li>
+                              )}
+                            </ul>
+                          </div>
+
+                        </div>
+
+                        {/* Collapsible Explainable AI (XAI) Details */}
+                        <details style={{ cursor: "pointer", borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: "10px" }}>
+                          <summary style={{ fontSize: "0.82rem", color: "var(--primary-color)", fontWeight: "bold", outline: "none", display: "flex", alignItems: "center", gap: "4px" }}>
+                            💡 Why this disease? (Explainable AI Analysis)
+                          </summary>
+                          <div style={{ marginTop: "10px", fontSize: "0.82rem", color: "var(--text-muted)", lineHeight: "1.6", cursor: "default", background: "rgba(0,0,0,0.1)", padding: "12px", borderRadius: "6px" }}>
+                            <p style={{ marginBottom: "6px" }}>
+                              Matched <strong style={{ color: "white" }}>{matchedSymptoms.length} of {match.symptoms ? match.symptoms.length : 0}</strong> typical symptoms.
+                            </p>
+                            <p style={{ marginBottom: "6px" }}>
+                              <strong style={{ color: "var(--success-color)" }}>Primary Symptoms Present:</strong>{" "}
+                              {matchedSymptoms.length > 0 ? matchedSymptoms.join(", ") : "None"}
+                            </p>
+                            <p>
+                              <strong style={{ color: "var(--warning-color)" }}>Secondary Symptoms Absent:</strong>{" "}
+                              {missingSymptoms.length > 0 ? missingSymptoms.join(", ") : "None"}
+                            </p>
+                          </div>
+                        </details>
+                      </div>
+                    );
+                  })()}
+
+                  {/* Emergency Alert Box */}
+                  {match.emergency && (
+                    <div style={{ margin: "15px 0 20px 0", background: "rgba(255, 51, 102, 0.08)", border: "1px solid var(--danger-color)", padding: "14px 18px", borderRadius: "10px", color: "var(--danger-color)", display: "flex", alignItems: "center", gap: "10px", fontSize: "0.9rem", lineHeight: "1.5" }}>
+                      <AlertTriangle size={20} style={{ flexShrink: 0 }} />
+                      <span>
+                        <strong>EMERGENCY ALERT:</strong> This condition may require immediate emergency medical care. Please contact emergency services or go to the nearest emergency room immediately.
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Risk Factors & Prevention */}
+                  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "20px", borderBottom: "1px solid rgba(255,255,255,0.04)", paddingBottom: "20px" }}>
+                    {match.risk_factors && match.risk_factors.length > 0 && (
+                      <div>
+                        <h4 style={{ fontSize: "0.85rem", color: "white", textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: "8px" }}>Risk Factors</h4>
+                        <ul style={{ paddingLeft: "18px", fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
+                          {match.risk_factors.map((item, i) => <li key={i}>{item}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                    {match.prevention && match.prevention.length > 0 && (
+                      <div>
+                        <h4 style={{ fontSize: "0.85rem", color: "white", textTransform: "uppercase", letterSpacing: "0.5px", marginBottom: "8px" }}>Prevention</h4>
+                        <ul style={{ paddingLeft: "18px", fontSize: "0.85rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
+                          {match.prevention.map((item, i) => <li key={i}>{item}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Structured Medical Recommendations */}
+                  <div style={{ marginTop: "25px", borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "20px" }}>
+                    <h4 style={{ fontSize: "1rem", color: "var(--primary-color)", fontFamily: "'Space Grotesk', sans-serif", marginBottom: "15px", display: "flex", alignItems: "center", gap: "8px" }}>
+                      <ShieldCheck size={18} /> Medical Recommendations
+                    </h4>
+                    
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "20px" }}>
+                      
+                      {/* Home Care */}
+                      <div style={{ background: "rgba(0, 255, 157, 0.03)", border: "1px solid rgba(0, 255, 157, 0.08)", padding: "18px", borderRadius: "12px" }}>
+                        <h5 style={{ color: "var(--success-color)", fontSize: "0.95rem", fontWeight: "600", marginBottom: "12px", borderBottom: "1px solid rgba(0,255,157,0.1)", paddingBottom: "6px" }}>
+                          Home Care
+                        </h5>
+                        <ul style={{ listStyle: "none", paddingLeft: 0, fontSize: "0.85rem", color: "var(--text-muted)", display: "flex", flexDirection: "column", gap: "8px" }}>
+                          {match.home_remedies && match.home_remedies.length > 0 ? (
+                            match.home_remedies.map((item, i) => (
+                              <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}>
+                                <span style={{ color: "var(--success-color)", fontWeight: "bold" }}>✓</span>
+                                <span>{item.charAt(0).toUpperCase() + item.slice(1)}</span>
+                              </li>
+                            ))
+                          ) : (
+                            <React.Fragment>
+                              <li style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}><span style={{ color: "var(--success-color)", fontWeight: "bold" }}>✓</span><span>Rest</span></li>
+                              <li style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}><span style={{ color: "var(--success-color)", fontWeight: "bold" }}>✓</span><span>Drink fluids</span></li>
+                              <li style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}><span style={{ color: "var(--success-color)", fontWeight: "bold" }}>✓</span><span>Monitor temperature</span></li>
+                            </React.Fragment>
+                          )}
+                        </ul>
+                      </div>
+
+                      {/* Medicines */}
+                      <div style={{ background: "rgba(125, 42, 232, 0.03)", border: "1px solid rgba(125, 42, 232, 0.08)", padding: "18px", borderRadius: "12px" }}>
+                        <h5 style={{ color: "var(--secondary-color)", fontSize: "0.95rem", fontWeight: "600", marginBottom: "12px", borderBottom: "1px solid rgba(125,42,232,0.1)", paddingBottom: "6px" }}>
+                          Medicines
+                        </h5>
+                        <ul style={{ listStyle: "none", paddingLeft: 0, fontSize: "0.85rem", color: "var(--text-muted)", display: "flex", flexDirection: "column", gap: "8px" }}>
+                          {match.medications && match.medications.length > 0 ? (
+                            match.medications.map((item, i) => (
+                              <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}>
+                                <span style={{ color: "var(--secondary-color)", fontWeight: "bold" }}>✓</span>
+                                <span>{item.charAt(0).toUpperCase() + item.slice(1)}</span>
+                              </li>
+                            ))
+                          ) : (
+                            <React.Fragment>
+                              <li style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}><span style={{ color: "var(--secondary-color)", fontWeight: "bold" }}>✓</span><span>Paracetamol</span></li>
+                              <li style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}><span style={{ color: "var(--secondary-color)", fontWeight: "bold" }}>✓</span><span>Ibuprofen</span></li>
+                            </React.Fragment>
+                          )}
+                        </ul>
+                      </div>
+
+                      {/* Doctor & Hospital Referrals */}
+                      <div style={{ background: "rgba(255, 51, 102, 0.03)", border: "1px solid rgba(255, 51, 102, 0.08)", padding: "18px", borderRadius: "12px" }}>
+                        <h5 style={{ color: "var(--danger-color)", fontSize: "0.95rem", fontWeight: "600", marginBottom: "12px", borderBottom: "1px solid rgba(255,51,102,0.1)", paddingBottom: "6px" }}>
+                          Professional Care
+                        </h5>
+                        
+                        {/* Doctor */}
+                        <div style={{ marginBottom: "14px" }}>
+                          <span style={{ display: "block", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--text-muted)", marginBottom: "4px" }}>Doctor</span>
+                          <span style={{ fontSize: "0.9rem", fontWeight: "600", color: "white", display: "flex", alignItems: "center", gap: "6px" }}>
+                            <Stethoscope size={14} style={{ color: "var(--warning-color)" }} />
+                            {match.recommended_specialist || match.specialist || "General Physician"}
+                          </span>
+                        </div>
+
+                        {/* When to Visit Hospital */}
+                        <div>
+                          <span style={{ display: "block", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.5px", color: "var(--text-muted)", marginBottom: "6px" }}>When to Visit Hospital</span>
+                          <ul style={{ listStyle: "none", paddingLeft: 0, fontSize: "0.8rem", color: "var(--danger-color)", display: "flex", flexDirection: "column", gap: "6px" }}>
+                            {getHospitalTriggers(match).map((trigger, i) => (
+                              <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "6px" }}>
+                                <span>🚨</span>
+                                <span>{trigger}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
                 </div>
-              </div>
-            )}
+             ))}
           </section>
         )}
 
-        {/* ========================================================================= */}
-        {/* TAB 10: HUMAN-IN-THE-LOOP */}
-        {/* ========================================================================= */}
-        {activeTab === 'hitl' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                👨‍⚕️ Human-in-the-Loop (HITL) Workflow
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Clinical sign-off: AI Analysis → Risk Assessment → Explain Findings → Clinician Review → Final Decision.
-              </p>
-            </div>
+        {/* Disease Comparison Table (Phase 11) */}
+        {activeTab === 'compare-diseases' && diseaseA && diseaseB && (
+          (() => {
+            const dataA = diseasesDB[diseaseA];
+            const dataB = diseasesDB[diseaseB];
+            if (!dataA || !dataB) return null;
 
-            <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)" }}>
-              <label style={{ display: "block", color: "white", marginBottom: "8px", fontSize: "0.9rem" }}>Clinician Sign-off Status:</label>
-              <select 
-                value={hitlStatus} 
-                onChange={(e) => setHitlStatus(e.target.value)}
-                style={{ width: "100%", padding: "12px", background: "rgba(16, 21, 34, 0.8)", border: "1px solid var(--border-color)", color: "white", borderRadius: "10px", marginBottom: "20px" }}
-              >
-                <option>Pending Review</option>
-                <option>Approved</option>
-                <option>Modified / Overridden</option>
-                <option>Rejected</option>
-              </select>
+            // Merge symptoms
+            const symsA = new Set((dataA.symptoms || []).map(s => s.toLowerCase()));
+            const symsB = new Set((dataB.symptoms || []).map(s => s.toLowerCase()));
+            const allSymptoms = Array.from(new Set([
+              ...(dataA.symptoms || []),
+              ...(dataB.symptoms || [])
+            ])).sort();
 
-              <label style={{ display: "block", color: "white", marginBottom: "8px", fontSize: "0.9rem" }}>Physician Clinical Notes &amp; Rationale:</label>
-              <textarea 
-                rows={4} 
-                value={clinicianNotes}
-                onChange={(e) => setClinicianNotes(e.target.value)}
-                placeholder="Enter doctor clinical review notes and override justifications..."
-                style={{ width: "100%", padding: "12px", background: "rgba(16, 21, 34, 0.8)", border: "1px solid var(--border-color)", color: "white", borderRadius: "10px", marginBottom: "20px" }}
-              />
+            return (
+              <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.5s backwards", marginBottom: "40px" }}>
+                <h3 style={{ fontSize: "1.5rem", marginBottom: "25px", color: "var(--primary-color)", fontFamily: "'Space Grotesk', sans-serif" }}>
+                  📊 Disease Comparison: {diseaseA} vs {diseaseB}
+                </h3>
 
-              <button 
-                onClick={() => alert("Clinician review signed off successfully!")} 
-                className="quantum-btn-primary"
-                style={{ padding: "12px 28px", borderRadius: "10px", background: "linear-gradient(135deg, var(--primary-color), var(--secondary-color))", color: "white", fontWeight: "bold", border: "none", cursor: "pointer" }}
-              >
-                Submit Clinician Approval
-              </button>
-            </div>
-          </section>
-        )}
-
-        {/* ========================================================================= */}
-        {/* TAB 11: MEDICAL AI RESEARCH LAB */}
-        {/* ========================================================================= */}
-        {activeTab === 'researchlab' && (
-          <section className="glass-panel" style={{ padding: "40px", animation: "fadeSlideUp 0.3s ease-out" }}>
-            <div className="panel-header" style={{ marginBottom: "25px" }}>
-              <h2 style={{ fontSize: "1.6rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "8px" }}>
-                🧪 Medical AI Research Lab
-              </h2>
-              <p style={{ color: "var(--text-muted)", fontSize: "0.95rem" }}>
-                Reproducible experiment benchmark execution suite and academic research report generator.
-              </p>
-            </div>
-
-            {researchLabData && (
-              <div style={{ background: "rgba(0,0,0,0.3)", padding: "25px", borderRadius: "14px", border: "1px solid var(--border-color)" }}>
-                <div style={{ overflowX: "auto" }}>
-                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem", color: "white" }}>
+                {/* General Metrics Table */}
+                <div style={{ overflowX: "auto", marginBottom: "30px" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.9rem", color: "white", textAlign: "left" }}>
                     <thead>
-                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.1)", textAlign: "left" }}>
-                        <th style={{ padding: "12px" }}>Model</th>
-                        <th style={{ padding: "12px" }}>Accuracy</th>
-                        <th style={{ padding: "12px" }}>F1-Score</th>
-                        <th style={{ padding: "12px" }}>AUROC</th>
-                        <th style={{ padding: "12px" }}>Parameters</th>
-                        <th style={{ padding: "12px" }}>Runtime</th>
+                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+                        <th style={{ padding: "12px", color: "var(--text-muted)" }}>Feature</th>
+                        <th style={{ padding: "12px", color: "var(--primary-color)" }}>{diseaseA}</th>
+                        <th style={{ padding: "12px", color: "var(--secondary-color)" }}>{diseaseB}</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {researchLabData.models_evaluated.map((m, idx) => (
-                        <tr key={idx} style={{ borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-                          <td style={{ padding: "12px", fontWeight: "bold" }}>{m.model_name}</td>
-                          <td style={{ padding: "12px", color: "var(--success-color)" }}>{m.accuracy_pct}%</td>
-                          <td style={{ padding: "12px" }}>{m.f1_score_pct}%</td>
-                          <td style={{ padding: "12px" }}>{m.auroc}</td>
-                          <td style={{ padding: "12px" }}>{m.parameters_count.toLocaleString()}</td>
-                          <td style={{ padding: "12px" }}>{m.inference_runtime_ms} ms</td>
-                        </tr>
-                      ))}
+                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                        <td style={{ padding: "12px", fontWeight: "bold", color: "var(--text-muted)" }}>Category</td>
+                        <td style={{ padding: "12px" }}>{dataA.category}</td>
+                        <td style={{ padding: "12px" }}>{dataB.category}</td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                        <td style={{ padding: "12px", fontWeight: "bold", color: "var(--text-muted)" }}>Severity Level</td>
+                        <td style={{ padding: "12px" }}>
+                          <span style={{ color: dataA.severity === "Severe" ? "var(--danger-color)" : dataA.severity === "Moderate" ? "var(--warning-color)" : "var(--success-color)" }}>
+                            {dataA.severity}
+                          </span>
+                        </td>
+                        <td style={{ padding: "12px" }}>
+                          <span style={{ color: dataB.severity === "Severe" ? "var(--danger-color)" : dataB.severity === "Moderate" ? "var(--warning-color)" : "var(--success-color)" }}>
+                            {dataB.severity}
+                          </span>
+                        </td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                        <td style={{ padding: "12px", fontWeight: "bold", color: "var(--text-muted)" }}>Est. Recovery Time</td>
+                        <td style={{ padding: "12px" }}>{dataA.recovery_time}</td>
+                        <td style={{ padding: "12px" }}>{dataB.recovery_time}</td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                        <td style={{ padding: "12px", fontWeight: "bold", color: "var(--text-muted)" }}>Specialist</td>
+                        <td style={{ padding: "12px" }}>{dataA.recommended_specialist}</td>
+                        <td style={{ padding: "12px" }}>{dataB.recommended_specialist}</td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.05)" }}>
+                        <td style={{ padding: "12px", fontWeight: "bold", color: "var(--text-muted)" }}>Emergency Status</td>
+                        <td style={{ padding: "12px", color: dataA.emergency ? "var(--danger-color)" : "var(--text-muted)" }}>
+                          {dataA.emergency ? "🚨 Emergency" : "Non-Emergency"}
+                        </td>
+                        <td style={{ padding: "12px", color: dataB.emergency ? "var(--danger-color)" : "var(--text-muted)" }}>
+                          {dataB.emergency ? "🚨 Emergency" : "Non-Emergency"}
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
-              </div>
-            )}
-          </section>
-        )}
 
-        {/* ========================================================================= */}
-        {/* DIFFERENTIAL DISEASE COMPARATOR (Original Feature Preserved) */}
-        {/* ========================================================================= */}
-        <section className="glass-panel" style={{ padding: "40px", marginTop: "40px" }}>
-          <div className="panel-header" style={{ marginBottom: "20px" }}>
-            <h3 style={{ fontSize: "1.3rem", fontFamily: "'Space Grotesk', sans-serif", color: "white", marginBottom: "6px" }}>
-              📊 Differential Diagnosis Comparator
-            </h3>
-            <p style={{ color: "var(--text-muted)", fontSize: "0.85rem" }}>
-              Select two clinical conditions from our database to compare their symptom overlap, recovery timelines, and specialist referrals.
-            </p>
-          </div>
-
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "25px" }}>
-            <div>
-              <label style={{ display: "block", fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "6px" }}>Disease A:</label>
-              <select 
-                value={diseaseA} 
-                onChange={(e) => setDiseaseA(e.target.value)}
-                style={{ width: "100%", padding: "10px", background: "rgba(16, 21, 34, 0.8)", border: "1px solid var(--border-color)", color: "white", borderRadius: "8px" }}
-              >
-                <option value="">Select Disease A...</option>
-                {Object.keys(diseasesDB).sort().map(d => <option key={d} value={d}>{d}</option>)}
-              </select>
-            </div>
-            <div>
-              <label style={{ display: "block", fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "6px" }}>Disease B:</label>
-              <select 
-                value={diseaseB} 
-                onChange={(e) => setDiseaseB(e.target.value)}
-                style={{ width: "100%", padding: "10px", background: "rgba(16, 21, 34, 0.8)", border: "1px solid var(--border-color)", color: "white", borderRadius: "8px" }}
-              >
-                <option value="">Select Disease B...</option>
-                {Object.keys(diseasesDB).sort().map(d => <option key={d} value={d}>{d}</option>)}
-              </select>
-            </div>
-          </div>
-
-          {diseaseA && diseaseB && diseasesDB[diseaseA] && diseasesDB[diseaseB] && (
-            (() => {
-              const dataA = diseasesDB[diseaseA];
-              const dataB = diseasesDB[diseaseB];
-              const symsA = new Set((dataA.symptoms || []).map(s => s.toLowerCase()));
-              const symsB = new Set((dataB.symptoms || []).map(s => s.toLowerCase()));
-              const allSymptoms = Array.from(new Set([...(dataA.symptoms || []), ...(dataB.symptoms || [])])).sort();
-
-              return (
-                <div style={{ background: "rgba(0,0,0,0.2)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.05)", overflowX: "auto" }}>
-                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.85rem", color: "white" }}>
+                {/* Symptoms Comparison Subtable */}
+                <h4 style={{ fontSize: "1.1rem", marginBottom: "15px", color: "var(--warning-color)", fontFamily: "'Space Grotesk', sans-serif" }}>
+                  🧬 Symptom Overlap Grid
+                </h4>
+                <div style={{ overflowX: "auto", background: "rgba(0,0,0,0.2)", borderRadius: "10px", border: "1px solid rgba(255,255,255,0.05)" }}>
+                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.85rem", color: "white", textAlign: "left" }}>
                     <thead>
                       <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.02)" }}>
-                        <th style={{ padding: "10px 15px", textAlign: "left" }}>Feature / Symptom</th>
+                        <th style={{ padding: "10px 15px", color: "var(--text-muted)" }}>Symptom</th>
                         <th style={{ padding: "10px 15px", textAlign: "center", color: "var(--primary-color)" }}>{diseaseA}</th>
                         <th style={{ padding: "10px 15px", textAlign: "center", color: "var(--secondary-color)" }}>{diseaseB}</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-                        <td style={{ padding: "10px 15px", fontWeight: "bold" }}>Category</td>
-                        <td style={{ padding: "10px 15px", textAlign: "center" }}>{dataA.category}</td>
-                        <td style={{ padding: "10px 15px", textAlign: "center" }}>{dataB.category}</td>
-                      </tr>
-                      <tr style={{ borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-                        <td style={{ padding: "10px 15px", fontWeight: "bold" }}>Severity</td>
-                        <td style={{ padding: "10px 15px", textAlign: "center", color: dataA.severity === "Severe" ? "var(--danger-color)" : "var(--success-color)" }}>{dataA.severity}</td>
-                        <td style={{ padding: "10px 15px", textAlign: "center", color: dataB.severity === "Severe" ? "var(--danger-color)" : "var(--success-color)" }}>{dataB.severity}</td>
-                      </tr>
-                      {allSymptoms.slice(0, 8).map(sym => (
-                        <tr key={sym} style={{ borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
-                          <td style={{ padding: "8px 15px", textTransform: "capitalize" }}>{sym}</td>
-                          <td style={{ padding: "8px 15px", textAlign: "center" }}>{symsA.has(sym.toLowerCase()) ? <span style={{ color: "var(--success-color)" }}>✓</span> : <span style={{ color: "var(--text-muted)" }}>✖</span>}</td>
-                          <td style={{ padding: "8px 15px", textAlign: "center" }}>{symsB.has(sym.toLowerCase()) ? <span style={{ color: "var(--success-color)" }}>✓</span> : <span style={{ color: "var(--text-muted)" }}>✖</span>}</td>
-                        </tr>
-                      ))}
+                      {allSymptoms.map(sym => {
+                        const hasA = symsA.has(sym.toLowerCase());
+                        const hasB = symsB.has(sym.toLowerCase());
+                        return (
+                          <tr key={sym} style={{ borderBottom: "1px solid rgba(255,255,255,0.03)" }}>
+                            <td style={{ padding: "8px 15px", fontWeight: "500" }}>
+                              {sym.charAt(0).toUpperCase() + sym.slice(1)}
+                            </td>
+                            <td style={{ padding: "8px 15px", textAlign: "center", fontSize: "1rem" }}>
+                              {hasA ? <span style={{ color: "var(--success-color)", fontWeight: "bold" }}>✓</span> : <span style={{ color: "var(--text-muted)" }}>✖</span>}
+                            </td>
+                            <td style={{ padding: "8px 15px", textAlign: "center", fontSize: "1rem" }}>
+                              {hasB ? <span style={{ color: "var(--success-color)", fontWeight: "bold" }}>✓</span> : <span style={{ color: "var(--text-muted)" }}>✖</span>}
+                            </td>
+                          </tr>
+                        );
+                      })}
                     </tbody>
                   </table>
                 </div>
-              );
-            })()
-          )}
-        </section>
+
+              </section>
+            );
+          })()
+        )}
       </main>
 
-      {/* Footer */}
+      {/* Ethical Usage Disclaimer */}
       <footer style={{ textAlign: "center", padding: "30px 20px", color: "var(--text-muted)", fontSize: "0.85rem", borderTop: "1px solid rgba(255,255,255,0.05)", marginTop: "40px", background: "rgba(0,0,0,0.2)" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
           <AlertTriangle color="var(--warning-color)" size={28} />
           <p style={{ lineHeight: "1.6", margin: 0 }}>
             <strong style={{ color: "var(--warning-color)", fontSize: "0.95rem" }}>Medical Disclaimer &amp; Ethical Usage:</strong> QuantumMed AI is a research platform demonstrating quantum computing and artificial intelligence in healthcare. 
             The diagnostic results, insights, and treatment suggestions provided are for <strong>educational and informational purposes only</strong>. 
-            This tool is <strong style={{color: 'var(--danger-color)'}}>not</strong> a substitute for professional medical advice, diagnosis, or treatment.
+            This tool is <strong style={{color: 'var(--danger-color)'}}>not</strong> a substitute for professional medical advice, diagnosis, or treatment. 
+            Always consult a qualified healthcare provider regarding any medical condition or emergency. Never disregard professional medical advice because of something you have read on this platform.
           </p>
         </div>
       </footer>

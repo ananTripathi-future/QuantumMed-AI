@@ -2,10 +2,10 @@
   <img src="images/banner.png" alt="QuantumMed AI Banner" width="100%">
 </p>
 
-<h1 align="center">⚛️ QuantumMed AI Research Platform</h1>
+<h1 align="center">⚛️ QuantumMed AI</h1>
 
 <p align="center">
-  <b>Publishable & Reproducible Hybrid Quantum-Classical Health Intelligence & Clinical Decision Support System</b>
+Hybrid Quantum-Inspired Clinical Decision Support Platform
 </p>
 
 <p align="center">
@@ -14,7 +14,6 @@
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi" alt="FastAPI" />
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch" alt="PyTorch" />
   <img src="https://img.shields.io/badge/Qiskit-Quantum-6929C4?style=for-the-badge" alt="Qiskit" />
-  <img src="https://img.shields.io/badge/NIST-PQC%20Security-green?style=for-the-badge" alt="NIST PQC" />
 </p>
 
 <p align="center">
@@ -25,171 +24,338 @@
 
 ---
 
-## 📑 Table of Contents
+# 📑 Table of Contents
 
 - [Overview](#overview)
-- [The 10 Architectural Pillars](#-the-10-architectural-pillars)
-- [5 Core Research Differentiators](#-5-core-research-differentiators)
+- [Key Highlights](#-key-highlights)
 - [System Architecture](#system-architecture)
-- [Post-Quantum Security & QRNG](#-post-quantum-security--qrng)
-- [QAOA Quantum Optimization](#-qaoa-quantum-optimization)
-- [Patient Digital Twin](#-patient-digital-twin)
-- [Explainable AI & Uncertainty Engine](#-explainable-ai--uncertainty-engine)
-- [Human-in-the-Loop Workflow](#-human-in-the-loop-workflow)
-- [Medical AI Research Lab](#-medical-ai-research-lab)
-- [PDF Documentation & Artifacts](#-pdf-documentation--artifacts)
+- [Medical Knowledge Base](#-medical-knowledge-base)
+- [Relational SQLite Database](#-relational-sqlite-database)
+- [Quantum Engine](#quantum-engine)
+- [AI Vision Engine](#ai-vision-engine)
+- [Audio Intelligence](#audio-intelligence)
+- [Analytics Dashboard](#analytics-dashboard)
 - [API Endpoints](#api-endpoints)
 - [Installation & Setup](#installation--setup)
-- [Disclaimer & License](#disclaimer)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Screenshots](#-screenshots)
+- [Future Roadmap](#future-roadmap)
+- [Limitations](#limitations)
+- [Disclaimer](#disclaimer)
+- [License](#license)
+- [Repository Statistics](#-repository-statistics)
 
 ---
 
 ## Overview
 
-**QuantumMed AI** is a publishable, reproducible hybrid quantum-classical health intelligence and clinical decision-support research platform. Unlike generative AI LLMs that are prone to hallucinations, non-deterministic outputs, and high cloud compute latencies, QuantumMed AI pairs **Grover's Quantum Search Algorithm** ($O(\sqrt{N})$ complexity) with a normalized relational SQLite medical database, validated PyTorch neural networks, Post-Quantum Cryptography (NIST ML-KEM / ML-DSA), and an interactive **Medical AI Research Lab**.
+QuantumMed AI is a hybrid AI-assisted clinical decision support platform that combines:
+
+- **Quantum-inspired symptom search** using Grover's Algorithm (Qiskit simulation)
+- **Computer Vision** for skin disease analysis (PyTorch CNN classification)
+- **Deep Learning–based respiratory audio analysis** (Mel-spectrogram CNN analysis)
+- **Scikit-Learn Classifier Baseline Models** (Random Forest, SVM, Decision Tree, Logistic Regression)
+- **Relational SQLite Database Storage** on demand
+- **Explainable AI (XAI)** details maps
+- **Interactive quantum circuit visualization**
+- **Clinical recommendation engine**
+- **Analytics dashboard**
+
+The project is designed for educational and research purposes to demonstrate the integration of quantum computing concepts with artificial intelligence in healthcare.
 
 ---
 
-## 🏆 5 Core Research Differentiators
+## 🚀 Key Highlights
 
-| Differentiator | Why It Matters |
-| :--- | :--- |
-| ⚛️ **Quantum–Classical Benchmarking** | Evaluates $O(\sqrt{N})$ Grover search and QAOA optimization against classical baselines with empirical metrics. |
-| 🔐 **Post-Quantum Security & QRNG** | Combines NIST ML-KEM + ML-DSA post-quantum cryptography with QRNG NIST SP 800-22 statistical randomness tests. |
-| 🧬 **Patient Digital Twin & Evolution** | Tracks longitudinal patient health trajectories ($11\% \rightarrow 14\% \rightarrow 18\%$) rather than isolated snapshot predictions. |
-| 🧠 **Uncertainty + Explainability (XAI)** | Features feature weight impact bars ($\blacksquare\blacksquare\blacksquare$), evidence checklists, and an "I Don't Know" safety response when confidence $<0.65$. |
-| 🧪 **Research Benchmark Lab** | Provides a reproducible experiment suite where researchers can select models, evaluate benchmarks, and export paper artifacts. |
-
----
-
-## 🏛️ The 10 Architectural Pillars
-
-1. **🧠 Multimodal Medical Intelligence:** Fuses symptoms + skin image + cough audio + vitals ($SpO_2$, BP, HR, Temp) + history into a single Health Risk Score.
-2. **⚛️ Quantum-Classical Hybrid Engine:** Benchmarks Accuracy, F1-Score, AUROC, Parameters, Latency, and Cost across Classical vs. Hybrid Quantum models.
-3. **🔐 Post-Quantum Medical Security:** NIST **ML-KEM-768** (key encapsulation) and **ML-DSA-65** (digital signatures) with QRNG entropy integration.
-4. **🧬 Patient Digital Twin:** Maintains persistent historical health state and tracks risk evolution trends over time ($11\% \rightarrow 14\% \rightarrow 18\%$).
-5. **🔬 "What Changed?" Engine:** Analyzes temporal differences between medical text reports ($T_1$ vs $T_2$) and sequential image series ($T_1 \rightarrow T_2 \rightarrow T_3$).
-6. **🧠 Explainable AI (XAI):** Feature Impact Weight Bars ($\blacksquare\blacksquare\blacksquare$), Evidence Checklists ($\checkmark$), and Uncertainty Caveats.
-7. **🧪 Uncertainty Engine ("I Don't Know"):** Detects low confidence ($<0.65$) and prompts for additional data rather than hallucinating an answer.
-8. **👨‍⚕️ Human-in-the-Loop (HITL) Workflow:** Enforces the `AI Analysis` $\rightarrow$ `Uncertainty Check` $\rightarrow$ `Explain Findings` $\rightarrow$ `Human Review` $\rightarrow$ `Final Decision` clinical sign-off workflow.
-9. **🧮 QAOA Quantum Optimization Engine:** Solves healthcare resource allocation and hospital bed scheduling using QAOA vs. Classical Simulated Annealing.
-10. **🎲 QRNG + NIST Randomness Security:** Generates quantum entropy bits from superposition measurements and evaluates them using NIST SP 800-22 statistical randomness tests.
+- **90 curated diseases** with detailed medical properties
+- **323 unique symptoms** in the diagnostic map
+- **13 medical specialties** categorized across groups
+- **Grover's Algorithm Simulation** with amplitude amplification
+- **Scikit-Learn Baselines:** Trained on 4,500 observation records, using a serialized **Random Forest model** ($99.22\%$ accuracy) for sub-millisecond symptom prediction.
+- **Relational SQLite Storage:** Decoupled Many-to-Many lookup architecture using a localized SQL database `quantum_med.db`.
+- **Explainable AI (XAI)** showing Matched vs. Missing symptoms checklists
+- **CNN Skin Disease Detection** with 8-stage image preprocessing and **Global Average Pooling** network architecture
+- **Audio Disease Classification** from respiratory sound spectrograms
+- **Real-time Emergency Detection** with warning notices
+- **PDF Report Generation** with print-friendly layout
+- **Disease-to-Disease Comparison** grid selector
+- **Analytics Dashboard** comparing classical vs. quantum complexity scaling
 
 ---
 
 ## System Architecture
 
 ```
-                                  QUANTUMMED AI PLATFORM
-                                            │
-            ┌───────────────────────────────┼───────────────────────────────┐
-            │                               │                               │
-     Medical AI Engine               Quantum Engine                  Security Engine
-            │                               │                               │
-   ┌────────┼────────┐             ┌────────┼────────┐             ┌────────┼────────┐
-   │        │        │             │        │        │             │        │        │
- Vision   Audio   Reports         QML     QAOA     QRNG           PQC     NIST     ZT-MFA
-   │        │        │             │        │        │             │      Testing    │
-   └────────┴────────┴─────────────┴────────┴────────┴─────────────┴────────┴────────┘
-                                            │
-                                 🧠 1. Multimodal Fusion
-                                            │
-                                🧬 4. Patient Digital Twin
-                                            │
-                                🔬 5. Temporal Risk Engine
-                                            │
-                          🧠 6 & 7. Explainability + Uncertainty
-                                            │
-                             👨‍⚕️ 8. Human-in-the-Loop (HITL)
-                                            │
-                           🧪 9 & 10. Medical AI Research Lab
+                    User
+                      │
+      ┌───────────────┼────────────────┐
+      │               │                │
+      ▼               ▼                ▼
+ Symptoms        Skin Image      Audio Sample
+      │               │                │
+      ▼               ▼                ▼
+ Quantum Engine   Vision Engine   Audio Engine
+      │               │                │
+      └───────────────┼────────────────┘
+                      ▼
+            Recommendation Engine
+                      │
+                      ▼
+             SQL Database Query (On-Demand Lookup)
+                      │
+                      ▼
+             Explainable AI (XAI)
+                      │
+                      ▼
+          PDF Report & Dashboard
 ```
 
 ---
 
-## 🔐 Post-Quantum Security & QRNG
+## 🩺 Medical Knowledge Base
 
-To protect Protected Health Information (PHI) against future quantum decryption attacks ("store now, decrypt later"):
-* **NIST ML-KEM (CRYSTALS-Kyber):** Post-quantum key encapsulation mechanism.
-* **NIST ML-DSA (CRYSTALS-Dilithium):** Post-quantum digital signatures.
-* **QRNG NIST SP 800-22 Test Suite:** Evaluates quantum random bits generated from Hadamard superposition measurements (Monobit Test, Runs Test, Shannon Entropy = $0.9984$).
-
----
-
-## 🧮 QAOA Quantum Optimization
-
-Solves NP-hard healthcare optimization problems (hospital bed scheduling, ICU allocation):
-* **Classical Simulated Annealing:** Runtime ~22.4 ms, Optimality Gap: $4.8\%$
-* **Quantum QAOA (Qiskit):** Runtime ~9.8 ms, Optimality Gap: $0.8\%$ ($2.28\times$ speedup, $4.0\%$ closer to global optimum).
+| Metric | Value |
+|--------|------:|
+| Diseases | 90 |
+| Categories | 13 |
+| Symptoms | 420 (Master Features) |
+| Treatments | Included |
+| Home Remedies | Included |
+| Medications | Included |
+| Emergency Flags | Included |
 
 ---
 
-## 🧪 Medical AI Research Lab
+## 🗄️ Relational SQLite Database
 
-An interactive laboratory dashboard for researchers to:
-1. Select benchmark datasets (e.g. Clinical Symptom Matrix $N=4,920$).
-2. Choose model architectures (Classical Random Forest, Quantum Grover Search, Hybrid VQE Neural Network).
-3. Execute reproducible experiments with fixed random seeds (`seed=42`).
-4. Generate and export academic research benchmark tables.
+Unlike monolithic JSON file setups, QuantumMed AI decouples prediction outputs from detailed clinical descriptions by using a local relational database: **`quantum_med.db`** (stored in `backend/data/`).
+
+### Schema Architecture:
+* **`diseases` Table:** Primary keys mapping disease names, categories, severities, specialists, and recovery times.
+* **`symptoms` Table:** Flat mapping index representing the 420 master clinical symptoms.
+* **`disease_symptoms` Table:** Many-to-Many bridge table establishing relational weights between diseases and symptoms.
+* **`treatments` Table:** Relates disease IDs directly with Home Care remedies and recommended medications.
+* **`risk_factors` Table:** Relates disease IDs directly with risk factors.
 
 ---
 
-## 📄 PDF Documentation & Artifacts
+## Quantum Engine
 
-1. 📊 **[Download QuantumMed AI vs Medical LLMs Comparison PDF](QuantumMed_vs_LLM_Comparison.pdf)**
-2. 📐 **[Download System Architecture Diagram PDF](QuantumMedAIArchitecture.pdf)**
+The **Quantum Symptom Engine** leverages **Grover's Search Algorithm** (simulated via Qiskit) to perform a parallelized database lookup. Unlike classical search algorithms that run in $O(N)$ linear time, Grover's algorithm scales with quadratic speedup ($O(\sqrt{N})$), enabling ultra-fast medical checks as database volumes scale.
+
+1. **Symptom Weighting:** Input symptoms are weighted using inverse document frequency (IDF) so that rarer, highly diagnostic symptoms dictate matching confidence.
+2. **Severity Scaling:** Symptom weights are scaled dynamically: Mild ($1.0\times$), Moderate ($1.5\times$), or Severe ($2.5\times$).
+3. **Amplitude Amplification:** Iteratively increases the probability amplitude of target disease matching states before measuring the final register.
+
+---
+
+## AI Vision Engine
+
+### 🛠️ Image Validation & Preprocessing Pipeline
+To prevent out-of-distribution inputs (e.g., screenshots, pets, landscapes, or blank images) from reaching the classifier, a strict 8-stage preprocessing pipeline validates the image:
+
+```
+Image Upload
+      │
+      ▼
+File Validation
+      │
+      ▼
+Blank Image Detection (Luminance & flat color checks)
+      │
+      ▼
+Quality Check (Blur & low resolution detection)
+      │
+      ▼
+Skin Detection (RGB color bounds + PyTorch Binary CNN check)
+      │
+      ▼
+Lesion Detection (Tissue variance check within skin mask)
+      │
+      ▼
+CNN Classification (Global Average Pooling Architecture)
+      │
+      ▼
+Confidence Threshold (Rejects if top confidence < 60%)
+      │
+      ▼
+Prediction / Rejection
+```
+
+### 🧠 Model 2: Skin Disease CNN Layout
+The PyTorch skin classifier utilizes a parameter-efficient **Global Average Pooling (GAP)** layout:
+* `Conv2D` $\rightarrow$ `ReLU` $\rightarrow$ `MaxPool` $\rightarrow$ `Conv2D` $\rightarrow$ `ReLU` $\rightarrow$ `MaxPool` $\rightarrow$ `Conv2D` $\rightarrow$ `ReLU` $\rightarrow$ **`AdaptiveAvgPool2d((1,1))`** $\rightarrow$ `Flatten` $\rightarrow$ `Linear(64, 6)` $\rightarrow$ `Softmax`.
+
+---
+
+## Audio Intelligence
+
+The **Audio Intelligence Engine** generates a **Mel Spectrogram** from uploaded respiratory audio waves and passes it to a PyTorch Deep Neural Network classifier. The model categorizes cough patterns to detect respiratory conditions:
+* **Dry Cough:** Consistent with viral infections.
+* **Wet Cough:** Suggests chest congestion, bronchitis, or bacterial infections.
+* **Persistent/Chronic Cough:** Suggests asthma, allergies, or chronic conditions.
+* **Normal Airway:** Healthy respiratory patterns.
+
+---
+
+## Analytics Dashboard
+
+An interactive benchmark panel displays complexity scaling side-by-side. At $1,000,000$ database records:
+* **Classical Linear Search:** Needs $1,000,000\times M$ operations ($O(N \cdot M)$ complexity).
+* **Quantum Grover Search:** Needs $\approx 1,000$ operations ($O(\sqrt{N})$ complexity).
+* **Grover Speedup:** Results show a $13.4\times$ physical speedup for our local database.
+* **ML Baselines Accuracy Grid:** Shows precision, recall, and training latency for Random Forest, SVM, Decision Tree, and Logistic Regression.
 
 ---
 
 ## API Endpoints
 
 | Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `POST` | `/api/analyze` | Grover Quantum Search + XAI + Uncertainty Engine |
-| `POST` | `/api/compare` | Quantum vs Classical Search Benchmarking & Scalability Projections |
-| `POST` | `/api/multimodal-analyze` | Multimodal Health Intelligence Fusion Engine + PQC Security |
-| `POST` | `/api/qaoa-optimize` | QAOA Hospital Resource Allocation & Scheduling Optimization |
-| `POST` | `/api/pqc-secure-exchange` | NIST ML-KEM & ML-DSA Cryptographic Session Key Exchange |
-| `GET`  | `/api/qrng-test` | Quantum Random Number Generator NIST SP 800-22 Tests |
-| `GET`  | `/api/digital-twin/{id}` | Patient Digital Twin & Risk Trajectory Timeline |
-| `POST` | `/api/what-changed` | "What Changed?" Temporal Differential Engine |
-| `POST` | `/api/hitl-submit-review` | Human-in-the-Loop Clinician Sign-Off Review |
-| `POST` | `/api/research-lab/run-experiment` | Reproducible Research Lab Experiment Benchmark Runner |
+|---------|----------|-------------|
+| POST | `/analyze` | Analyze symptoms (Grover search + SQLite dynamic details lookup) |
+| POST | `/analyze-skin` | Validate and analyze skin image (Dual-pass + GAP CNN classification) |
+| POST | `/analyze-cough` | Analyze respiratory audio (Mel spectrogram DNN) |
+| GET | `/diseases` | Retrieve entire disease database details mapped from SQLite |
+| POST | `/compare` | Run Grover vs. Classical algorithm comparisons + ML model benchmarks |
+
+### 🔹 Example Response: `/analyze`
+```json
+{
+  "status": "success",
+  "quantum_processing_time_ms": 14.5,
+  "findings": [
+    {
+      "disease": "Migraine",
+      "confidence": 92.5,
+      "category": "Neurology",
+      "severity": "Moderate",
+      "symptoms": ["headache", "nausea", "sensitivity to light"],
+      "recommended_specialist": "Neurologist",
+      "emergency": false,
+      "recovery_time": "1-2 days",
+      "home_remedies": ["Rest in a dark room", "Cold compress"],
+      "medications": ["Sumatriptan", "Ibuprofen"],
+      "medical_treatment": ["Triptans", "NSAIDs"]
+    }
+  ]
+}
+```
 
 ---
 
 ## Installation & Setup
 
-### 1. Clone Repository
+### Prerequisites
+- Node.js (v16+)
+- Python 3.10+
+
+### Quick Start (Windows)
+Double-click `Start-QuantumMed.bat` in the root directory. This automatically launches both the FastAPI backend and React frontend in separate terminal windows.
+
+### Database Initialization
+If you need to seed or reset the relational SQLite database from JSON raw mappings, run:
 ```bash
-git clone https://github.com/ananTripathi-future/QuantumMed-AI.git
-cd QuantumMed-AI
+python scripts/import_medical_data.py
 ```
 
-### 2. Start Backend Server (Python FastAPI)
-```bash
-cd backend
-python -m pip install -r requirements.txt
-python main.py
-```
-*(Server binds to `http://127.0.0.1:8080`)*
+---
 
-### 3. Start Frontend App (React Vite)
-```bash
-cd frontend
-npm install
-npm run dev
+## Project Structure
+
 ```
-*(App launches at `http://localhost:5173`)*
+quantummed-ai/
+│
+├── backend/
+│   ├── app.py                      # FastAPI routes & endpoints
+│   ├── database.py                 # SQLite initialization & accessors
+│   ├── quantum_search.py           # Grover's algorithm symptom matching
+│   ├── classical_search.py         # Classical linear search benchmark
+│   ├── ai_analyzer.py              # CNN skin classifier & Spectrogram Audio DNN
+│   ├── ml_compare.py               # Classical ML classifier evaluation
+│   ├── diseases.json               # Raw JSON source database
+│   ├── data/
+│   │   └── quantum_med.db          # SQLite relational database
+│   ├── models/
+│   │   ├── symptom_random_forest.pkl   # Serialized Random Forest model
+│   │   └── symptom_features.pkl        # Serialized feature list mapping
+│   └── requirements.txt
+│
+├── scripts/
+│   └── import_medical_data.py      # Database seeder execution script
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx                 # Dashboard UI, charts, & visualizer
+│   │   └── index.css               # Vanilla CSS styles & layout tokens
+│   └── package.json
+│
+├── images/
+│   ├── banner.png
+│   ├── dashboard.png
+│   ├── quantum-search.png
+│   ├── vision.png
+│   ├── comparison.png
+│   └── analytics.png
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 📷 Screenshots
+
+### Dashboard
+![Dashboard](images/dashboard.png)
+
+---
+
+### Quantum Search
+![Quantum](images/quantum-search.png)
+
+---
+
+### AI Skin Vision
+![Vision](images/vision.png)
+
+---
+
+
+## Future Roadmap
+
+- [ ] **AI Conversational Assistant:** Integrate LLMs for user intake questions.
+- [ ] **Grad-CAM Explainability:** Draw heatmap overlays showing where CNN classifiers see lesions.
+- [ ] **Bounding Box Localization:** Implement YOLO for localized skin lesion cropping.
+- [ ] **Multi-language Support:** Localize diagnostic outputs to global languages.
+- [ ] **Cloud Deployment:** Deploy on AWS/GCP with Qiskit runtime endpoints.
+- [ ] **Docker Support:** Containerize services for microservice deployments.
+- [ ] **EHR Integration:** Support HL7 / FHIR data transmission standards.
+
+---
+
+## Limitations
+
+- **Simulated Qubits:** Running large quantum registers is simulated locally on classical CPUs using Qiskit Aer. Real quantum computers require cooling infrastructure.
+- **Mock Model Weights:** Convolutional network layers are initialized for diagnostic demonstration. They should be backed by clinical validation data before any real-world test.
 
 ---
 
 ## Disclaimer
 
-**IMPORTANT:** QuantumMed AI is an **experimental clinical decision-support and health intelligence research platform**. It is NOT intended to replace professional medical advice, diagnosis, or treatment. Always consult a qualified board-certified physician for medical concerns.
+This project is built **for educational and research simulation purposes only.**
+It is **not** intended for real-world medical use, clinical decision-making, or patient care. Always consult a qualified medical professional for health concerns.
 
 ---
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for details.
+This project is provided for educational and research purposes under standard academic licensing.
+
+---
+
+## 📈 Repository Statistics
+
+[![GitHub stars](https://img.shields.io/github/stars/ananTripathi-future/quantummed-ai?style=social)](https://github.com/ananTripathi-future/QuantumMed-AI)
+[![GitHub forks](https://img.shields.io/github/forks/ananTripathi-future/quantummed-ai?style=social)](https://github.com/ananTripathi-future/QuantumMed-AI)
+![GitHub issues](https://img.shields.io/github/issues/ananTripathi-future/quantummed-ai)
